@@ -1,0 +1,137 @@
+/* Variabel warna seperti di Bootstrap */
+:root {
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar .contact a,
+i {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.navbar .mail a,
+i {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.navbar .line {
+    width: 880px;
+    border: 1px solid rgb(247, 247, 247);
+}
+
+.nav-link {
+    color: white !important;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background: rgb(231, 60, 60);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    height: 3px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 5px;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    /* filter: brightness(80%); */
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
+}
+
+.drop {
+    width: 100%;
+    height: 200%;
+    /* background-color: #d2dcdd; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)); */
+}
+
+.overlay-section {
+    width: 80%;
+    color: white;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+}
+
+.overlay-section .event-button {
+    width: 210px;
+    height: 150px;
+    border-right: 1px solid rgb(152, 152, 152);
+    /* background-color: #0d6efd; */
+}
+
+/* .overlay-line {
+    position: absolute;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    background-color: #152780;
+} */
