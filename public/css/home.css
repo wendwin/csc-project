@@ -1,7 +1,7 @@
 /* Variabel warna seperti di Bootstrap */
 :root {
-    --bs-primary: #0d6efd;
-    --bs-secondary: #6c757d;
+    --bs-primary: #0c174b;
+    --bs-secondary: #cbd5e1;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
@@ -32,88 +32,119 @@ a {
     text-decoration: none;
 }
 
-.navbar .contact a,
-i {
-    font-size: 12px;
-    font-weight: 400;
-    font-family: "Inter", sans-serif;
-    color: white;
+.bg-nav {
+    background-color: var(--bs-primary);
 }
 
-.navbar .mail a,
-i {
+.navbar {
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    /* height: 100vh; */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar .contact-info .contact,
+.mail {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: "Inter", sans-serif;
-    color: white;
+    color: var(--bs-secondary);
+}
+
+.navbar .contact-info .contact i,
+.mail i {
+    font-size: 14px;
+}
+
+.navbar .contact-info a :hover {
+    color: var(--bs-light);
+}
+
+.navbar .contact p,
+.mail p {
+    margin: 0;
+}
+
+.navbar .contact i,
+.mail i {
+    vertical-align: middle;
 }
 
 .navbar .line {
-    width: 880px;
-    border: 1px solid rgb(247, 247, 247);
+    width: 930px;
+    height: 0.3px;
+    background-color: #7f7f7f;
 }
 
-.nav-link {
-    color: white !important;
-    text-decoration: none;
+.nav-item {
     position: relative;
 }
 
-.nav-link::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 5px;
-    background: rgb(231, 60, 60);
-    transition: width 0.3s;
+.nav-line {
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background-color: rgb(254, 20, 20);
+    transition: width 0.3s;
 }
 
-.nav-link:hover::after {
+.nav-item:hover .nav-line {
     width: 100%;
 }
 
-.nav-link.active::after {
-    width: 100%;
-    height: 3px;
+.nav-item:hover .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: #cbd5e1;
+}
+
+.nav-link:focus {
+    color: #fff;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-item {
+    font-family: "Inter", sans-serif;
+    color: #5c5c5c;
+}
+
+.dropdown-item:hover {
+    background-color: #e9f0f0;
+    color: var(--bs-dark);
+}
+
+/* .carousel {
+    height: 92vh;
 }
 
 .carousel-inner {
-    height: 100vh;
-}
+    height: 90vh;
+} */
 
-.carousel-inner img {
-    object-fit: cover;
-    background-position: center;
+.carousel-item {
     height: 100%;
-    width: 100%;
-    /* filter: brightness(80%); */
-    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
 }
 
-.drop {
-    width: 100%;
-    height: 200%;
-    /* background-color: #d2dcdd; */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0.5)); */
+.carousel-item img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
 }
 
 .overlay-section {
-    width: 80%;
     color: white;
     bottom: 0;
+    left: 0;
+    right: 0;
     background: rgba(255, 255, 255, 0);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -122,16 +153,41 @@ i {
 }
 
 .overlay-section .event-button {
-    width: 210px;
-    height: 150px;
+    width: 100%;
+    height: 170px;
     border-right: 1px solid rgb(152, 152, 152);
-    /* background-color: #0d6efd; */
 }
 
-/* .overlay-line {
+.overlay-section .event-button:last-child {
+    border-right: none
+}
+
+.overlay-section .more {
+    width: 25%;
+    font-size: 16;
+    font-weight: 24px;
+    font-family: "Inter", sans-serif;
+    color: #cbd5e1;
+    z-index: 99;
+    text-shadow: 1px 1px 2px #9d9d9d;
+    background: linear-gradient(to right, #132579 50%, #132b92 90%);
+}
+
+.drop {
+    height: 10px;
     position: absolute;
     bottom: 0;
-    height: 10px;
-    width: 100%;
-    background-color: #152780;
-} */
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #132579 90%, #132b92);
+}
+
+.drop-full {
+    color: white;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #132579 30%, #132b92 60%);
+}
