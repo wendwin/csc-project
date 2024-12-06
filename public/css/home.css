@@ -1,0 +1,193 @@
+/* Variabel warna seperti di Bootstrap */
+:root {
+    --bs-primary: #0c174b;
+    --bs-secondary: #cbd5e1;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-nav {
+    background-color: var(--bs-primary);
+}
+
+.navbar {
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    /* height: 100vh; */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar .contact-info .contact,
+.mail {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: var(--bs-secondary);
+}
+
+.navbar .contact-info .contact i,
+.mail i {
+    font-size: 14px;
+}
+
+.navbar .contact-info a :hover {
+    color: var(--bs-light);
+}
+
+.navbar .contact p,
+.mail p {
+    margin: 0;
+}
+
+.navbar .contact i,
+.mail i {
+    vertical-align: middle;
+}
+
+.navbar .line {
+    width: 930px;
+    height: 0.3px;
+    background-color: #7f7f7f;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-line {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background-color: rgb(254, 20, 20);
+    transition: width 0.3s;
+}
+
+.nav-item:hover .nav-line {
+    width: 100%;
+}
+
+.nav-item:hover .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: #cbd5e1;
+}
+
+.nav-link:focus {
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-item {
+    font-family: "Inter", sans-serif;
+    color: #5c5c5c;
+}
+
+.dropdown-item:hover {
+    background-color: #e9f0f0;
+    color: var(--bs-dark);
+}
+
+/* .carousel {
+    height: 92vh;
+}
+
+.carousel-inner {
+    height: 90vh;
+} */
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.overlay-section {
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+}
+
+.overlay-section .event-button {
+    width: 100%;
+    height: 170px;
+    border-right: 1px solid rgb(152, 152, 152);
+}
+
+.overlay-section .event-button:last-child {
+    border-right: none
+}
+
+.overlay-section .more {
+    width: 25%;
+    font-size: 16;
+    font-weight: 24px;
+    font-family: "Inter", sans-serif;
+    color: #cbd5e1;
+    z-index: 99;
+    text-shadow: 1px 1px 2px #9d9d9d;
+    background: linear-gradient(to right, #132579 50%, #132b92 90%);
+}
+
+.drop {
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #132579 90%, #132b92);
+}
+
+.drop-full {
+    color: white;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #132579 30%, #132b92 60%);
+}
