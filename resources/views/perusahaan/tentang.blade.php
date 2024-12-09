@@ -1,6 +1,6 @@
 
 <x-layout :navbar="'customize'" :css="['perusahaan/tentang.css', 'navbar_costumize.css']">
-{{-- silahkan costumise tampilannya --}}
+{{-- silahkan costumise tampilannya  ini masih blm fiks -}}
 
     <!-- Konten Halaman -->
 <div class="container my-5 pt-5">
