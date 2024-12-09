@@ -1,7 +1,9 @@
-<nav x-data class="navbar navbar-expand-lg libre-caslon-text-regular bg-transparent fixed-top px-3 px-md-5"
+{{-- navbar costumize untuk kebutuhan menu-menu --}}
+    
+    <nav x-data class="navbar navbar-expand-lg libre-caslon-text-regular bg-transparent fixed-top px-3 px-md-5"
     :class="{ 'bg-transparent': !$store.navbar.isExpanded, 'bg-nav': $store.navbar.isExpanded }">
     <div class="container">
-        <a class="navbar-brand fs-2 text-white" href="/">CENDANA</a>
+        <a class="navbar-brand fs-2 text-black" href="/">CENDANA</a>
         <div class="d-flex align-items-center gap-3">
             <div class="contact-info d-none d-md-flex align-items-center d-lg-none">
                 <a href="">
@@ -44,20 +46,19 @@
                         <a class="nav-link dropdown-toggle" href="#" id="perusahaanDropdown" role="button">
                             Perusahaan
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="perusahaanDropdown">
+                         <ul class="dropdown-menu" aria-labelledby="perusahaanDropdown">
                             <li><a class="dropdown-item" href="{{ route('perusahaan.tentang') }}">Tentang</a></li>
                             <li><a class="dropdown-item" href="{{ route('perusahaan.direksi') }}">Anggota Direksi</a></li>
                             <li><a class="dropdown-item" href="{{ route('perusahaan.struktur_organisasi') }}">Struktur Organisasi</a></li>
                             <li><a class="dropdown-item" href="{{ route('perusahaan.tata-kelola') }}">Tata Kelola Perusahaan</a></li>
                         </ul>
-
                         <div class="nav-line"></div>
                     </li>
                     <li class="nav-item dropdown me-3">
                         <a class="nav-link dropdown-toggle" href="#" id="layananDropdown" role="button">
                             Layanan
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="layananDropdown">
+                         <ul class="dropdown-menu" aria-labelledby="layananDropdown">
                             <li><a class="dropdown-item" href="{{ route('layanan.ringkasan') }}">Ringkasan</a></li>
                             <li><a class="dropdown-item" href="{{ route('layanan.pameran') }}">Pameran</a></li>
                             <li><a class="dropdown-item" href="{{ route('layanan.konferensi') }}">Konferensi</a></li>
@@ -121,3 +122,11 @@
         </div>
     </div>
 </nav>
+
+<div class="bg-nav text-white py-5 mt-5">
+    <div class="container-fluid text-start">
+        <h1 class="text-danger small mt-5">Company</h1>
+        <p class="text-dark display-6 fw-bold">Tentang</p>
+    </div>
+</div>
+

@@ -17,16 +17,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     {{-- alpinejs --}}
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="css/{{ $css }}">
-    
+    {{-- <link rel="stylesheet" href="css/{{ $css }}"> --}}
+
+    {{-- load dinamis css --}}
+    @isset($css)
+        @if(is_array($css))
+            @foreach($css as $style)
+                <link rel="stylesheet" href="{{ asset('css/' . $style) }}">
+            @endforeach
+        @else
+            <link rel="stylesheet" href="{{ asset('css/' . $css) }}">
+        @endif
+    @endisset
+
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 <body>
-
-    <x-navbar></x-navbar>
+    
+  {{-- Debugging nilai $navbar --}}
+    @if(isset($navbar) && $navbar === 'customize')
+    @include('components.navbar_costumize')
+    @else
+        <x-navbar />
+    @endif
 
     <main>
         {{ $slot }}
     </main>
+
+    <x-footer></x-footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

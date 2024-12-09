@@ -1,6 +1,6 @@
-<x-layout>
+
     <!-- Carousel -->
-    <x-slot:css>{{ $css }}</x-slot:css>
+<x-layout :navbar="null" :css="'home.css'">
     <div class="position-relative">
         <div id="carouselExample" class="carousel slide vh-100" data-bs-ride="carousel">
             <div class="carousel-indicators d-lg-none">

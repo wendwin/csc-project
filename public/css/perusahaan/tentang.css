@@ -1,0 +1,169 @@
+
+
+/* Glimpse Section */
+.glimpse-section {
+    position: relative;
+    display: flex;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+.glimpse-text-container {
+    background-color: #ffffff;
+    padding: 50px;
+    color: #333;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    left: -10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+    text-align: left;
+    padding-left: 300px;
+}
+
+
+/* Glimpse Title */
+.glimpse-title {
+    font-size: 2rem;
+    color: #1c1f4d;
+    font-weight: bold;
+}
+
+.glimpse-highlight {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.glimpse-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 
+/* Container untuk gambar */
+.glimpse-image-container {
+    position: absolute; 
+    top: 5%;
+    left: 184px;
+    width: 93%;
+    height: 112%;
+    overflow: hidden;
+    z-index: 1;
+} */
+
+.glimpse-image {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+
+/* Vision & Mission Section */
+.vision-mission-section {
+    margin-top: -6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-left: -118px;
+    height: 100vh;
+    width: 121%;
+    padding: 20%;
+    background-color: #1c1f4d;
+    color: white;
+    box-sizing: border-box;
+}
+
+.vision h3,
+.mission h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+/* Garis pendek awal sebelum hover */
+.vision h3::before,
+.mission h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 10px;
+    background: red;
+    border-radius: 50%;
+    transition: width 0.3s ease;
+}
+
+.vision:hover h3::before,
+.mission:hover h3::before {
+    width: 100%;
+}
+
+/* Container untuk teks Vision dan Mission */
+.vision,
+.mission {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.vision:hover,
+.mission:hover {
+    border-radius: 10px;
+}
+
+/* Subsidiary Section */
+.subsidiary-section {
+    background-color: white;
+    padding: 40px 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.subsidiary-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #1c1f4d;
+    position: relative;
+    padding-top: 15px;
+}
+
+
+.subsidiary-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 60px;
+    background: red;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #1c1f4d;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #555;
+}
