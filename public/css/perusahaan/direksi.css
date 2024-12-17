@@ -1,0 +1,44 @@
+.description-page{
+    color: #fff;
+    width: 100%;
+    padding: 120px 0px 20px 30px;
+    background-color: #F7BC12;
+
+}
+
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+
+.organisasi-section:hover .yellow-bar {
+    width: 85px;
+    
+}
+
+.organisasi-member img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-container{
+    color: #000;
+    font-weight: 500;
+}
+
+.text-container a{
+    text-decoration: none;
+    color: #000;
+    transition: ease-in-out 0.2s;
+}
+.text-container a:hover{
+    color: #3499C5;
+}
+.name{
+    color: #3499C5;
+    margin-bottom: -5px;
+}
+
