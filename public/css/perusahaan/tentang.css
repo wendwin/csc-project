@@ -1,169 +1,194 @@
-
-
-/* Glimpse Section */
-.glimpse-section {
-    position: relative;
-    display: flex;
-    padding: 2%;
-    border-radius: 8px;
+.navbar {
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    /* height: 100vh; */
 }
 
-.glimpse-text-container {
-    background-color: #ffffff;
-    padding: 50px;
-    color: #333;
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar .contact-info .contact,
+.mail {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: var(--bs-secondary);
+}
+
+.navbar .contact-info .contact i,
+.mail i {
+    font-size: 14px;
+}
+
+.navbar .contact-info a :hover {
+    color: var(--bs-light);
+}
+
+.navbar .contact p,
+.mail p {
+    margin: 0;
+}
+
+.navbar .contact i,
+.mail i {
+    vertical-align: middle;
+}
+
+.navbar .line {
+    width: 930px;
+    height: 0.3px;
+    background-color: #7f7f7f;
+}
+
+.nav-item {
     position: relative;
-    z-index: 2;
-    overflow: hidden;
+}
+
+.nav-line {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background-color: rgb(254, 20, 20);
+    transition: width 0.3s;
+}
+
+.nav-item:hover .nav-line {
     width: 100%;
-    left: -10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    justify-content: center; 
-    text-align: left;
-    padding-left: 300px;
 }
 
-
-/* Glimpse Title */
-.glimpse-title {
-    font-size: 2rem;
-    color: #1c1f4d;
-    font-weight: bold;
+.nav-item:hover .nav-link {
+    color: rgb(255, 255, 255);
 }
 
-.glimpse-highlight {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+.nav-link {
+    color: #cbd5e1;
 }
 
-.glimpse-text {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #555;
+.nav-link:focus {
+    color: #fff;
 }
 
-/* 
-/* Container untuk gambar */
-.glimpse-image-container {
-    position: absolute; 
-    top: 5%;
-    left: 184px;
-    width: 93%;
-    height: 112%;
-    overflow: hidden;
-    z-index: 1;
-} */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
 
-.glimpse-image {
-    /* width: 100%; */
-    height: 100%;
+.dropdown-item {
+    font-family: "Inter", sans-serif;
+    color: #5c5c5c;
+}
+
+.dropdown-item:hover {
+    background-color: #e9f0f0;
+    color: var(--bs-dark);
+}
+
+.description-page{
+    color: #fff;
+    width: 100%;
+    padding: 120px 0px 20px 30px;
+    background-color: #F7BC12;
+}
+
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+
+.intro-container{
+    background-color: #F5F5F5;
+    border-radius: 30px;
+}
+.intro-img-section img{
+    width: 320px;
+    height: 600px;
+    border-radius: 30px;
     object-fit: cover;
-    position: absolute;
 }
-
-
-
-/* Vision & Mission Section */
-.vision-mission-section {
-    margin-top: -6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    margin-left: -118px;
-    height: 100vh;
-    width: 121%;
-    padding: 20%;
-    background-color: #1c1f4d;
-    color: white;
-    box-sizing: border-box;
+.intro-text-section{
+    text-align: justify;
 }
-
-.vision h3,
-.mission h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    color: white;
+.intro-pengalaman-container{
+    transition: ease-in-out 0.2s;
 }
-
-/* Garis pendek awal sebelum hover */
-.vision h3::before,
-.mission h3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5px;
-    width: 10px;
-    background: red;
+.intro-pengalaman-container:hover{
+    scale: 105%;
+    transition: ease-in-out 0.2s;
+}
+.intro-pengalaman-container h4{
+    width: 120px;
+    padding: 10px 0px;
+    background-color: #3499C5;
+    color: #fff;
+    border-radius: 15px;
+}
+.sejarah-section:hover .yellow-bar,
+.visi-misi-section:hover .yellow-bar{
+    width: 85px;
+}
+.sejarah-section{
+    margin-top: 100px;
+}
+.sejarah-shape-container{
+    margin-left: -50px;
+    width: 100px;
+    height: 90px;
     border-radius: 50%;
-    transition: width 0.3s ease;
+    background-color: #3499C5;
 }
-
-.vision:hover h3::before,
-.mission:hover h3::before {
+.sejarah-text-container{
+    text-align: justify;
+}
+.sejarah-img-section img{
+    width: 430px;
+    height: 400px;
+    object-fit: cover;
+    object-position: -10px center;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.visi-misi-section{
+    background-color: #3499C5;
+    border-top-left-radius:80px ;
+    border-bottom-right-radius:80px ;
+    margin: 100px 0px;
+}
+.visi-misi-img-section img{
     width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-top-left-radius:80px ;
+    border-bottom-right-radius:80px ;
 }
-
-/* Container untuk teks Vision dan Mission */
-.vision,
-.mission {
-    flex: 1;
-    text-align: center;
-    padding: 8px;
-    box-sizing: border-box;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
+.visi-misi-text-section{
+    text-align: justify;
+    color: #fff;
 }
-.vision:hover,
-.mission:hover {
-    border-radius: 10px;
+.company .logo img {
+    max-width: 130px;
 }
-
-/* Subsidiary Section */
-.subsidiary-section {
-    background-color: white;
-    padding: 40px 0;
-    text-align: left;
-    display: flex;
-    align-items: center;
+.company .logo-csc img {
+    max-width: 230px;
 }
-
-.subsidiary-title {
-    font-weight: bold;
-    font-size: 2.5rem;
-    color: #1c1f4d;
-    position: relative;
-    padding-top: 15px;
+@media (max-width: 992px) {
+    .sejarah-img-section img {
+        width: 330px;
+        height: 300px;
+    }
+    .visi-misi-img-section img{
+        height: 650px;
+    }
 }
-
-
-.subsidiary-title::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 5px;
-    width: 60px;
-    background: red;
+@media (max-width: 768px) {
+    .visi-misi-img-section img{
+        height: 500px;
+    }
 }
-
-.card-title {
-    font-weight: bold;
-    font-size: 1.8rem;
-    color: #1c1f4d;
-}
-
-.card-text {
-    font-size: 1.2rem;
-    color: #555;
+@media (max-width: 568px) {
+    .visi-misi-img-section img{
+        height: 400px;
+    }
 }
