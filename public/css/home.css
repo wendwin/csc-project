@@ -10,6 +10,10 @@
     --bs-dark: #212529;
 }
 
+body {
+    height: 3000px;
+}
+
 .libre-caslon-text-regular {
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
@@ -190,4 +194,351 @@ a {
     left: 0;
     right: 0;
     background: linear-gradient(to right, #132579 30%, #132b92 60%);
+}
+
+
+/* summery-about */
+
+/* summery-about */
+/* .summery-about .line-bar {
+    width: 80px;
+    height: 8px;
+    background-color: #F7BC12;
+}
+
+.summery-about img {
+    border-top-left-radius: 45%;
+    border-bottom-left-radius: 45%;
+} */
+
+.line-bar {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+}
+
+
+.glimpse {
+    background-color: #0c174b;
+    position: relative;
+    overflow: hidden;
+}
+
+.glimpse-section {
+    /* display: flex; */
+    /* width: 100%; */
+    /* padding: 1rem; */
+}
+
+.glimpse-text-container {
+    /* background-color: #ffffff; */
+    background: linear-gradient(to bottom, #F4F7FA, #fff);
+    height: 100%;
+    color: #333;
+    z-index: 2;
+    overflow: hidden;
+    border-bottom-right-radius: 15px;
+}
+
+.line-bar {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+}
+
+.glimpse .text-content {
+    padding: 50px 14px;
+}
+
+/* Glimpse Title */
+.glimpse-title {
+    font-size: 2rem;
+    color: #1c1f4d;
+    font-weight: bold;
+}
+
+.glimpse-highlight {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.glimpse-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.glimpse .count .number {
+    font-size: 2rem;
+    color: #F4033D;
+    font-weight: 600;
+}
+
+
+/* Container untuk gambar */
+.glimpse-image-container {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.glimpse-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-bottom-left-radius: 15px;
+}
+
+.service {
+    /* background: linear-gradient(to right, #102064 50%, #112580 70%); */
+    background-color: #0c174b;
+}
+
+.service .container {
+    padding: 120px 24px;
+}
+
+.service .card {
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+.service .card a {
+    color: #f3f3f3;
+}
+
+.service .card-body {
+    bottom: -45px;
+    padding: 25px;
+    transition: ease-in-out 0.25s;
+}
+
+.service .card:hover .card-body {
+    bottom: 0;
+    transition: ease-in-out 0.25s;
+}
+
+
+
+.service .card img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(60%);
+}
+
+.service .card:hover img {
+    filter: brightness(50%);
+}
+
+
+.service .line-bar-title {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.service .line-bar {
+    width: 25px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.service .card:hover .line-bar {
+    width: 50px;
+}
+
+
+.company .logo img {
+    max-width: 130px;
+}
+
+
+.trust {
+    background: linear-gradient(to bottom, #F4F7FA, #fff);
+}
+
+.trust .container {
+    margin-top: 50px;
+    padding: 120px 24px 0 24px;
+}
+
+.trust .line-bar-title {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.trust h2 {
+    color: var(--bs-primary);
+}
+
+.trust .org-one img {
+    max-width: 20%;
+}
+
+.trust .peta img {
+    max-width: 100%;
+}
+
+
+
+
+
+.news .container {
+    padding: 120px 24px;
+}
+
+.news .card {
+    border: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.news .line-bar-title {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.news h2 {
+    color: var(--bs-primary);
+}
+
+.news .card {
+    background-color: #f5f5f5;
+    max-width: 600px;
+}
+
+.news .line-bar {
+    width: 25px;
+    height: 5px;
+    background-color: #3499C5;
+    transition: width 0.3s;
+}
+
+.news .card .next {
+    color: #848484;
+    transition: ease-in-out 0.1s;
+    font-weight: 500;
+}
+
+
+.news .card:hover .line-bar {
+    width: 50px;
+}
+
+.news .card:hover .next {
+    color: #3499C5;
+    transition: ease-in-out 0.1s;
+}
+
+.news .card img {
+    transition: transform 0.3s ease;
+}
+
+.news .card:hover img {
+    transform: scale(0.98);
+}
+
+.news .card .date {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.news .card .title {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.news .card .content {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+.offer {
+    padding: 50px;
+    background-color: #F7BC12;
+    color: #fff;
+}
+
+.offer .container {
+    max-width: 700px;
+}
+
+.offer button {
+    padding: 15px 18px;
+    background-color: #3499C5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.offer button:hover {
+    background-color: #3089b0;
+    transition: ease-in-out 0.2s;
+}
+
+
+
+
+/* md */
+@media (min-width: 768px) {
+
+    .glimpse .text-content {
+        padding: 50px 130px 50px 80px;
+    }
+
+    .glimpse .count .number {
+        font-size: 2.5rem;
+    }
+
+    /* .trust .org-one img {
+        max-width: 7%;
+    } */
+
+
+}
+
+/* lg */
+@media (min-width: 992px) {
+
+    .glimpse-section {
+        max-width: 82%;
+    }
+
+    .glimpse .text-content {
+        padding: 100px 220px 100px 220px;
+    }
+
+    .glimpse .count .number {
+        font-size: 3rem;
+    }
+
+    .trust .org-one img {
+        max-width: 9%;
+    }
+
+    /* .service {
+        padding: 100px 220px 100px 220px;
+        
+    } */
 }
