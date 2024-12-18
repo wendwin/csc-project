@@ -1,5 +1,4 @@
-
-    <!-- Carousel -->
+<!-- Carousel -->
 <x-layout :navbar="null" :css="'home.css'">
     <div class="position-relative">
         <div id="carouselExample" class="carousel slide vh-100" data-bs-ride="carousel">
@@ -112,4 +111,296 @@
             </div>
         </div>
     </div>
+
+    <!-- seummery-about -->
+    {{-- <div class="summery-about container my-5 px-4">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="line-bar mb-3"></div>
+                <h2 class="fw-bolder mb-4">Menghadirkan Solusi, <br> Menciptakan Dunia Tak Terbatas</h2>
+                <p class="mb-2">Cendana Solution Center adalah mitra terpercaya yang menghadirkan solusi komprehensif
+                    di bidang event
+                    organizer, ketahanan pangan, dan konstruksi. Dengan keahlian dan dedikasi, kami membantu menciptakan
+                    acara yang berkesan, mendukung kebutuhan pangan berkelanjutan, dan membangun infrastruktur yang
+                    kokoh. Kami percaya bahwa inovasi dan kolaborasi adalah kunci untuk mewujudkan masa depan yang lebih
+                    baik bagi masyarakat dan lingkungan. Bersama Cendana Solution Center, setiap langkah Anda menuju
+                    sukses adalah prioritas kami.</p>
+                <a href="#">Lebih lanjut tentang kami <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="col-md-5">
+                <img src="img/example.avif" alt="" width="100%">
+            </div>
+        </div>
+    </div> --}}
+    <div class="glimpse p-md-0">
+        <div class="row glimpse-section mb-5 ">
+            <div class="col-md-7 glimpse-text-container w-100 px-4">
+                <div class="text-content">
+                    <div class="line-bar mb-3"></div>
+                    <h2 class="glimpse-title fs-1 mb-4">Glimpse of Cendana Company</h2>
+                    <p class="glimpse-highlight">
+                        <strong>Welcome to Cendana Solution Center, an esteemed pioneer and dominant player in
+                            Indonesia's
+                            Professional Conference Organization (PCO) sector, marking our presence since our founding
+                            in
+                            1989.</strong>
+                    </p>
+                    <p class="glimpse-text">Renowned for delivering unparalleled event experiences, we?ve obtained
+                        international acclaim as Indonesia's foremost authority in the industry
+                        At Royalindo, we redefine event solutions as a full-service, world-class
+                        provider offering an end-to-end journey from conceptualization
+                        Royalindo incorporates service </p>
+
+                    <div class="count d-lg-flex mt-lg-5 ">
+                        <div class="me-lg-5">
+                            <p class="number m-0">35+</p>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="me-lg-5">
+                            <p class="number  m-0">2000 +</p>
+                            <p>Events</p>
+                        </div>
+                        <div class="me-lg-5">
+                            <p class="number  m-0">1.000.000+</p>
+                            <p>Events Participants</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Image -->
+            <div class="col-md-5 glimpse-image-container">
+                <img src="/img/intro.jpg" alt="Event Image" class="glimpse-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="container" style="background-color: ">
+            <div class="line-bar-title mb-3"></div>
+            <h2 class="fw-bolder mb-5 text-white">Layanan</h2>
+            <div class="mb-xl-0 d-xl-flex justify-content-evenly align-items-center gap-5">
+                <a href="">
+                    <div class="card position-relative mb-4">
+                        <img src="img/layanan/event-organizer.jpg" class="card-img-top" alt="...">
+                        <div class="card-body position-absolute ">
+                            <div class="line-bar mb-2"></div>
+                            <p class="fs-3 fw-bold">Event Organizer</p>
+                            <a href="#" class="">Lebih lanjut...</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card position-relative mb-4">
+                        <img src="img/layanan/sawah.jpg" class="card-img-top" alt="...">
+                        <div class="card-body position-absolute">
+                            <div class="line-bar mb-2"></div>
+                            <p class="fs-3 fw-bold">Ketahanan Pangan</p>
+                            <a href="#" class="">Lebih lanjut...</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card position-relative mb-4">
+                        <img src="img/layanan/konstruksi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body position-absolute ">
+                            <div class="line-bar mb-2"></div>
+                            <p class="fs-3 fw-bold">Konstruksi</p>
+                            <a href="#" class="">Lebih lanjut...</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="company mt-5">
+        <div class="container">
+            <div class="logo d-flex flex-column justify-center align-items-center">
+                <div class="text-center mb-5">
+                    <h2 class="mb-4">Perusahaan Induk</h2>
+                    <img src="img/logo/csc.png" alt="">
+                </div>
+                <div class="d-md-flex flex-column mt-2">
+                    <div class="text-center mb-3">
+                        <h2>Anak Perusahaan</h2>
+                    </div>
+                    <div class="d-md-flex gap-4">
+                        <div class="d-md-flex align-items-center gap-3 text-center mb-5 mb-md-0">
+                            <img src="img/logo/pusdiklatnas.png" alt="" class="order-md-2">
+                            <div class="text-center text-md-end mt-2 order-md-1">
+                                <p class="text-uppercase ">pusdiklatnas</p>
+                                <p class="text-end">Pusat Pendidikan Dan Pelatihan
+                                    Nasional</p>
+                            </div>
+                        </div>
+                        <div class="d-md-flex align-items-center gap-3 text-center">
+                            <img src="img/logo/pustakapemda.png" alt="">
+                            <div class="text-center text-md-start mt-2">
+                                <p class="text-uppercase ">pustakapemda</p>
+                                <p class="">Pusat Kajian Tata Kelola Keuangan <br>dan
+                                    Pembangunan Pemerintah Daerah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trust">
+            <div class="container">
+                <div class="line-bar-title mb-3"></div>
+                <h2 class="fw-bolder mb-5">Dipercaya Oleh:</h2>
+                <div class="org-one text-center d-md-flex justify-content-center align-items-center gap-5">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendes.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendagri.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendikbud.png" alt="">
+                </div>
+                <div
+                    class="org-one text-center my-5 d-md-flex justify-content-center align-items-center flex-wrap gap-5">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-tanah-laut.jpg" alt="">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-karimun.gif" alt="">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-kepulauan.jpg" alt="">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-kapuas-hulu.jpg" alt="">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-selatan.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-utara.jpg" alt="">
+                </div>
+                <div class="peta mt-5">
+                    <div class="text-center">
+                        <h2 class="mb-5">Mitra Kami</h2>
+                        <img src="img/mitra/Peta.png" alt="" width="500">
+                    </div>
+                    <div class="mt-4 d-md-flex justify-content-center gap-md-5">
+                        <ul>
+                            <li>APDESI DESI Kab. Tanah Laut</li>
+                            <li>Dinas Pendidikan Kab. Tanah Laut</li>
+                            <li>Kec. Manuhing, Kab. Gunung Mas</li>
+                            <li>Kec. Manuhing Raya, Kab. Gunung Mas</li>
+                            <li>Kec. Rungan</li>
+                            <li>Kec. Rungan Hulu</li>
+                            <li>Kec. Lembuya, Kab. Konawe</li>
+                            <li>Kec. Aru Selatan Timur, Kab. Kepulauan Aru</li>
+                            <li>Kec. Weda Selatan, Kab. Halsel</li>
+                        </ul>
+                        <ul>
+                            <li>Kab. Maluku Tenggara</li>
+                            <li>Kab. Karimun</li>
+                            <li>Kab. Pasaman</li>
+                            <li>Kab. Tanah Bumbu</li>
+                            <li>Kab. Kapuas Hulu</li>
+                            <li>Kab. Toli Toli</li>
+                            <li>Kab. Morotai</li>
+                            <li>Kab. Banggailaut</li>
+                            <li>Seluruh OPD Di Indonesia yang Berpartisipasi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision & Mission Section -->
+        {{-- <div class="vision-mission-section">
+            <div class="vision mb-4">
+                <h3>Vision</h3>
+                <p>To be the leading company in creative and innovative solutions for global challenges.</p>
+            </div>
+            <div class="mission">
+                <h3>Mission</h3>
+                <p>Empowering communities through innovation and fostering sustainable growth in every project we
+                    undertake.</p>
+            </div>  --}}
+
+        <!-- Subsidiary Section -->
+        {{-- <div class="subsidiary-section">
+            <h2 class="subsidiary-title">Subsidiary</h2>
+            <div class="row justify-content-end">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Bahaso</h4>
+                            <p class="card-text">A leading language learning platform designed for global communication
+                                and collaboration.</p>
+                            <a href="#" class="btn btn-readmore">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Aldena Ganthari Kreatif</h4>
+                            <p class="card-text">Delivering creative solutions and designs that inspire and connect.
+                            </p>
+                            <a href="#" class="btn btn-readmore">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> --}}
+    </div>
+
+    <div class="news">
+        <div class="container" style="background-color:">
+            <div class="line-bar-title mb-3"></div>
+            <h2 class="fw-bolder mb-5 ">Berita Terbaru</h2>
+            <div class="mb-lg-0 d-lg-flex justify-content-evenly align-items-center gap-3">
+                <a href="">
+                    <div class="card p-3 mb-4">
+                        <img src="img/berita/image 4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="line-bar mb-2"></div>
+                            <p class="date">25 November 2024</p>
+                            <p class="title">Bimtek Peningkatan Kapasitas Aparatur Desa di Kecamatan Manuhing,
+                                Manuhing Raya, dan Rungan Berlangsung Sukses</p>
+                            <p class="content">Dalam upaya meningkatkan kualitas pelayanan dan tata kelola pemerintahan
+                                desa, Pemerintah
+                                Kabupaten Gunung Mas menggelar Bimbingan ...</p>
+                            <a href="#" class="next">Selengkapnya...</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card p-3 mb-4">
+                        <img src="img/berita/image 7.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="line-bar mb-2"></div>
+                            <p class="date">25 November 2024</p>
+                            <p class="title">Bimtek Peningkatan Kapasitas Aparatur Desa di Kecamatan Manuhing,
+                                Manuhing Raya, dan Rungan Berlangsung Sukses</p>
+                            <p class="content">Dalam upaya meningkatkan kualitas pelayanan dan tata kelola pemerintahan
+                                desa, Pemerintah
+                                Kabupaten Gunung Mas menggelar Bimbingan ...</p>
+                            <a href="#" class="next">Selengkapnya...</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card p-3 mb-4">
+                        <img src="img/berita/image 8.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="line-bar mb-2"></div>
+                            <p class="date">25 November 2024</p>
+                            <p class="title">Bimtek Peningkatan Kapasitas Aparatur Desa di Kecamatan Manuhing,
+                                Manuhing Raya, dan Rungan Berlangsung Sukses</p>
+                            <p class="content">Dalam upaya meningkatkan kualitas pelayanan dan tata kelola pemerintahan
+                                desa, Pemerintah
+                                Kabupaten Gunung Mas menggelar Bimbingan ...</p>
+                            <a href="#" class="next">Selengkapnya...</a>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="offer text-center">
+        <div class="container">
+            <p class="fs-2 fw-medium mb-5">Butuh Solusi Handal untuk Event Organizer, Ketahanan Pangan, dan Konstruksi?
+            </p>
+            <button class="text-uppercase">hubungi kami sekarang</button>
+        </div>
+    </div>
+
+
 </x-layout>
