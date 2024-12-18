@@ -1,0 +1,86 @@
+.description-page{
+    color: #fff;
+    width: 100%;
+    padding: 120px 0px 20px 30px;
+    background-color: #F7BC12;
+}
+
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+
+.komisaris-container,
+.direktur-utama-container,
+.direktur-lainnya-container,
+.jabatan-lainnya-container{
+    transition:ease-in-out 0.2s;
+    text-transform: uppercase;
+}
+
+.komisaris-container:hover,
+.direktur-utama-container:hover,
+.direktur-lainnya-container:hover,
+.jabatan-lainnya-container:hover{
+    scale: 105%;
+}
+
+.komisaris-container h6,
+.direktur-utama-container h6,
+.direktur-lainnya-container h6,
+.jabatan-lainnya-container h6{
+    text-align: center;
+    font-weight: 700;
+    padding: 5px 0px;
+    color: #346cc5;
+}
+
+.nama-container {
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+    padding: 10px 0px 1px 0px;
+    font-weight: 700;
+    color: #fff;
+    background-color:#346cc5;
+    margin: 10px 5px;
+}
+
+.struktur-section:hover .yellow-bar {
+    width: 85px;
+    
+}
+
+/* Untuk mobile (lebar lebih kecil, 50%) */
+@media (max-width: 900px) {
+    .nama-container {
+        width: 115px; 
+    }
+    .komisaris-container,
+    .direktur-utama-container,
+    .direktur-lainnya-container,
+    .jabatan-lainnya-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .komisaris-container p,
+    .direktur-utama-container p,
+    .direktur-lainnya-container p,
+    .jabatan-lainnya-container p
+    {
+        font-size: 0.7rem;
+    }
+    .komisaris-container h6,
+    .direktur-utama-container h6,
+    .direktur-lainnya-container h6,
+    .jabatan-lainnya-container h6{
+        font-size: 0.65rem;
+        margin-bottom: -5px;
+        padding: 10px 0px -2px 0px;
+    }
+}
