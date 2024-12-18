@@ -1,28 +1,19 @@
 
 /* Footer Section */
 footer {
-    background-color: #0c174b;
     padding: 20px 0;
     width: 100%; 
-    margin: 0; 
-    display: flex;
     /* margin-left: -2%; */
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
     font-size: 1rem;
     box-sizing: border-box;
 }
 
 
 .footer-content {
+    margin: 120px 0px 0px ;
     display: flex;
-    
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 4%;
 }
 
 /* Membuat setiap section di footer */
@@ -35,13 +26,13 @@ footer {
 }
 
 .footer-section h5 {
-     gap: 2px;
+    gap: 2px;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .footer-section a {
-    color: #ccc;
+    color: #3f3f3f;
     text-decoration: none;
     font-weight: 500;
 }
@@ -62,7 +53,28 @@ footer {
     line-height: 1.5;
 }
 
-.footer-section a:hover {
-    color: #ffffff;
+.footer-section i {
+    color: #3499C5;
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.footer-section a:hover, 
+.footer-section i:hover,
+.footer-bottom a:hover {
+    color: #000000;
     transition: 0.2s;
+}
+
+.footer-bottom{
+    margin-top: 40px;
+    padding: 0% 4%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: #3f3f3f;
 }

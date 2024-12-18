@@ -2,52 +2,49 @@
 
 
 <!-- Footer Section -->
-<footer class="footer bg-dark text-white py-4">
-    <div class="container footer-content">
+<div class="footer bg-white text-black">
+    <div class="footer-content">
         <div class="footer-section">
-            <h5>Company</h5>
+            <h5>Perusahaan</h5>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Board Members</a></li>
-                <li><a href="#">Organizational Structure</a></li>
-                <li><a href="#">Corporate Governance</a></li>
-                <li><a href="#">History & Milestone</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Anggota Direksi</a></li>
+                <li><a href="#">Struktur Organisasi</a></li>
+                <li><a href="#">Tata Kelola Perusahaan</a></li>
+                <li><a href="#">Sejarah</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Karir</a></li>
+                <li><a href="#">Hubungi</a></li>
             </ul>
         </div>
 
         <div class="footer-section">
-            <h5>Services</h5>
+            <h5>Layanan</h5>
             <ul>
-                <li><a href="#">Exhibitions</a></li>
-                <li><a href="#">Conferences</a></li>
-                <li><a href="#">Special Events</a></li>
-                <li><a href="#">Clients</a></li>
+                <li><a href="#">Event Organizer</a></li>
+                <li><a href="#">Ketahanan Pangan</a></li>
+                <li><a href="#">Kontruksi</a></li>
             </ul>
         </div>
 
-        <div class="footer-section">
-            <h5>Investor Relations</h5>
-            <ul>
-                <li><a href="#">Annual Report</a></li>
-                <li><a href="#">Financial Statements</a></li>
-                <li><a href="#">General Meeting of Shareholders</a></li>
-                <li><a href="#">Prospectus</a></li>
-                <li><a href="#">Information Disclosure</a></li>
-            </ul>
-        </div>
 
         <div class="footer-section">
-            <h5>Follow Us</h5>
-            <ul>
-                <li><a href="#">Social Media</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Affiliates</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
+            <h5>Ikuti Media Sosial Kami</h5>
+            <ul class="d-flex">
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
             </ul>
         </div>
     </div>
-</footer>
+    <div class="footer-bottom">
+        <p>2024. CSC - <i class="bi bi-c-circle"></i> PT Cendana Solution Center. Hak Cipta Dilindungi</p>
+        <div class="d-flex">
+            <a class="mx-2" href=""><i class="bi bi-shield-fill-exclamation"> </i>Kebijakan Privasi</a>
+            <a class="mx-2" href=""><i class="bi bi-map-fill"></i> Peta Situs</a>
+        </div>
+    </div>
+</div>
+
+
