@@ -3,8 +3,8 @@
 
 <!-- Footer Section -->
 <div class="footer bg-white text-black">
-    <div class="row footer-content d-flex flex-wrap justify-content-between">
-        <div class="col-md-3 footer-section me-5 me-md-0">
+    <div class="footer-content d-flex flex-column flex-md-row">
+        <div class="footer-section mb-3 mb-md-0 me-md-5">
             <h5 >Perusahaan</h5>
             <ul>
                 <li><a href="#">Tentang</a></li>
@@ -18,7 +18,7 @@
             </ul>
         </div>
 
-        <div class="col-md-3 footer-section ms-5 ms-md-0">
+        <div class="footer-section mb-3 mb-md-0  mx-md-5">
             <h5>Layanan</h5>
             <ul>
                 <li><a href="#">Event Organizer</a></li>
@@ -28,7 +28,7 @@
         </div>
 
 
-        <div class="col-md-3 footer-section">
+        <div class="footer-section mb-3 mb-md-0 mx-md-5">
             <h5>Ikuti Media Sosial Kami</h5>
             <ul class="d-flex">
                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
@@ -38,11 +38,11 @@
             </ul>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p class="fs-6 fs-md-0"> 2024. CSC - <i class="bi bi-c-circle"></i> PT Cendana Solution Center. Hak Cipta Dilindungi</p>
-        <div class="d-flex">
-            <a class="mx-2 fs-6 fs-md-0" href=""><i class="bi bi-shield-fill-exclamation"> </i>Kebijakan Privasi</a>
-            <a class="mx-2 fs-6 fs-md-0" href=""><i class="bi bi-map-fill"></i> Peta Situs</a>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between mt-md-5">
+        <p class="fs-6 fs-md-0 order-2 order-md-0"> 2024. CSC - <i class="bi bi-c-circle"></i> PT Cendana Solution Center. Hak Cipta Dilindungi</p>
+        <div class="d-flex flex-column flex-md-row order-1 order-md-0 mb-3">
+            <a class="me-md-2 fs-6 fs-md-0 " href=""><i class="bi bi-shield-fill-exclamation me-2"> </i>Kebijakan Privasi</a>
+            <a class="ms-md-2 fs-6 fs-md-0" href=""><i class="bi bi-map-fill me-2"></i> Peta Situs</a>
         </div>
     </div>
 </div>
