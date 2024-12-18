@@ -11,8 +11,6 @@ footer {
 
 .footer-content {
     margin: 120px 0px 0px ;
-    display: flex;
-    justify-content: space-between;
     padding: 0 4%;
 }
 
