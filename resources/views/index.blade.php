@@ -2,7 +2,7 @@
 <x-layout :navbar="null" :css="'home.css'">
     <div class="position-relative">
         <div id="carouselExample" class="carousel slide vh-100" data-bs-ride="carousel">
-            <div class="carousel-indicators d-lg-none">
+            <div class="carousel-indicators d-lg-none ">
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
@@ -13,103 +13,158 @@
                     aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"
                     aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+
             </div>
-            <div class="carousel-inner vh-100">
+            <div class="carousel-inner vh-100 position-relative">
                 <div class="carousel-item active">
                     <img src="img/g20.jpg" class="d-block w-100" alt="Slide 1">
-                    <div class="carousel-caption d-lg-none">
-                        <h5>Sherpa Meeting <br>Presidensi G20</h5>
-                        <p>2024</p>
+                    <div class="carousel-caption d-lg-none mb-5">
+                        <h5 class="">Sherpa Meeting <br>Presidensi G20</h5>
+                        <p class="mb-4">2024</p>
                     </div>
+                    <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/wwf-2024.jpg" class="d-block w-100" alt="Slide 2">
-                    <div class="carousel-caption d-lg-none">
-                        <h5>Expo 2020 Dubai</h5>
-                        <p>2020</p>
+                    <div class="carousel-caption d-lg-none mb-5">
+                        <h5 class="">Expo 2020 Dubai</h5>
+                        <p class="mb-4">2020</p>
                     </div>
+                    <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/pon.jpg" class="d-block w-100" alt="Slide 3">
-                    <div class="carousel-caption d-lg-none">
-                        <h5>Pekan Olahraga Nasional (PON) XX</h5>
-                        <p>2023</p>
+                    <div class="carousel-caption d-lg-none mb-5">
+                        <h5 class="">Pekan Olahraga Nasional (PON) XX</h5>
+                        <p class="mb-4">2023</p>
                     </div>
+                    <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/expo-2020-dubai.jpg" class="d-block w-100" alt="Slide 4">
-                    <div class="carousel-caption d-lg-none">
-                        <h5>10th World Water Forum</h5>
-                        <p>2024</p>
+                    <div class="carousel-caption d-lg-none mb-5">
+                        <h5 class="">10th World Water Forum</h5>
+                        <p class="mb-4">2024</p>
                     </div>
+                    <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/asian-paragames.jpg" class="d-block w-100" alt="Slide 5">
-                    <div class="carousel-caption d-lg-none">
-                        <h5>Asian Para Games</h5>
-                        <p>2022</p>
+                    <div class="carousel-caption d-lg-none mb-5">
+                        <h5 class="">Asian Para Games</h5>
+                        <p class="mb-4">2022</p>
                     </div>
+                    <div class="backdrop position-absolute"></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/asean-bac.jpg" class="d-block w-100" alt="Slide 6">
+                    <div class="carousel-caption d-lg-none mb-5">
+                        <h5 class="">Asian Para Games</h5>
+                        <p class="mb-4">2022</p>
+                    </div>
+                    <div class="backdrop position-absolute"></div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            {{-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> --}}
 
             <div class="overlay-section d-none d-lg-flex position-absolute" style="font-family: Inter">
                 <div class="d-flex">
-                    <div class="event-button p-3">
-                        <h5>Sherpa Meeting Presidensi G20</h5>
-                        <div class="position-absolute bottom-0 mb-3 ">
-                            <h6 class="text-center">2024</h6>
+
+                    <div class="event-button px-3" @click="$store.carousel.setActiveSlide(0)"
+                        @mouseover="$store.carousel.hovered = true" @mouseleave="$store.carousel.hovered = false"
+                        :class="{ 'active': $store.carousel.currentSlide === 0 }" data-bs-target="#carouselExample"
+                        data-bs-slide-to="0" role="button" aria-label="Slide 1">
+                        <div class="line-bar-overlay mb-2"
+                            :class="{ 'active-bar': $store.carousel.currentSlide === 0, 'hovered': $store.carousel.hovered }">
                         </div>
-                    </div>
-                    <div class="event-button p-3">
-                        <h5>Expo 2020 Dubai</h5>
+                        <h6>Sherpa Meeting Presidensi G20</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
                     </div>
-                    <div class="event-button p-3">
-                        <h5>Pekan Olahraga Nasional (PON) XX</h5>
+
+
+                    <div class="event-button px-3" @click="$store.carousel.setActiveSlide(1)"
+                        :class="{ 'active': $store.carousel.currentSlide === 1 }" data-bs-target="#carouselExample"
+                        data-bs-slide-to="1" role="button" aria-label="Slide 2">
+                        <div class="line-bar-overlay mb-2"
+                            :class="{ 'active-bar': $store.carousel.currentSlide === 0 }"></div>
+                        <h6>Expo 2020 Dubai</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
                     </div>
-                    <div class="event-button p-3">
-                        <h5>10th World Water Forum</h5>
+
+                    <div class="event-button px-3" @click="$store.carousel.setActiveSlide(2)"
+                        :class="{ 'active': $store.carousel.currentSlide === 2 }" data-bs-target="#carouselExample"
+                        data-bs-slide-to="2" role="button" aria-label="Slide 3">
+                        <div class="line-bar-overlay mb-2"
+                            :class="{ 'active-bar': $store.carousel.currentSlide === 0 }"></div>
+                        <h6>Pekan Olahraga Nasional (PON) XX</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
                     </div>
-                    <div class="event-button p-3">
-                        <h5>Asian Para Games</h5>
+
+                    <div class="event-button px-3" @click="$store.carousel.setActiveSlide(3)"
+                        :class="{ 'active': $store.carousel.currentSlide === 3 }" data-bs-target="#carouselExample"
+                        data-bs-slide-to="3" role="button" aria-label="Slide 4">
+                        <div class="line-bar-overlay mb-2"
+                            :class="{ 'active-bar': $store.carousel.currentSlide === 0 }"></div>
+                        <h6>10th World Water Forum</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
                     </div>
-                    <div class="event-button p-3">
-                        <h5>Asean Business Advisory Council</h5>
+
+                    <div class="event-button px-3" @click="$store.carousel.setActiveSlide(4)"
+                        :class="{ 'active': $store.carousel.currentSlide === 4 }" data-bs-target="#carouselExample"
+                        data-bs-slide-to="4" role="button" aria-label="Slide 5">
+                        <div class="line-bar-overlay mb-2"
+                            :class="{ 'active-bar': $store.carousel.currentSlide === 0 }"></div>
+                        <h6>Asian Para Games</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
                     </div>
+
+                    <div class="event-button px-3" @click="$store.carousel.setActiveSlide(5)"
+                        :class="{ 'active': $store.carousel.currentSlide === 5 }" data-bs-target="#carouselExample"
+                        data-bs-slide-to="5" role="button" aria-label="Slide 6">
+                        <div class="line-bar-overlay mb-2"
+                            :class="{ 'active-bar': $store.carousel.currentSlide === 0 }">
+                        </div>
+                        <h6>Asean Business Advisory Council</h6>
+                        <div class="position-absolute bottom-0 mb-3">
+                            <h6 class="text-center">2024</h6>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="more p-3 d-flex justify-content-center align-items-center gap-3">
-                    <h6>Explore more</h6>
+                <a href="#more" class="more p-3 d-flex justify-content-center align-items-center gap-3">
+                    <h6 class="text-capitalize">jelajah lebih lanjut</h6>
                     <i class="bi bi-caret-down-fill"></i>
-                </div>
-            </div>
-            <div class="drop d-none d-lg-block"></div>
-            <div class="drop-full d-lg-none d-flex justify-content-center align-items-center gap-3">
-                <h6>Explore more</h6>
-                <i class="bi bi-caret-down-fill"></i>
+                </a>
             </div>
         </div>
+        <div class="drop d-none d-lg-block"></div>
+        <a href="#more" class="drop-full d-lg-none d-flex justify-content-center align-items-center gap-3">
+            <h6 class="text-capitalize">jelajah lebih lanjut</h6>
+            <i class="bi bi-caret-down-fill">
+            </i>
+        </a>
+        {{-- <div class="drop-full d-lg-none d-flex justify-content-center align-items-center gap-3">
+        </div> --}}
+    </div>
     </div>
 
     <!-- seummery-about -->
@@ -132,7 +187,7 @@
             </div>
         </div>
     </div> --}}
-    <div class="glimpse p-md-0">
+    <div class="glimpse p-md-0" id="more">
         <div class="row glimpse-section mb-5 ">
             <div class="col-md-7 glimpse-text-container w-100 px-4">
                 <div class="text-content">
@@ -219,7 +274,7 @@
             <div class="logo d-flex flex-column justify-center align-items-center">
                 <div class="text-center mb-5">
                     <h2 class="mb-4">Perusahaan Induk</h2>
-                    <img src="img/logo/csc.png" alt="">
+                    <img class="parent" src="img/logo/csc.png" alt="">
                 </div>
                 <div class="d-md-flex flex-column mt-2">
                     <div class="text-center mb-3">
@@ -250,7 +305,7 @@
         <div class="trust">
             <div class="container">
                 <div class="line-bar-title mb-3"></div>
-                <h2 class="fw-bolder mb-5">Dipercaya Oleh:</h2>
+                <h2 class="fw-bolder mb-5">Dipercaya Oleh</h2>
                 <div class="org-one text-center d-md-flex justify-content-center align-items-center gap-5">
                     <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendes.png" alt="">
                     <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendagri.png" alt="">
