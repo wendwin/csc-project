@@ -1,5 +1,8 @@
 
 
+<x-layout :navbar="null" :css="'/perusahaan/tentang.css'">
+{{-- silahkan costumise tampilannya --}}
+
     <!-- Konten Halaman -->
     <div class="description-page">
         <h5>Perusahan</h5>
