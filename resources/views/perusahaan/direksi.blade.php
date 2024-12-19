@@ -7,7 +7,7 @@
         <div class="organisasi-section mb-5">
             <div class="yellow-bar"></div>
             <h3>Jajaran Komisaris</h3>
-            <div class="row organisasi-member mb-2">
+            {{-- <div class="row organisasi-member mb-2">
                 <div class="col-md-3 organisasi-container mx-auto mx-md-0">
                     <img class="m-3" src="/img/komisaris/1.png" alt="">
                     <div class="text-container">
@@ -28,12 +28,12 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <div class="organisasi-section mb-5">
             <div class="yellow-bar"></div>
             <h3>Jajaran Direksi</h3>
-            <div class="row organisasi-member">
+            {{-- <div class="row organisasi-member">
                 <div class="col-md-3 organisasi-container mx-auto mx-md-0 ">
                     <img class="m-3" src="/img/direksi/1.png" alt="">
                     <div class="text-container">
@@ -82,7 +82,7 @@
                         <a href="#">Baca Selengkapnya ></a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </x-layout>

@@ -198,7 +198,6 @@ a {
 
 .gallery-pangan-container{
     transition: ease-in-out 0.2s;
-    margin: 0px 20px;
 }
 
 .gallery-pangan-container img{
@@ -213,15 +212,15 @@ a {
 }
 
 
-.layanan-lainnya-section .card {
+.layanan-lainnya-section .layanan-card {
     border: none;
-    width: 100%;
+    width: 35%;
     overflow: hidden;
     border-radius: 15px;
 }
 
 
-.layanan-lainnya-section .card a {
+.layanan-lainnya-section .layanan-card a {
     color: #f3f3f3;
 }
 
@@ -231,12 +230,13 @@ a {
     transition: ease-in-out 0.25s;
 }
 
-.layanan-lainnya-section .card:hover .card-body {
+.layanan-lainnya-section .layanan-card:hover .card-body {
     bottom: 0;
     transition: ease-in-out 0.25s;
 }
 
-.layanan-lainnya-section .card img {
+.layanan-lainnya-section .layanan-card img {
+    width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
@@ -248,7 +248,7 @@ a {
     color: #fff;
 }
 
-.layanan-lainnya-section .card:hover img {
+.layanan-lainnya-section .layanan-card:hover img {
     filter: brightness(50%);
 }
 
@@ -267,7 +267,7 @@ a {
     transition: width 0.3s;
 }
 
-.layanan-lainnya-section .card:hover .line-bar {
+.layanan-lainnya-section .layanan-card:hover .line-bar {
     width: 50px;
 }
 
@@ -279,7 +279,12 @@ a {
     .gallery-pangan-container img{
         width: 150px;
         height: 120px;
-        
+    }
+    .layanan-lainnya-section .layanan-card {
+        width: 100%;
+    }
+    .layanan-lainnya-section .layanan-card img {
+        height: 120px;
     }
 }
 @media (max-width: 668px) {
@@ -294,11 +299,5 @@ a {
         width: 120px;
         height: 90px;
         
-    }
-    .layanan-lainnya-section .card img {
-        height: 130px;
-        object-fit: cover;
-        border-radius: 15px;
-        filter: brightness(60%);
     }
 }
