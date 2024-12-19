@@ -45,7 +45,7 @@
                             Perusahaan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="perusahaanDropdown">
-                            <li><a class="dropdown-item" href="{{ route('perusahaan.tentang') }}">Tentang</a></li>
+                            <li><a class="dropdown-item" href="#">Tentang</a></li>
                             <li><a class="dropdown-item" href="{{ route('perusahaan.direksi') }}">Anggota Direksi</a></li>
                             <li><a class="dropdown-item" href="{{ route('perusahaan.struktur_organisasi') }}">Struktur Organisasi</a></li>
                             <li><a class="dropdown-item" href="{{ route('perusahaan.tata-kelola') }}">Tata Kelola Perusahaan</a></li>

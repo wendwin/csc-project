@@ -1,3 +1,116 @@
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-nav {
+    background-color: var(--bs-primary);
+}
+
+.navbar {
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    /* height: 100vh; */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar .contact-info .contact,
+.mail {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: var(--bs-secondary);
+}
+
+.navbar .contact-info .contact i,
+.mail i {
+    font-size: 14px;
+}
+
+.navbar .contact-info a :hover {
+    color: var(--bs-light);
+}
+
+.navbar .contact p,
+.mail p {
+    margin: 0;
+}
+
+.navbar .contact i,
+.mail i {
+    vertical-align: middle;
+}
+
+.navbar .line {
+    width: 930px;
+    height: 0.3px;
+    background-color: #7f7f7f;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-line {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background-color: rgb(254, 20, 20);
+    transition: width 0.3s;
+}
+
+.nav-item:hover .nav-line {
+    width: 100%;
+}
+
+.nav-item:hover .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: #cbd5e1;
+}
+
+.nav-link:focus {
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-item {
+    font-family: "Inter", sans-serif;
+    color: #5c5c5c;
+}
+
+.dropdown-item:hover {
+    background-color: #e9f0f0;
+    color: var(--bs-dark);
+}
+
+
 .description-page{
     color: #fff;
     width: 100%;

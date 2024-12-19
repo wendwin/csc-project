@@ -39,7 +39,6 @@
 </head>
 
 <body>
-
     {{-- Debugging nilai $navbar --}}
     @if (isset($navbar) && $navbar === 'customize')
         @include('components.navbar_costumize')
@@ -51,7 +50,7 @@
         {{ $slot }}
     </main>
 
-    {{-- <x-footer></x-footer> --}}
+    <x-footer></x-footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
