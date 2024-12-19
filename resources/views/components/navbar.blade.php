@@ -46,9 +46,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="perusahaanDropdown">
                             <li><a class="dropdown-item" href="{{ route('perusahaan.tentang') }}">Tentang</a></li>
-                            <li><a class="dropdown-item" href="{{ route('perusahaan.direksi') }}">Anggota Direksi</a></li>
-                            <li><a class="dropdown-item" href="{{ route('perusahaan.struktur_organisasi') }}">Struktur Organisasi</a></li>
-                            <li><a class="dropdown-item" href="{{ route('perusahaan.tata-kelola') }}">Tata Kelola Perusahaan</a></li>
+                            <li><a class="dropdown-item" href="{{ route('perusahaan.direksi') }}">Anggota Direksi</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ route('perusahaan.struktur_organisasi') }}">Struktur
+                                    Organisasi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('perusahaan.tata-kelola') }}">Tata Kelola
+                                    Perusahaan</a></li>
                         </ul>
 
                         <div class="nav-line"></div>
@@ -58,8 +61,10 @@
                             Layanan
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="layananDropdown">
-                            <li><a class="dropdown-item" href="{{ route('layanan.event_organizer') }}">Event Organizer</a></li>
-                            <li><a class="dropdown-item" href="{{ route('layanan.ketahanan_pangan') }}">Ketahanan Pangan</a></li>
+                            <li><a class="dropdown-item" href="{{ route('layanan.event_organizer') }}">Event
+                                    Organizer</a></li>
+                            <li><a class="dropdown-item" href="{{ route('layanan.ketahanan_pangan') }}">Ketahanan
+                                    Pangan</a></li>
                             <li><a class="dropdown-item" href="{{ route('layanan.konstruksi') }}">Konstruksi</a></li>
                             {{-- <li><a class="dropdown-item" href="{{ route('layanan.acara_khusus') }}">Acara Khusus</a></li> --}}
                         </ul>
