@@ -8,7 +8,7 @@
             <img src="/img/layanan/event-organizer/event2.png" alt="">
             <img src="/img/layanan/event-organizer/event3.png" alt="">
         </div>
-        <div class="intro-text-section p-3 p-lg-5 mt-3 mt-lg-0">
+        <div class="intro-text-section px-3 px-lg-5 mt-3 mt-lg-0">
             <p><span class="fw-bold">Cendana Solution Center (CSC)</span>bergerak di bidang ketahanan pangan dengan memanfaatkan keahlian dan sumber daya yang kami miliki. Kami menghasilkan kompos sehat dari kotoran hewan yang digunakan sebagai pupuk untuk tanaman beras sehat (Pandan wangi, beras merah, beras hitam), berbagai sayuran (Sawi, Kol, Cabai, Terong, Tomat, Suweg, Wortel, Paprika, dll.), dan buah segar (Melon, Semangka, dll). Kami juga mengolah limbah organik dari hotel, pasar, rumah makan, dan industri menggunakan teknologi Noutrino Consorsium dan ozongenerator menjadi pakan ternak berkualitas, menghasilkan hewan ternak sehat (ayam, bebek, sapi, dll). Dengan begitu, kami juga berperan sebagai konsultan lingkungan. Selain itu, kami menyediakan layanan konsultasi untuk perencanaan, pelaksanaan, dan pengembangan ekonomi desa dalam sektor ketahanan pangan.</p>
         </div>
     </div>
@@ -249,7 +249,7 @@
                     </div>
                 </div>
             </div>
-            <a class="btn btn-link p-0 toggle-btn d-flex align-items-center mt-2 " data-bs-toggle="collapse" href="#readMore" role="button" aria-expanded="false" aria-controls="readMore">
+            <a class="btn btn-link p-0 toggle-btn d-flex align-items-center mt-2 mx-5 " data-bs-toggle="collapse" href="#readMore" role="button" aria-expanded="false" aria-controls="readMore">
                 <span class="toggle-text me-2"></span> <i class="bi bi-chevron-down toggle-icon"></i>
             </a>
         </div>  
@@ -343,26 +343,27 @@
             </div>
         </div>
     </div>
-        <div class="layanan-lainnya-section d-flex flex-column flex-lg-row justify-center align-items gap-2 gap-lg-5 my-5 p-5">
+        <div class="layanan-lainnya-section d-flex flex-wrap justify-content-center gap-3 gap-lg-0 p-2 p-lg-5">
             <a href="">
-                <div class="card position-relative mb-4">
-                <img src="/img/layanan/event-organizer.jpg" class="card-img-top" alt="...">
-                <div class="card-body position-absolute ">
-                    <div class="line-bar mb-2"></div>
-                    <p class="fs-3 fw-bold">Event Organizer</p>
-                    <a href="#" class="">Lebih lanjut...</a>
+                <div class="layanan-card position-relative">
+                    <img src="/img/layanan/event-organizer.jpg" class="card-img-top" alt="...">
+                    <div class="card-body position-absolute ">
+                        <div class="line-bar mb-2"></div>
+                        <p class="fs-3 fw-bold">Event Organizer</p>
+                        <a href="#" class="">Lebih lanjut...</a>
+                    </div>
                 </div>
-            </div>
-        </a>
-        <a href="">
-            <div class="card position-relative mb-4">
-                <img src="/img/layanan/konstruksi.jpg" class="card-img-top" alt="...">
-                <div class="card-body position-absolute ">
-                    <div class="line-bar mb-2"></div>
-                    <p class="fs-3 fw-bold">Kontruksi</p>
-                    <a href="#" class="">Lebih lanjut...</a>
+            </a>
+            <div class="mx-lg-5 "></div>
+            <a href="">
+                <div class="layanan-card position-relative">
+                    <img src="/img/layanan/konstruksi.jpg" class="card-img-top" alt="...">
+                    <div class="card-body position-absolute ">
+                        <div class="line-bar mb-2"></div>
+                        <p class="fs-3 fw-bold">Kontruksi</p>
+                        <a href="#" class="">Lebih lanjut...</a>
+                    </div>
                 </div>
-            </div>
-        </a>
-    </div>
+            </a>
+        </div>
 </x-layout>

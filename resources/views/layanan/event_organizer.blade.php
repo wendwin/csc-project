@@ -8,7 +8,7 @@
             <img src="/img/layanan/event-organizer/event2.png" alt="">
             <img src="/img/layanan/event-organizer/event3.png" alt="">
         </div>
-        <div class="intro-text-section p-3 p-lg-5 mt-3 mt-lg-0">
+        <div class="intro-text-section px-3 px-lg-5 mt-3 mt-lg-0">
             <p><span class="fw-bold">Cendana Solution Center (CSC)</span> memfasilitasi kegiatan bidang pendidikan, Bimbingan Teknis, Diklat, Seminar, Workshop, Traning, Outbond, sertifikasi, Kunjungan Kerja, Study Tiru, Study Banding, dan Konsultasi melalui dua lembaga pelaksana kami yaitu PT.PUSDIKLATNAS dan PT.PUSTAKAPEMDA dengan narasumber yang berkualitas dan mempuyai keahlian khusus/spesialis serta profesional sesuai bidangnya. Kualitas dan metode pengajaran, baik isi materi maupun tenaga pengajar dilakukan dengan menggunakan metode yang terbaru sehingga mudah dimengerti oleh peserta.</p>
         </div>
     </div>
@@ -97,9 +97,9 @@
         <img src="/img/layanan/event-organizer/event-gallery-14.png" alt="">
         <img src="/img/layanan/event-organizer/event-gallery-15.png" alt="">
     </div>
-    <div class="layanan-lainnya-section d-flex flex-column flex-lg-row justify-center align-items gap-2 gap-lg-5 my-5 p-5">
+    <div class="layanan-lainnya-section d-flex flex-wrap justify-content-center gap-3 gap-lg-0 p-2 p-lg-5">
         <a href="">
-            <div class="card position-relative mb-4">
+            <div class="layanan-card position-relative">
                 <img src="/img/layanan/sawah.jpg" class="card-img-top" alt="...">
                 <div class="card-body position-absolute ">
                     <div class="line-bar mb-2"></div>
@@ -108,8 +108,9 @@
                 </div>
             </div>
         </a>
+        <div class="mx-lg-5"></div>
         <a href="">
-            <div class="card position-relative mb-4">
+            <div class="layanan-card position-relative">
                 <img src="/img/layanan/konstruksi.jpg" class="card-img-top" alt="...">
                 <div class="card-body position-absolute ">
                     <div class="line-bar mb-2"></div>
