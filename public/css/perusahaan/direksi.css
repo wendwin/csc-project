@@ -112,6 +112,7 @@ a {
 
 
 .description-page{
+    font-family: 'Inter';
     color: #fff;
     width: 100%;
     padding: 120px 0px 20px 30px;
@@ -129,6 +130,10 @@ a {
 .organisasi-section:hover .yellow-bar {
     width: 85px;
     
+}
+
+.organisasi-section{
+    font-family: 'Inter';
 }
 
 .organisasi-member img{

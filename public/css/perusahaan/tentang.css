@@ -1,3 +1,29 @@
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-nav {
+    background-color: var(--bs-primary);
+}
+
 .navbar {
     transition: background-color 0.5s ease, transform 0.2s ease;
     /* height: 100vh; */
@@ -85,6 +111,7 @@
 }
 
 .description-page{
+    font-family: 'Inter';
     color: #fff;
     width: 100%;
     padding: 120px 0px 20px 30px;
@@ -99,6 +126,7 @@
 }
 
 .intro-container{
+    font-family: 'Inter';
     background-color: #F5F5F5;
     border-radius: 30px;
 }
@@ -130,6 +158,7 @@
     width: 85px;
 }
 .sejarah-section{
+    font-family: 'Inter';
     margin-top: 100px;
 }
 .sejarah-shape-container{
@@ -151,6 +180,7 @@
     border-bottom-left-radius: 50%;
 }
 .visi-misi-section{
+    font-family: 'Inter';
     background-color: #3499C5;
     border-top-left-radius:80px ;
     border-bottom-right-radius:80px ;
@@ -166,6 +196,9 @@
 .visi-misi-text-section{
     text-align: justify;
     color: #fff;
+}
+.company{
+    font-family: 'Inter';
 }
 .company .logo img {
     max-width: 130px;
