@@ -1,0 +1,303 @@
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-nav {
+    background-color: var(--bs-primary);
+}
+
+.navbar {
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    /* height: 100vh; */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar .contact-info .contact,
+.mail {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: var(--bs-secondary);
+}
+
+.navbar .contact-info .contact i,
+.mail i {
+    font-size: 14px;
+}
+
+.navbar .contact-info a :hover {
+    color: var(--bs-light);
+}
+
+.navbar .contact p,
+.mail p {
+    margin: 0;
+}
+
+.navbar .contact i,
+.mail i {
+    vertical-align: middle;
+}
+
+.navbar .line {
+    width: 930px;
+    height: 0.3px;
+    background-color: #7f7f7f;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-line {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background-color: rgb(254, 20, 20);
+    transition: width 0.3s;
+}
+
+.nav-item:hover .nav-line {
+    width: 100%;
+}
+
+.nav-item:hover .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: #cbd5e1;
+}
+
+.nav-link:focus {
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-item {
+    font-family: "Inter", sans-serif;
+    color: #5c5c5c;
+}
+
+.dropdown-item:hover {
+    background-color: #e9f0f0;
+    color: var(--bs-dark);
+}
+
+
+.description-page{
+    font-family: 'Inter';
+    position: relative; /* Menjadikan parent sebagai posisi acuan */
+    color: #fff;
+    padding: 4% 0%;
+    overflow: hidden; /* Menghindari overflow elemen */
+    width: 100%;
+    padding: 120px 0px 20px 30px;
+}
+.description-page::before{
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)),
+    url('/img/layanan/event-organizer/event1.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%); /* Atau gunakan opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Menempatkan pseudo-element di belakang teks */
+}
+
+.blue-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #3499C5;
+    transition:ease-in-out 0.2s;
+}
+
+.bidang-event-section:hover .blue-bar,
+.keunggulan-event-section:hover .blue-bar{
+    width: 85px;
+}
+
+.intro-img-section img{
+    margin: 0px 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro-text-section{
+    font-family: 'Inter';
+    text-align: justify;
+}
+
+.bidang-event-section h3,
+.keunggulan-event-section h3,
+.bidang-event-section a,
+.bidang-event-section li,
+.keunggulan-event-section li{
+    font-family: 'Inter';
+    color: #000;
+}
+.bidang-event-section a{
+    text-decoration: none;
+    color: #474747;
+    transition: ease-in-out 0.2s;
+}
+.bidang-event-section a:hover{
+    color: #000;
+
+    text-decoration: none;
+}
+.toggle-btn .toggle-text {
+    display: inline;
+}
+
+.toggle-btn .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn[aria-expanded="false"] .toggle-text::before {
+    content: "Baca Selengkapnya"; 
+}
+.toggle-btn[aria-expanded="true"] .toggle-text::before {
+    content: "Tutup"; 
+}
+
+.toggle-btn[aria-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.gallery-event-section{
+    padding: 0px 200px;
+}
+
+.gallery-event-section img{
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    transition: ease-in-out 0.2s;
+}
+.gallery-event-section img:hover{
+    scale: 105%;
+}
+
+
+.layanan-lainnya-section .card {
+    border: none;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+.layanan-lainnya-section .card a {
+    color: #f3f3f3;
+}
+
+.layanan-lainnya-section .card-body {
+    bottom: -45px;
+    padding: 25px;
+    transition: ease-in-out 0.25s;
+}
+
+.layanan-lainnya-section .card:hover .card-body {
+    bottom: 0;
+    transition: ease-in-out 0.25s;
+}
+
+.layanan-lainnya-section .card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(60%);
+}
+
+.layanan-lainnya-section .card-body{
+    font-family: 'Inter';
+    color: #fff;
+}
+
+.layanan-lainnya-section .card:hover img {
+    filter: brightness(50%);
+}
+
+
+.layanan-lainnya-section .line-bar-title {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.layanan-lainnya-section .line-bar {
+    width: 25px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.layanan-lainnya-section .card:hover .line-bar {
+    width: 50px;
+}
+
+@media (max-width: 968px) {
+    .gallery-event-section{
+        padding: 0px 50px;
+    }
+    .gallery-event-section img{
+        width: 150px;
+        height: 120px;
+        
+    }
+}
+@media (max-width: 668px) {
+    .intro-img-section img{
+        width: 150px;
+        height: 150px;
+    }
+    .gallery-event-section{
+        padding: 0px 0px;
+    }
+    .gallery-event-section img{
+        width: 120px;
+        height: 90px;
+        
+    }
+    .layanan-lainnya-section .card img {
+        height: 130px;
+        object-fit: cover;
+        border-radius: 15px;
+        filter: brightness(60%);
+    }
+}
