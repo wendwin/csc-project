@@ -28,16 +28,13 @@ Route::prefix('perusahaan')->group(function () {
 
 // Layanan
 Route::prefix('layanan')->group(function () {
-    Route::get('/ringkasan', function () {
-        return view('layanan.ringkasan', ['css' => 'css/layanan/ringkasan.css']);
-    })->name('layanan.ringkasan');
-    Route::get('/pameran', function () {
-        return view('layanan.pameran', ['css' => 'css/layanan/pameran.css']);
-    })->name('layanan.pameran');
-    Route::get('/konferensi', function () {
-        return view('layanan.konferensi', ['css' => 'css/layanan/konferensi.css']);
-    })->name('layanan.konferensi');
-    Route::get('/acara_khusus', function () {
-        return view('layanan.acara_khusus', ['css' => 'css/layanan/acara_khusus.css']);
-    })->name('layanan.acara_khusus');
+    Route::get('/event_organizer', function () {
+        return view('layanan.event_organizer', ['css' => 'css/layanan/event_organizer.css']);
+    })->name('layanan.event_organizer');
+    Route::get('/ketahanan_pangan', function () {
+        return view('layanan.ketahanan_pangan', ['css' => 'css/layanan/ketahanan_pangan.css']);
+    })->name('layanan.ketahanan_pangan');
+    Route::get('/konstruksi', function () {
+        return view('layanan.konstruksi', ['css' => 'css/layanan/konstruksi.css']);
+    })->name('layanan.konstruksi');
 });
