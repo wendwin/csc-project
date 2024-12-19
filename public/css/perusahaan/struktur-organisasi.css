@@ -112,6 +112,7 @@ a {
 
 
 .description-page{
+    font-family: 'Inter';
     color: #fff;
     width: 100%;
     padding: 120px 0px 20px 30px;
@@ -129,6 +130,7 @@ a {
 .direktur-utama-container,
 .direktur-lainnya-container,
 .jabatan-lainnya-container{
+    font-family: 'Inter';
     transition:ease-in-out 0.2s;
     text-transform: uppercase;
 }
