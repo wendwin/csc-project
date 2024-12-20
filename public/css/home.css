@@ -68,6 +68,21 @@
     color: rgb(52, 51, 51);
 } */
 
+.btnhub {
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: #3499C5;
+    color: #fff;
+    text-decoration: none;
+}
+.btnhub:hover {
+    background-color: #044085;
+    color: #fff;
+}
+
 
 .libre-caslon-text-regular {
     font-family: "Libre Caslon Text", serif;

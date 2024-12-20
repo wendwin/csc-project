@@ -41,7 +41,7 @@
                         <li>Barang dan Aset</li>
                         <li>Kearsipan dan Perpustakan</li>
                         <li>Pekerjaan Umum (PU)</li>
-                        <li>Kehumasan dan Protokole</li>
+                        <li>Kehumasan dan Protokoler</li>
                         <li>Satpol PP</li>
                         <li>Pertambangan</li>
                         <li>Sistem Informasi Geografi</li>
