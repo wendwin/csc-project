@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="lowongan-section px-3 px-lg-5 p-4 my-5 my-lg-5">
-            <div class="white-bar"></div>
+            <div class="yellow-bar"></div>
             <h3>Lowongan Pekerjaan</h3>
             <div class="lowongan-container text-center pt-4 pb-2 my-1 my-lg-3">
                 <p>Maaf, Lowongan Saat Ini Belum Tersedia</p>
