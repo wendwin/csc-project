@@ -185,3 +185,69 @@ a {
     background-color: #e9f0f0;
     color: var(--bs-dark);
 }
+
+.description-page{
+    font-family: 'Inter';
+    color: #fff;
+    width: 100%;
+    padding: 190px 0px 20px 30px;
+    background-color: #F7BC12;
+}
+h3{
+    font-weight: bold;
+    font-family: 'Inter';
+}
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+
+.hubungi-section:hover .yellow-bar {
+    width: 85px;
+}
+.hubungi-section:hover iframe{
+    transition:ease-in-out 0.2s;
+    scale: 103%;
+}
+
+.hubungi{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.hubungi iframe{
+    transition:ease-in-out 0.2s;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.hubungi-text-section{
+    z-index: 2;
+    color: #fff;
+    font-family: 'Inter';
+    text-align: justify;
+    background-color: #3499C5;
+    border-bottom-right-radius:50px ;
+}
+.hubungi-text-section span{
+    font-weight: bold;
+}
+.hubungi-img-section{
+    position: absolute;
+    top: 4.8%;
+    right: 0;
+    width: 60%;
+    height: 95%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hubungi-img-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-bottom-left-radius: 50px;
+}
