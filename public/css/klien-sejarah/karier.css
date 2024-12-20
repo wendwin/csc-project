@@ -163,7 +163,8 @@ a {
     bottom: 0;
     height: 4px;
     width: 0;
-    background-color: rgb(255, 230, 0);
+    background-color: rgb(254, 20, 20);
+
     transition: width 0.3s;
 }
 
@@ -184,4 +185,183 @@ a {
 .dropdown-item:hover {
     background-color: #e9f0f0;
     color: var(--bs-dark);
+
 }
+
+.description-page{
+    font-family: 'Inter';
+    color: #fff;
+    width: 100%;
+    padding: 190px 0px 20px 30px;
+    background-color: #F7BC12;
+
+}
+h3{
+    font-weight: bold;
+}
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+.white-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #ffffff;
+    transition:ease-in-out 0.2s;
+}
+
+.karier{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.karier-section:hover .yellow-bar, 
+.lowongan-section:hover .white-bar {
+    width: 85px;
+}
+
+.karier-text-section{
+    z-index: 2;
+    color: #fff;
+    font-family: 'Inter';
+    text-align: justify;
+    background-color: #3499C5;
+    border-bottom-right-radius:50px ;
+}
+.karier-img-section{
+    position: absolute;
+    top: 8.5%;
+    right: 0;
+    width: 60%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.karier-img-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-bottom-left-radius: 50px;
+}
+
+.lowongan-section{
+    font-family: 'Inter';
+    color: #fff;
+    width: 100%;
+    background-color: #F7BC12;
+}
+.lowongan-container{
+    font-family: 'Inter';
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+}
+
+.cari-img-section img{
+    width: 100%;
+    height: 100%;
+}
+.cari-text-section{
+    text-align: justify;
+}
+
+
+.tawarkan-text-section{
+    color:var(--bs-light);
+    font-family: 'Inter';
+    text-align: justify;
+    background-color: #3499C5;
+    border-top-right-radius: 50px;
+}
+.grey-bar{
+    width: 100%;
+    height: 15px;
+    background-color: #D9D9D9;
+}
+
+.tawarkan-img-section img{
+    width: 300px;
+}
+.kegiatan-section{
+    font-family: 'Inter';
+}
+
+.news .container {
+    padding: 120px 24px;
+}
+
+.news .card {
+    border: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.news .line-bar-title {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.news h2 {
+    color: var(--bs-primary);
+}
+
+.news .card {
+    background-color: #f5f5f5;
+    max-width: 600px;
+}
+
+.news .line-bar {
+    width: 25px;
+    height: 5px;
+    background-color: #3499C5;
+    transition: width 0.3s;
+}
+
+.news .card .next {
+    color: #848484;
+    transition: ease-in-out 0.1s;
+    font-weight: 500;
+}
+
+
+.news .card:hover .line-bar {
+    width: 50px;
+}
+
+.news .card:hover .next {
+    color: #3499C5;
+    transition: ease-in-out 0.1s;
+}
+
+.news .card img {
+    transition: transform 0.3s ease;
+}
+
+.news .card:hover img {
+    transform: scale(0.98);
+}
+
+.news .card .date {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.news .card .title {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.news .card .content {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+}
+

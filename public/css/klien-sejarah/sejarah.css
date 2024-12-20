@@ -10,7 +10,6 @@
     --bs-dark: #212529;
 }
 
-
 .bg-transparent {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
@@ -142,6 +141,7 @@ a {
     vertical-align: middle;
 }
 
+
 .line {
     width: 750px;
     height: 0.3px;
@@ -163,7 +163,8 @@ a {
     bottom: 0;
     height: 4px;
     width: 0;
-    background-color: rgb(255, 230, 0);
+    background-color: rgb(254, 20, 20);
+
     transition: width 0.3s;
 }
 
@@ -184,4 +185,29 @@ a {
 .dropdown-item:hover {
     background-color: #e9f0f0;
     color: var(--bs-dark);
+}
+
+.description-page{
+    font-family: 'Inter';
+    color: #fff;
+    width: 100%;
+    padding: 190px 0px 20px 30px;
+    background-color: #F7BC12;
+
+}
+
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+
+.sejarah-section:hover .yellow-bar{
+    width: 85px;
+}
+
+.sejarah-text-section{
+    font-family: 'Inter';
+    text-align: justify;
 }
