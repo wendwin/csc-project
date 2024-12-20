@@ -1,4 +1,4 @@
-<x-layout :navbar="null" :css="'/perusahaan/struktur-organisasi.css'">
+<x-layout :css="'/perusahaan/struktur-organisasi.css'">
     <div class="description-page">
         <h5>Perusahan</h5>
         <h4>Struktur Organisasi</h4>

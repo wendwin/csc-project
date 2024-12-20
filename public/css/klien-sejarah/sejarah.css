@@ -141,10 +141,6 @@ a {
     vertical-align: middle;
 }
 
-.navbar-brand img {
-    width: 70px;
-}
-
 
 .line {
     width: 750px;
@@ -168,6 +164,7 @@ a {
     height: 4px;
     width: 0;
     background-color: rgb(254, 20, 20);
+
     transition: width 0.3s;
 }
 

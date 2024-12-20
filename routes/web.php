@@ -49,3 +49,15 @@ Route::get('/sejarah', function () {
 Route::get('/karier', function () {
     return view('klien-sejarah/karier', ['css' => 'css/klien-sejarah/karier.css']);
 })->name('karier');
+
+Route::get('/berita', function () {
+    return view('klien-sejarah/berita', ['css' => 'css/klien-sejarah/berita.css']);
+})->name('berita');
+
+Route::get('/csr', function () {
+    return view('klien-sejarah/csr', ['css' => 'css/klien-sejarah/csr.css']);
+})->name('csr');
+
+Route::get('/hubungi', function () {
+    return view('klien-sejarah/hubungi', ['css' => 'css/klien-sejarah/hubungi.css']);
+})->name('hubungi');
