@@ -1,0 +1,368 @@
+/* Variabel warna seperti di Bootstrap */
+:root {
+    --bs-primary: #0c174b;
+    --bs-secondary: #cbd5e1;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #fabf18;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+.bg-transparent {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bg-nav {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.visible {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: #cbd5e1;
+}
+
+.nav-link:hover {
+    color: #cbd5e1;
+}
+
+.nav-link-on {
+    color: #cbd5e1;
+    /* transition: color 0.3s ease-in-out; */
+}
+
+.nav-link-scroll {
+    color: rgb(117, 117, 117);
+    /* transition: color 0.3s ease-in-out; */
+}
+
+.nav-link-on:hover {
+    color: #fff;
+}
+
+.nav-link-scroll:hover {
+    color: var(--bs-primary);
+}
+
+.shadow-nav {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* .nav-link-scroll:hover {
+    color: rgb(52, 51, 51);
+} */
+
+
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar {
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    /* height: 100vh; */
+}
+
+.navbar-brand-filter {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.navbar-brand-ori {
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+.navbar-brand img {
+    width: 70px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar .contact-info .contact,
+.mail {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: var(--bs-secondary);
+}
+
+.navbar .contact-info .contact i,
+.mail i {
+    font-size: 14px;
+}
+
+/* .navbar .contact-info a :hover {
+    color: #fff;
+} */
+
+.navbar .contact p,
+.mail p {
+    margin: 0;
+}
+
+.navbar .contact i,
+.mail i {
+    vertical-align: middle;
+}
+
+.navbar-brand img {
+    width: 70px;
+}
+
+
+.line {
+    width: 750px;
+    height: 0.3px;
+    background-color: #7f7f7f;
+}
+
+.line-scroll {
+    width: 750px;
+    height: 0.3px;
+    background-color: #e3e3e3;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-line {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background-color: rgb(254, 20, 20);
+    transition: width 0.3s;
+}
+
+.nav-item:hover .nav-line {
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-item {
+    font-family: "Inter", sans-serif;
+    color: #5c5c5c;
+}
+
+.dropdown-item:hover {
+    background-color: #e9f0f0;
+    color: var(--bs-dark);
+}
+
+.description-page{
+    font-family: 'Inter';
+    color: #fff;
+    width: 100%;
+    padding: 190px 0px 20px 30px;
+    background-color: #F7BC12;
+
+}
+h3{
+    font-weight: bold;
+}
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+.white-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #ffffff;
+    transition:ease-in-out 0.2s;
+}
+
+.karier{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.karier-section:hover .yellow-bar, 
+.lowongan-section:hover .white-bar {
+    width: 85px;
+}
+
+.karier-text-section{
+    z-index: 2;
+    color: #fff;
+    font-family: 'Inter';
+    text-align: justify;
+    background-color: #3499C5;
+    border-bottom-right-radius:50px ;
+}
+.karier-img-section{
+    position: absolute;
+    top: 8.5%;
+    right: 0;
+    width: 60%;
+    height: 90%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.karier-img-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-bottom-left-radius: 50px;
+}
+
+.lowongan-section{
+    font-family: 'Inter';
+    color: #fff;
+    width: 100%;
+    background-color: #F7BC12;
+}
+.lowongan-container{
+    font-family: 'Inter';
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+}
+
+.cari-img-section img{
+    width: 100%;
+    height: 100%;
+}
+.cari-text-section{
+    text-align: justify;
+}
+
+
+.tawarkan-text-section{
+    color:var(--bs-light);
+    font-family: 'Inter';
+    text-align: justify;
+    background-color: #3499C5;
+    border-top-right-radius: 50px;
+}
+.grey-bar{
+    width: 100%;
+    height: 15px;
+    background-color: #D9D9D9;
+}
+
+.tawarkan-img-section img{
+    width: 300px;
+}
+.kegiatan-section{
+    font-family: 'Inter';
+}
+
+.news .container {
+    padding: 120px 24px;
+}
+
+.news .card {
+    border: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.news .line-bar-title {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.news h2 {
+    color: var(--bs-primary);
+}
+
+.news .card {
+    background-color: #f5f5f5;
+    max-width: 600px;
+}
+
+.news .line-bar {
+    width: 25px;
+    height: 5px;
+    background-color: #3499C5;
+    transition: width 0.3s;
+}
+
+.news .card .next {
+    color: #848484;
+    transition: ease-in-out 0.1s;
+    font-weight: 500;
+}
+
+
+.news .card:hover .line-bar {
+    width: 50px;
+}
+
+.news .card:hover .next {
+    color: #3499C5;
+    transition: ease-in-out 0.1s;
+}
+
+.news .card img {
+    transition: transform 0.3s ease;
+}
+
+.news .card:hover img {
+    transform: scale(0.98);
+}
+
+.news .card .date {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.news .card .title {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.news .card .content {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+}
