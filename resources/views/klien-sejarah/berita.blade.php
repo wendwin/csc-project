@@ -1,4 +1,4 @@
-<x-layout :css="'/klien-sejarah/berita.css'">
+<x-layout :css="'klien-sejarah/berita.css'">
     <div class="description-page">   
     </div>
     <div class="berita-section p-3 p-lg-5">

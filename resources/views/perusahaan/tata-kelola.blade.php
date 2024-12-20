@@ -1,4 +1,4 @@
-<x-layout :css="'/perusahaan/tata-kelola.css'">
+<x-layout :css="'perusahaan/tata-kelola.css'">
     <div class="description-page">
         <h5>Perusahan</h5>
         <h4>Tata Kelola Perusahaan</h4>

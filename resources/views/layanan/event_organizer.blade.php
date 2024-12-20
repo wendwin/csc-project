@@ -1,4 +1,4 @@
-<x-layout :css="'/layanan/event_organizer.css'">
+<x-layout :css="'layanan/event_organizer.css'">
     <div class="description-page">
         <h5>Layanan</h5>
         <h4>Event Organizer</h4>
