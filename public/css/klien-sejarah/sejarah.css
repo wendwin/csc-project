@@ -10,6 +10,7 @@
     --bs-dark: #212529;
 }
 
+
 .bg-transparent {
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
@@ -141,7 +142,6 @@ a {
     vertical-align: middle;
 }
 
-
 .line {
     width: 750px;
     height: 0.3px;
@@ -163,8 +163,7 @@ a {
     bottom: 0;
     height: 4px;
     width: 0;
-    background-color: rgb(254, 20, 20);
-
+    background-color: rgb(255, 230, 0);
     transition: width 0.3s;
 }
 
@@ -186,7 +185,6 @@ a {
     background-color: #e9f0f0;
     color: var(--bs-dark);
 }
-
 .description-page{
     font-family: 'Inter';
     color: #fff;
