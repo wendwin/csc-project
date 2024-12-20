@@ -164,7 +164,7 @@
                         </ul>
                         <div class="nav-line"></div>
                     </li> --}}
-                    <li class="nav-item me-3"><a class="nav-link" href="#">
+                    <li class="nav-item me-3"><a class="nav-link" href="{{ route('berita') }}">
                             <span class=""
                                 :class="{
                                     'nav-link-on': !$store.navbar.isExpanded && window.scrollY === 0,
@@ -182,7 +182,7 @@
                                 Karir</span></a>
                         <div class="nav-line"></div>
                     </li>
-                    <li class="nav-item me-3"><a class="nav-link" href="#">
+                    <li class="nav-item me-3"><a class="nav-link" href="{{ route('csr') }}">
                             <span class=""
                                 :class="{
                                     'nav-link-on': !$store.navbar.isExpanded && window.scrollY === 0,
@@ -192,7 +192,7 @@
                         </a>
                         <div class="nav-line"></div>
                     </li>
-                    <li class="nav-item me-3"><a class="nav-link" href="#">
+                    <li class="nav-item me-3"><a class="nav-link" href="{{ route('hubungi') }}">
                             <span class=""
                                 :class="{
                                     'nav-link-on': !$store.navbar.isExpanded && window.scrollY === 0,
