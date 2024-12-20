@@ -204,12 +204,21 @@ h3{
     transition:ease-in-out 0.2s;
 }
 
+.hubungi-section:hover .yellow-bar {
+    width: 85px;
+}
+.hubungi-section:hover iframe{
+    transition:ease-in-out 0.2s;
+    scale: 103%;
+}
+
 .hubungi{
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 .hubungi iframe{
+    transition:ease-in-out 0.2s;
     width: 100%;
     border-radius: 20px;
 }
