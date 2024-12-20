@@ -185,3 +185,134 @@ a {
     background-color: #e9f0f0;
     color: var(--bs-dark);
 }
+.description-page{
+    font-family: 'Inter';
+    color: #fff;
+    width: 100%;
+    padding: 190px 0px 20px 30px;
+    background-color: #F7BC12;
+}
+h3{
+    font-weight: bold;
+    font-family: 'Inter';
+}
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+
+.tanggung-jawab-section:hover .yellow-bar, 
+.fokus-section:hover .yellow-bar,
+.news:hover .yellow-bar {
+    width: 85px;
+}
+
+.tanggung-jawab-section:hover .tanggung-jawab-img img, 
+.fokus-section:hover .fokus-img img{
+    scale: 105%;
+}
+.tanggung-jawab-text,
+.fokus-text{
+    font-family: "Inter";
+    text-align: justify;
+}
+
+.tanggung-jawab-img img{
+    width: 300px;
+    height: 400px;
+    object-position: 35px center;
+    object-fit: cover;
+    transition:ease-in-out 0.2s;
+}
+.fokus-img img{
+    width: 300px;
+    height: 400px;
+    object-position: -170px center;
+    object-fit: cover;
+    transition:ease-in-out 0.2s;
+}
+
+.news .container {
+    padding: 120px 24px;
+}
+
+.news .card {
+    border: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.news .line-bar-title {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.news h2 {
+    color: var(--bs-primary);
+}
+
+.news .card {
+    background-color: #f5f5f5;
+    max-width: 600px;
+}
+
+.news .line-bar {
+    width: 25px;
+    height: 5px;
+    background-color: #3499C5;
+    transition: width 0.3s;
+}
+
+.news .card .next {
+    color: #848484;
+    transition: ease-in-out 0.1s;
+    font-weight: 500;
+}
+
+
+.news .card:hover .line-bar {
+    width: 50px;
+}
+
+.news .card:hover .next {
+    color: #3499C5;
+    transition: ease-in-out 0.1s;
+}
+
+.news .card img {
+    transition: transform 0.3s ease;
+}
+
+.news .card:hover img {
+    transform: scale(0.98);
+}
+
+.news .card .date {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.news .card .title {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.news .card .content {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+}
+
+@media (max-width: 992px) {
+    .tanggung-jawab-img img{
+        width: 300px;
+        height: 300px;
+        object-position: center center;
+    }
+}
