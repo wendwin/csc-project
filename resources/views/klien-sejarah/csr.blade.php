@@ -3,27 +3,31 @@
         
     </div>
     <div class="tanggung-jawab-section my-5">
-        <div class="px-3 px-lg-5">
-            <div class="yellow-bar"></div>
-            <h3>Tanggung Jawab Sosial Perusahaan (CSR)</h3>
-        </div>
-        <div class="tanggung-jawab-container d-flex flex-column flex-lg-row justify-content-between align-items-center">
-            <div class="tanggung-jawab-text px-3 px-lg-5">
-                Di Cendana Solution Center (CSC), kami tidak hanya fokus pada penyelenggaraan acara, ketahanan pangan, dan konstruksi, tetapi juga berkomitmen untuk memberikan dampak positif bagi masyarakat dan lingkungan. Komitmen terhadap Tanggung Jawab Sosial Perusahaan (CSR) adalah bagian tak terpisahkan dari nilai-nilai dan budaya kami.
-                <br><br>
-                Visi CSR kami didasarkan pada keyakinan bahwa setiap langkah kecil dapat membawa perubahan besar. Kami berupaya menjadi kekuatan yang membawa kebaikan di komunitas tempat kami beroperasi, menciptakan dampak yang melampaui proyek dan acara yang kami kelola. Dengan mengintegrasikan aspek sosial dan lingkungan ke dalam setiap praktik bisnis, kami bertujuan menciptakan nilai bersama bagi semua pemangku kepentingan, termasuk klien, karyawan, mitra, dan masyarakat luas.
-                <br><br>
-                Pendekatan kami terhadap CSR dipandu oleh nilai-nilai inti perusahaan, dengan fokus pada inisiatif strategis untuk menghadapi tantangan sosial dan lingkungan secara berkelanjutan. Dengan memanfaatkan sumber daya, keahlian, dan jaringan yang kami miliki, CSC berkomitmen untuk mendorong perubahan positif yang bermakna dan memberikan kontribusi nyata bagi masyarakat serta lingkungan, sejalan dengan tujuan bisnis kami untuk menciptakan masa depan yang lebih baik.
+        <div class="tanggung-jawab-container d-flex flex-column flex-lg-row justify-content-between align-items-end align-items-lg-center gap-5">
+            <div class="tanggung-jawab-text p-3 p-lg-5">
+                <div class="yellow-bar"></div>
+                <h3>Tanggung Jawab Sosial Perusahaan (CSR)</h3>
+                <p>
+                    Di Cendana Solution Center (CSC), kami tidak hanya fokus pada penyelenggaraan acara, ketahanan pangan, dan konstruksi, tetapi juga berkomitmen untuk memberikan dampak positif bagi masyarakat dan lingkungan. Komitmen terhadap Tanggung Jawab Sosial Perusahaan (CSR) adalah bagian tak terpisahkan dari nilai-nilai dan budaya kami.
+                    <br><br>
+                    Visi CSR kami didasarkan pada keyakinan bahwa setiap langkah kecil dapat membawa perubahan besar. Kami berupaya menjadi kekuatan yang membawa kebaikan di komunitas tempat kami beroperasi, menciptakan dampak yang melampaui proyek dan acara yang kami kelola. Dengan mengintegrasikan aspek sosial dan lingkungan ke dalam setiap praktik bisnis, kami bertujuan menciptakan nilai bersama bagi semua pemangku kepentingan, termasuk klien, karyawan, mitra, dan masyarakat luas.
+                    <br><br>
+                    Pendekatan kami terhadap CSR dipandu oleh nilai-nilai inti perusahaan, dengan fokus pada inisiatif strategis untuk menghadapi tantangan sosial dan lingkungan secara berkelanjutan. Dengan memanfaatkan sumber daya, keahlian, dan jaringan yang kami miliki, CSC berkomitmen untuk mendorong perubahan positif yang bermakna dan memberikan kontribusi nyata bagi masyarakat serta lingkungan, sejalan dengan tujuan bisnis kami untuk menciptakan masa depan yang lebih baik.
+                </p>
             </div>
-            <div class="tanggung-jawab-img my-5 my-lg-0">
-                <img src="/img/logo/csc-cut.png" alt="">
+            <div class="tanggung-jawab-img d-none d-lg-flex flex-column gap-3">
+                <img src="/img/csr/csr1.jpg" alt="">
+                <img src="/img/csr/csr2.jpg" alt="">
             </div>
         </div>
     </div>
     <div class="fokus-section py-0 py-lg-5">
         <div class="fokus-container d-flex flex-column flex-lg-row justify-content-between align-items-center">
-            <div class="fokus-img d-none d-lg-block">
-                <img src="/img/logo/csc-cut.png" alt="">
+            <div class="fokus-img">
+                <img src="/img/csr/csr3.png" alt="">
+                <div class="solusi-container mb-3 mb-lg-0">
+                    <h2>CSC, SOLUSI UNTUK ANDA</h2>
+                </div>
             </div>
             <div class="fokus-text px-3 px-lg-5">
                 <div class="yellow-bar"></div>

@@ -209,29 +209,41 @@ h3{
     width: 85px;
 }
 
-.tanggung-jawab-section:hover .tanggung-jawab-img img, 
-.fokus-section:hover .fokus-img img{
-    scale: 105%;
-}
+
 .tanggung-jawab-text,
 .fokus-text{
     font-family: "Inter";
     text-align: justify;
 }
 
+.tanggung-jawab-text{
+    color: var(--bs-light);
+    background-color: #3499C5;
+    border-bottom-right-radius: 70px;
+}
+
 .tanggung-jawab-img img{
-    width: 300px;
-    height: 400px;
-    object-position: 35px center;
+    width: 420px;
+    height: 300px;
+    object-fit: cover;
+    transition:ease-in-out 0.2s;
+    border-bottom-left-radius: 70px;
+}
+.fokus-img img{
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     transition:ease-in-out 0.2s;
 }
-.fokus-img img{
-    width: 300px;
-    height: 400px;
-    object-position: -170px center;
-    object-fit: cover;
-    transition:ease-in-out 0.2s;
+
+.solusi-container{
+    text-align: center;
+    width: 100%;
+    background-color: #0C174B;
+    padding: 15px 0px;
+    color: var(--bs-light);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .news .container {
