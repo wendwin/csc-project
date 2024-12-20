@@ -19,7 +19,7 @@
             </div>
             <div class="carousel-inner vh-100 position-relative">
                 <div class="carousel-item active">
-                    <img src="img/g20.jpg" class="d-block w-100" alt="Slide 1">
+                    <img src="img/carosel/img6.jpg" class="d-block w-100" alt="Slide 1">
                     <div class="carousel-caption d-lg-none mb-5">
                         <h5 class="">Sherpa Meeting <br>Presidensi G20</h5>
                         <p class="mb-4">2024</p>
@@ -27,7 +27,7 @@
                     <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/wwf-2024.jpg" class="d-block w-100" alt="Slide 2">
+                    <img src="img/carosel/img5.jpg" class="d-block w-100" alt="Slide 2">
                     <div class="carousel-caption d-lg-none mb-5">
                         <h5 class="">Expo 2020 Dubai</h5>
                         <p class="mb-4">2020</p>
@@ -35,7 +35,7 @@
                     <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/pon.jpg" class="d-block w-100" alt="Slide 3">
+                    <img src="img/carosel/img4.jpg" class="d-block w-100" alt="Slide 3">
                     <div class="carousel-caption d-lg-none mb-5">
                         <h5 class="">Pekan Olahraga Nasional (PON) XX</h5>
                         <p class="mb-4">2023</p>
@@ -43,7 +43,7 @@
                     <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/expo-2020-dubai.jpg" class="d-block w-100" alt="Slide 4">
+                    <img src="img/carosel/img3.jpg" class="d-block w-100" alt="Slide 4">
                     <div class="carousel-caption d-lg-none mb-5">
                         <h5 class="">10th World Water Forum</h5>
                         <p class="mb-4">2024</p>
@@ -51,7 +51,7 @@
                     <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/asian-paragames.jpg" class="d-block w-100" alt="Slide 5">
+                    <img src="img/carosel/img2.jpg" class="d-block w-100" alt="Slide 5">
                     <div class="carousel-caption d-lg-none mb-5">
                         <h5 class="">Asian Para Games</h5>
                         <p class="mb-4">2022</p>
@@ -59,7 +59,7 @@
                     <div class="backdrop position-absolute"></div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/asean-bac.jpg" class="d-block w-100" alt="Slide 6">
+                    <img src="img/carosel/img1.jpg" class="d-block w-100" alt="Slide 6">
                     <div class="carousel-caption d-lg-none mb-5">
                         <h5 class="">Asian Para Games</h5>
                         <p class="mb-4">2022</p>

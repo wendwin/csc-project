@@ -10,10 +10,6 @@
     --bs-dark: #212529;
 }
 
-body {
-    height: 3000px;
-}
-
 
 .bg-transparent {
     background-color: transparent;

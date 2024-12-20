@@ -9,7 +9,8 @@
     }">
     <div class="container">
         <a class="navbar-brand" href="/" x-data="{ scrollY: 0 }" x-init="window.addEventListener('scroll', () => { scrollY = window.scrollY })">
-            <img src="img/logo/csc.png"
+            <img src="{{ asset('img/logo/csc.png') }}"
+            
                 :class="{
                     'navbar-brand-filter': !$store.navbar.isExpanded && window.scrollY === 0,
                     'navbar-brand-ori': $store.navbar.isExpanded || window.scrollY > 0,
