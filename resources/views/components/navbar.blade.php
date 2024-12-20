@@ -17,7 +17,6 @@
                 alt="cendana">
         </a>
 
-
         <div class="d-flex align-items-center gap-3">
             <div class="contact-info d-none d-md-flex align-items-center d-lg-none">
                 {{-- mobile --}}
@@ -174,7 +173,7 @@
                         </a>
                         <div class="nav-line"></div>
                     </li>
-                    <li class="nav-item me-3"><a class="nav-link" href="#"><span class=""
+                    <li class="nav-item me-3"><a class="nav-link" href="{{ route('karier') }}"><span class=""
                                 :class="{
                                     'nav-link-on': !$store.navbar.isExpanded && window.scrollY === 0,
                                     'nav-link-scroll': $store.navbar.isExpanded || window.scrollY > 0,

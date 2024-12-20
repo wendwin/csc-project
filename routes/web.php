@@ -45,3 +45,7 @@ Route::get('/klien', function () {
 Route::get('/sejarah', function () {
     return view('klien-sejarah/sejarah', ['css' => 'css/klien-sejarah/sejarah.css']);
 })->name('sejarah');
+
+Route::get('/karier', function () {
+    return view('klien-sejarah/karier', ['css' => 'css/klien-sejarah/karier.css']);
+})->name('karier');
