@@ -8,8 +8,6 @@ Route::get('/', function () {
     return view('index', ['css'=> 'home.css']);
 })->name('home');
 
-
-
 // Perusahaan
 Route::prefix('perusahaan')->group(function () {
     Route::get('/tentang', function () {
@@ -38,3 +36,12 @@ Route::prefix('layanan')->group(function () {
         return view('layanan.konstruksi', ['css' => 'css/layanan/konstruksi.css']);
     })->name('layanan.konstruksi');
 });
+
+// Klien dan Sejarah
+Route::get('/klien', function () {
+    return view('klien-sejarah/klien', ['css' => 'css/klien-sejarah/klien.css']);
+})->name('klien');
+
+Route::get('/sejarah', function () {
+    return view('klien-sejarah/sejarah', ['css' => 'css/klien-sejarah/sejarah.css']);
+})->name('sejarah');

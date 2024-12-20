@@ -124,7 +124,7 @@
                         <div class="nav-line"></div>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('klien') }}">
                             <span class=""
                                 :class="{
                                     'nav-link-on': !$store.navbar.isExpanded && window.scrollY === 0,
@@ -134,7 +134,7 @@
                         </a>
                         <div class="nav-line"></div>
                     </li>
-                    <li class="nav-item me-3"><a class="nav-link" href="#">
+                    <li class="nav-item me-3"><a class="nav-link" href="{{ route('sejarah') }}">
                             <span class=""
                                 :class="{
                                     'nav-link-on': !$store.navbar.isExpanded && window.scrollY === 0,
