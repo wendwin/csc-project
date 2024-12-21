@@ -1,4 +1,6 @@
-<x-layout :navbar="null" :css="'klien-sejarah/karier.css'">
+
+
+<x-layout :css="'klien-sejarah/karier.css'">
     <div class="description-page">
 
     </div>
@@ -23,8 +25,23 @@
                 </p>
             </div>
         </div>
+
         <div class="col-md-6 karier-img-section">
             <img src="/img/karier/karier1.png" alt="">
+
+        <div class="lowongan-section px-3 px-lg-5 pt-3 pt-lt-5 my-5 my-lg-5">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <div class="">
+                    <div class="white-bar"></div>
+                    <h3>Lowongan Pekerjaan</h3>
+                    <div class="lowongan-container text-center pt-4 pb-2 px-3 px-lg-5 my-5">
+                        <p>Maaf, Lowongan Saat Ini Belum Tersedia</p>
+                    </div>
+                </div>
+                <div class="lowongan-img">
+                    <img src="/img/karier/karier3.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -34,10 +51,31 @@
         <div class="lowongan-container text-center pt-4 pb-2 my-1 my-lg-3">
             <p>Maaf, Lowongan Saat Ini Belum Tersedia</p>
         </div>
+
     </div>
     <div class="cari-section d-flex flex-column flex-lg-row justify-content-between align-items-center my-5 gap-lg-3">
         <div class="cari-img-section w-100 ">
             <img src="/img/karier/karier2.jpeg" alt="">
+
+        <div class="tawarkan-section d-flex flex-column flex-lg-row justify-content-between align-items-center my-2 my-lg-5">
+            <div class="">
+                <div class="tawarkan-text-section p-3 p-lg-5">
+                    <div class="yellow-bar"></div>
+                    <h3>Apa yang Kami Tawarkan</h3>
+                    <ul>
+                        <li>Paket gaji dan tunjangan yang menarik: Kami memastikan penghargaan yang setimpal dengan kontribusi dan dedikasi Anda.</li>
+                        <li>Peluang pengembangan karir: Kesempatan untuk belajar, tumbuh, dan mengembangkan keterampilan profesional Anda di berbagai bidang.</li>
+                        <li>Lingkungan kerja yang dinamis dan kolaboratif: Bekerja bersama tim yang energik dan berorientasi pada inovasi</li>
+                        <li>Pengalaman beragam: Terlibat dalam berbagai acara dan proyek yang menantang dan menarik, mulai dari event hingga konstruksi dan ketahanan pangan.</li>
+                        <li>Budaya kerja yang mendukung: Kami menghargai kreativitas, inovasi, dan komitmen terhadap keunggulan dalam setiap hal yang kami lakukan.</li>
+                    </ul>
+                </div>
+                <div class="grey-bar"></div>
+            </div>
+            <div class="tawarkan-img-section mx-3 my-3 my-lg-0 mb-5 mb-lg-0">
+                <img src="/img/karier/karier4.png" alt="">
+            </div>
+
         </div>
         <div class="cari-text-section w-100 p-3 p-lg-">
             <div class="yellow-bar"></div>

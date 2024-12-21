@@ -1,5 +1,8 @@
+
+
 <x-layout :css="'perusahaan/tentang.css'">
-    {{-- silahkan costumise tampilannya --}}
+{{-- silahkan costumise tampilannya --}}
+
 
     <!-- Konten Halaman -->
     <div class="description-page">

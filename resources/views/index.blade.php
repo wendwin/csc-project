@@ -240,33 +240,33 @@
             <div class="line-bar-title mb-3"></div>
             <h2 class="fw-bolder mb-5 text-white">Layanan</h2>
             <div class="mb-xl-0 d-xl-flex justify-content-evenly align-items-center gap-5">
-                <a href="">
+                <a href="{{ route('layanan.event_organizer') }}">
                     <div class="card position-relative mb-4">
                         <img src="img/layanan/event-organizer.jpg" class="card-img-top" alt="...">
                         <div class="card-body position-absolute ">
                             <div class="line-bar mb-2"></div>
                             <p class="fs-3 fw-bold">Event Organizer</p>
-                            <a href="#" class="">Lebih lanjut...</a>
+                            <a href="{{ route('layanan.event_organizer') }}" class="">Lebih lanjut...</a>
                         </div>
                     </div>
                 </a>
-                <a href="">
+                <a href="{{ route('layanan.ketahanan_pangan') }}">
                     <div class="card position-relative mb-4">
                         <img src="img/layanan/sawah.jpg" class="card-img-top" alt="...">
                         <div class="card-body position-absolute">
                             <div class="line-bar mb-2"></div>
                             <p class="fs-3 fw-bold">Ketahanan Pangan</p>
-                            <a href="#" class="">Lebih lanjut...</a>
+                            <a href="{{ route('layanan.ketahanan_pangan') }}" class="">Lebih lanjut...</a>
                         </div>
                     </div>
                 </a>
-                <a href="">
+                <a href="{{ route('layanan.konstruksi') }}">
                     <div class="card position-relative mb-4">
                         <img src="img/layanan/konstruksi.jpg" class="card-img-top" alt="...">
                         <div class="card-body position-absolute ">
                             <div class="line-bar mb-2"></div>
                             <p class="fs-3 fw-bold">Konstruksi</p>
-                            <a href="#" class="">Lebih lanjut...</a>
+                            <a href="{{ route('layanan.konstruksi') }}" class="">Lebih lanjut...</a>
                         </div>
                     </div>
                 </a>
@@ -454,13 +454,13 @@
         </div>
     </div>
 
-    <div class="offer text-center">
-        <div class="container">
-            <p class="fs-2 fw-medium mb-5">Butuh Solusi Handal untuk Event Organizer, Ketahanan Pangan, dan Konstruksi?
-            </p>
-            <button class="text-uppercase">hubungi kami sekarang</button>
+        <div class="offer text-center">
+            <div class="container">
+                <p class="fs-2 fw-medium mb-5">Butuh Solusi Handal untuk Event Organizer, Ketahanan Pangan, dan Konstruksi?
+                </p>
+                <a href="{{ route('hubungi') }}" class="btnhub btn-primary text-uppercase">Hubungi Kami Sekarang</a>
+            </div>
         </div>
-    </div>
 
 
 </x-layout>
