@@ -61,8 +61,3 @@ Route::get('/csr', function () {
 Route::get('/hubungi', function () {
     return view('klien-sejarah/hubungi', ['css' => 'css/klien-sejarah/hubungi.css']);
 })->name('hubungi');
-
-
-Route::get('/galery', function () {
-    return view('galery/galery', ['css' => 'css/galery/galery.css']);
-})->name('galery');
