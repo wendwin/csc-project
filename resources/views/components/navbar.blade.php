@@ -202,6 +202,16 @@
                         </a>
                         <div class="nav-line"></div>
                     </li>
+                    <li class="nav-item me-3"><a class="nav-link" href="{{ route('galery') }}">
+                            <span class=""
+                                :class="{
+                                    'nav-link-on': !$store.navbar.isExpanded && window.scrollY === 0,
+                                    'nav-link-scroll': $store.navbar.isExpanded || window.scrollY > 0,
+                                }">
+                                Galeri</span>
+                        </a>
+                        <div class="nav-line"></div>
+                    </li>
                     <li class="nav-item me-3 d-lg-none mt-4">
                         <a class="nav-link" href="#">
                             <span class=""
