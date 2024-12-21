@@ -9,11 +9,12 @@
             <img src="/img/layanan/event-organizer/event3.png" alt="">
         </div>
         <div class="intro-text-section px-3 px-lg-5 mt-3 mt-lg-0">
-            <p><span class="fw-bold">Cendana Solution Center (CSC)</span>bergerak di bidang ketahanan pangan dengan
+            <p><span class="fw-bold">Cendana Solution Center (CSC)</span> bergerak di bidang ketahanan pangan dengan
                 memanfaatkan keahlian dan sumber daya yang kami miliki. Kami menghasilkan kompos sehat dari kotoran
                 hewan yang digunakan sebagai pupuk untuk tanaman beras sehat (Pandan wangi, beras merah, beras hitam),
                 berbagai sayuran (Sawi, Kol, Cabai, Terong, Tomat, Suweg, Wortel, Paprika, dll.), dan buah segar (Melon,
-                Semangka, dll). Kami juga mengolah limbah organik dari hotel, pasar, rumah makan, dan industri
+                Semangka, dll).</p>
+                </p>Kami juga mengolah limbah organik dari hotel, pasar, rumah makan, dan industri
                 menggunakan teknologi Noutrino Consorsium dan ozongenerator menjadi pakan ternak berkualitas,
                 menghasilkan hewan ternak sehat (ayam, bebek, sapi, dll). Dengan begitu, kami juga berperan sebagai
                 konsultan lingkungan. Selain itu, kami menyediakan layanan konsultasi untuk perencanaan, pelaksanaan,
@@ -136,7 +137,7 @@
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pakcoy.jpg" alt="">
-                        <h5>Pokcoi</h5>
+                        <h5>Pakcoy</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-wortel.jpg" alt="">
@@ -148,7 +149,7 @@
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-brokoli.jpg" alt="">
-                        <h5>Brokkoli</h5>
+                        <h5>Brokoli</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kembangkol.jpg" alt="">
@@ -287,7 +288,7 @@
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/ayampedaging.jpg" alt="">
-                <h5>Ayam Daging</h5>
+                <h5>Ayam Pedaging</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/entok.jpg" alt="">

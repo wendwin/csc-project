@@ -23,22 +23,22 @@
             <div class="yellow-bar mb-3"></div>
             <h3 class="fw-bolder mb-5">Dipercaya Oleh</h3>
             <div class="org-one text-center d-md-flex justify-content-center align-items-center gap-5">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendes.png" alt="">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendagri.png" alt="">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendikbud.png" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendes.png" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendagri.png" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendikbud.png" alt="">
             </div>
             <div class="org-one text-center my-5 d-md-flex justify-content-center align-items-center flex-wrap gap-5">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-tanah-laut.jpg" alt="">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-karimun.gif" alt="">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-kepulauan.jpg" alt="">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-kapuas-hulu.jpg" alt="">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-selatan.png" alt="">
-                <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-utara.jpg" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-tanah-laut.png" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-karimun.png" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-kepulauan.png" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kapuas-hulu.png" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-selatan.png" alt="">
+                <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-utara.png" alt="">
             </div>
             <div class="peta mt-5">
                 <div class="text-center">
                     <h3 class="mb-5">Mitra Kami</h3>
-                    <img src="img/mitra/Peta.png" alt="" width="500">
+                    <img src="img/kemitraan/Peta.png" alt="" width="500">
                 </div>
                 <div class="mt-4 d-md-flex justify-content-center gap-md-5">
                     <ul>

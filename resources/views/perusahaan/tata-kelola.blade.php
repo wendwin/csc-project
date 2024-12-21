@@ -30,7 +30,7 @@
     <div class="row prinsip-container mt-5 mx-0 d-flex flex-wrap justify-content-between">
         <div class="col-md-3 text-container ms-0 ms-md-5 mb-3 mb-mb-0">
             <div class="yellow-bar"></div>
-            <h4>Prinsip Data Kelola Perusahaan</h4>
+            <h4>Prinsip Tata Kelola Perusahaan</h4>
         </div>
         <div class="col-md-7 ms-3 ms-mb-0 ps-1 pe-4 px-md-4 py-5 deskripsi-container">
             <ul>

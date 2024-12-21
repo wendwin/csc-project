@@ -7,7 +7,7 @@
     <!-- Konten Halaman -->
     <div class="description-page">
         <h5>Perusahan</h5>
-        <h4>Tata Kelola Perusahaan</h4>
+        <h4>Tentang Kami</h4>
     </div>
     <div class="intro-section p-1 p-lg-5">
         <div
@@ -22,8 +22,8 @@
                     acara yang berkesan, mendukung kebutuhan pangan berkelanjutan, dan membangun infrastruktur yang
                     kokoh. Kami percaya bahwa inovasi dan kolaborasi adalah kunci untuk mewujudkan masa depan yang lebih
                     baik bagi masyarakat dan lingkungan. Bersama Cendana Solution Center, setiap langkah Anda menuju
-                    sukses adalah prioritas kami. <br>
-                    Dalam sektor event organizer, kami menciptakan pengalaman berkesan yang dirancang khusus untuk
+                    sukses adalah prioritas kami.</p>
+                    <p>Dalam sektor event organizer, kami menciptakan pengalaman berkesan yang dirancang khusus untuk
                     memenuhi kebutuhan unik setiap klien. Di bidang ketahanan pangan, kami mendukung terciptanya solusi
                     berkelanjutan melalui integrasi teknologi modern dan pendekatan ramah lingkungan guna memastikan
                     ketersediaan pangan di masa depan. Sementara itu, dalam sektor konstruksi, kami mengedepankan
@@ -33,11 +33,11 @@
                     mewujudkan masa depan yang lebih baik bagi masyarakat dan lingkungan.</p>
                 <div class="intro-pengalaman-section d-flex flex-wrap flex-wd-0 justify-content-evenly text-center">
                     <div class="intro-pengalaman-container">
-                        <h4 class="mx-auto">24+</h4>
+                        <h4 class="mx-auto">1+</h4>
                         <p>Pengalaman (Tahun)</p>
                     </div>
                     <div class="intro-pengalaman-container">
-                        <h4 class="mx-auto">1000+</h4>
+                        <h4 class="mx-auto">500+</h4>
                         <p>Acara</p>
                     </div>
                     <div class="intro-pengalaman-container">
@@ -59,14 +59,14 @@
             <div class="yellow-bar"></div>
             <div class="sejarah-text-container ">
                 <h3>SEJARAH CENDANA SOLUTION CENTER</h3>
-                <p>Sejak didirikan pada tahun 2000, Cendana Solution Center (CSC) telah berkomitmen untuk menjadi
+                <p>Sejak didirikan pada tahun 2024, Cendana Solution Center (CSC) telah berkomitmen untuk menjadi
                     penyelenggara spesial event yang terpercaya, bekerja sama dengan berbagai instansi pemerintah dan
                     perusahaan swasta di seluruh Indonesia. Dengan pengalaman yang luas dalam mengelola berbagai jenis
                     acara, kami telah membangun hubungan jangka panjang dengan hampir seluruh Organisasi Perangkat
                     Daerah (OPD) serta perusahaan besar di Indonesia. Kepercayaan yang diberikan kepada kami selama
                     lebih dari dua dekade mencerminkan dedikasi dan profesionalisme dalam setiap event yang kami
-                    selenggarakan. <br>
-                    Melalui kerja sama yang erat dengan klien-klien dari berbagai sektor, CSC terus berkembang dan
+                    selenggarakan.</p>
+                    <p>Melalui kerja sama yang erat dengan klien-klien dari berbagai sektor, CSC terus berkembang dan
                     berinovasi, memastikan bahwa setiap acara yang kami tangani tidak hanya sukses secara
                     penyelenggaraan, tetapi juga memberikan dampak positif dan berkelanjutan. Dengan tim yang
                     berpengalaman dan pendekatan yang berbasis pada kebutuhan klien, kami berkomitmen untuk terus

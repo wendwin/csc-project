@@ -213,15 +213,15 @@
 
                     <div class="count d-lg-flex mt-lg-5 ">
                         <div class="me-lg-5">
-                            <p class="number m-0">35+</p>
+                            <p class="number m-0">1+</p>
                             <p>Years Experience</p>
                         </div>
                         <div class="me-lg-5">
-                            <p class="number  m-0">2000 +</p>
+                            <p class="number  m-0">500+</p>
                             <p>Events</p>
                         </div>
                         <div class="me-lg-5">
-                            <p class="number  m-0">1.000.000+</p>
+                            <p class="number  m-0">2.000.000+</p>
                             <p>Events Participants</p>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
             </div>
             <!-- Image -->
             <div class="col-md-5 glimpse-image-container">
-                <img src="/img/intro.jpg" alt="Event Image" class="glimpse-image">
+                <img src="/img/intro3.jpg" alt="Event Image" class="glimpse-image">
             </div>
         </div>
     </div>
@@ -312,23 +312,23 @@
                 <div class="line-bar-title mb-3"></div>
                 <h2 class="fw-bolder mb-5">Dipercaya Oleh</h2>
                 <div class="org-one text-center d-md-flex justify-content-center align-items-center gap-5">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendes.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendagri.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendikbud.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendes.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendagri.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendikbud.png" alt="">
                 </div>
                 <div
                     class="org-one text-center my-5 d-md-flex justify-content-center align-items-center flex-wrap gap-5">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-tanah-laut.jpg" alt="">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-karimun.gif" alt="">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-kepulauan.jpg" alt="">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-kapuas-hulu.jpg" alt="">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-selatan.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-utara.jpg" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-tanah-laut.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-karimun.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-kepulauan.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kapuas-hulu.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-selatan.png" alt="">
+                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-utara.png" alt="">
                 </div>
                 <div class="peta mt-5">
                     <div class="text-center">
                         <h2 class="mb-5">Mitra Kami</h2>
-                        <img src="img/mitra/Peta.png" alt="" width="500">
+                        <img src="img/kemitraan/Peta.png" alt="" width="500">
                     </div>
                     <div class="mt-4 d-md-flex justify-content-center gap-md-5">
                         <ul>
