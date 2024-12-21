@@ -1,4 +1,4 @@
-<x-layout :css="'/klien-sejarah/csr.css'">
+<x-layout :css="'klien-sejarah/csr.css'">
     <div class="description-page">
         
     </div>

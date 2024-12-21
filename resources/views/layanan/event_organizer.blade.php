@@ -1,4 +1,4 @@
-<x-layout :css="'/layanan/event_organizer.css'">
+<x-layout :css="'layanan/event_organizer.css'">
     <div class="description-page">
         <h5>Layanan</h5>
         <h4>Event Organizer</h4>
@@ -41,7 +41,7 @@
                         <li>Barang dan Aset</li>
                         <li>Kearsipan dan Perpustakan</li>
                         <li>Pekerjaan Umum (PU)</li>
-                        <li>Kehumasan dan Protokole</li>
+                        <li>Kehumasan dan Protokoler</li>
                         <li>Satpol PP</li>
                         <li>Pertambangan</li>
                         <li>Sistem Informasi Geografi</li>

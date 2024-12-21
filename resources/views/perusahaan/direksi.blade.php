@@ -1,4 +1,4 @@
-<x-layout :css="'/perusahaan/direksi.css'">
+<x-layout :css="'perusahaan/direksi.css'">
     <div class="description-page">
         <h5>Perusahan</h5>
         <h4>Anggota Direksi</h4>

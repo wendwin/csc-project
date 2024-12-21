@@ -1,6 +1,5 @@
 
-
-<x-layout :css="'/perusahaan/tentang.css'">
+<x-layout :css="'perusahaan/tentang.css'">
 {{-- silahkan costumise tampilannya --}}
 
     <!-- Konten Halaman -->

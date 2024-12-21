@@ -1,4 +1,4 @@
-<x-layout :css="'/layanan/ketahanan_pangan.css'">
+<x-layout :css="'layanan/ketahanan_pangan.css'">
     <div class="description-page">
         <h5>Layanan</h5>
         <h4>Ketahanan Pangan</h4>

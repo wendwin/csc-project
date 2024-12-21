@@ -1,4 +1,4 @@
-<x-layout :css="'/klien-sejarah/hubungi.css'">
+<x-layout :css="'klien-sejarah/hubungi.css'">
     <div class="description-page">
     </div>
     <div class="hubungi py-5 mb-0 mb-lg-5">
