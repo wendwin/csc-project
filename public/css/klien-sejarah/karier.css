@@ -217,7 +217,7 @@ h3{
 }
 
 .karier-section:hover .yellow-bar, 
-.lowongan-section:hover .yellow-bar, 
+.lowongan-section:hover .white-bar, 
 .cari-section:hover .yellow-bar,
 .tawarkan-section:hover .yellow-bar,
 .kegiatan-section:hover .yellow-bar,
@@ -255,11 +255,12 @@ h3{
     font-family: 'Inter';
     color: #fff;
     width: 100%;
-    background-color: #0076ff;
+    background-color: #F7BC12;
 }
 .lowongan-container{
+    color: var(--bs-dark);
     font-family: 'Inter';
-    background-color: #F7BC12;
+    background-color: #E2E2E2;
     border-radius: 20px;
 }
 

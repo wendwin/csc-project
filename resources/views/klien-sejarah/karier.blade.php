@@ -1,3 +1,4 @@
+
 <x-layout :css="'klien-sejarah/karier.css'">
     <div class="description-page">
         
@@ -17,11 +18,18 @@
                 </div>
             </div>
         </div>
-        <div class="lowongan-section px-3 px-lg-5 p-4 my-5 my-lg-5">
-            <div class="yellow-bar"></div>
-            <h3>Lowongan Pekerjaan</h3>
-            <div class="lowongan-container text-center pt-4 pb-2 my-1 my-lg-3">
-                <p>Maaf, Lowongan Saat Ini Belum Tersedia</p>
+        <div class="lowongan-section px-3 px-lg-5 pt-3 pt-lt-5 my-5 my-lg-5">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <div class="">
+                    <div class="white-bar"></div>
+                    <h3>Lowongan Pekerjaan</h3>
+                    <div class="lowongan-container text-center pt-4 pb-2 px-3 px-lg-5 my-5">
+                        <p>Maaf, Lowongan Saat Ini Belum Tersedia</p>
+                    </div>
+                </div>
+                <div class="lowongan-img">
+                    <img src="/img/karier/karier3.png" alt="">
+                </div>
             </div>
         </div>
         <div class="cari-section d-flex flex-column flex-lg-row justify-content-between align-items-center my-5 gap-lg-3">
@@ -52,7 +60,7 @@
                 <div class="grey-bar"></div>
             </div>
             <div class="tawarkan-img-section mx-3 my-3 my-lg-0 mb-5 mb-lg-0">
-                <img src="/img/logo/csc.png" alt="">
+                <img src="/img/karier/karier4.png" alt="">
             </div>
         </div>
         <div class="kegiatan-section p-3 p-lg-5 my-3 my-lg-5">
