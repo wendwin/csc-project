@@ -5,7 +5,7 @@
 <div class="footer bg-white text-black">
     <div class="footer-content d-flex flex-column flex-md-row">
         <div class="footer-section mb-3 mb-md-0 me-md-5">
-            <h5 >Perusahaan</h5>
+            <h5>Perusahaan</h5>
             <ul>
                 <li><a href="#">Tentang</a></li>
                 <li><a href="#">Anggota Direksi</a></li>
@@ -38,13 +38,15 @@
             </ul>
         </div>
     </div>
-    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between mt-md-5">
-        <p class="fs-6 fs-md-0 order-2 order-md-0"> 2024. CSC - <i class="bi bi-c-circle"></i> PT Cendana Solution Center. Hak Cipta Dilindungi</p>
-        <div class="d-flex flex-column flex-md-row order-1 order-md-0 mb-3">
-            <a class="me-md-2 fs-6 fs-md-0 " href=""><i class="bi bi-shield-fill-exclamation me-2"> </i>Kebijakan Privasi</a>
-            <a class="ms-md-2 fs-6 fs-md-0" href=""><i class="bi bi-map-fill me-2"></i> Peta Situs</a>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between mt-md-5 py-3 px-4 py-md-1 px-md-5">
+        <p class=" order-2 order-md-0 mt-md-4 mt-lg-3"> 2024. CSC - <i class="bi bi-c-circle"></i> PT
+            Cendana
+            Solution
+            Center. Hak Cipta Dilindungi</p>
+        <div class="d-flex flex-column flex-md-row order-1 order-md-0 mb-3  mt-md-4 mt-lg-3 ">
+            <a class="me-md-2  " href=""><i class="bi bi-shield-fill-exclamation me-2"> </i>Kebijakan
+                Privasi</a>
+            <a class="ms-md-2 " href=""><i class="bi bi-map-fill me-2"></i> Peta Situs</a>
         </div>
     </div>
 </div>
-
-

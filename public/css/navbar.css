@@ -9,6 +9,29 @@
     --bs-dark: #212529;
 }
 
+.libre-caslon-text-regular {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.libre-caslon-text-bold {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 
 .bg-transparent {
     background-color: transparent;
@@ -60,40 +83,8 @@
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-/* .nav-link-scroll:hover {
-    color: rgb(52, 51, 51);
-} */
-
-
-.libre-caslon-text-regular {
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.libre-caslon-text-bold {
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.libre-caslon-text-regular-italic {
-    font-family: "Libre Caslon Text", serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-a {
-    text-decoration: none;
-}
-
-
 .navbar {
     transition: background-color 0.5s ease, transform 0.2s ease;
-    /* height: 100vh; */
 }
 
 .navbar-brand-filter {
@@ -127,9 +118,6 @@ a {
     font-size: 14px;
 }
 
-/* .navbar .contact-info a :hover {
-    color: #fff;
-} */
 
 .navbar .contact p,
 .mail p {
@@ -185,8 +173,6 @@ a {
     color: var(--bs-dark);
 }
 
-
-/* md */
 @media (min-width: 768px) {
 
     .navbar-brand img {

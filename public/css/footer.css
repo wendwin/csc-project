@@ -49,14 +49,19 @@
 }
 
 .footer-bottom{
-    color: #474747;
-    padding: 0% 4%;
+    color: #ffffff;
     font-weight: 500;
+    background-color: #0C174B;
 }
 .footer-bottom a{
     text-decoration: none;
-    color: #474747;
+    color: #ffffff;
 }
+
+.footer-bottom p, a {
+    font-size: 14px;
+}
+
 @media (max-width: 900px) {
     .footer-section h5 {
         font-size: 1.2rem;

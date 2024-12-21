@@ -35,13 +35,14 @@
         @endif
     @endisset
 
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 
 <body>
-   
-        <x-navbar></x-navbar>
-   
+
+    <x-navbar></x-navbar>
+
 
     <main>
         {{ $slot }}

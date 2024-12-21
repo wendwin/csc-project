@@ -1,4 +1,4 @@
-<x-layout :css="'/layanan/event_organizer.css'">
+<x-layout :css="'layanan/event_organizer.css'">
     <div class="description-page">
         <h5>Layanan</h5>
         <h4>Event Organizer</h4>
@@ -9,7 +9,12 @@
             <img src="/img/layanan/event-organizer/event3.png" alt="">
         </div>
         <div class="intro-text-section px-3 px-lg-5 mt-3 mt-lg-0">
-            <p><span class="fw-bold">Cendana Solution Center (CSC)</span> memfasilitasi kegiatan bidang pendidikan, Bimbingan Teknis, Diklat, Seminar, Workshop, Traning, Outbond, sertifikasi, Kunjungan Kerja, Study Tiru, Study Banding, dan Konsultasi melalui dua lembaga pelaksana kami yaitu PT.PUSDIKLATNAS dan PT.PUSTAKAPEMDA dengan narasumber yang berkualitas dan mempuyai keahlian khusus/spesialis serta profesional sesuai bidangnya. Kualitas dan metode pengajaran, baik isi materi maupun tenaga pengajar dilakukan dengan menggunakan metode yang terbaru sehingga mudah dimengerti oleh peserta.</p>
+            <p><span class="fw-bold">Cendana Solution Center (CSC)</span> memfasilitasi kegiatan bidang pendidikan,
+                Bimbingan Teknis, Diklat, Seminar, Workshop, Traning, Outbond, sertifikasi, Kunjungan Kerja, Study Tiru,
+                Study Banding, dan Konsultasi melalui dua lembaga pelaksana kami yaitu PT.PUSDIKLATNAS dan
+                PT.PUSTAKAPEMDA dengan narasumber yang berkualitas dan mempuyai keahlian khusus/spesialis serta
+                profesional sesuai bidangnya. Kualitas dan metode pengajaran, baik isi materi maupun tenaga pengajar
+                dilakukan dengan menggunakan metode yang terbaru sehingga mudah dimengerti oleh peserta.</p>
         </div>
     </div>
     <div class="bidang-event-section p-3 p-lg-5">
@@ -18,65 +23,74 @@
         <div class="d-flex flex-column align-items-center align-items-lg-start">
 
             <ol>
-                <li>Peraturan perundang-undangan yang diterbitkan /dikeluarkan oleh kementerian maupun pemerintah meliputi : <br>
+                <li>Peraturan perundang-undangan yang diterbitkan /dikeluarkan oleh kementerian maupun pemerintah
+                    meliputi : <br>
                     Permendes Nomor 11 Tahun 2019 Tentang Prioritas Penggunaan dana Desa Tahun 2020</li>
-                    <ul>
-                        <li>Pemanfaatan Dana Desa Tahun 2020</li>
-                        <li>Pedoman Umum Pelaksanaan Penggunaan Dana Desa Tahun 2020</li>
-                        <li>Desa Siaga Bidang Kesehatan Berbasis Masyaraka</li>
-                        <li>Percepatan Peningkatan SDM Di Desa dengan Platform Digital</li>
-                        <li>Undang-Undang No.3 Tahun 2024 Tentang Desa</li>
-                    </ul>
-                    <li>Sosialisasi berbagai peraturan terbaru beserta isu-isu strategis yang berkembang</li>
-                    <li>Meningkatkan kesadaran dan pengetahuan tentang pentingnya gizi seimbang</li>
-                    <li>Peningkatan Kapasitas Kewenangan Desa antara lain :</li>
-                    <ul>
-                        <li>Permendesa dan RPMJ Desa</li>
-                    </ul>
-                    <li>Mewujudkan Tata kelola Pemerintahan Desa Sesuai UU No. 3 Tahun 2024 Tentang Desa</li>
-                    <div class="collapse" id="readMore">
-                        <li>Peningkatan Perekonomian rakyat melalui potensi desa</li>
-                        <li>Peningkatan Skill anggota legislatif agar mampu memerankan fungsilegislasi, controling, dan Budgeting di dewan nanti</li>
-                        <li>Pengadaan Barang dan Jasa</li>
-                        <li>Barang dan Aset</li>
-                        <li>Kearsipan dan Perpustakan</li>
-                        <li>Pekerjaan Umum (PU)</li>
-                        <li>Kehumasan dan Protokole</li>
-                        <li>Satpol PP</li>
-                        <li>Pertambangan</li>
-                        <li>Sistem Informasi Geografi</li>
-                        <li>Penanaman Modal</li>
-                        <li>Rumah Sakit, BUMN dan BUMD</li>
-                        <li>Tata Usaha (TU)</li>
-                        <li>Bendahara</li>
-                        <li>Internet of Thing (Iot) 4.0</li>
-                        <li>Tata Kota dan Lingkungan hidup</li>
-                        <li>Koperasi dan UMKM</li>
-                        <li>Kependudukan dan Catatan Sipil</li>
-                        <li>Sekretaris Daerah</li>
-                        <li>Keuangan</li>
-                        <li>DPRD dan Setwan</li>
-                        <li>Pariwisata</li>
-                        <li>Kepegawaian</li>
-                        <li>Kesehatan</li>
-                        <li>Perpajakan</li>
-                        <li>Outbond</li>
-                    </div>
-                </ol>
-                <a class="btn btn-link p-0 toggle-btn d-flex align-items-center mt-2 mx-auto mx-lg-0" data-bs-toggle="collapse" href="#readMore" role="button" aria-expanded="false" aria-controls="readMore">
-                    <span class="toggle-text me-2"></span> <i class="bi bi-chevron-down toggle-icon"></i>
-                </a>
-            </div>
+                <ul>
+                    <li>Pemanfaatan Dana Desa Tahun 2020</li>
+                    <li>Pedoman Umum Pelaksanaan Penggunaan Dana Desa Tahun 2020</li>
+                    <li>Desa Siaga Bidang Kesehatan Berbasis Masyaraka</li>
+                    <li>Percepatan Peningkatan SDM Di Desa dengan Platform Digital</li>
+                    <li>Undang-Undang No.3 Tahun 2024 Tentang Desa</li>
+                </ul>
+                <li>Sosialisasi berbagai peraturan terbaru beserta isu-isu strategis yang berkembang</li>
+                <li>Meningkatkan kesadaran dan pengetahuan tentang pentingnya gizi seimbang</li>
+                <li>Peningkatan Kapasitas Kewenangan Desa antara lain :</li>
+                <ul>
+                    <li>Permendesa dan RPMJ Desa</li>
+                </ul>
+                <li>Mewujudkan Tata kelola Pemerintahan Desa Sesuai UU No. 3 Tahun 2024 Tentang Desa</li>
+                <div class="collapse" id="readMore">
+                    <li>Peningkatan Perekonomian rakyat melalui potensi desa</li>
+                    <li>Peningkatan Skill anggota legislatif agar mampu memerankan fungsilegislasi, controling, dan
+                        Budgeting di dewan nanti</li>
+                    <li>Pengadaan Barang dan Jasa</li>
+                    <li>Barang dan Aset</li>
+                    <li>Kearsipan dan Perpustakan</li>
+                    <li>Pekerjaan Umum (PU)</li>
+                    <li>Kehumasan dan Protokole</li>
+                    <li>Satpol PP</li>
+                    <li>Pertambangan</li>
+                    <li>Sistem Informasi Geografi</li>
+                    <li>Penanaman Modal</li>
+                    <li>Rumah Sakit, BUMN dan BUMD</li>
+                    <li>Tata Usaha (TU)</li>
+                    <li>Bendahara</li>
+                    <li>Internet of Thing (Iot) 4.0</li>
+                    <li>Tata Kota dan Lingkungan hidup</li>
+                    <li>Koperasi dan UMKM</li>
+                    <li>Kependudukan dan Catatan Sipil</li>
+                    <li>Sekretaris Daerah</li>
+                    <li>Keuangan</li>
+                    <li>DPRD dan Setwan</li>
+                    <li>Pariwisata</li>
+                    <li>Kepegawaian</li>
+                    <li>Kesehatan</li>
+                    <li>Perpajakan</li>
+                    <li>Outbond</li>
+                </div>
+            </ol>
+            <a class="btn btn-link p-0 toggle-btn d-flex align-items-center mt-2 mx-auto mx-lg-0"
+                data-bs-toggle="collapse" href="#readMore" role="button" aria-expanded="false"
+                aria-controls="readMore">
+                <span class="toggle-text me-2"></span> <i class="bi bi-chevron-down toggle-icon"></i>
+            </a>
         </div>
+    </div>
     <div class="keunggulan-event-section p-3 p-lg-5">
         <div class="keunggulan-text-section">
             <div class="blue-bar"></div>
             <h3>Keunggulan Kami</h3>
             <ul>
-                <li>Pengalaman dan Jaringan Luas: Selama lebih dari dua dekade, kami telah bekerja dengan berbagai instansi pemerintah dan perusahaan di seluruh Indonesia, memberikan kami keunggulan dalam memahami kebutuhan klien</li>
-                <li>Pendekatan Personal: Setiap acara dirancang khusus sesuai dengan visi klien, memastikan hasil yang maksimal dan memuaskan.</li>
-                <li>Tim Profesional: Dengan tim yang berpengalaman dan berdedikasi, kami memastikan setiap detail acara berjalan lancar.</li>
-                <li>Inovasi dan Kreativitas: Kami selalu mencari cara baru untuk membuat acara Anda unik dan berkesan.</li>
+                <li>Pengalaman dan Jaringan Luas: Selama lebih dari dua dekade, kami telah bekerja dengan berbagai
+                    instansi pemerintah dan perusahaan di seluruh Indonesia, memberikan kami keunggulan dalam memahami
+                    kebutuhan klien</li>
+                <li>Pendekatan Personal: Setiap acara dirancang khusus sesuai dengan visi klien, memastikan hasil yang
+                    maksimal dan memuaskan.</li>
+                <li>Tim Profesional: Dengan tim yang berpengalaman dan berdedikasi, kami memastikan setiap detail acara
+                    berjalan lancar.</li>
+                <li>Inovasi dan Kreativitas: Kami selalu mencari cara baru untuk membuat acara Anda unik dan berkesan.
+                </li>
             </ul>
         </div>
     </div>
