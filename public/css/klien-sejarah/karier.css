@@ -79,12 +79,16 @@ h3{
 }
 
 .lowongan-section{
+    background-image: url('/img/karier/karier3.png');
+    background-position: center;
+    background-size: cover;
     font-family: 'Inter';
     color: #fff;
     width: 100%;
     background-color: #F7BC12;
 }
 .lowongan-container{
+    z-index: 2;
     color: var(--bs-dark);
     font-family: 'Inter';
     background-color: #E2E2E2;
@@ -114,7 +118,7 @@ h3{
 }
 
 .tawarkan-img-section img{
-    width: 300px;
+    width: 400px;
 }
 .kegiatan-section{
     font-family: 'Inter';
