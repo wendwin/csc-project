@@ -1,8 +1,5 @@
-{{-- silahkan di kostimise sesuikan dengan web Royalindo.com --}}
-
-
 <!-- Footer Section -->
-<div class="footer bg-white text-black">
+<div class="footer text-black position-relative">
     <div class="footer-content d-flex flex-column flex-md-row">
         <div class="footer-section mb-3 mb-md-0 me-md-5">
             <h5>Perusahaan</h5>
@@ -38,7 +35,12 @@
             </ul>
         </div>
     </div>
-    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between mt-md-5 py-3 px-4 py-md-1 px-md-5">
+
+    <div class="scroll-up">
+        <a href="#" class="scroll-top"><i class="bi bi-caret-up"></i></a>
+    </div>
+
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between mt-4 py-3 px-4 py-md-1 px-md-5">
         <p class=" order-2 order-md-0 mt-md-4 mt-lg-3"> 2024. CSC - <i class="bi bi-c-circle"></i> PT
             Cendana
             Solution

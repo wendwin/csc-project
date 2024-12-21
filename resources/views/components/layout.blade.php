@@ -48,6 +48,9 @@
         {{ $slot }}
     </main>
 
+
+    <x-contact></x-contact>
+
     <x-footer></x-footer>
 
     <!-- Bootstrap JS -->

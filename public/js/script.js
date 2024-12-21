@@ -9,6 +9,7 @@
 
 window.addEventListener('scroll', () => {
     Alpine.store('navbar').updateVisibility();
+    Alpine.store("contact").updateVisibility();
 });
 
 document.addEventListener("alpine:init", () => {
@@ -34,7 +35,34 @@ document.addEventListener("alpine:init", () => {
             this.lastScrollY = currentScrollY;
         },
     });
+
+    Alpine.store("contact", {
+        lastScrollY: 0,
+        isVisible: false,
+        isAtBottom: false, 
+    
+        updateVisibility() {
+            const currentScrollY = window.scrollY; 
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+    
+            if (currentScrollY + windowHeight >= documentHeight) {
+                this.isVisible = true; 
+                this.isAtBottom = true; 
+            } else if (currentScrollY === 0) {
+                this.isVisible = false;
+                this.isAtBottom = false; 
+            } else {
+                this.isVisible = true; 
+                this.isAtBottom = false; 
+            }
+    
+            this.lastScrollY = currentScrollY;
+        },
+    });
+    
 });
+
 
 
 document.addEventListener("alpine:init", () => {
