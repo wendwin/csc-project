@@ -266,6 +266,9 @@ h3{
         height: 90px;
         
     }
+    .yayasan-pangan-section img{
+        width: 90%;;
+    }
 }
 @media (max-width: 668px) {
     .dokumentasi-pangan-container{

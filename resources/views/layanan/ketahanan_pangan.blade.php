@@ -5,8 +5,8 @@
     </div>
     <div class="intro-pangan-section p-3 p-lg-5 mt-5 my-lg-5 d-flex flex-column flex-lg-row align-items-center">
         <div class="intro-img-section d-flex flex-row align-items-center">
-            <img src="/img/layanan/event-organizer/event2.png" alt="">
-            <img src="/img/layanan/event-organizer/event3.png" alt="">
+            <img src="/img/layanan/ketahanan-pangan/dokumentasi/111.png" alt="">
+            <img src="/img/layanan/ketahanan-pangan/dokumentasi/110.png" alt="">
         </div>
         <div class="intro-text-section px-3 px-lg-5 mt-3 mt-lg-0">
             <p><span class="fw-bold">Cendana Solution Center (CSC)</span> bergerak di bidang ketahanan pangan dengan
