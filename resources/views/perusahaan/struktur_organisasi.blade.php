@@ -43,7 +43,7 @@
                 <div class="direktur-lainnya-container mx-1 mx-md-3">
                     <h6>Direktur Marketing</h6>
                     <div class="nama-container">
-                        <p>David Kirl</p>
+                        <p>David Karlado</p>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                 <div class="jabatan-lainnya-container mx-1 mx-md-3">
                     <h6>Admin</h6>
                     <div class="nama-container">
-                        <p>Kharisma</p>
+                        <p>Hadi</p>
                     </div>
                 </div>
                 <div class="jabatan-lainnya-container mx-1 mx-md-3">
