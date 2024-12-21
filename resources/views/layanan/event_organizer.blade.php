@@ -26,6 +26,7 @@
                 <li>Peraturan perundang-undangan yang diterbitkan /dikeluarkan oleh kementerian maupun pemerintah
                     meliputi : <br>
                     Permendes Nomor 11 Tahun 2019 Tentang Prioritas Penggunaan dana Desa Tahun 2020</li>
+
                 <ul>
                     <li>Pemanfaatan Dana Desa Tahun 2020</li>
                     <li>Pedoman Umum Pelaksanaan Penggunaan Dana Desa Tahun 2020</li>
@@ -75,6 +76,7 @@
                 aria-controls="readMore">
                 <span class="toggle-text me-2"></span> <i class="bi bi-chevron-down toggle-icon"></i>
             </a>
+            </div>
         </div>
     </div>
     <div class="keunggulan-event-section p-3 p-lg-5">

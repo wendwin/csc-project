@@ -12,3 +12,190 @@
 a {
     text-decoration: none;
 }
+
+
+
+.navbar {
+    transition: background-color 0.5s ease, transform 0.2s ease;
+    /* height: 100vh; */
+}
+
+.navbar-brand-filter {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.navbar-brand-ori {
+    filter: none;
+    transition: filter 0.3s ease;
+}
+
+.navbar-brand img {
+    width: 70px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar .contact-info .contact,
+.mail {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: var(--bs-secondary);
+}
+
+.navbar .contact-info .contact i,
+.mail i {
+    font-size: 14px;
+}
+
+/* .navbar .contact-info a :hover {
+    color: #fff;
+} */
+
+.navbar .contact p,
+.mail p {
+    margin: 0;
+}
+
+.navbar .contact i,
+.mail i {
+    vertical-align: middle;
+}
+
+.line {
+    width: 750px;
+    height: 0.3px;
+    background-color: #7f7f7f;
+}
+
+.line-scroll {
+    width: 750px;
+    height: 0.3px;
+    background-color: #e3e3e3;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-line {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    background-color: rgb(255, 230, 0);
+    transition: width 0.3s;
+}
+
+.nav-item:hover .nav-line {
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-item {
+    font-family: "Inter", sans-serif;
+    color: #5c5c5c;
+}
+
+.dropdown-item:hover {
+    background-color: #e9f0f0;
+    color: var(--bs-dark);
+}
+.description-page{
+    font-family: 'Inter';
+    position: relative; /* Menjadikan parent sebagai posisi acuan */
+    color: #fff;
+    padding: 4% 0%;
+    overflow: hidden; /* Menghindari overflow elemen */
+    width: 100%;
+    padding: 120px 0px 20px 30px;
+}
+.description-page::before{
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0)),
+    url('/img/layanan/kontruksi/kontruksi1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%); /* Atau gunakan opacity */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Menempatkan pseudo-element di belakang teks */
+}
+.layanan-lainnya-section .layanan-card {
+    border: none;
+    width: 35%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+.layanan-lainnya-section .layanan-card a {
+    color: #f3f3f3;
+}
+
+.layanan-lainnya-section .card-body {
+    bottom: -45px;
+    padding: 25px;
+    transition: ease-in-out 0.25s;
+}
+
+.layanan-lainnya-section .layanan-card:hover .card-body {
+    bottom: 0;
+    transition: ease-in-out 0.25s;
+}
+
+.layanan-lainnya-section .layanan-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(60%);
+}
+
+.layanan-lainnya-section .card-body{
+    font-family: 'Inter';
+    color: #fff;
+}
+
+.layanan-lainnya-section .layanan-card:hover img {
+    filter: brightness(50%);
+}
+
+
+.layanan-lainnya-section .line-bar-title {
+    width: 50px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.layanan-lainnya-section .line-bar {
+    width: 25px;
+    height: 5px;
+    background-color: #F7BC12;
+    transition: width 0.3s;
+}
+
+.layanan-lainnya-section .layanan-card:hover .line-bar {
+    width: 50px;
+}
+
+@media (max-width: 968px) {
+    .layanan-lainnya-section .layanan-card {
+        width: 100%;
+    }
+    .layanan-lainnya-section .layanan-card img {
+        height: 120px;
+    }
+}
+

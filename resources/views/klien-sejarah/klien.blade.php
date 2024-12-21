@@ -1,4 +1,5 @@
-<x-layout :navbar="null" :css="'klien-sejarah/klien.css'">
+
+<x-layout :css="'klien-sejarah/klien.css'">
     <div class="description-page">
 
     </div>

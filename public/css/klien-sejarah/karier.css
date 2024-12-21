@@ -18,7 +18,7 @@ a {
     color: #fff;
     width: 100%;
     padding: 190px 0px 20px 30px;
-    background-color: #F7BC12;
+    background-color: #0C174B;
 
 }
 h3{
@@ -44,7 +44,11 @@ h3{
 }
 
 .karier-section:hover .yellow-bar, 
-.lowongan-section:hover .white-bar {
+.lowongan-section:hover .white-bar, 
+.cari-section:hover .yellow-bar,
+.tawarkan-section:hover .yellow-bar,
+.kegiatan-section:hover .yellow-bar,
+.news:hover .yellow-bar{
     width: 85px;
 }
 
@@ -75,14 +79,19 @@ h3{
 }
 
 .lowongan-section{
+    background-image: url('/img/karier/karier3.png');
+    background-position: center;
+    background-size: cover;
     font-family: 'Inter';
     color: #fff;
     width: 100%;
     background-color: #F7BC12;
 }
 .lowongan-container{
+    z-index: 2;
+    color: var(--bs-dark);
     font-family: 'Inter';
-    background-color: rgba(217, 217, 217, 0.5);
+    background-color: #E2E2E2;
     border-radius: 20px;
 }
 
@@ -109,7 +118,7 @@ h3{
 }
 
 .tawarkan-img-section img{
-    width: 300px;
+    width: 400px;
 }
 .kegiatan-section{
     font-family: 'Inter';
