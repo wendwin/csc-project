@@ -35,6 +35,36 @@
                 lokal, dan mengubah tantangan menjadi potensi guna menciptakan masyarakat desa yang sejahtera.</p>
         </div>
     </div>
+    <div class="mitra-pangan-section p-3 px-lg-5 my-3 my-lg-5">
+        <div class="green-bar"></div>
+        <h3>Mitra dan Binaan</h3>
+        <div class="peta mt-5">
+            <div class="text-center mb-3">
+                <img src="/img/layanan/ketahanan-pangan/peta-2.png" alt="" width="500">
+            </div>
+            <ol>
+                <li>Desa Muara Selangkau kecamatan Kaliorang Kabupaten Kutai TimurKALTIM (Budidaya Udang Windu).</li>
+                <li>Desa Kramat, Kecamatan Kembaran, Kabupaten Banyumas JATENG(Budidaya Ikan Lele dan pembuatan pakan pasta mandiri berbasis limbahorganik pasar dan rumah makan).</li>
+                <li>Desa Kandang Mas, Kecamatan Dawe, Kebupaten Kudus JATENG (pembuatan pupuk organik utk pemupukan pohon durian dan pembuatanpakan bebek organik berbasis limbah pasar ).</li>
+                <li>PT MAGGOT INDONESIA LESTARI, Madang, Kabupaten Bogor (Pembuatanfermentasi pakan magot).</li>
+                <li>Desa Kendalrejo, Kecamatan Talun, kabupaten Blitar (Pembuatan pakansapi terfermentasi).</li>
+                <li>Desa Drono, Kecamatan Sardonoharjo, kabupaten Sleman Yogyakarta (Budidaya udang Vaname air tawar).</li>
+                <li>PO Mekar Jaya, Lamongan JATIM (budidaya udang Vaname).</li>
+                <li>Buyan The Villa Resort, Kabupaten Buleleng BALI (Pembuatan PupukOrganik).</li>
+                <li>DLHK Sidoarjo JATIM (Pengolahan Limbah Industri).</li>
+                <li>TPST Manis Lor Desa Manilor Kecamatan Jalaksana, Kabupaten KuninganJABAR (PENGOLAHAN SAMPAH TIDAK BERBAU).</li>
+                <li>Desa Poowobar, Kecamatan Kabila, Gorontalo (Pengolahan Lahan Cabai).</li>
+            </ol>
+        </div>
+    </div>
+    <div class="yayasan-pangan-section d-flex flex-column flex-lg-row justify-content-between align-items-center my-5">
+        <img class="w-80 w-lg-100 px-5 px-lg-0" src="/img/logo/rukun-satu-bumi.png" alt="">
+        <div class="yayasan-text p-3 p-lg-0 px-lg-5 mt-3 mt-lg-0">
+            <div class="green-bar"></div>
+            <h3>Yayasan</h3>
+            <p>Yayasan Rukun Satu Bumi adalah yayasan yang fokus pada penguatan ketahanan pangan melalui pemberdayaan petani lokal, edukasi masyarakat, dan pengembangan teknologi ramah lingkungan. Kami berkomitmen menciptakan akses pangan yang terjangkau dan bergizi, mendukung produksi pertanian berkelanjutan, serta memberikan bantuan darurat bagi komunitas terdampak bencana. Dengan berbagai program inovatif, kami percaya bahwa ketahanan pangan adalah kunci untuk mewujudkan masyarakat yang sehat, mandiri, dan sejahtera.</p>
+        </div>
+    </div>
     <div class="gallery-pangan-section p-3 p-lg-5">
         <div class="gallery-text-container mb-5">
             <div class="green-bar"></div>

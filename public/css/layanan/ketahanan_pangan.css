@@ -51,6 +51,8 @@ h3{
 }
 
 .bidang-pangan-section:hover .green-bar,
+.mitra-pangan-section:hover .green-bar,
+.yayasan-pangan-section:hover .green-bar,
 .gallery-pangan-section:hover .green-bar,
 .inovasi-pangan-section:hover .green-bar,
 .dokumentasi-pangan-section:hover .green-bar{
@@ -72,11 +74,14 @@ h3{
 
 .bidang-pangan-section h3,
 .bidang-pangan-section p,
+.mitra-pangan-section,
+.yayasan-pangan-section,
 .gallery-pangan-section h3,
 .gallery-pangan-section h5,
 .inovasi-pangan-section p,
 .inovasi-pangan-section h5,
 .bidang-pangan-section a{
+    text-align: justify;
     font-family: 'Inter';
     color: #000;
 }
@@ -130,6 +135,10 @@ h3{
 }
 .gallery-pangan-container:hover{
     scale: 105%;
+}
+
+.peta img {
+    max-width: 100%;
 }
 
 
