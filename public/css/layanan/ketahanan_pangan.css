@@ -51,7 +51,9 @@ h3{
 }
 
 .bidang-pangan-section:hover .green-bar,
-.gallery-pangan-section:hover .green-bar{
+.gallery-pangan-section:hover .green-bar,
+.inovasi-pangan-section:hover .green-bar,
+.dokumentasi-pangan-section:hover .green-bar{
     width: 85px;
 }
 
@@ -72,16 +74,27 @@ h3{
 .bidang-pangan-section p,
 .gallery-pangan-section h3,
 .gallery-pangan-section h5,
+.inovasi-pangan-section p,
+.inovasi-pangan-section h5,
 .bidang-pangan-section a{
     font-family: 'Inter';
     color: #000;
 }
-.gallery-pangan-section a{
+.inovasi-pangan-section h5{
+    font-weight: bold;
+}
+.gallery-pangan-section a,
+.inovasi-pangan-section a,
+.inovasi-text a,
+.dokumentasi-pangan-section a{
     text-decoration: none;
     color: #474747;
     transition: ease-in-out 0.2s;
 }
-.gallery-pangan-section a:hover{
+.gallery-pangan-section a:hover,
+.inovasi-pangan-section a:hover,
+.inovasi-text a:hover,
+.dokumentasi-pangan-section a:hover{
     color: #000;
     text-decoration: none;
 }
@@ -119,6 +132,45 @@ h3{
     scale: 105%;
 }
 
+
+.inovasi-pangan-container{
+    background-color: rgba(217, 217, 217, 0.25);
+    border-radius: 20px;
+}
+
+.inovasi-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-color: rgba(217, 217, 217, 0.50);
+    text-align: justify;
+    border-radius: 10px;
+    font-family: "Inter";
+}
+
+.inovasi-text a{
+    text-decoration: none;
+    font-family: "Inter";
+    color: #474747;
+    transition: ease-in-out 0.2s;;
+}
+
+.dokumentasi-pangan-container{
+    padding: 0px 150px;
+}
+
+.dokumentasi-pangan-container img{
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    transition: ease-in-out 0.2s;
+}
+.dokumentasi-pangan-container img:hover{
+    scale: 105%;
+}
 
 .layanan-lainnya-section .layanan-card {
     border: none;
@@ -181,12 +233,12 @@ h3{
 
 @media (max-width: 968px) {
     .gallery-pangan-container{
-        padding: 0px 30px;
+        padding: 0px 10px;
         margin: 0px 0px;
     }
     .gallery-pangan-container img{
-        width: 150px;
-        height: 120px;
+        width: 120px;
+        height: 90px;
     }
     .layanan-lainnya-section .layanan-card {
         width: 100%;
@@ -194,8 +246,27 @@ h3{
     .layanan-lainnya-section .layanan-card img {
         height: 120px;
     }
+    .inovasi-pangan-container img{
+        width: 60%;
+    }
+    .dokumentasi-pangan-container{
+        padding: 0px 0px;
+    }
+    .dokumentasi-pangan-container img{
+        width: 120px;
+        height: 90px;
+        
+    }
 }
 @media (max-width: 668px) {
+    .dokumentasi-pangan-container{
+        padding: 0px 50px;
+    }
+    .dokumentasi-pangan-container img{
+        width: 120px;
+        height: 90px;
+    }
+
     .intro-img-section img{
         width: 150px;
         height: 150px;
