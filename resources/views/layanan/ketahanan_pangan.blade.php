@@ -73,129 +73,129 @@
         <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-padi-1.jpg" alt="">
-                <h5>Padi</h5>
+                <h5 class="text-center">Padi</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-jagung-1.jpg" alt="">
-                <h5>Jagung</h5>
+                <h5 class="text-center">Jagung</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-bawangmerah-1.jpeg" alt="">
-                <h5>Bawang Merah</h5>
+                <h5 class="text-center">Bawang Merah</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-cabe-1.jpg" alt="">
-                <h5>Cabai</h5>
+                <h5 class="text-center">Cabai</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-bawangputih-1.jpeg" alt="">
-                <h5>Bawang Putih</h5>
+                <h5 class="text-center">Bawang Putih</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-singkong-1.jpg" alt="">
-                <h5>Singkong</h5>
+                <h5 class="text-center">Singkong</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-kopi-1.jpg" alt="">
-                <h5>Kopi</h5>
+                <h5 class="text-center">Kopi</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-sawit-1.jpg" alt="">
-                <h5>Sawit</h5>
+                <h5 class="text-center">Sawit</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-karet-1.jpg" alt="">
-                <h5>Karet</h5>
+                <h5 class="text-center">Karet</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-tembakau-1.png" alt="">
-                <h5>Tembakau</h5>
+                <h5 class="text-center">Tembakau</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-kakao-1.jpg" alt="">
-                <h5>Kakao</h5>
+                <h5 class="text-center">Kakao</h5>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-tebu-1.jpg" alt="">
-                <h5>Tebu</h5>
+                <h5 class="text-center">Tebu</h5>
             </div>
             <div class="collapse" id="readMore">
                 <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-jahe-1.jpg" alt="">
-                        <h5>Jahe</h5>
+                        <h5 class="text-center">Jahe</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kunyit-1.jpg" alt="">
-                        <h5>Kunyit</h5>
+                        <h5 class="text-center">Kunyit</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-laos-1.jpeg" alt="">
-                        <h5>Laos</h5>
+                        <h5 class="text-center">Laos</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kencur-1.jpeg" alt="">
-                        <h5>Kencur</h5>
+                        <h5 class="text-center">Kencur</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kedelai-1.jpg" alt="">
-                        <h5>Kedelai</h5>
+                        <h5 class="text-center">Kedelai</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-telang-1.jpg" alt="">
-                        <h5>Telang</h5>
+                        <h5 class="text-center">Telang</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-sawi-1.jpg" alt="">
-                        <h5>Sawi</h5>
+                        <h5 class="text-center">Sawi</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kol-1.jpg" alt="">
-                        <h5>Kol</h5>
+                        <h5 class="text-center">Kol</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-selada-1.jpg" alt="">
-                        <h5>Selada</h5>
+                        <h5 class="text-center">Selada</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kangkung.jpg" alt="">
-                        <h5>Kangkung</h5>
+                        <h5 class="text-center">Kangkung</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-bayam.jpg" alt="">
-                        <h5>Bayam</h5>
+                        <h5 class="text-center">Bayam</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pakcoy.jpg" alt="">
-                        <h5>Pakcoy</h5>
+                        <h5 class="text-center">Pakcoy</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-wortel.jpg" alt="">
-                        <h5>Wortel</h5>
+                        <h5 class="text-center">Wortel</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-terong.jpg" alt="">
-                        <h5>Terong</h5>
+                        <h5 class="text-center">Terong</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-brokoli.jpg" alt="">
-                        <h5>Brokoli</h5>
+                        <h5 class="text-center">Brokoli</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kembangkol.jpg" alt="">
-                        <h5>Kembang Kol</h5>
+                        <h5 class="text-center">Kembang Kol</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kentang.jpg" alt="">
-                        <h5>Kentang</h5>
+                        <h5 class="text-center">Kentang</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-tomat.jpg" alt="">
-                        <h5>Tomat</h5>
+                        <h5 class="text-center">Tomat</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-timun.jpg" alt="">
-                        <h5>Timun</h5>
+                        <h5 class="text-center">Timun</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kacangpanjang.jpg" alt="">
@@ -203,91 +203,91 @@
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-buncis.jpg" alt="">
-                        <h5>Buncis</h5>
+                        <h5 class="text-center">Buncis</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kacang.jpg" alt="">
-                        <h5>Kacang</h5>
+                        <h5 class="text-center">Kacang</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-mlinjo.jpg" alt="">
-                        <h5>Melinjo</h5>
+                        <h5 class="text-center">Melinjo</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-lobak.jpg" alt="">
-                        <h5>Lobak</h5>
+                        <h5 class="text-center">Lobak</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-jeruk.jpg" alt="">
-                        <h5>Jeruk</h5>
+                        <h5 class="text-center">Jeruk</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-jeruknipis.jpg" alt="">
-                        <h5>Jeruk Nipis</h5>
+                        <h5 class="text-center">Jeruk Nipis</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-anggur.jpg" alt="">
-                        <h5>Anggur</h5>
+                        <h5 class="text-center">Anggur</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pir.jpg" alt="">
-                        <h5>Pir</h5>
+                        <h5 class="text-center">Pir</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kiwi.jpg" alt="">
-                        <h5>Kiwi</h5>
+                        <h5 class="text-center">Kiwi</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-durian.jpg" alt="">
-                        <h5>Durian</h5>
+                        <h5 class="text-center">Durian</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-apel.jpg" alt="">
-                        <h5>Apel</h5>
+                        <h5 class="text-center">Apel</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-jambu.jpg" alt="">
-                        <h5>Jambu</h5>
+                        <h5 class="text-center">Jambu</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-semangka.jpg" alt="">
-                        <h5>Semangka</h5>
+                        <h5 class="text-center">Semangka</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-melon.jpg" alt="">
-                        <h5>Melon</h5>
+                        <h5 class="text-center">Melon</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-buahnaga.jpg" alt="">
-                        <h5>Buah Naga</h5>
+                        <h5 class="text-center">Buah Naga</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pepaya.jpg" alt="">
-                        <h5>Pepaya</h5>
+                        <h5 class="text-center">Pepaya</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-alpukat.jpeg" alt="">
-                        <h5>Alpukat</h5>
+                        <h5 class="text-center">Alpukat</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-mangga.jpg" alt="">
-                        <h5>Mangga</h5>
+                        <h5 class="text-center">Mangga</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-nanas.jpg" alt="">
-                        <h5>Nanas</h5>
+                        <h5 class="text-center">Nanas</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pisang.jpg" alt="">
-                        <h5>Pisang</h5>
+                        <h5 class="text-center">Pisang</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-stroberi.jpg" alt="">
-                        <h5>Stroberi</h5>
+                        <h5 class="text-center">Stroberi</h5>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-salak.jpg" alt="">
-                        <h5>Salak</h5>
+                        <h5 class="text-center">Salak</h5>
                     </div>
                 </div>
             </div>
@@ -306,27 +306,27 @@
         <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/sapi.jpg" alt="">
-                <h5>Sapi</h5>
+                <h5 class="text-center">Sapi</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/kambing.jpg" alt="">
-                <h5>Kambing</h5>
+                <h5 class="text-center">Kambing</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/ayampetelur.png" alt="">
-                <h5>Ayam Petelur</h5>
+                <h5 class="text-center">Ayam Petelur</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/ayampedaging.jpg" alt="">
-                <h5>Ayam Pedaging</h5>
+                <h5 class="text-center">Ayam Pedaging</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/entok.jpg" alt="">
-                <h5>Entok</h5>
+                <h5 class="text-center">Entok</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/bebek.jpg" alt="">
-                <h5>Bebek</h5>
+                <h5 class="text-center">Bebek</h5>
             </div>
         </div>
     </div>
@@ -338,51 +338,51 @@
         <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/nila.jpg" alt="">
-                <h5>Nila</h5>
+                <h5 class="text-center">Nila</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/lele.jpg" alt="">
-                <h5>Lele</h5>
+                <h5 class="text-center">Lele</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/gurame.png" alt="">
-                <h5>Gurame</h5>
+                <h5 class="text-center">Gurame</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/bandeng.jpg" alt="">
-                <h5>Bandeng</h5>
+                <h5 class="text-center">Bandeng</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/udangwindu.jpg" alt="">
-                <h5>Udang Windu</h5>
+                <h5 class="text-center">Udang Windu</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/udangvaname.jpg" alt="">
-                <h5>Udang Vaname</h5>
+                <h5 class="text-center">Udang Vaname</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/cacingsutra.jpg" alt="">
-                <h5>Cacing Sutra</h5>
+                <h5 class="text-center">Cacing Sutra</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/kutuair.jpg" alt="">
-                <h5>Kutu Air</h5>
+                <h5 class="text-center">Kutu Air</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/kodok.jpg" alt="">
-                <h5>Kodok</h5>
+                <h5 class="text-center">Kodok</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/mujair.jpg" alt="">
-                <h5>Mujair</h5>
+                <h5 class="text-center">Mujair</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/patin.webp" alt="">
-                <h5>Patin</h5>
+                <h5 class="text-center">Patin</h5>
             </div>
             <div class="gallery-pangan-container text-center text-center">
                 <img src="/img/layanan/ketahanan-pangan/bawal.jpg" alt="">
-                <h5>Bawal</h5>
+                <h5 class="text-center">Bawal</h5>
             </div>
         </div>
     </div>
@@ -762,24 +762,24 @@
         </a>
     </div>
     <div class="layanan-lainnya-section d-flex flex-wrap justify-content-center gap-3 gap-lg-0 p-2 p-lg-5">
-        <a href="">
+        <a href="{{ route('layanan.event_organizer') }}">
             <div class="layanan-card position-relative">
                 <img src="/img/layanan/event-organizer.jpg" class="card-img-top" alt="...">
                 <div class="card-body position-absolute ">
                     <div class="line-bar mb-2"></div>
                     <p class="fs-3 fw-bold">Event Organizer</p>
-                    <a href="#" class="">Lebih lanjut...</a>
+                    <a href="{{ route('layanan.event_organizer') }}" class="">Lebih lanjut...</a>
                 </div>
             </div>
         </a>
         <div class="mx-lg-5 "></div>
-        <a href="">
+        <a href="{{ route('layanan.konstruksi') }}">
             <div class="layanan-card position-relative">
                 <img src="/img/layanan/konstruksi.jpg" class="card-img-top" alt="...">
                 <div class="card-body position-absolute ">
                     <div class="line-bar mb-2"></div>
                     <p class="fs-3 fw-bold">Kontruksi</p>
-                    <a href="#" class="">Lebih lanjut...</a>
+                    <a href="{{ route('layanan.konstruksi') }}" class="">Lebih lanjut...</a>
                 </div>
             </div>
         </a>
