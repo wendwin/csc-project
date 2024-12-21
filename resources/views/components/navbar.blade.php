@@ -210,7 +210,7 @@
                                     'nav-link-scroll': $store.navbar.isExpanded || window.scrollY > 0,
                                 }"><i
                                     class="bi bi-telephone me-2"></i>
-                                +62 811-1954-17 | +62 81-1945-045</span>
+                                +62 822-2122-2177 | +62 81-1945-045</span>
                         </a>
                         <div class="nav-line"></div>
                     </li>
