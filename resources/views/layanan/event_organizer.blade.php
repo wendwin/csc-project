@@ -76,52 +76,6 @@
                 aria-controls="readMore">
                 <span class="toggle-text me-2"></span> <i class="bi bi-chevron-down toggle-icon"></i>
             </a>
-                    <ul>
-                        <li>Pemanfaatan Dana Desa Tahun 2020</li>
-                        <li>Pedoman Umum Pelaksanaan Penggunaan Dana Desa Tahun 2020</li>
-                        <li>Desa Siaga Bidang Kesehatan Berbasis Masyaraka</li>
-                        <li>Percepatan Peningkatan SDM Di Desa dengan Platform Digital</li>
-                        <li>Undang-Undang No.3 Tahun 2024 Tentang Desa</li>
-                    </ul>
-                    <li>Sosialisasi berbagai peraturan terbaru beserta isu-isu strategis yang berkembang</li>
-                    <li>Meningkatkan kesadaran dan pengetahuan tentang pentingnya gizi seimbang</li>
-                    <li>Peningkatan Kapasitas Kewenangan Desa antara lain :</li>
-                    <ul>
-                        <li>Permendesa dan RPMJ Desa</li>
-                    </ul>
-                    <li>Mewujudkan Tata kelola Pemerintahan Desa Sesuai UU No. 3 Tahun 2024 Tentang Desa</li>
-                    <div class="collapse" id="readMore">
-                        <li>Peningkatan Perekonomian rakyat melalui potensi desa</li>
-                        <li>Peningkatan Skill anggota legislatif agar mampu memerankan fungsilegislasi, controling, dan Budgeting di dewan nanti</li>
-                        <li>Pengadaan Barang dan Jasa</li>
-                        <li>Barang dan Aset</li>
-                        <li>Kearsipan dan Perpustakan</li>
-                        <li>Pekerjaan Umum (PU)</li>
-                        <li>Kehumasan dan Protokoler</li>
-                        <li>Satpol PP</li>
-                        <li>Pertambangan</li>
-                        <li>Sistem Informasi Geografi</li>
-                        <li>Penanaman Modal</li>
-                        <li>Rumah Sakit, BUMN dan BUMD</li>
-                        <li>Tata Usaha (TU)</li>
-                        <li>Bendahara</li>
-                        <li>Internet of Thing (Iot) 4.0</li>
-                        <li>Tata Kota dan Lingkungan hidup</li>
-                        <li>Koperasi dan UMKM</li>
-                        <li>Kependudukan dan Catatan Sipil</li>
-                        <li>Sekretaris Daerah</li>
-                        <li>Keuangan</li>
-                        <li>DPRD dan Setwan</li>
-                        <li>Pariwisata</li>
-                        <li>Kepegawaian</li>
-                        <li>Kesehatan</li>
-                        <li>Perpajakan</li>
-                        <li>Outbond</li>
-                    </div>
-                </ol>
-                <a class="btn btn-link p-0 toggle-btn d-flex align-items-center mt-2 mx-auto mx-lg-0" data-bs-toggle="collapse" href="#readMore" role="button" aria-expanded="false" aria-controls="readMore">
-                    <span class="toggle-text me-2"></span> <i class="bi bi-chevron-down toggle-icon"></i>
-                </a>
             </div>
         </div>
     </div>
