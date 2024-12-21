@@ -246,7 +246,9 @@ h3{
 
 /* lg */
 @media (min-width: 992px) {
+
     .trust .org-one img {
         max-width: 8%;
     }
+
 }

@@ -9,7 +9,15 @@
             <img src="/img/layanan/event-organizer/event3.png" alt="">
         </div>
         <div class="intro-text-section px-3 px-lg-5 mt-3 mt-lg-0">
-            <p><span class="fw-bold">Cendana Solution Center (CSC)</span>bergerak di bidang ketahanan pangan dengan memanfaatkan keahlian dan sumber daya yang kami miliki. Kami menghasilkan kompos sehat dari kotoran hewan yang digunakan sebagai pupuk untuk tanaman beras sehat (Pandan wangi, beras merah, beras hitam), berbagai sayuran (Sawi, Kol, Cabai, Terong, Tomat, Suweg, Wortel, Paprika, dll.), dan buah segar (Melon, Semangka, dll). Kami juga mengolah limbah organik dari hotel, pasar, rumah makan, dan industri menggunakan teknologi Noutrino Consorsium dan ozongenerator menjadi pakan ternak berkualitas, menghasilkan hewan ternak sehat (ayam, bebek, sapi, dll). Dengan begitu, kami juga berperan sebagai konsultan lingkungan. Selain itu, kami menyediakan layanan konsultasi untuk perencanaan, pelaksanaan, dan pengembangan ekonomi desa dalam sektor ketahanan pangan.</p>
+            <p><span class="fw-bold">Cendana Solution Center (CSC)</span>bergerak di bidang ketahanan pangan dengan
+                memanfaatkan keahlian dan sumber daya yang kami miliki. Kami menghasilkan kompos sehat dari kotoran
+                hewan yang digunakan sebagai pupuk untuk tanaman beras sehat (Pandan wangi, beras merah, beras hitam),
+                berbagai sayuran (Sawi, Kol, Cabai, Terong, Tomat, Suweg, Wortel, Paprika, dll.), dan buah segar (Melon,
+                Semangka, dll). Kami juga mengolah limbah organik dari hotel, pasar, rumah makan, dan industri
+                menggunakan teknologi Noutrino Consorsium dan ozongenerator menjadi pakan ternak berkualitas,
+                menghasilkan hewan ternak sehat (ayam, bebek, sapi, dll). Dengan begitu, kami juga berperan sebagai
+                konsultan lingkungan. Selain itu, kami menyediakan layanan konsultasi untuk perencanaan, pelaksanaan,
+                dan pengembangan ekonomi desa dalam sektor ketahanan pangan.</p>
         </div>
     </div>
     <div class="bidang-pangan-section p-3 px-lg-5">
@@ -20,7 +28,10 @@
                 kemitraan dengan perusahaan swasta, lembaga pemerintah, dan pelaku
                 usaha. Kami menerapkan pola tanam sehat dan efisien, mulai dari
                 pengolahan tanah hingga panen tanpa bahan kimia, dengan tujuan
-                meningkatkan hasil panen dan kesejahteraan petani lokal. Di bidang peternakan, kami menyediakan pakan alternatif mandirimelalui metode training of trainer untuk meningkatkan efisiensipeternakan berkelanjutan. Kami juga mendampingi desa untuk mencapai kemandirian pangan,mengoptimalkan hasil pangan lokal, dan mengubah tantangan menjadipotensi guna menciptakan masyarakat desa yang sejahtera.</p>
+                meningkatkan hasil panen dan kesejahteraan petani lokal. Di bidang peternakan, kami menyediakan pakan
+                alternatif mandirimelalui metode training of trainer untuk meningkatkan efisiensipeternakan
+                berkelanjutan. Kami juga mendampingi desa untuk mencapai kemandirian pangan,mengoptimalkan hasil pangan
+                lokal, dan mengubah tantangan menjadipotensi guna menciptakan masyarakat desa yang sejahtera.</p>
         </div>
     </div>
     <div class="gallery-pangan-section p-3 p-lg-5">
@@ -28,52 +39,52 @@
             <div class="green-bar"></div>
             <h3>Komoditas Pertanian</h3>
         </div>
-            <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
-                <div class="gallery-pangan-container text-center text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-padi-1.jpg" alt="">
-                    <h5>Padi</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-jagung-1.jpg" alt="">
-                    <h5>Jagung</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-bawangmerah-1.jpeg" alt="">
-                    <h5>Bawang Merah</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-cabe-1.jpg" alt="">
-                    <h5>Cabai</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-bawangputih-1.jpeg" alt="">
-                    <h5>Bawang Putih</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-singkong-1.jpg" alt="">
-                    <h5>Singkong</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-kopi-1.jpg" alt="">
-                    <h5>Kopi</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-sawit-1.jpg" alt="">
-                    <h5>Sawit</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-karet-1.jpg" alt="">
-                    <h5>Karet</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-tembakau-1.png" alt="">
-                    <h5>Tembakau</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
-                    <img src="/img/layanan/ketahanan-pangan/ktp-kakao-1.jpg" alt="">
-                    <h5>Kakao</h5>
-                </div>
-                <div class="gallery-pangan-container text-center">
+        <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
+            <div class="gallery-pangan-container text-center text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-padi-1.jpg" alt="">
+                <h5>Padi</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-jagung-1.jpg" alt="">
+                <h5>Jagung</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-bawangmerah-1.jpeg" alt="">
+                <h5>Bawang Merah</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-cabe-1.jpg" alt="">
+                <h5>Cabai</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-bawangputih-1.jpeg" alt="">
+                <h5>Bawang Putih</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-singkong-1.jpg" alt="">
+                <h5>Singkong</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-kopi-1.jpg" alt="">
+                <h5>Kopi</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-sawit-1.jpg" alt="">
+                <h5>Sawit</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-karet-1.jpg" alt="">
+                <h5>Karet</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-tembakau-1.png" alt="">
+                <h5>Tembakau</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
+                <img src="/img/layanan/ketahanan-pangan/ktp-kakao-1.jpg" alt="">
+                <h5>Kakao</h5>
+            </div>
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-tebu-1.jpg" alt="">
                 <h5>Tebu</h5>
             </div>
@@ -249,10 +260,11 @@
                     </div>
                 </div>
             </div>
-            <a class="btn btn-link p-0 toggle-btn d-flex align-items-center mt-2 mx-5 " data-bs-toggle="collapse" href="#readMore" role="button" aria-expanded="false" aria-controls="readMore">
+            <a class="btn btn-link p-0 toggle-btn d-flex align-items-center mt-2 mx-5 " data-bs-toggle="collapse"
+                href="#readMore" role="button" aria-expanded="false" aria-controls="readMore">
                 <span class="toggle-text me-2"></span> <i class="bi bi-chevron-down toggle-icon"></i>
             </a>
-        </div>  
+        </div>
     </div>
     </div>
     <div class="gallery-pangan-section p-3 p-lg-5">
@@ -343,27 +355,27 @@
             </div>
         </div>
     </div>
-        <div class="layanan-lainnya-section d-flex flex-wrap justify-content-center gap-3 gap-lg-0 p-2 p-lg-5">
-            <a href="">
-                <div class="layanan-card position-relative">
-                    <img src="/img/layanan/event-organizer.jpg" class="card-img-top" alt="...">
-                    <div class="card-body position-absolute ">
-                        <div class="line-bar mb-2"></div>
-                        <p class="fs-3 fw-bold">Event Organizer</p>
-                        <a href="#" class="">Lebih lanjut...</a>
-                    </div>
+    <div class="layanan-lainnya-section d-flex flex-wrap justify-content-center gap-3 gap-lg-0 p-2 p-lg-5">
+        <a href="">
+            <div class="layanan-card position-relative">
+                <img src="/img/layanan/event-organizer.jpg" class="card-img-top" alt="...">
+                <div class="card-body position-absolute ">
+                    <div class="line-bar mb-2"></div>
+                    <p class="fs-3 fw-bold">Event Organizer</p>
+                    <a href="#" class="">Lebih lanjut...</a>
                 </div>
-            </a>
-            <div class="mx-lg-5 "></div>
-            <a href="">
-                <div class="layanan-card position-relative">
-                    <img src="/img/layanan/konstruksi.jpg" class="card-img-top" alt="...">
-                    <div class="card-body position-absolute ">
-                        <div class="line-bar mb-2"></div>
-                        <p class="fs-3 fw-bold">Kontruksi</p>
-                        <a href="#" class="">Lebih lanjut...</a>
-                    </div>
+            </div>
+        </a>
+        <div class="mx-lg-5 "></div>
+        <a href="">
+            <div class="layanan-card position-relative">
+                <img src="/img/layanan/konstruksi.jpg" class="card-img-top" alt="...">
+                <div class="card-body position-absolute ">
+                    <div class="line-bar mb-2"></div>
+                    <p class="fs-3 fw-bold">Kontruksi</p>
+                    <a href="#" class="">Lebih lanjut...</a>
                 </div>
-            </a>
-        </div>
+            </div>
+        </a>
+    </div>
 </x-layout>

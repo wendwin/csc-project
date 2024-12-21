@@ -1,4 +1,3 @@
-/* Variabel warna seperti di Bootstrap */
 :root {
     --bs-primary: #0c174b;
     --bs-secondary: #cbd5e1;
@@ -9,6 +8,7 @@
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
 }
+
 
 
 .bg-transparent {
@@ -84,6 +84,7 @@
 }
 
 
+
 .libre-caslon-text-regular {
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
@@ -106,100 +107,6 @@ a {
     text-decoration: none;
 }
 
-
-.navbar {
-    transition: background-color 0.5s ease, transform 0.2s ease;
-    /* height: 100vh; */
-}
-
-.navbar-brand-filter {
-    filter: brightness(0) invert(1);
-    transition: filter 0.3s ease;
-}
-
-.navbar-brand-ori {
-    filter: none;
-    transition: filter 0.3s ease;
-}
-
-.navbar-brand img {
-    width: 70px;
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
-}
-
-.navbar .contact-info .contact,
-.mail {
-    font-size: 12px;
-    font-weight: 500;
-    font-family: "Inter", sans-serif;
-    color: var(--bs-secondary);
-}
-
-.navbar .contact-info .contact i,
-.mail i {
-    font-size: 14px;
-}
-
-/* .navbar .contact-info a :hover {
-    color: #fff;
-} */
-
-.navbar .contact p,
-.mail p {
-    margin: 0;
-}
-
-.navbar .contact i,
-.mail i {
-    vertical-align: middle;
-}
-
-.line {
-    width: 750px;
-    height: 0.3px;
-    background-color: #7f7f7f;
-}
-
-.line-scroll {
-    width: 750px;
-    height: 0.3px;
-    background-color: #e3e3e3;
-}
-
-.nav-item {
-    position: relative;
-}
-
-.nav-line {
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-    width: 0;
-    background-color: rgb(255, 230, 0);
-    transition: width 0.3s;
-}
-
-.nav-item:hover .nav-line {
-    width: 100%;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-    border-radius: 0 0 5px 5px;
-}
-
-.dropdown-item {
-    font-family: "Inter", sans-serif;
-    color: #5c5c5c;
-}
-
-.dropdown-item:hover {
-    background-color: #e9f0f0;
-    color: var(--bs-dark);
-}
 
 .carousel {
     filter: brightness(120%);
@@ -297,7 +204,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, #132579 90%,#132b92);
+    background: linear-gradient(to right, #132579 90%, #132b92);
 }
 
 .drop-full {
@@ -307,7 +214,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, #132579 50%, #132b92, 90%);
+    background: linear-gradient(to right, #132579 50%, #132b92 90%);
 }
 
 
@@ -338,11 +245,11 @@ a {
     overflow: hidden;
 }
 
-.glimpse-section {
-    /* display: flex; */
-    /* width: 100%; */
-    /* padding: 1rem; */
-}
+/* .glimpse-section { */
+/* display: flex; */
+/* width: 100%; */
+/* padding: 1rem; */
+/* } */
 
 .glimpse-text-container {
     /* background-color: #ffffff; */
@@ -374,13 +281,24 @@ a {
 .glimpse-highlight {
     font-size: 1rem;
     font-weight: bold;
+    color: #555;
     margin-bottom: 15px;
 }
 
 .glimpse-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: #555;
+}
+
+.glimpse a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #555;
+}
+
+.glimpse a:hover {
+    color: #1c1f4d;
 }
 
 .glimpse .count .number {
@@ -474,12 +392,12 @@ a {
 
 
 .company .logo .parent {
-    max-width: 160px;
+    max-width: 35%;
 }
 
 
 .company .logo img {
-    max-width: 130px;
+    max-width: 30%;
 }
 
 .trust {
@@ -633,10 +551,15 @@ a {
         font-size: 2.5rem;
     }
 
-    /* .trust .org-one img {
-        max-width: 7%;
-    } */
+    .company .logo .parent {
+        max-width: 30%;
+    }
+
+    .company .logo img {
+        max-width: 35%;
+    }
 }
+
 
 /* lg */
 @media (min-width: 992px) {
@@ -661,8 +584,11 @@ a {
         max-width: 9%;
     }
 
-    /* .service {
-        padding: 100px 220px 100px 220px;
-        
-    } */
+    .company .logo .parent {
+        max-width: 24%;
+    }
+
+    .company .logo img {
+        max-width: 35%;
+    }
 }

@@ -1,3 +1,4 @@
+
 <x-layout :css="'klien-sejarah/hubungi.css'">
     <div class="description-page">
     </div>

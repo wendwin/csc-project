@@ -1,14 +1,21 @@
+
 <x-layout :css="'klien-sejarah/klien.css'">
     <div class="description-page">
-        
+
     </div>
     <div class="klien-section p-3 p-lg-5 ">
         <div class="yellow-bar"></div>
         <h3>Klien</h3>
         <div class="klien-text-section">
-            <p>Cendana Solution Center (CSC) merasa bangga telah menjadi mitra andal bagi berbagai industri, termasuk instansi pemerintah, organisasi internasional, dan perusahaan multinasional. Kami memiliki portofolio beragam yang menampilkan keberhasilan kami dalam merancang dan menyelenggarakan acara, dengan setiap proyek mencerminkan komitmen penuh terhadap kesempurnaan dan kesuksesan di berbagai sektor.
+            <p>Cendana Solution Center (CSC) merasa bangga telah menjadi mitra andal bagi berbagai industri, termasuk
+                instansi pemerintah, organisasi internasional, dan perusahaan multinasional. Kami memiliki portofolio
+                beragam yang menampilkan keberhasilan kami dalam merancang dan menyelenggarakan acara, dengan setiap
+                proyek mencerminkan komitmen penuh terhadap kesempurnaan dan kesuksesan di berbagai sektor.
                 <br><br>
-            Kami mengundang Anda untuk menjelajahi daftar klien kami sebagai bukti nyata dari kemitraan yang telah terjalin dengan sukses. Setiap kolaborasi yang kami bangun adalah cerminan dari kepercayaan dan dedikasi yang menjadi fondasi layanan kami. Bersama CSC, jadikan acara Anda bagian dari cerita sukses berikutnya!</p>
+                Kami mengundang Anda untuk menjelajahi daftar klien kami sebagai bukti nyata dari kemitraan yang telah
+                terjalin dengan sukses. Setiap kolaborasi yang kami bangun adalah cerminan dari kepercayaan dan dedikasi
+                yang menjadi fondasi layanan kami. Bersama CSC, jadikan acara Anda bagian dari cerita sukses berikutnya!
+            </p>
         </div>
     </div>
     <div class="trust">
@@ -20,8 +27,7 @@
                 <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendagri.png" alt="">
                 <img class="mx-5 mx-md-0" src="img/mitra/logo-kemendikbud.png" alt="">
             </div>
-            <div
-                class="org-one text-center my-5 d-md-flex justify-content-center align-items-center flex-wrap gap-5">
+            <div class="org-one text-center my-5 d-md-flex justify-content-center align-items-center flex-wrap gap-5">
                 <img class="mx-5 mx-md-0" src="img/mitra/logo-tanah-laut.jpg" alt="">
                 <img class="mx-5 mx-md-0" src="img/mitra/logo-karimun.gif" alt="">
                 <img class="mx-5 mx-md-0" src="img/mitra/logo-konawe-kepulauan.jpg" alt="">

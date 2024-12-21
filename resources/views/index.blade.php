@@ -21,7 +21,7 @@
                 <div class="carousel-item active">
                     <img src="img/carosel/img6.jpg" class="d-block w-100" alt="Slide 1">
                     <div class="carousel-caption d-lg-none mb-5">
-                        <h5 class="">Sherpa Meeting <br>Presidensi G20</h5>
+                        <h5 class="">Bimtek Peningkatan Kapasitas Desa Se- Kec. Manuhing</h5>
                         <p class="mb-4">2024</p>
                     </div>
                     <div class="backdrop position-absolute"></div>
@@ -29,7 +29,8 @@
                 <div class="carousel-item">
                     <img src="img/carosel/img5.jpg" class="d-block w-100" alt="Slide 2">
                     <div class="carousel-caption d-lg-none mb-5">
-                        <h5 class="">Expo 2020 Dubai</h5>
+                        <h5 class="">Bimtek Peningkatan Kapasitas & Kapabilitas Pemda Yogyakarta
+                        </h5>
                         <p class="mb-4">2020</p>
                     </div>
                     <div class="backdrop position-absolute"></div>
@@ -37,7 +38,7 @@
                 <div class="carousel-item">
                     <img src="img/carosel/img4.jpg" class="d-block w-100" alt="Slide 3">
                     <div class="carousel-caption d-lg-none mb-5">
-                        <h5 class="">Pekan Olahraga Nasional (PON) XX</h5>
+                        <h5 class="">Bimtek Peningkatan Kapasitas & Kapabilitas Pemda & PDAM</h5>
                         <p class="mb-4">2023</p>
                     </div>
                     <div class="backdrop position-absolute"></div>
@@ -45,7 +46,7 @@
                 <div class="carousel-item">
                     <img src="img/carosel/img3.jpg" class="d-block w-100" alt="Slide 4">
                     <div class="carousel-caption d-lg-none mb-5">
-                        <h5 class="">10th World Water Forum</h5>
+                        <h5 class="">Family Gathering Dinas Pariwisata Kab. Bengkayang</h5>
                         <p class="mb-4">2024</p>
                     </div>
                     <div class="backdrop position-absolute"></div>
@@ -53,7 +54,8 @@
                 <div class="carousel-item">
                     <img src="img/carosel/img2.jpg" class="d-block w-100" alt="Slide 5">
                     <div class="carousel-caption d-lg-none mb-5">
-                        <h5 class="">Asian Para Games</h5>
+                        <h5 class="">Bimtek Peningkatan Kapasitas & Kapabilitas Pemda Kalimantan
+                            Selatan</h5>
                         <p class="mb-4">2022</p>
                     </div>
                     <div class="backdrop position-absolute"></div>
@@ -61,7 +63,8 @@
                 <div class="carousel-item">
                     <img src="img/carosel/img1.jpg" class="d-block w-100" alt="Slide 6">
                     <div class="carousel-caption d-lg-none mb-5">
-                        <h5 class="">Asian Para Games</h5>
+                        <h5 class="">Bimtek Peningkatan Kapasitas & Kapabilitas Pemdes se- Kec.
+                            Putussibau Selatan</h5>
                         <p class="mb-4">2022</p>
                     </div>
                     <div class="backdrop position-absolute"></div>
@@ -86,7 +89,7 @@
                         <div class="line-bar-overlay mb-2"
                             :class="{ 'active-bar': $store.carousel.currentSlide === 0, 'hovered': $store.carousel.hovered }">
                         </div>
-                        <h6>Sherpa Meeting Presidensi G20</h6>
+                        <h6>Bimtek Peningkatan Kapasitas Desa Se- Kec. Manuhing</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
@@ -98,7 +101,8 @@
                         data-bs-slide-to="1" role="button" aria-label="Slide 2">
                         <div class="line-bar-overlay mb-2"
                             :class="{ 'active-bar': $store.carousel.currentSlide === 0 }"></div>
-                        <h6>Expo 2020 Dubai</h6>
+                        <h6>Bimtek Peningkatan Kapasitas & Kapabilitas Pemda Yogyakarta
+                        </h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
@@ -109,7 +113,7 @@
                         data-bs-slide-to="2" role="button" aria-label="Slide 3">
                         <div class="line-bar-overlay mb-2"
                             :class="{ 'active-bar': $store.carousel.currentSlide === 0 }"></div>
-                        <h6>Pekan Olahraga Nasional (PON) XX</h6>
+                        <h6>Bimtek Peningkatan Kapasitas & Kapabilitas Pemda & PDAM</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
@@ -120,7 +124,7 @@
                         data-bs-slide-to="3" role="button" aria-label="Slide 4">
                         <div class="line-bar-overlay mb-2"
                             :class="{ 'active-bar': $store.carousel.currentSlide === 0 }"></div>
-                        <h6>10th World Water Forum</h6>
+                        <h6>Family Gathering Dinas Pariwisata Kab. Bengkayang</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
@@ -131,7 +135,7 @@
                         data-bs-slide-to="4" role="button" aria-label="Slide 5">
                         <div class="line-bar-overlay mb-2"
                             :class="{ 'active-bar': $store.carousel.currentSlide === 0 }"></div>
-                        <h6>Asian Para Games</h6>
+                        <h6>Bimtek Peningkatan Kapasitas & Kapabilitas Pemda Kalimantan Selatan</h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
@@ -143,7 +147,9 @@
                         <div class="line-bar-overlay mb-2"
                             :class="{ 'active-bar': $store.carousel.currentSlide === 0 }">
                         </div>
-                        <h6>Asean Business Advisory Council</h6>
+                        <h6>Bimtek Peningkatan Kapasitas & Kapabilitas Pemdes se- Kec.
+                            Putussibau Selatan
+                        </h6>
                         <div class="position-absolute bottom-0 mb-3">
                             <h6 class="text-center">2024</h6>
                         </div>
@@ -192,19 +198,18 @@
             <div class="col-md-7 glimpse-text-container w-100 px-4">
                 <div class="text-content">
                     <div class="line-bar mb-3"></div>
-                    <h2 class="glimpse-title fs-1 mb-4">Glimpse of Cendana Company</h2>
+                    <h2 class="glimpse-title fs-1 mb-4">Menghadirkan Solusi, Menciptakan Dunia Tak Terbatas</h2>
                     <p class="glimpse-highlight">
-                        <strong>Welcome to Cendana Solution Center, an esteemed pioneer and dominant player in
-                            Indonesia's
-                            Professional Conference Organization (PCO) sector, marking our presence since our founding
-                            in
-                            1989.</strong>
+                        Cendana Solution Center adalah mitra terpercaya yang menghadirkan solusi komprehensif di
+                        bidang event organizer, ketahanan pangan, dan konstruksi. Dengan keahlian dan dedikasi, kami
+                        membantu menciptakan acara yang berkesan, mendukung kebutuhan pangan berkelanjutan, dan
+                        membangun infrastruktur yang kokoh.
                     </p>
-                    <p class="glimpse-text">Renowned for delivering unparalleled event experiences, we?ve obtained
-                        international acclaim as Indonesia's foremost authority in the industry
-                        At Royalindo, we redefine event solutions as a full-service, world-class
-                        provider offering an end-to-end journey from conceptualization
-                        Royalindo incorporates service </p>
+                    <p class="glimpse-text">Kami percaya bahwa inovasi dan kolaborasi adalah kunci untuk mewujudkan
+                        masa depan yang lebih baik bagi masyarakat dan lingkungan. Bersama Cendana Solution Center,
+                        setiap langkah Anda menuju sukses adalah prioritas kami.</p>
+                    <a href="{{ route('perusahaan.tentang') }}">Lebih lanjut tentang kami <i
+                            class="bi bi-arrow-right"></i></a>
 
                     <div class="count d-lg-flex mt-lg-5 ">
                         <div class="me-lg-5">
@@ -276,11 +281,11 @@
                     <h2 class="mb-4">Perusahaan Induk</h2>
                     <img class="parent" src="img/logo/csc.png" alt="">
                 </div>
-                <div class="d-md-flex flex-column mt-2">
-                    <div class="text-center mb-3">
+                <div class="d-md-flex flex-column mt-4">
+                    <div class="text-center mb-4">
                         <h2>Anak Perusahaan</h2>
                     </div>
-                    <div class="d-md-flex gap-4">
+                    <div class="d-md-flex gap-5">
                         <div class="d-md-flex align-items-center gap-3 text-center mb-5 mb-md-0">
                             <img src="img/logo/pusdiklatnas.png" alt="" class="order-md-2">
                             <div class="text-center text-md-end mt-2 order-md-1">

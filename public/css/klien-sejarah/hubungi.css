@@ -1,4 +1,3 @@
-/* Variabel warna seperti di Bootstrap */
 :root {
     --bs-primary: #0c174b;
     --bs-secondary: #cbd5e1;
@@ -186,6 +185,25 @@ a {
     color: var(--bs-dark);
 }
 
+
+
+/* md */
+@media (min-width: 768px) {
+
+    .navbar-brand img {
+        width: 80px;
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+}
+
 .description-page{
     font-family: 'Inter';
     color: #fff;
@@ -251,3 +269,4 @@ h3{
     position: absolute;
     border-bottom-left-radius: 50px;
 }
+
