@@ -353,9 +353,6 @@ a {
 }
 
 
-
-
-
 .news .container {
     padding: 120px 24px;
 }
@@ -460,6 +457,8 @@ a {
 
 
 
+
+
 /* md */
 @media (min-width: 768px) {
 
@@ -482,11 +481,32 @@ a {
     .company .logo img {
         max-width: 35%;
     }
+
+
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 60px;
+        height: 60px;
+        bottom: 110px;
+        right: 40px;
+        font-size: 35px;
+    }
 }
 
 
 /* lg */
 @media (min-width: 992px) {
+
+    .whatsapp_float {
+        width: 50px;
+        height: 50px;
+        bottom: 100px;
+        font-size: 30px;
+
+    }
 
     .navbar-brand img {
         width: 100px;
