@@ -4,23 +4,25 @@
         <div class="footer-section mb-3 mb-md-0 me-md-5">
             <h5>Perusahaan</h5>
             <ul>
-                <li><a href="#">Tentang</a></li>
-                <li><a href="#">Anggota Direksi</a></li>
-                <li><a href="#">Struktur Organisasi</a></li>
-                <li><a href="#">Tata Kelola Perusahaan</a></li>
-                <li><a href="#">Sejarah</a></li>
-                <li><a href="#">Berita</a></li>
-                <li><a href="#">Karir</a></li>
-                <li><a href="#">Hubungi</a></li>
+                <li><a href="{{ route('perusahaan.tentang') }}">Tentang</a></li>
+                <li><a href="{{ route('perusahaan.direksi') }}">Anggota Direksi</a></li>
+                <li><a href="{{ route('perusahaan.struktur_organisasi') }}">Struktur Organisasi</a></li>
+                <li><a href="{{ route('perusahaan.tata-kelola') }}">Tata Kelola Perusahaan</a></li>
+                <li><a href="{{ route('sejarah') }}">Sejarah</a></li>
+                <li><a href="{{ route('berita') }}">Berita</a></li>
+                <li><a href="{{ route('klien') }}">Klien</a></li>
+                <li><a href="{{ route('karier') }}">Karir</a></li>
+                <li><a href="{{ route('csr') }}">CSR</a></li>
+                <li><a href="{{ route('hubungi') }}">Hubungi</a></li>
             </ul>
         </div>
 
         <div class="footer-section mb-3 mb-md-0  mx-md-5">
             <h5>Layanan</h5>
             <ul>
-                <li><a href="#">Event Organizer</a></li>
-                <li><a href="#">Ketahanan Pangan</a></li>
-                <li><a href="#">Kontruksi</a></li>
+                <li><a href="{{ route('layanan.event_organizer') }}">Event Organizer</a></li>
+                <li><a href="{{ route('layanan.ketahanan_pangan') }}">Ketahanan Pangan</a></li>
+                <li><a href="{{ route('layanan.konstruksi') }}">Kontruksi</a></li>
             </ul>
         </div>
 
