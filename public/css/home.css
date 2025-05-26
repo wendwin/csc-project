@@ -392,9 +392,16 @@ a {
 
 
 .company .logo .parent {
-    max-width: 35%;
+    max-width: 40%;
 }
 
+
+.company .logo .child {
+    width: 125px;
+}
+.company .logo .sertifikasi {
+    width: 255px;
+}
 
 .company .logo img {
     max-width: 30%;
@@ -610,5 +617,8 @@ a {
 
     .company .logo img {
         max-width: 35%;
+    }
+    .company .logo .sertifikasi {
+        width: 135px;
     }
 }
