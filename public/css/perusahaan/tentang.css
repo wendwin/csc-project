@@ -295,12 +295,20 @@ a {
 }
 
 .company .logo img {
-    max-width: 130px;
+    max-width: 30%;
 }
 
-.company .logo-csc img {
-    max-width: 230px;
+.company .logo .parent {
+    max-width: 40%;
 }
+
+.company .logo .child {
+    width: 125px;
+}
+.company .logo .sertifikasi {
+    width: 255px;
+}
+
 
 
 @media (max-width: 568px) {
@@ -338,4 +346,11 @@ a {
         height: 650px;
     }
 
+    .company .logo .parent {
+    max-width: 24%;
+    }
+
+    .company .logo .sertifikasi {
+    width: 135px;
+    }
 }

@@ -1,7 +1,5 @@
-
-
 <x-layout :css="'perusahaan/tentang.css'">
-{{-- silahkan costumise tampilannya --}}
+    {{-- silahkan costumise tampilannya --}}
 
 
     <!-- Konten Halaman -->
@@ -23,7 +21,7 @@
                     kokoh. Kami percaya bahwa inovasi dan kolaborasi adalah kunci untuk mewujudkan masa depan yang lebih
                     baik bagi masyarakat dan lingkungan. Bersama Cendana Solution Center, setiap langkah Anda menuju
                     sukses adalah prioritas kami.</p>
-                    <p>Dalam sektor event organizer, kami menciptakan pengalaman berkesan yang dirancang khusus untuk
+                <p>Dalam sektor event organizer, kami menciptakan pengalaman berkesan yang dirancang khusus untuk
                     memenuhi kebutuhan unik setiap klien. Di bidang ketahanan pangan, kami mendukung terciptanya solusi
                     berkelanjutan melalui integrasi teknologi modern dan pendekatan ramah lingkungan guna memastikan
                     ketersediaan pangan di masa depan. Sementara itu, dalam sektor konstruksi, kami mengedepankan
@@ -66,7 +64,7 @@
                     Daerah (OPD) serta perusahaan besar di Indonesia. Kepercayaan yang diberikan kepada kami selama
                     lebih dari dua dekade mencerminkan dedikasi dan profesionalisme dalam setiap event yang kami
                     selenggarakan.</p>
-                    <p>Melalui kerja sama yang erat dengan klien-klien dari berbagai sektor, CSC terus berkembang dan
+                <p>Melalui kerja sama yang erat dengan klien-klien dari berbagai sektor, CSC terus berkembang dan
                     berinovasi, memastikan bahwa setiap acara yang kami tangani tidak hanya sukses secara
                     penyelenggaraan, tetapi juga memberikan dampak positif dan berkelanjutan. Dengan tim yang
                     berpengalaman dan pendekatan yang berbasis pada kebutuhan klien, kami berkomitmen untuk terus
@@ -106,35 +104,41 @@
     </div>
     <div class="company mt-5">
         <div class="container">
-            <div class="logo-csc d-flex flex-column justify-center align-items-center">
-                <div class="text-center mb-5">
+            <div class="logo d-flex flex-column justify-center align-items-center">
+                <div class="induk text-center mb-5">
                     <h2 class="mb-4">Perusahaan Induk</h2>
-                    <img src="/img/logo/csc.png" alt="">
+                    <img class="parent" src="/img/logo/csc.png" alt="">
                 </div>
-                <div class="d-lg-flex flex-column mt-2">
-                    <div class="text-center mb-3">
+                <div class="d-md-flex flex-column mt-4">
+                    <div class="text-center mb-4">
                         <h2>Anak Perusahaan</h2>
                     </div>
-                    <div class="d-lg-flex gap-4">
-                        <div class="d-lg-flex align-items-center gap-3 text-center mb-5 mb-lg-0">
-                            <img src="/img/logo/pusdiklatnas.png" alt="" class="order-lg-2">
-                            <div class="text-center text-lg-end mt-2 order-lg-1">
-                                <p class="text-uppercase ">pusdiklatnas</p>
+                    <div class="d-md-flex mx-auto gap-5">
+                        <div class="d-md-flex align-items-center gap-3 text-center mb-5 mb-md-0">
+                            <img src="/img/logo/pusdiklatnas2.png" alt="" class="child order-md-2">
+                            <div class="text-center text-md-end mt-2 order-md-1">
+                                <p class="text-uppercase fw-semibold">pusdiklatnas</p>
                                 <p class="text-end">Pusat Pendidikan Dan Pelatihan
                                     Nasional</p>
                             </div>
                         </div>
-                        <div class="d-lg-flex align-items-center gap-3 text-center">
-                            <img src="/img/logo/pustakapemda.png" alt="">
-                            <div class="text-center text-lg-start mt-2">
-                                <p class="text-uppercase ">pustakapemda</p>
+                        <div class="d-md-flex align-items-center gap-3 text-center">
+                            <img src="/img/logo/pustakapemda2.png" alt="" class="child">
+                            <div class="text-center text-md-start mt-2">
+                                <p class="text-uppercase fw-semibold">pustakapemda</p>
                                 <p class="">Pusat Kajian Tata Kelola Keuangan <br>dan
                                     Pembangunan Pemerintah Daerah</p>
                             </div>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <img src="/img/logo/sertifikasi.png" alt="" class="sertifikasi mt-4 mt-md-2">
+                        <div class="text-center mt-2 order-md-1">
+                            <p class="text-uppercase fw-semibold">pspi</p>
+                            <p class="">Pusat Sertifikasi Profesi Indonesia</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </x-layout>

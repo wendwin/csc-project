@@ -277,7 +277,7 @@
     <div class="company mt-5">
         <div class="container">
             <div class="logo d-flex flex-column justify-center align-items-center">
-                <div class="text-center mb-5">
+                <div class="induk text-center mb-5">
                     <h2 class="mb-4">Perusahaan Induk</h2>
                     <img class="parent" src="img/logo/csc.png" alt="">
                 </div>
@@ -285,23 +285,29 @@
                     <div class="text-center mb-4">
                         <h2>Anak Perusahaan</h2>
                     </div>
-                    <div class="d-md-flex gap-5">
+                    <div class="d-md-flex mx-auto gap-5">
                         <div class="d-md-flex align-items-center gap-3 text-center mb-5 mb-md-0">
-                            <img src="img/logo/pusdiklatnas.png" alt="" class="order-md-2">
+                            <img src="img/logo/pusdiklatnas2.png" alt="" class="child order-md-2">
                             <div class="text-center text-md-end mt-2 order-md-1">
-                                <p class="text-uppercase ">pusdiklatnas</p>
+                                <p class="text-uppercase fw-semibold">pusdiklatnas</p>
                                 <p class="text-end">Pusat Pendidikan Dan Pelatihan
                                     Nasional</p>
                             </div>
                         </div>
                         <div class="d-md-flex align-items-center gap-3 text-center">
-                            <img src="img/logo/pustakapemda.png" alt="">
+                            <img src="img/logo/pustakapemda2.png" alt="" class="child">
                             <div class="text-center text-md-start mt-2">
-                                <p class="text-uppercase ">pustakapemda</p>
+                                <p class="text-uppercase fw-semibold">pustakapemda</p>
                                 <p class="">Pusat Kajian Tata Kelola Keuangan <br>dan
                                     Pembangunan Pemerintah Daerah</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="text-center">
+                            <img src="img/logo/sertifikasi.png" alt="" class="sertifikasi mt-4 mt-md-2">
+                            <div class="text-center mt-2 order-md-1">
+                                <p class="text-uppercase fw-semibold">pspi</p>
+                                <p class="">Pusat Sertifikasi Profesi Indonesia</p>
                     </div>
                 </div>
             </div>
@@ -311,19 +317,19 @@
             <div class="container">
                 <div class="line-bar-title mb-3"></div>
                 <h2 class="fw-bolder mb-5">Dipercaya Oleh</h2>
-                <div class="org-one text-center d-md-flex justify-content-center align-items-center gap-5">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendes.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendagri.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendikbud.png" alt="">
+                <div class="org-one text-center d-md-flex flex-warp justify-content-center align-items-center gap-5">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-kemendes.png" alt="">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-kemendagri.png" alt="">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-kemendikbud.png" alt="">
                 </div>
                 <div
-                    class="org-one text-center my-5 d-md-flex justify-content-center align-items-center flex-wrap gap-5">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-tanah-laut.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-karimun.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-kepulauan.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kapuas-hulu.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-selatan.png" alt="">
-                    <img class="mx-5 mx-md-0" src="img/kemitraan/logo-konawe-utara.png" alt="">
+                    class="org-one text-center my-md-5 my-0 mb-5 mb-md-0 d-md-flex justify-content-center align-items-center flex-wrap gap-5">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-tanah-laut.png" alt="">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-karimun.png" alt="">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-konawe-kepulauan.png" alt="">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-kapuas-hulu.png" alt="">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-konawe-selatan.png" alt="">
+                    <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-konawe-utara.png" alt="">
                 </div>
                 <div class="peta mt-5">
                     <div class="text-center">

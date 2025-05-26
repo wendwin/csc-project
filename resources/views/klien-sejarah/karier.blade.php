@@ -65,7 +65,7 @@
             <p class="text-center p-5">Belum Tersedia</p>
         </div>
         <div class="news">
-            <div class="p-3 p-lg-5" style="background-color:">
+            <div class="container" style="background-color:">
                 <div class="yellow-bar mb-3"></div>
                 <h2 class="fw-bolder mb-5 ">Berita Terbaru</h2>
                 <div class="mb-lg-0 d-lg-flex justify-content-evenly align-items-center gap-3">
