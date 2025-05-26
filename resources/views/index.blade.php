@@ -440,8 +440,10 @@
                         <div class="card-body">
                             <div class="line-bar mb-2"></div>
                             <p class="date">30 Agustus 2024</p>
-                            <p class="title">Panen Raya Cabai, di Tembanggung Mengundang Seluruh Petani dan Aparatur Desa</p><br>
-                            <p class="content">Pemerintah Desa Tembanggung dengan bangga mengundang seluruh petani dan aparatur desa untuk berpartisipasi dalam acara Panen Raya ...</p>
+                            <p class="title">Panen Raya Cabai, di Temanggung Mengundang Seluruh Petani cabai dan
+                                Aparatur Desa</p><br>
+                            <p class="content">Pemerintah Desa Tembanggung dengan bangga mengundang seluruh petani dan
+                                aparatur desa untuk berpartisipasi dalam acara Panen Raya ...</p>
                             <a href="#" class="next">Selengkapnya...</a>
                         </div>
                     </div>
@@ -451,12 +453,12 @@
         </div>
     </div>
 
-        <div class="offer text-center">
-            <div class="container">
-                <p class="fs-2 fw-medium mb-5">Butuh Solusi Handal untuk Event Organizer, Ketahanan Pangan, dan Konstruksi?
-                </p>
-                <a href="{{ route('hubungi') }}" class="btnhub btn-primary text-uppercase">Hubungi Kami Sekarang</a>
-            </div>
+    <div class="offer text-center">
+        <div class="container">
+            <p class="fs-2 fw-medium mb-5">Butuh Solusi Handal untuk Event Organizer, Ketahanan Pangan, dan Konstruksi?
+            </p>
+            <a href="{{ route('hubungi') }}" class="btnhub btn-primary text-uppercase">Hubungi Kami Sekarang</a>
         </div>
+    </div>
 
 </x-layout>
