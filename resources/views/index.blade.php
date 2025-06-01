@@ -234,6 +234,43 @@
             </div>
         </div>
     </div>
+    <div class="glimpse-bottom "></div>
+
+    <div class="school">
+        <div class="bg-white p-5 position-relative">
+            <div class="line-bar position-absolute top-0 end-0 me-3 mt-3"></div>
+            <div class="line-bar-title mb-5">
+                <h2 class="fw-bolder mx-auto text-center">Sekolah Koperasi Desa Merah Putih & Bisnis BUMDes Bangkitkan Desa, Kuatkan Indonesia</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="img/programschool.png" alt="" class="w-100">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <p class="fs-6 text-justify">Program ini merupakan inisiatif kolaboratif antara Cendana Solution Center, Desa Ponggok Klaten, dan Narasi Desa, yang bertujuan untuk memperkuat ekonomi desa melalui peningkatan kapasitas pengelolaan BUMDes dan koperasi desa. Dengan pendekatan berbasis praktik, peserta akan dibekali keterampilan manajerial, kewirausahaan, perencanaan bisnis, hingga strategi pemasaran digital. Pelatihan berlangsung selama 1 minggu, dilanjutkan dengan pendampingan intensif selama 1 bulan.</p>
+                    <div class="collapse" id="readMore">
+                        <p class="fs-6 fw-bold">Tujuan Program:</p>
+                        <ol class="fs-6">
+                            <li>Meningkatkan kapasitas SDM pengelola BUMDes dan koperasi secara profesional dan akuntabel.</li>
+                            <li>Mendorong transformasi BUMDes menjadi entitas bisnis yang berkelanjutan.</li>
+                            <li>Mengembangkan usaha berbasis potensi lokal: pertanian, pariwisata, ekonomi kreatif, dan lainnya.</li>
+                            <li>Membentuk ekosistem bisnis desa yang kolaboratif dan inklusif.</li>
+                            <li>Menghasilkan rencana bisnis konkret dan roadmap pengembangan ekonomi desa.</li>
+                        </ol>
+                        <p class="fs-6 fw-bold">Manfaat Program:</p>
+                        <ol class="fs-6">
+                            <li>Tumbuhnya unit usaha produktif desa.</li>
+                            <li>Peningkatan PAD dan kesejahteraan masyarakat.</li>
+                            <li>Terciptanya lapangan kerja di tingkat desa.</li>
+                            <li>Terbangunnya jejaring antar desa, pelaku usaha, dan pemangku kepentingan.</li>
+                        </ol>
+                        </div>
+                            <a class="btn btn-link p-0 toggle-btn d-flex align-items-center mt-2 mx-auto mx-lg-0" data-bs-toggle="collapse" href="#readMore" role="button" aria-expanded="false" aria-controls="readMore"> 
+                        <span class="toggle-text me-2"></span></a>
+                        </div>
+            </div>
+        </div>
+    </div>
 
     <div class="service">
         <div class="container" style="background-color: ">
@@ -276,39 +313,42 @@
 
     <div class="company mt-5">
         <div class="container">
-            <div class="logo d-flex flex-column justify-center align-items-center">
+            <div class="logo d-flex flex-column ">
                 <div class="induk text-center mb-5">
-                    <h2 class="mb-4">Perusahaan Induk</h2>
+                    {{-- <h2 class="mb-4">Perusahaan Induk</h2> --}}
                     <img class="parent" src="img/logo/csc.png" alt="">
                 </div>
-                <div class="d-md-flex flex-column mt-4">
-                    <div class="text-center mb-4">
+                <div class="flex mt-4">
+                    {{-- <div class="text-center mb-4">
                         <h2>Anak Perusahaan</h2>
-                    </div>
-                    <div class="d-md-flex mx-auto gap-5">
-                        <div class="d-md-flex align-items-center gap-3 text-center mb-5 mb-md-0">
-                            <img src="img/logo/pusdiklatnas2.png" alt="" class="child order-md-2">
+                    </div> --}}
+                    <div class="d-flex md-flex-row flex-wrap justify-content-center align-items-center gap-5">
+                        <div class=" mb-5 mb-md-0">
+                            <img src="img/logo/pusdiklatnas.png" alt="" class="child order-md-2">
                             <div class="text-center text-md-end mt-2 order-md-1">
-                                <p class="text-uppercase fw-semibold">pusdiklatnas</p>
-                                <p class="text-end">Pusat Pendidikan Dan Pelatihan
-                                    Nasional</p>
+                                {{-- <p class="text-uppercase fw-semibold">pusdiklatnas</p> --}}
                             </div>
                         </div>
-                        <div class="d-md-flex align-items-center gap-3 text-center">
+                        <div class="  mb-5 mb-md-0">
                             <img src="img/logo/pustakapemda2.png" alt="" class="child">
                             <div class="text-center text-md-start mt-2">
-                                <p class="text-uppercase fw-semibold">pustakapemda</p>
-                                <p class="">Pusat Kajian Tata Kelola Keuangan <br>dan
-                                    Pembangunan Pemerintah Daerah</p>
+                                {{-- <p class="text-uppercase fw-semibold">pustakapemda</p> --}}
                             </div>
                         </div>
+                        
                     </div>
-                    <div class="text-center">
+                    <div class="d-flex flex-row justify-content-center align-items-center">
+                        <img src="img/logo/sertifikasi.png" alt="" class="child">
+                        <div class="text-center text-md-start mt-2">
+                            {{-- <p class="text-uppercase fw-semibold">pustakapemda</p> --}}
+                        </div>
+                    </div>
+                    {{-- <div class="text-center">
                             <img src="img/logo/sertifikasi.png" alt="" class="sertifikasi mt-4 mt-md-2">
                             <div class="text-center mt-2 order-md-1">
                                 <p class="text-uppercase fw-semibold">pspi</p>
                                 <p class="">Pusat Sertifikasi Profesi Indonesia</p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

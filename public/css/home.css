@@ -326,6 +326,50 @@ a {
     border-bottom-left-radius: 15px;
 }
 
+.glimpse-bottom{
+    height: 40px;
+    background-color: #0c174b;
+}
+
+.school{
+    background-image: url('../img/school.png');
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.school h2{
+    max-width: 70%;
+}
+
+.toggle-btn .toggle-text {
+    display: inline;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3499C5;
+    color: #fff; 
+}
+
+.school  a{
+    text-decoration: none;
+}
+
+.toggle-btn .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn[aria-expanded="false"] .toggle-text::before {
+    content: "Selengkapnya"; 
+}
+.toggle-btn[aria-expanded="true"] .toggle-text::before {
+    content: "Tutup"; 
+}
+
+.toggle-btn[aria-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
+
 .service {
     /* background: linear-gradient(to right, #102064 50%, #112580 70%); */
     background-color: #0c174b;
@@ -403,7 +447,7 @@ a {
     width: 255px;
 }
 
-.company .logo img {
+.company .logo .parent img {
     max-width: 30%;
 }
 
@@ -560,10 +604,10 @@ a {
     .company .logo .parent {
         max-width: 30%;
     }
-
+/* 
     .company .logo img {
-        max-width: 35%;
-    }
+        max-width: 50%;
+    } */
 
 
     .whatsapp-icon {
@@ -611,13 +655,41 @@ a {
         max-width: 9%;
     }
 
-    .company .logo .parent {
-        max-width: 24%;
-    }
+    .toggle-btn .toggle-text {
+    display: inline;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3499C5;
+    color: #fff; 
+}
 
-    .company .logo img {
-        max-width: 35%;
+.school  a{
+    text-decoration: none;
+}
+
+.toggle-btn .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn[aria-expanded="false"] .toggle-text::before {
+    content: "Selengkapnya"; 
+}
+.toggle-btn[aria-expanded="true"] .toggle-text::before {
+    content: "Tutup"; 
+}
+
+.toggle-btn[aria-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
+
+    .company .logo .parent {
+        max-width: 20%;
     }
+/* 
+    .company .logo img {
+        max-width: 80%;
+    } */
     .company .logo .sertifikasi {
         width: 135px;
     }
