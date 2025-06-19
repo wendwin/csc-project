@@ -1,0 +1,44 @@
+:root {
+    --bs-primary: #0c174b;
+    --bs-secondary: #cbd5e1;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #fabf18;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+a {
+    text-decoration: none;
+}
+
+.description-page{
+    font-family: 'Inter';
+    color: #fff;
+    width: 100%;
+    padding: 190px 0px 20px 30px;
+    background-color: #0C174B;
+
+}
+
+h3{
+    font-weight: bold;
+    font-family: 'Inter';
+}
+
+.yellow-bar{
+    width: 50px;
+    height: 10px;
+    background-color: #F7BC12;
+    transition:ease-in-out 0.2s;
+}
+
+.sejarah-section:hover .yellow-bar{
+    width: 85px;
+}
+
+.sejarah-text-section{
+    font-family: 'Inter';
+    text-align: justify;
+}

@@ -1,5 +1,5 @@
 
-<x-layout :css="'klien-sejarah/kopdes.css'">
+<x-layout :css="'klien-sejarah/sejarah.css'">
 
     <div class="description-page">
 
