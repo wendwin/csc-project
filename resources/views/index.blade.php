@@ -236,7 +236,7 @@
     </div>
     <div class="glimpse-bottom "></div>
 
-    <div class="school">
+    {{-- <div class="school">
         <div class="bg-white p-5 position-relative">
             <div class="line-bar position-absolute top-0 end-0 me-3 mt-3"></div>
             <div class="line-bar-title mb-5">
@@ -270,7 +270,7 @@
                         </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="service">
         <div class="container" style="background-color: ">

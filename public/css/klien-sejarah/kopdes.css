@@ -29,16 +29,103 @@ h3{
 
 .yellow-bar{
     width: 50px;
-    height: 10px;
+    height: 4px;
     background-color: #F7BC12;
     transition:ease-in-out 0.2s;
 }
 
-.sejarah-section:hover .yellow-bar{
+.kopdes-section:hover .yellow-bar{
     width: 85px;
 }
 
-.sejarah-text-section{
+.kopdes-text-section{
     font-family: 'Inter';
     text-align: justify;
+}
+
+
+
+.school{
+    background-image: url('/../img/school.png');
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.school h2{
+    max-width: 70%;
+}
+
+.toggle-btn .toggle-text {
+    display: inline;
+    /* width: ; */
+    /* padding-: 10px; */
+    border-radius: 10px;
+    background-color: #3499C5;
+    color: #fff; 
+}
+
+.toggle-btn .toggle-text:hover {
+    display: inline;
+    /* width: ; */
+    /* padding-: 10px; */
+    border-radius: 10px;
+    background-color: #308db5;
+    color: #fff; 
+}
+
+.school  a{
+    text-decoration: none;
+}
+
+.school .content {
+    padding: 30px 8px;
+}
+
+.school .school-img {
+    width: 100%;
+}
+
+.toggle-btn .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn[aria-expanded="false"] .toggle-text::before {
+    content: "Selengkapnya"; 
+}
+.toggle-btn[aria-expanded="true"] .toggle-text::before {
+    content: "Tutup"; 
+}
+
+.toggle-btn[aria-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
+
+
+
+/* md */
+
+@media (min-width: 768px) {
+.school .content {
+    padding: 35px 12px;
+}
+
+.school .school-img {
+    width: 60%;
+    margin-button: 10px
+}
+
+}
+
+
+/* lg */
+@media (min-width: 992px) {
+.school .content {
+    padding: 34px 40px;
+}
+
+.school .school-img {
+    width: 100%;
+    margin-button: 10px
+}
 }
