@@ -5,14 +5,14 @@
 
     </div>
     <div class="kopdes-section p-3 p-lg-5 ">
-        <div class="yellow-bar"></div>
-        <h3>Koperasi Desa</h3>
-        <div class="kopdes-text-section">
+        <div class="yellow-bar mb-3"></div>
+        <h4>Koperasi Desa</h4>
+        <div class="kopdes-text-section mt-3">
             <div class="school">
                 <div class="bg-white  content position-relative">
                     <div class="line-bar position-absolute top-0 end-0 me-3 mt-3"></div>
                     <div class="line-bar-title mb-5">
-                        <h2 class="fw-bolder mx-auto text-center">Sekolah Koperasi Desa Merah Putih & Bisnis BUMDes Bangkitkan Desa, Kuatkan Indonesia</h2>
+                        <h2 class="fw-medium mx-auto text-center">Sekolah Koperasi Desa Merah Putih & Bisnis BUMDes Bangkitkan Desa, Kuatkan Indonesia</h2>
                     </div>
                     <div class="row ">
                         <div class="col-lg-5 mb-4 ">

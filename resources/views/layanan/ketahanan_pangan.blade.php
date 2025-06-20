@@ -22,9 +22,9 @@
         </div>
     </div>
     <div class="bidang-pangan-section p-3 px-lg-5">
-        <div class="green-bar"></div>
+        <div class="green-bar mb-3"></div>
         <div class="bidang-text-section">
-            <h3>Bidang Kami</h3>
+            <h4>Bidang Kami</h4>
             <p>Kami fokus mengembangkan usaha ketahanan pangan melalui
                 kemitraan dengan perusahaan swasta, lembaga pemerintah, dan pelaku
                 usaha. Kami menerapkan pola tanam sehat dan efisien, mulai dari
@@ -36,8 +36,8 @@
         </div>
     </div>
     <div class="mitra-pangan-section p-3 px-lg-5 my-3 my-lg-5">
-        <div class="green-bar"></div>
-        <h3>Mitra dan Binaan</h3>
+        <div class="green-bar mb-3"></div>
+        <h4>Mitra dan Binaan</h4>
         <div class="peta mt-5">
             <div class="text-center mb-3">
                 <img src="/img/layanan/ketahanan-pangan/peta-2.png" alt="" width="500">
@@ -57,145 +57,145 @@
             </ol>
         </div>
     </div>
-    <div class="yayasan-pangan-section d-flex flex-column flex-lg-row justify-content-between align-items-center my-5">
+    <div class="yayasan-pangan-section d-flex flex-column flex-md-row justify-content-between align-items-center my-5">
         <img class="w-80 w-lg-100 px-5 px-lg-0" src="/img/logo/rukun-satu-bumi.png" alt="">
         <div class="yayasan-text p-3 p-lg-0 px-lg-5 mt-3 mt-lg-0">
-            <div class="green-bar"></div>
-            <h3>Yayasan</h3>
+            <div class="green-bar mb-3"></div>
+            <h4>Yayasan</h4>
             <p>Yayasan Rukun Satu Bumi adalah yayasan yang fokus pada penguatan ketahanan pangan melalui pemberdayaan petani lokal, edukasi masyarakat, dan pengembangan teknologi ramah lingkungan. Kami berkomitmen menciptakan akses pangan yang terjangkau dan bergizi, mendukung produksi pertanian berkelanjutan, serta memberikan bantuan darurat bagi komunitas terdampak bencana. Dengan berbagai program inovatif, kami percaya bahwa ketahanan pangan adalah kunci untuk mewujudkan masyarakat yang sehat, mandiri, dan sejahtera.</p>
         </div>
     </div>
     <div class="gallery-pangan-section p-3 p-lg-5">
         <div class="gallery-text-container mb-5">
-            <div class="green-bar"></div>
-            <h3>Komoditas Pertanian</h3>
+            <div class="green-bar mb-3"></div>
+            <h4>Komoditas Pertanian</h4>
         </div>
-        <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
-            <div class="gallery-pangan-container text-center text-center">
+        <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 gap-lg-5">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-padi-1.jpg" alt="">
-                <h5 class="text-center">Padi</h5>
+                <h6 class="text-center fs-6">Padi</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-jagung-1.jpg" alt="">
-                <h5 class="text-center">Jagung</h5>
+                <h6 class="text-center fs-6">Jagung</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-bawangmerah-1.jpeg" alt="">
-                <h5 class="text-center">Bawang Merah</h5>
+                <h6 class="text-center fs-6">Bawang Merah</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-cabe-1.jpg" alt="">
-                <h5 class="text-center">Cabai</h5>
+                <h6 class="text-center fs-6">Cabai</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-bawangputih-1.jpeg" alt="">
-                <h5 class="text-center">Bawang Putih</h5>
+                <h6 class="text-center fs-6">Bawang Putih</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-singkong-1.jpg" alt="">
-                <h5 class="text-center">Singkong</h5>
+                <h6 class="text-center fs-6">Singkong</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-kopi-1.jpg" alt="">
-                <h5 class="text-center">Kopi</h5>
+                <h6 class="text-center fs-6">Kopi</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-sawit-1.jpg" alt="">
-                <h5 class="text-center">Sawit</h5>
+                <h6 class="text-center fs-6">Sawit</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-karet-1.jpg" alt="">
-                <h5 class="text-center">Karet</h5>
+                <h6 class="text-center fs-6">Karet</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-tembakau-1.png" alt="">
-                <h5 class="text-center">Tembakau</h5>
+                <h6 class="text-center fs-6">Tembakau</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-kakao-1.jpg" alt="">
-                <h5 class="text-center">Kakao</h5>
+                <h6 class="text-center fs-6">Kakao</h6>
             </div>
             <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ktp-tebu-1.jpg" alt="">
-                <h5 class="text-center">Tebu</h5>
+                <h6 class="text-center fs-6">Tebu</h6>
             </div>
             <div class="collapse" id="readMore">
                 <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-jahe-1.jpg" alt="">
-                        <h5 class="text-center">Jahe</h5>
+                        <h6 class="text-center fs-6">Jahe</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kunyit-1.jpg" alt="">
-                        <h5 class="text-center">Kunyit</h5>
+                        <h6 class="text-center fs-6">Kunyit</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-laos-1.jpeg" alt="">
-                        <h5 class="text-center">Laos</h5>
+                        <h6 class="text-center fs-6">Laos</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kencur-1.jpeg" alt="">
-                        <h5 class="text-center">Kencur</h5>
+                        <h6 class="text-center fs-6">Kencur</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kedelai-1.jpg" alt="">
-                        <h5 class="text-center">Kedelai</h5>
+                        <h6 class="text-center fs-6">Kedelai</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-telang-1.jpg" alt="">
-                        <h5 class="text-center">Telang</h5>
+                        <h6 class="text-center fs-6">Telang</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-sawi-1.jpg" alt="">
-                        <h5 class="text-center">Sawi</h5>
+                        <h6 class="text-center fs-6">Sawi</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kol-1.jpg" alt="">
-                        <h5 class="text-center">Kol</h5>
+                        <h6 class="text-center fs-6">Kol</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-selada-1.jpg" alt="">
-                        <h5 class="text-center">Selada</h5>
+                        <h6 class="text-center fs-6">Selada</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kangkung.jpg" alt="">
-                        <h5 class="text-center">Kangkung</h5>
+                        <h6 class="text-center fs-6">Kangkung</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-bayam.jpg" alt="">
-                        <h5 class="text-center">Bayam</h5>
+                        <h6 class="text-center fs-6">Bayam</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pakcoy.jpg" alt="">
-                        <h5 class="text-center">Pakcoy</h5>
+                        <h6 class="text-center fs-6">Pakcoy</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-wortel.jpg" alt="">
-                        <h5 class="text-center">Wortel</h5>
+                        <h6 class="text-center fs-6">Wortel</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-terong.jpg" alt="">
-                        <h5 class="text-center">Terong</h5>
+                        <h6 class="text-center fs-6">Terong</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-brokoli.jpg" alt="">
-                        <h5 class="text-center">Brokoli</h5>
+                        <h6 class="text-center fs-6">Brokoli</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kembangkol.jpg" alt="">
-                        <h5 class="text-center">Kembang Kol</h5>
+                        <h6 class="text-center fs-6">Kembang Kol</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kentang.jpg" alt="">
-                        <h5 class="text-center">Kentang</h5>
+                        <h6 class="text-center fs-6">Kentang</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-tomat.jpg" alt="">
-                        <h5 class="text-center">Tomat</h5>
+                        <h6 class="text-center fs-6">Tomat</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-timun.jpg" alt="">
-                        <h5 class="text-center">Timun</h5>
+                        <h6 class="text-center fs-6">Timun</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kacangpanjang.jpg" alt="">
@@ -203,91 +203,91 @@
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-buncis.jpg" alt="">
-                        <h5 class="text-center">Buncis</h5>
+                        <h6 class="text-center fs-6">Buncis</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kacang.jpg" alt="">
-                        <h5 class="text-center">Kacang</h5>
+                        <h6 class="text-center fs-6">Kacang</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-mlinjo.jpg" alt="">
-                        <h5 class="text-center">Melinjo</h5>
+                        <h6 class="text-center fs-6">Melinjo</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-lobak.jpg" alt="">
-                        <h5 class="text-center">Lobak</h5>
+                        <h6 class="text-center fs-6">Lobak</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-jeruk.jpg" alt="">
-                        <h5 class="text-center">Jeruk</h5>
+                        <h6 class="text-center fs-6">Jeruk</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-jeruknipis.jpg" alt="">
-                        <h5 class="text-center">Jeruk Nipis</h5>
+                        <h6 class="text-center fs-6">Jeruk Nipis</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-anggur.jpg" alt="">
-                        <h5 class="text-center">Anggur</h5>
+                        <h6 class="text-center fs-6">Anggur</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pir.jpg" alt="">
-                        <h5 class="text-center">Pir</h5>
+                        <h6 class="text-center fs-6">Pir</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-kiwi.jpg" alt="">
-                        <h5 class="text-center">Kiwi</h5>
+                        <h6 class="text-center fs-6">Kiwi</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-durian.jpg" alt="">
-                        <h5 class="text-center">Durian</h5>
+                        <h6 class="text-center fs-6">Durian</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-apel.jpg" alt="">
-                        <h5 class="text-center">Apel</h5>
+                        <h6 class="text-center fs-6">Apel</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-jambu.jpg" alt="">
-                        <h5 class="text-center">Jambu</h5>
+                        <h6 class="text-center fs-6">Jambu</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-semangka.jpg" alt="">
-                        <h5 class="text-center">Semangka</h5>
+                        <h6 class="text-center fs-6">Semangka</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-melon.jpg" alt="">
-                        <h5 class="text-center">Melon</h5>
+                        <h6 class="text-center fs-6">Melon</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-buahnaga.jpg" alt="">
-                        <h5 class="text-center">Buah Naga</h5>
+                        <h6 class="text-center fs-6">Buah Naga</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pepaya.jpg" alt="">
-                        <h5 class="text-center">Pepaya</h5>
+                        <h6 class="text-center fs-6">Pepaya</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-alpukat.jpeg" alt="">
-                        <h5 class="text-center">Alpukat</h5>
+                        <h6 class="text-center fs-6">Alpukat</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-mangga.jpg" alt="">
-                        <h5 class="text-center">Mangga</h5>
+                        <h6 class="text-center fs-6">Mangga</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-nanas.jpg" alt="">
-                        <h5 class="text-center">Nanas</h5>
+                        <h6 class="text-center fs-6">Nanas</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-pisang.jpg" alt="">
-                        <h5 class="text-center">Pisang</h5>
+                        <h6 class="text-center fs-6">Pisang</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-stroberi.jpg" alt="">
-                        <h5 class="text-center">Stroberi</h5>
+                        <h6 class="text-center fs-6">Stroberi</h6>
                     </div>
                     <div class="gallery-pangan-container text-center">
                         <img src="/img/layanan/ketahanan-pangan/ktp-salak.jpg" alt="">
-                        <h5 class="text-center">Salak</h5>
+                        <h6 class="text-center fs-6">Salak</h6>
                     </div>
                 </div>
             </div>
@@ -300,98 +300,98 @@
     </div>
     <div class="gallery-pangan-section p-3 p-lg-5">
         <div class="gallery-text-container mb-5">
-            <div class="green-bar"></div>
-            <h3>Komoditas Peternakan</h3>
+            <div class="green-bar mb-3"></div>
+            <h4>Komoditas Peternakan</h4>
         </div>
-        <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
-            <div class="gallery-pangan-container text-center text-center">
+        <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 gap-lg-5">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/sapi.jpg" alt="">
-                <h5 class="text-center">Sapi</h5>
+                <h6 class="text-center fs-6">Sapi</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/kambing.jpg" alt="">
-                <h5 class="text-center">Kambing</h5>
+                <h6 class="text-center fs-6">Kambing</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ayampetelur.png" alt="">
-                <h5 class="text-center">Ayam Petelur</h5>
+                <h6 class="text-center fs-6">Ayam Petelur</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/ayampedaging.jpg" alt="">
-                <h5 class="text-center">Ayam Pedaging</h5>
+                <h6 class="text-center fs-6">Ayam Pedaging</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/entok.jpg" alt="">
-                <h5 class="text-center">Entok</h5>
+                <h6 class="text-center fs-6">Entok</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/bebek.jpg" alt="">
-                <h5 class="text-center">Bebek</h5>
+                <h6 class="text-center fs-6">Bebek</h6>
             </div>
         </div>
     </div>
     <div class="gallery-pangan-section p-3 p-lg-5">
         <div class="gallery-text-container mb-5">
-            <div class="green-bar"></div>
-            <h3>Komoditas Perikanan</h3>
+            <div class="green-bar mb-3"></div>
+            <h4>Komoditas Perikanan</h4>
         </div>
-        <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-5">
-            <div class="gallery-pangan-container text-center text-center">
+        <div class="gallery-pangan d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 gap-lg-5">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/nila.jpg" alt="">
-                <h5 class="text-center">Nila</h5>
+                <h6 class="text-center fs-6">Nila</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/lele.jpg" alt="">
-                <h5 class="text-center">Lele</h5>
+                <h6 class="text-center fs-6">Lele</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/gurame.png" alt="">
-                <h5 class="text-center">Gurame</h5>
+                <h6 class="text-center fs-6">Gurame</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/bandeng.jpg" alt="">
-                <h5 class="text-center">Bandeng</h5>
+                <h6 class="text-center fs-6">Bandeng</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/udangwindu.jpg" alt="">
-                <h5 class="text-center">Udang Windu</h5>
+                <h6 class="text-center fs-6">Udang Windu</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/udangvaname.jpg" alt="">
-                <h5 class="text-center">Udang Vaname</h5>
+                <h6 class="text-center fs-6">Udang Vaname</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/cacingsutra.jpg" alt="">
-                <h5 class="text-center">Cacing Sutra</h5>
+                <h6 class="text-center fs-6">Cacing Sutra</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/kutuair.jpg" alt="">
-                <h5 class="text-center">Kutu Air</h5>
+                <h6 class="text-center fs-6">Kutu Air</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/kodok.jpg" alt="">
-                <h5 class="text-center">Kodok</h5>
+                <h6 class="text-center fs-6">Kodok</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/mujair.jpg" alt="">
-                <h5 class="text-center">Mujair</h5>
+                <h6 class="text-center fs-6">Mujair</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/patin.webp" alt="">
-                <h5 class="text-center">Patin</h5>
+                <h6 class="text-center fs-6">Patin</h6>
             </div>
-            <div class="gallery-pangan-container text-center text-center">
+            <div class="gallery-pangan-container text-center">
                 <img src="/img/layanan/ketahanan-pangan/bawal.jpg" alt="">
-                <h5 class="text-center">Bawal</h5>
+                <h6 class="text-center fs-6">Bawal</h6>
             </div>
         </div>
     </div>
     <div class="inovasi-pangan-section p-3 p-lg-5">
         <div class="gallery-text-container mb-5">
-            <div class="green-bar"></div>
-            <h3>Inovasi dan Teknologi</h3>
+            <div class="green-bar mb-3"></div>
+            <h4>Inovasi dan Teknologi</h4>
         </div>          
-        <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+        <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
             <img src="/img/layanan/ketahanan-pangan/inovasi1.png" alt="">
             <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                 <h5 class="text-center text-lg-start">Pupuk Organik Cair (POC)</h5>
@@ -403,7 +403,7 @@
                 </div>
             </div>
         </div>
-        <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+        <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
             <img src="/img/layanan/ketahanan-pangan/inovasi2.png" alt="">
             <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                 <h5 class="text-center text-lg-start">Pupuk Padat Organik</h5>
@@ -418,7 +418,7 @@
                 </div>
             </div>
         </div>
-        <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+        <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
             <img src="/img/layanan/ketahanan-pangan/inovasi3.png" alt="">
             <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                 <h5 class="text-center text-lg-start">Pupuk Cair Penguat Tanaman</h5>
@@ -455,7 +455,7 @@
                     </div>
                 </div>
             </div>
-            <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+            <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
                 <img src="/img/layanan/ketahanan-pangan/inovasi4.png" alt="">
                 <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                     <h5 class="text-center text-lg-start">Pestisida Organik</h5>
@@ -494,7 +494,7 @@
                 </div>
             </div>
             <div class="collapse" id="readMore8">
-            <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+            <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
                 <img src="/img/layanan/ketahanan-pangan/inovasi5.png" alt="">
                 <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                     <h5 class="text-center text-lg-start">Pakan Ternak</h5>
@@ -509,7 +509,7 @@
                     </div>
                 </div>
             </div>
-            <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+            <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
                 <img src="/img/layanan/ketahanan-pangan/inovasi6.png" alt="">
                 <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                     <h5 class="text-center text-lg-start">Pestisida Organik</h5>
@@ -549,7 +549,7 @@
                     </a>
                 </div>
             </div>
-            <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+            <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
                 <img src="/img/layanan/ketahanan-pangan/inovasi7.png" alt="">
                 <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                     <h5 class="text-center text-lg-start">Mikrobubble</h5>
@@ -579,7 +579,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+                        <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
                             <img src="/img/layanan/ketahanan-pangan/inovasi8.png" alt="">
                             <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                                 <h5 class="text-center text-lg-start">Ozone Generator</h5>
@@ -611,7 +611,7 @@
                                 </div>
                             </div>
                         </div>
-                    <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+                    <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
                         <img src="/img/layanan/ketahanan-pangan/inovasi9.png" alt="">
                         <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                             <h5 class="text-center text-lg-start">Bunga Telang</h5>
@@ -655,7 +655,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+                    <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
                         <img src="/img/layanan/ketahanan-pangan/inovasi10.png" alt="">
                         <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                             <h5 class="text-center text-lg-start">Greenhouse</h5>
@@ -693,7 +693,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="inovasi-pangan-container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
+                    <div class="inovasi-pangan-container d-flex flex-column flex-md-row justify-content-center justify-content-lg-between align-items-center px-3 py-3 my-3">
                         <img src="/img/layanan/ketahanan-pangan/inovasi11.png" alt="">
                         <div class="inovasi-pangan-deskripsi  px-3 px-lg-5 mt-2 mt-lg-0 d-flex flex-column">
                             <h5 class="text-center text-lg-start">Penghilang Bau Sampah</h5>
@@ -715,10 +715,10 @@
     </div>
     <div class="dokumentasi-pangan-section my-5">
         <div class="px-3 px-lg-5 mb-3 mb-lg-5">
-            <div class="green-bar"></div>
-            <h3>Arsip Dokumen</h3>
+            <div class="green-bar mb-3"></div>
+            <h4>Arsip Dokumen</h4>
         </div>
-        <div class="dokumentasi-pangan-container d-flex flex-wrap justify-content-center align-items-center gap-5">
+        <div class="dokumentasi-pangan-container d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 gap-lg-5">
             <img src="/img/layanan/ketahanan-pangan/dokumentasi/110.png" alt="">
             <img src="/img/layanan/ketahanan-pangan/dokumentasi/111.png" alt="">
             <img src="/img/layanan/ketahanan-pangan/dokumentasi/112.png" alt="">
@@ -733,7 +733,7 @@
             <img src="/img/layanan/ketahanan-pangan/dokumentasi/121.png" alt="">
         </div>
             <div class="collapse" id="readMore9">
-                <div class="dokumentasi-pangan-container d-flex flex-wrap justify-content-center align-items-center gap-5 mt-5">
+                <div class="dokumentasi-pangan-container d-flex flex-wrap justify-content-center align-items-center  gap-3 gap-md-4 gap-lg-5 mt-5">
                     <img src="/img/layanan/ketahanan-pangan/dokumentasi/122.png" alt="">
                     <img src="/img/layanan/ketahanan-pangan/dokumentasi/123.png" alt="">
                     <img src="/img/layanan/ketahanan-pangan/dokumentasi/124.png" alt="">

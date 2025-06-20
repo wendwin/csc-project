@@ -15,8 +15,8 @@
     <div class="yellow-bar-container"></div>
     <!--legalitas perusahaan -->
     <div class="legalitas-container">
-        <div class="yellow-bar"></div>
-        <h4 class="mb-4 fw-bold">Legalitas Perusahaan</h4>
+        <div class="yellow-bar mb-3"></div>
+        <h4 class="mb-4">Legalitas Perusahaan</h4>
         <p>Sebagai induk perusahaan, PT. Cendana Solution Center (CSC) memilikibadan hukum yang sah sesuai dengan
             standart perusahaan perseroan diantarannya :</p>
         <ol>
@@ -29,7 +29,7 @@
     <!--prinsip tata kelola perusahaan -->
     <div class="row prinsip-container mt-5 mx-0 d-flex flex-wrap justify-content-between">
         <div class="col-md-3 text-container ms-0 ms-md-5 mb-3 mb-mb-0">
-            <div class="yellow-bar"></div>
+            <div class="yellow-bar mb-3"></div>
             <h4>Prinsip Tata Kelola Perusahaan</h4>
         </div>
         <div class="col-md-7 ms-3 ms-mb-0 ps-1 pe-4 px-md-4 py-5 deskripsi-container">
@@ -50,7 +50,7 @@
     <!-- tata kelola lainnya -->
     <div class="row kelola-lainnya-container my-5 mx-0 p-5 d-flex flex-wrap justify-content-between">
         <div class="col-md-5 kelola-container">
-            <div class="yellow-bar"></div>
+            <div class="yellow-bar mb-3"></div>
             <h4>Pendekatan Operasional</h4>
             <p>CSC menerapkan pendekatan berbasis proses yang terukur untuk meningkatkan kualitas layanan. Kami juga
                 melakukan evaluasi secara berkala terhadap kinerja perusahaan guna memastikan keberlanjutan, inovasi,
@@ -58,7 +58,7 @@
                 menguntungkan dengan seluruh mitra kerja dan klien.</p>
         </div>
         <div class="col-md-5 kelola-container">
-            <div class="yellow-bar"></div>
+            <div class="yellow-bar mb-3"></div>
             <h4>Komitmen Keberlanjutan</h4>
             <p>Sebagai bagian dari tata kelola yang baik, CSC berfokus pada keberlanjutan dengan mengintegrasikan aspek
                 sosial, ekonomi, dan lingkungan ke dalam strategi bisnis kami. Program-program CSR kami dirancang untuk

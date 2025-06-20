@@ -4,8 +4,8 @@
 
     </div>
     <div class="klien-section p-3 p-lg-5 ">
-        <div class="yellow-bar"></div>
-        <h3>Klien</h3>
+        <div class="yellow-bar mb-3"></div>
+        <h4>Klien</h4>
         <div class="klien-text-section">
             <p>Cendana Solution Center (CSC) merasa bangga telah menjadi mitra andal bagi berbagai industri, termasuk
                 instansi pemerintah, organisasi internasional, dan perusahaan multinasional. Kami memiliki portofolio
@@ -21,7 +21,7 @@
     <div class="trust">
         <div class="p-3 p-lg-5">
             <div class="yellow-bar mb-3"></div>
-            <h3 class="fw-bolder mb-5">Dipercaya Oleh</h3>
+            <h4 class="fw-semibold mb-5">Dipercaya Oleh</h4>
             <div class="org-one text-center d-md-flex justify-content-center align-items-center gap-5">
                 <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendes.png" alt="">
                 <img class="mx-5 mx-md-0" src="img/kemitraan/logo-kemendagri.png" alt="">
@@ -37,7 +37,7 @@
             </div>
             <div class="peta mt-5">
                 <div class="text-center">
-                    <h3 class="mb-5">Mitra Kami</h3>
+                    <h4 class="fw-semibold mb-5">Mitra Kami</h4>
                     <img src="img/kemitraan/Peta.png" alt="" width="500">
                 </div>
                 <div class="mt-4 d-md-flex justify-content-center gap-md-5">

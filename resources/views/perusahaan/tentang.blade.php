@@ -10,11 +10,11 @@
     <div class="intro-section p-1 p-lg-5">
         <div
             class="intro-container m-3 m-lg-0 d-flex flex-column flex-lg-row justify-content-between align-items-center">
-            <div class="intro-img-section order-1 order-lg-0">
+            <div class="intro-img-section d-none d-lg-block order-1 order-lg-0">
                 <img src="/img/tatakelola2.jpeg" alt="">
             </div>
-            <div class="intro-text-section p-2 p-lg-5 order-0 order-lg-1">
-                <h3>CSC UNTUK INDONESIA</h3>
+            <div class="intro-text-section p-3 p-lg-5 order-0 order-lg-1">
+                <h4>CSC UNTUK INDONESIA</h4>
                 <p>Cendana Solution Center adalah mitra terpercaya yang menghadirkan solusi komprehensif di bidang event
                     organizer, ketahanan pangan, dan konstruksi. Dengan keahlian dan dedikasi, kami membantu menciptakan
                     acara yang berkesan, mendukung kebutuhan pangan berkelanjutan, dan membangun infrastruktur yang
@@ -29,7 +29,7 @@
                     Dengan tim ahli yang berdedikasi, kolaborasi erat dengan mitra, dan komitmen pada inovasi, Cendana
                     Solution Center percaya bahwa setiap langkah menuju sukses adalah prioritas utama kami, demi
                     mewujudkan masa depan yang lebih baik bagi masyarakat dan lingkungan.</p>
-                <div class="intro-pengalaman-section d-flex flex-wrap flex-wd-0 justify-content-evenly text-center">
+                <div class="intro-pengalaman-section d-flex flex-wrap flex-wd-0 justify-content-evenly text-center mt-5">
                     <div class="intro-pengalaman-container">
                         <h4 class="mx-auto">1+</h4>
                         <p>Pengalaman (Tahun)</p>
@@ -54,9 +54,9 @@
             <div class="sejarah-shape-container"></div>
         </div>
         <div class="sejarah-text-section px-4 px-lg-5">
-            <div class="yellow-bar"></div>
+            <div class="yellow-bar mb-3"></div>
             <div class="sejarah-text-container ">
-                <h3>SEJARAH CENDANA SOLUTION CENTER</h3>
+                <h4 class="mb-2">SEJARAH CENDANA SOLUTION CENTER</h4>
                 <p>Sejak didirikan pada tahun 2024, Cendana Solution Center (CSC) telah berkomitmen untuk menjadi
                     penyelenggara spesial event yang terpercaya, bekerja sama dengan berbagai instansi pemerintah dan
                     perusahaan swasta di seluruh Indonesia. Dengan pengalaman yang luas dalam mengelola berbagai jenis
@@ -81,8 +81,8 @@
             <img src="/img/tentang2.jpeg" alt="">
         </div>
         <div class="visi-misi-text-section pt-5 pb-3 py-lg-0 px-4 px-lg-5">
-            <div class="yellow-bar"></div>
-            <h3>VISI & MISI</h3>
+            <div class="yellow-bar mb-3"></div>
+            <h4>VISI & MISI</h4>
             <ul>
                 <li>Visi : </li>
                 <ul>
@@ -106,12 +106,12 @@
         <div class="container">
             <div class="logo d-flex flex-column justify-center align-items-center">
                 <div class="induk text-center mb-5">
-                    <h2 class="mb-4">Perusahaan Induk</h2>
+                    <h4 class="mb-4">Perusahaan Induk</h4>
                     <img class="parent" src="/img/logo/csc.png" alt="">
                 </div>
                 <div class="d-md-flex flex-column mt-4">
                     <div class="text-center mb-4">
-                        <h2>Anak Perusahaan</h2>
+                        <h4>Anak Perusahaan</h4>
                     </div>
                     <div class="d-md-flex mx-auto gap-5">
                         <div class="d-md-flex align-items-center gap-3 text-center mb-5 mb-md-0">
