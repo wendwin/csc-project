@@ -45,7 +45,7 @@ h3{
 
 .blue-bar{
     width: 50px;
-    height: 10px;
+    height: 5px;
     background-color: #3499C5;
     transition:ease-in-out 0.2s;
 }
@@ -105,20 +105,28 @@ h3{
     transform: rotate(180deg);
 }
 
-.gallery-event-section{
+/* .gallery-event-section{
     padding: 0px 150px;
-}
+} */
 
 .gallery-event-section img{
-    border-radius: 20px;
-    width: 350px;
-    height: 250px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     transition: ease-in-out 0.2s;
 }
 .gallery-event-section img:hover{
     scale: 105%;
 }
+
+/* .gallery-event-section img{
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: ease-in-out 0.2s;
+} */
 
 
 .layanan-lainnya-section .layanan-card {
@@ -185,29 +193,37 @@ h3{
         width: 150px;
         height: 150px;
     }
-    .gallery-event-section{
+    /* .gallery-event-section{
         padding: 0px 0px;
     }
     .gallery-event-section img{
         width: 120px;
         height: 90px;
         
-    }
+    } */
 }
 
 @media (max-width: 992px) {
     .gallery-event-section{
-        padding: 0px 50px;
+        padding: 0px 4px;
     }
-    .gallery-event-section img{
+    /* .gallery-event-section img{
         width: 110px;
         height: 90px;
         
-    }
+    } */
     .layanan-lainnya-section .layanan-card {
         width: 100%;
     }
     .layanan-lainnya-section .layanan-card img {
         height: 120px;
     }
+}
+
+@media (min-width: 993px) {
+.gallery-event-section img{
+    width: 350px;
+    height: 250px;
+    
+}
 }

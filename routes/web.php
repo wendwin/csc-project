@@ -37,6 +37,13 @@ Route::prefix('layanan')->group(function () {
     })->name('layanan.konstruksi');
 });
 
+// Program
+Route::prefix('program')->group(function () {
+    Route::get('/koperasi_desa', function () {
+        return view('klien-sejarah/kopdes', ['css' => 'css/klien-sejarah/kopdes.css']);
+    })->name('koperasi_desa');
+});
+
 // Klien dan Sejarah
 Route::get('/klien', function () {
     return view('klien-sejarah/klien', ['css' => 'css/klien-sejarah/klien.css']);

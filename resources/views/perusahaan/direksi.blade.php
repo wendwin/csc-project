@@ -5,8 +5,8 @@
     </div>
     <div class="container mt-5">
         <div class="organisasi-section mb-5">
-            <div class="yellow-bar"></div>
-            <h3>Jajaran Komisaris</h3>
+            <div class="yellow-bar mb-3"></div>
+            <h4 class="">Jajaran Komisaris</h4>
             {{-- <div class="row organisasi-member mb-2">
                 <div class="col-md-3 organisasi-container mx-auto mx-md-0">
                     <img class="m-3" src="/img/komisaris/1.png" alt="">
@@ -31,8 +31,8 @@
             </div> --}}
         </div>
         <div class="organisasi-section mb-5">
-            <div class="yellow-bar"></div>
-            <h3>Jajaran Direksi</h3>
+            <div class="yellow-bar mb-3"></div>
+            <h4 class="fw-medium">Jajaran Direksi</h4>
             {{-- <div class="row organisasi-member">
                 <div class="col-md-3 organisasi-container mx-auto mx-md-0 ">
                     <img class="m-3" src="/img/direksi/1.png" alt="">

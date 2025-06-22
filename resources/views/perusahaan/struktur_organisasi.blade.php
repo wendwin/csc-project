@@ -5,7 +5,7 @@
     </div>
     <div class="struktur-section p-3 p-md-5">
         <div class="judul-container">
-            <div class="yellow-bar"></div>
+            <div class="yellow-bar mb-3"></div>
             <h4>Struktur Organisasi</h4>
         </div>
         <div class="stuktur-container d-flex flex-column align-items-center mt-5">

@@ -236,7 +236,7 @@
     </div>
     <div class="glimpse-bottom "></div>
 
-    <div class="school">
+    {{-- <div class="school">
         <div class="bg-white p-5 position-relative">
             <div class="line-bar position-absolute top-0 end-0 me-3 mt-3"></div>
             <div class="line-bar-title mb-5">
@@ -270,12 +270,12 @@
                         </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="service">
         <div class="container" style="background-color: ">
             <div class="line-bar-title mb-3"></div>
-            <h2 class="fw-bolder mb-5 text-white">Layanan</h2>
+            <h4 class=" mb-5 text-white">Layanan</h4>
             <div class="mb-xl-0 d-xl-flex justify-content-evenly align-items-center gap-5">
                 <a href="{{ route('layanan.event_organizer') }}">
                     <div class="card position-relative mb-4">
@@ -356,7 +356,7 @@
         <div class="trust">
             <div class="container">
                 <div class="line-bar-title mb-3"></div>
-                <h2 class="fw-bolder mb-5">Dipercaya Oleh</h2>
+                <h4 class=" mb-5">Dipercaya Oleh</h4>
                 <div class="org-one text-center d-md-flex flex-warp justify-content-center align-items-center gap-5">
                     <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-kemendes.png" alt="">
                     <img class="mx-5 mx-md-0 mb-4 mb-md-0" src="img/kemitraan/logo-kemendagri.png" alt="">
@@ -373,7 +373,7 @@
                 </div>
                 <div class="peta mt-5">
                     <div class="text-center">
-                        <h2 class="mb-5">Mitra Kami</h2>
+                        <h4 class="fw-semibold mb-5">Mitra Kami</h4>
                         <img src="img/kemitraan/Peta.png" alt="" width="500">
                     </div>
                     <div class="mt-4 d-md-flex justify-content-center gap-md-5">
@@ -448,7 +448,7 @@
     <div class="news">
         <div class="container" style="background-color:">
             <div class="line-bar-title mb-3"></div>
-            <h2 class="fw-bolder mb-5 ">Berita Terbaru</h2>
+            <h4 class="mb-5 ">Berita Terbaru</h4>
             <div class="mb-lg-0 d-lg-flex justify-content-evenly align-items-center gap-3">
                 <a href="">
                     <div class="card p-3 mb-4">

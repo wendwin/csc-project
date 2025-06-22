@@ -123,6 +123,20 @@
                         </ul>
                         <div class="nav-line"></div>
                     </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="layananDropdown" role="button">
+                            <span class=""
+                                :class="{
+                                    'nav-link-on': !$store.navbar.isExpanded && window.scrollY === 0,
+                                    'nav-link-scroll': $store.navbar.isExpanded || window.scrollY > 0,
+                                }">
+                                Program</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="layananDropdown">
+                            <li><a class="dropdown-item" href="{{ route('koperasi_desa') }}">Koperasi Desa</a></li>
+                        </ul>
+                        <div class="nav-line"></div>
+                    </li>
                     <li class="nav-item me-3">
                         <a class="nav-link" href="{{ route('klien') }}">
                             <span class=""

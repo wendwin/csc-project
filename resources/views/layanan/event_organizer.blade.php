@@ -18,8 +18,8 @@
         </div>
     </div>
     <div class="bidang-event-section p-3 p-lg-5">
-        <div class="blue-bar"></div>
-        <h3>Bidang Kami</h3>
+        <div class="blue-bar mb-3"></div>
+        <h4>Bidang Kami</h4>
         <div class="d-flex flex-column align-items-center align-items-lg-start">
 
             <ol>
@@ -81,8 +81,8 @@
     </div>
     <div class="keunggulan-event-section p-3 p-lg-5">
         <div class="keunggulan-text-section">
-            <div class="blue-bar"></div>
-            <h3>Keunggulan Kami</h3>
+            <div class="blue-bar mb-3"></div>
+            <h4>Keunggulan Kami</h4>
             <ul>
                 <li>Pengalaman dan Jaringan Luas: Selama lebih dari dua dekade, kami telah bekerja dengan berbagai
                     instansi pemerintah dan perusahaan di seluruh Indonesia, memberikan kami keunggulan dalam memahami
@@ -96,7 +96,7 @@
             </ul>
         </div>
     </div>
-    <div class="gallery-event-section d-flex flex-wrap justify-content-center align-items-center gap-5">
+    <div class="gallery-event-section d-flex flex-wrap justify-content-center align-items-center gap-3 gap-md-4 gap-lg-5">
         <img src="/img/layanan/event-organizer/event-gallery-1.png" alt="">
         <img src="/img/layanan/event-organizer/event-gallery-2.png" alt="">
         <img src="/img/layanan/event-organizer/event-gallery-3.png" alt="">

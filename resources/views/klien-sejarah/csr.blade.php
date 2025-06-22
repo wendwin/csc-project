@@ -6,8 +6,8 @@
     <div class="tanggung-jawab-section my-5">
         <div class="tanggung-jawab-container d-flex flex-column flex-lg-row justify-content-between align-items-end align-items-lg-center gap-5">
             <div class="tanggung-jawab-text p-3 p-lg-5">
-                <div class="yellow-bar"></div>
-                <h3>Tanggung Jawab Sosial Perusahaan (CSR)</h3>
+                <div class="yellow-bar mb-3"></div>
+                <h4>Tanggung Jawab Sosial Perusahaan (CSR)</h4>
                 <p>
                     Di Cendana Solution Center (CSC), kami tidak hanya fokus pada penyelenggaraan acara, ketahanan pangan, dan konstruksi, tetapi juga berkomitmen untuk memberikan dampak positif bagi masyarakat dan lingkungan. Komitmen terhadap Tanggung Jawab Sosial Perusahaan (CSR) adalah bagian tak terpisahkan dari nilai-nilai dan budaya kami.
                     <br><br>
@@ -27,12 +27,12 @@
             <div class="fokus-img">
                 <img src="/img/csr/csr3.png" alt="">
                 <div class="solusi-container mb-3 mb-lg-0">
-                    <h2>CSC, SOLUSI UNTUK ANDA</h2>
+                    <h4>CSC, SOLUSI UNTUK ANDA</h4>
                 </div>
             </div>
-            <div class="fokus-text px-3 px-lg-5">
-                <div class="yellow-bar"></div>
-                <h3>Fokus Kami</h3>
+            <div class="fokus-text px-3 px-lg-5 mt-3 mt-lg-0">
+                <div class="yellow-bar mb-3"></div>
+                <h4>Fokus Kami</h4>
                 <p>1. Peristiwa Berkelanjutan <br>
                     CSC berkomitmen untuk menyelenggarakan acara yang tidak hanya mengesankan peserta tetapi juga ramah lingkungan. Kami menerapkan praktik berkelanjutan, seperti pengelolaan sumber daya yang bertanggung jawab dan penggunaan bahan ramah lingkungan, untuk meminimalkan dampak negatif terhadap lingkungan.
                     <br><br>
@@ -51,7 +51,7 @@
     <div class="news">
         <div class="container" style="background-color:">
             <div class="yellow-bar mb-3"></div>
-            <h2 class="fw-bolder mb-5 ">Berita Terbaru</h2>
+            <h4 class="fw-semibold mb-5 ">Berita Terbaru</h4    >
             <div class="mb-lg-0 d-lg-flex justify-content-evenly align-items-center gap-3">
                 <a href="">
                     <div class="card p-3 mb-4">

@@ -26,13 +26,13 @@ h3{
 }
 .yellow-bar{
     width: 50px;
-    height: 10px;
+    height: 5px;
     background-color: #F7BC12;
     transition:ease-in-out 0.2s;
 }
 .white-bar{
     width: 50px;
-    height: 10px;
+    height: 5px;
     background-color: #ffffff;
     transition:ease-in-out 0.2s;
 }
