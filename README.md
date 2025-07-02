@@ -1,8 +1,8 @@
 
-````md
----
 
-# Laravel 12 Project - WEBSITE Multi-Domain
+
+
+Laravel 12 Project - WEBSITE Multi-Domain
 
 Proyek ini adalah sistem website berbasis Laravel 12 yang telah terintegrasi dengan:
 
@@ -13,7 +13,9 @@ Proyek ini adalah sistem website berbasis Laravel 12 yang telah terintegrasi den
 - Database MySQL
 - Support Nginx / Apache untuk multi-domain lokal
 
----
+
+
+````md
 
 ## 1. Install Dependency
 
