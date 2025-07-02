@@ -1,10 +1,10 @@
 
+````md
 ---
 
-````markdown
 # Laravel 12 Project - WEBSITE Multi-Domain
 
-Proyek ini adalah sistem dashboard berbasis Laravel 12 yang telah terintegrasi dengan:
+Proyek ini adalah sistem website berbasis Laravel 12 yang telah terintegrasi dengan:
 
 - Tailwind CSS (dengan auto reload via Vite)
 - Autentikasi (Login/Logout)
@@ -15,14 +15,16 @@ Proyek ini adalah sistem dashboard berbasis Laravel 12 yang telah terintegrasi d
 
 ---
 
-### Install Dependency
+## 1. Install Dependency
 
 ```bash
 composer install
 npm install && npm run dev
-```
+````
 
-### Setup Environment
+---
+
+## 2. Setup Environment
 
 Salin file `.env`:
 
@@ -30,7 +32,7 @@ Salin file `.env`:
 cp .env.example .env
 ```
 
-Lalu ubah konfigurasi berikut di `.env`:
+Edit `.env`:
 
 ```env
 APP_NAME="Dashboard"
@@ -44,7 +46,9 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 4. Generate Key dan Migrate
+---
+
+## 3. Generate Key & Migrate Database
 
 ```bash
 php artisan key:generate
@@ -53,23 +57,25 @@ php artisan migrate
 
 ---
 
-## Konfigurasi Multi-Domain Lokal
+## 4. Konfigurasi Multi-Domain Lokal
 
-### 1. Edit File Hosts
+### a. Edit File Hosts
 
-Tambahkan baris berikut ke `C:\Windows\System32\drivers\etc\hosts` (Windows) atau `/etc/hosts` (Linux/macOS):
+Tambahkan baris berikut ke:
 
-```
+* **Windows**: `C:\Windows\System32\drivers\etc\hosts`
+* **Linux/macOS**: `/etc/hosts`
 
-C:\Windows\System32\drivers\etc\hosts
+```text
 127.0.0.1      cendanasolution.test
 127.0.0.1      pustakapemda.test
 127.0.0.1      pspi.test
 127.0.0.1      dashboard.test
-
 ```
 
-### 2. Konfigurasi Nginx (contoh di Laragon)
+---
+
+### b. Konfigurasi Nginx (Contoh Laragon)
 
 ```nginx
 server {
@@ -92,7 +98,9 @@ server {
 }
 ```
 
-### 3. Konfigurasi Apache (Virtual Host)
+---
+
+### c. Konfigurasi Apache (Virtual Host)
 
 ```apache
 <VirtualHost *:80>
@@ -106,49 +114,54 @@ server {
 </VirtualHost>
 ```
 
-Setelah itu, **restart Apache/Nginx**.
+> Setelah itu, **restart Apache atau Nginx** agar konfigurasi berlaku.
 
 ---
 
-## Tailwind CSS + Auto Reload
+## 5. Tailwind CSS + Auto Reload
 
-* Tailwind sudah terpasang dengan Vite.
+* Tailwind sudah terpasang dengan Vite
 * Jalankan dev server:
 
 ```bash
-npm run dev #AGAR AUTO RELOAD
+npm run dev
 ```
 
-File penting:
+### File Terkait:
 
 * `vite.config.js`
 * `tailwind.config.js`
 * `resources/css/app.css`
-* `layouts/nama website.blade.php` sudah include CSS-nya.
+* `resources/views/layouts/[nama_website].blade.php` (sudah include CSS)
 
 ---
 
----
+## 6. Struktur File Penting
 
-## Struktur Penting
-
-* `routes/web.php` ? Routing domain dan auth
-* `app/Http/Controllers/AuthController.php` ? Login & Logout logic
+* `routes/web.php` ? Routing domain dan autentikasi
+* `app/Http/Controllers/AuthController.php` ? Logic login & logout
 * `resources/views/admin/auth/login.blade.php` ? Halaman login
 * `resources/views/admin/dashboard.blade.php` ? Halaman dashboard
 * `resources/views/layouts/app.blade.php` ? Layout utama
 
 ---
 
-## Testing
+## 7. Testing
 
-Akses login: `http://dashboard.test/auth/login` jalankan db seedernya dulu agar bisa login ke dashboardnya
-Akses CSC: `http://cendanasolution.test`
-Akses CSC: `http://pspi.test`
-Akses CSC: `http://pustakapemda.test`
-Login ? redirect ke: `http://dashboard.test/dashboard`
-Akses `/dashboard` tanpa login ? redirect ke login
-Akses `/auth/login` saat sudah login ? redirect ke dashboard
+Akses halaman:
+
+* Login: `http://dashboard.test/auth/login`
+  *(jalankan DB seeder dulu untuk login)*
+* Dashboard: `http://dashboard.test/dashboard`
+* CSC 1: `http://cendanasolution.test`
+* CSC 2: `http://pspi.test`
+* CSC 3: `http://pustakapemda.test`
+
+### Logika Redirect:
+
+* Akses `/dashboard` tanpa login ? redirect ke login
+* Akses `/auth/login` saat sudah login ? redirect ke dashboard
 
 ---
+
 
