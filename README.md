@@ -14,9 +14,6 @@ Proyek ini adalah sistem website berbasis Laravel 12 yang telah terintegrasi den
 - Support Nginx / Apache untuk multi-domain lokal
 
 
-
-````md
-
 ## 1. Install Dependency
 
 ```bash
