@@ -26,6 +26,7 @@ npm install && npm run dev
 ## 2. Setup Environment
 
 Salin file `.env`:
+APP_URL=http://dashboard.test #ganti dengan ini agar bisa rederch
 
 ```bash
 cp .env.example .env
@@ -40,7 +41,7 @@ APP_URL=http://dashboard.test
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=namadb
+DB_DATABASE=ppc_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```
