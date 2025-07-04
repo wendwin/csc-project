@@ -16,16 +16,17 @@
     @include('pustakapemda-components.navbar')
 
     {{-- Konten halaman --}}
-    <main class="flex-1 p-6"
-        style="background-image: url('/img/pustakapemda/background.png'); background-repeat: repeat;">
-        @yield('content')
+    <main class="relative flex-1"
+        style="background-image: url('/img/pustakapemda/background.png'); background-repeat: repeat; background-size: cover;">
+        <div class="absolute inset-0 bg-black/5 z-0"></div>
+
+        <div class="relative z-10 text-white">
+            @yield('content')
+        </div>
     </main>
 
     {{-- Footer, bisa di pindahkan ke component jika compleks --}}
-    <footer class="text-center p-4 text-sm text-gray-500">
-        &copy; {{ date('Y') }} Pustaka Pemda. All rights reserved.
-    </footer>
-
+    @include('pustakapemda-components.footer')
 </body>
 
 </html>

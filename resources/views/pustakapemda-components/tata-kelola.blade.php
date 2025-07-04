@@ -1,6 +1,6 @@
-<div class="max-w-6xl mx-auto p-6 bg-white shadow-sm rounded-lg">
+<div class="max-w-6xl mx-auto p-6 my-5 bg-white shadow-md rounded-lg">
     <h1 class="text-[#2C437F] text-xl md:text-2xl font-bold">Solusi Cerdas untuk Tata Kelola Desa</h1>
-    <p class="my-8 text-justify md:text-center text-sm md:text-base ">Kami hadir sebagai mitra strategis dalam
+    <p class="my-8 text-justify md:text-center text-sm md:text-base text-black">Kami hadir sebagai mitra strategis dalam
         pengembangan
         kapasitas aparatur
         desa dan kecamatan melalui

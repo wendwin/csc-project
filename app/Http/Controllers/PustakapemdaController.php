@@ -10,6 +10,33 @@ class PustakapemdaController extends Controller
 {
     public function index()
     {
+            $carouselItems = [
+        [
+            'image' => '/img/asean-bac.jpg',
+            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
+            'label' => 'Terbaru',
+            'publisher' => 'Pustaka Pemda',
+            'date' => '27/06/2025',
+            'description' => 'Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
+        ],
+        [
+            'image' => '/img/g20.jpg',
+            'title' => 'Pameran G20: Inovasi Global untuk Masa Depan',
+            'label' => 'Terbaru',
+            'publisher' => 'Pustaka Pemda',
+            'date' => '15/06/2025',
+            'description' => 'Acara G20 memperlihatkan komitmen negara-negara dalam menghadapi tantangan global...',
+        ],
+        [
+            'image' => '/img/expo-2020-dubai.jpg',
+            'title' => 'Expo 2020 Dubai: Kolaborasi Internasional',
+            'label' => 'Terbaru',
+            'publisher' => 'Pustaka Pemda',
+            'date' => '10/06/2025',
+            'description' => 'Berbagai inovasi dari berbagai negara ditampilkan dalam Expo 2020 Dubai...',
+        ],
+    ];
+
          $cards = [
         [
             'title' => 'Jaringan Kemitraan Luas dan Terpercaya',
@@ -48,6 +75,6 @@ class PustakapemdaController extends Controller
         ],
     ];
 
-        return view('pustakapemda.index', compact('cards'));
+        return view('pustakapemda.index', compact('cards', 'carouselItems'));
     }
 }
