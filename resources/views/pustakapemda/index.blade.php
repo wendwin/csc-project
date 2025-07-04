@@ -5,5 +5,6 @@
 @section('content')
     <div class="text-center">
         @include('pustakapemda-components.hero')
+        @include('pustakapemda-components.tata-kelola')
     </div>
 @endsection
