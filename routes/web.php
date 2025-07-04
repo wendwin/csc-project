@@ -6,6 +6,7 @@ use App\Http\Controllers\PustakapemdaController;
 use App\Http\Controllers\PspiController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,13 +67,16 @@ Route::domain('pspi.test')->group(function () {
 | Dashboard/Admin Panel: dashboard.test handle by putra
 |--------------------------------------------------------------------------
 */
-Route::domain('dashboard.test')->group(function () {
+Route::domain('dashboard.localhost')->group(function () {
     Route::get('/auth/login', [AuthController::class, 'login'])->name('admin.login');
     Route::post('/auth/login', [AuthController::class, 'doLogin'])->name('admin.login.submit');
     Route::post('/logout', [AuthController::class, 'logout'])->name('admin.logout');
 
     Route::middleware('auth')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+
+         // Artikel (resource)
+         Route::resource('/articles', ArticleController::class);
     });
 });
 

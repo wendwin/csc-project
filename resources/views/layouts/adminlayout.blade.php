@@ -1,26 +1,27 @@
 {{-- HANDLE BY PUTRA --}}
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>{{ $title ?? 'Dashboard Admin' }}</title>
-    @vite('resources/css/app.css')
+    <title>{{ $title ?? 'Dashboard' }}</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex">
+<body class="bg-gray-100 flex" x-data="{ sidebarOpen: true }">
 
     {{-- Sidebar --}}
     @include('admin-components.sidebar')
 
-    <div class="flex-1 flex flex-col">
+    <div class="flex flex-col flex-1">
         {{-- Navbar --}}
         @include('admin-components.navbar')
 
-        {{-- Content utama --}}
-        <main class="p-6 flex-1">
+        {{-- Content --}}
+        <main class="p-6">
             @yield('content')
         </main>
     </div>
+
 
 </body>
 </html>
