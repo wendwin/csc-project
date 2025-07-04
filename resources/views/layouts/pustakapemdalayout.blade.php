@@ -16,7 +16,8 @@
     @include('pustakapemda-components.navbar')
 
     {{-- Konten halaman --}}
-    <main class="flex-1 container mx-auto p-6">
+    <main class="flex-1 p-6"
+        style="background-image: url('/img/pustakapemda/background.png'); background-repeat: repeat;">
         @yield('content')
     </main>
 
