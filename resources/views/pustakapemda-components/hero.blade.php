@@ -1,4 +1,4 @@
-<div class="md:max-w-5xl mx-auto py-10">
+<div class="md:max-w-5xl mx-auto mt-16">
     <div class="flex justify-center rounded-lg">
         <div class="w-full max-w-xl md:max-w-5xl">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -45,7 +45,8 @@
         </div>
     </div>
 </div>
-<script>
+
+{{-- <script>
     const slides = document.querySelectorAll('.carousel-slide');
     let currentSlide = 0;
 
@@ -85,4 +86,17 @@
     }
 
     showSlide(currentSlide); 
+</script> --}}
+
+
+<script type="module">
+    import { initCarousel } from '/js/carousel.js';
+
+    document.addEventListener('DOMContentLoaded', function () {
+        initCarousel({
+            slideClass: 'carousel-slide',
+            prevId: 'prevSlide',
+            nextId: 'nextSlide',
+        });
+    });
 </script>

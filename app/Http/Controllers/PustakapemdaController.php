@@ -75,6 +75,17 @@ class PustakapemdaController extends Controller
         ],
     ];
 
-        return view('pustakapemda.index', compact('cards', 'carouselItems'));
+        $tentangItems = [
+        [
+            'image' => '/img/asean-bac.jpg',
+        ],
+        [
+            'image' => '/img/g20.jpg',
+        ],
+        [
+            'image' => '/img/expo-2020-dubai.jpg',
+        ],
+    ];
+        return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems'));
     }
 }
