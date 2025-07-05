@@ -10,9 +10,8 @@
     <div class="flex flex-wrap justify-center gap-5">
         @foreach ($cards as $card)
             <div
-                class="bg-[#3660AF] text-white px-5 py-5 md:py-7 rounded-lg max-w-[200px] md:max-w-60 flex flex-col items-center group hover:bg-[#2C437F] transition duration-300 transform">
-                <h5 class="text-center text-sm md:text-base font-bold group-hover:scale-105 transform transition-all"
-                    style="min-height:70px;">
+                class="bg-[#3660AF] text-white px-5 py-5 md:py-7 rounded-lg max-w-[160px] md:max-w-60 flex flex-col items-center group hover:bg-[#2C437F] transition duration-300 transform">
+                <h5 class="text-center text-sm md:text-base font-bold group-hover:scale-105 transform transition-all min-h-[100px]  md:min-h-[70px]">
                     {{ $card['title'] }}
                 </h5>
                 <img src="{{ $card['img'] }}" alt="" class="w-16 h-16 my-7">

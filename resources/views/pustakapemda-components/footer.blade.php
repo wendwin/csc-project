@@ -5,7 +5,7 @@
             <h1 class="text-lg md:text-xl font-bold max-w-xs">PUSAT TATA KELOLA KEUANGAN DAN PEMBANGUNAN DAERAH </h1>
             <div class="flex flex-col gap-3 md:-mb-3 my-5 md:my-0">
                 <div class="flex flex-row items-center gap-1">
-                    <i data-lucide="map-pin" class="w-4 h-4 text-white"></i>
+                    <i data-lucide="map-pin" class=" md:w-4 md:h-4 text-white"></i>
                     <p class="text-xs md:text-sm">
                         Office : Jl. Sidomukti No 30, Kel. Kadipaten,
                         Kec.Keraton, Kota Yogyakarta,
@@ -26,12 +26,15 @@
                 </div>
             </div>
             <div class="flex flex-row justify-end gap-1 mt-3 md:mt-0 md:w-[250px]">
-                <a href=""><i data-lucide="facebook"
-                        class="w-8 h-8 text-center rounded-xl bg-white p-1 text-[#074DFF]"></i></a>
-                <a href=""><i data-lucide="instagram"
-                        class="w-8 h-8 text-center rounded-xl bg-white p-1 text-[#074DFF]"></i></a>
-                <a href=""><i data-lucide="linkedin"
-                        class="w-8 h-8 text-center rounded-xl bg-white p-2 text-[#074DFF]"></i></a>
+                <a href="#">
+                    <i data-lucide="facebook" class="w-8 h-8 p-1 rounded-xl bg-white text-[#074DFF] flex items-center justify-center"></i>
+                </a>
+                <a href="#">
+                    <i data-lucide="instagram" class="w-8 h-8 p-1 rounded-xl bg-white text-[#074DFF] flex items-center justify-center"></i>
+                </a>
+                <a href="#">
+                    <i data-lucide="linkedin" class="w-8 h-8 p-2 rounded-xl bg-white text-[#074DFF] flex items-center justify-center"></i>
+                </a>
             </div>
         </div>
         <div class="w-2/3 h-1 mx-auto bg-white my-5 rounded-lg"></div>
@@ -39,7 +42,3 @@
     </div>
 </footer>
 
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-    lucide.createIcons();
-</script>
