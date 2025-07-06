@@ -15,7 +15,7 @@
                                 <div class="flex flex-col items-start">
 
                                     <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}"
-                                        class="w-full h-[200px] md:min-w-[200px] md:h-[220px] xl:min-w-[300px] xl:h-[250px] object-cover rounded">
+                                        class="w-full h-[200px] md:min-w-[200px] md:h-[220px] xl:min-w-[300px] xl:h-[250px] object-cover rounded" loading="lazy">
 
                                     <div class="flex flex-col justify-center w-2/3">
                                         <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>
@@ -50,7 +50,7 @@
                                         <div class="flex flex-col items-centertext-center">
 
                                             <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}"
-                                                class="w-full h-[100px] md:h-[130px] lg:h-[150px] xl:h-[170px] object-cover rounded">
+                                                class="w-full h-[100px] md:h-[130px] lg:h-[150px] xl:h-[170px] object-cover rounded" loading="lazy">
 
                                             <div class="flex flex-col justify-center">
                                                 <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>

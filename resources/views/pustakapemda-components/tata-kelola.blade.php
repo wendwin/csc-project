@@ -14,7 +14,7 @@
                 <h5 class="text-center text-sm md:text-base font-bold group-hover:scale-105 transform transition-all min-h-[100px]  md:min-h-[70px]">
                     {{ $card['title'] }}
                 </h5>
-                <img src="{{ $card['img'] }}" alt="" class="w-16 h-16 my-7">
+                <img src="{{ $card['img'] }}" alt="" class="w-16 h-16 my-7" loading="lazy">
                 <p class="text-justify text-xs md:text-sm group-hover:scale-105 transform transition-all">
                     {{ $card['text'] }}
                 </p>

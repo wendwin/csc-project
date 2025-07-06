@@ -78,7 +78,7 @@ window.addEventListener('scroll', () => {
                                 ? 'bg-gradient-to-r from-[#2C80FF] to-[#436dd7] text-white'
                                 : 'text-gray-700 hover:bg-gradient-to-r from-[#2C80FF] to-[#436dd7] hover:text-white' }}"
                             aria-current="page"><i data-lucide="house" class="w-5 h-5"></i>Beranda</a>
-                        <a href="#"
+                        <a href="{{ route('website2.profil') }}"
                             class="rounded-full px-3 py-2 text-sm font-medium flex items-center gap-1
                             {{ request()->routeIs('website2.profil')
                                 ? 'bg-gradient-to-r from-[#2C80FF] to-[#436dd7] text-white'
@@ -90,7 +90,7 @@ window.addEventListener('scroll', () => {
                                 ? 'bg-gradient-to-r from-[#2C80FF] to-[#436dd7] text-white'
                                 : 'text-gray-700 hover:bg-gradient-to-r from-[#2C80FF] to-[#436dd7] hover:text-white' }}">
                             <i data-lucide="list-todo" class="w-5 h-5"></i>Layanan</a>
-                        <a href="#"
+                        <a href="{{ route('website2.kontak') }}"
                             class="rounded-full px-3 py-2 text-sm font-medium flex items-center gap-1
                             {{ request()->routeIs('website2.kontak')
                                 ? 'bg-gradient-to-r from-[#2C80FF] to-[#436dd7] text-white'
@@ -129,13 +129,13 @@ window.addEventListener('scroll', () => {
         <div x-show="isOpen" class="md:hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="block rounded-md bg-gradient-to-r from-[#2C80FF] to-[#436dd7] px-3 py-2 text-base font-medium text-white"
+                <a href="{{ route('website2.home') }}" class="block rounded-md bg-gradient-to-r from-[#2C80FF] to-[#436dd7] px-3 py-2 text-base font-medium text-white"
                     aria-current="page">Beranda</a>
-                <a href="#"
+                <a href="{{ route('website2.profil') }}"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Profil</a>
                 <a href="#"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Layanan</a>
-                <a href="#"
+                <a href="{{ route('website2.kontak') }}"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Kontak</a>
             </div>
         </div>
