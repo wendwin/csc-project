@@ -7,5 +7,6 @@
         @include('pustakapemda-components.hero')
         @include('pustakapemda-components.tentang')
         @include('pustakapemda-components.tata-kelola')
+        @include('pustakapemda-components.berita')
     </div>
 @endsection

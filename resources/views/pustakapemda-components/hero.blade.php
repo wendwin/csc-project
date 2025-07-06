@@ -1,4 +1,4 @@
-<div class="md:max-w-5xl mx-auto mt-16">
+<div class="md:max-w-5xl mx-auto mt-4 md:mt-16 md:px-3">
     <div class="flex justify-center rounded-lg">
         <div class="w-full max-w-xl md:max-w-5xl">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
