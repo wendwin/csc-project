@@ -12,7 +12,7 @@
                             {{-- ====================== Mobile Layout ====================== --}}
                             <div class="flex flex-row items-center lg:hidden">
                                 <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}"
-                                    class="w-1/3 h-[100px] object-cover rounded">
+                                    class="w-1/3 h-[100px] object-cover rounded" loading="lazy">
                                 
                                 <div class="flex flex-col justify-center px-3 w-2/3">
                                     <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>
@@ -31,7 +31,7 @@
                             <div class="hidden lg:flex flex-row w-full">
                                 <!-- Gambar -->
                                 <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}"
-                                    class="min-w-[200px] h-[130px] xl:min-w-[300px] xl:h-[200px] object-cover rounded">
+                                    class="min-w-[200px] h-[130px] xl:min-w-[300px] xl:h-[200px] object-cover rounded" loading="lazy">
 
                                 <!-- Konten -->
                                 <div class="flex flex-col justify-center px-4 w-full">

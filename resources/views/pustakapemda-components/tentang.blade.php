@@ -9,7 +9,7 @@
                         <div class="carousel-slide-tentang absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out 
                     {{ $index === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }}"
                             data-index="{{ $index }}">
-                            <img src="{{ $item['image'] }}" alt="" class="w-full h-full object-cover">
+                            <img src="{{ $item['image'] }}" alt="" class="w-full h-full object-cover" loading="lazy">
                         </div>
                     @endforeach
 

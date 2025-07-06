@@ -78,7 +78,7 @@ window.addEventListener('scroll', () => {
                                 ? 'bg-gradient-to-r from-[#2C80FF] to-[#436dd7] text-white'
                                 : 'text-gray-700 hover:bg-gradient-to-r from-[#2C80FF] to-[#436dd7] hover:text-white' }}"
                             aria-current="page"><i data-lucide="house" class="w-5 h-5"></i>Beranda</a>
-                        <a href="#"
+                        <a href="{{ route('website2.profil') }}"
                             class="rounded-full px-3 py-2 text-sm font-medium flex items-center gap-1
                             {{ request()->routeIs('website2.profil')
                                 ? 'bg-gradient-to-r from-[#2C80FF] to-[#436dd7] text-white'

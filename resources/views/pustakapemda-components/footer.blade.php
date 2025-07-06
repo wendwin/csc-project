@@ -1,5 +1,5 @@
 <footer>
-    <img src="/img/pustakapemda/footer.png" alt="" class="w-full h-auto bg-white">
+    <img src="/img/pustakapemda/footer.png" alt="" class="w-full h-auto bg-white" loading="lazy">
     <div class="bg-[#074DFF]">
         <div class="flex flex-col md:flex-row justify-between items-start p-6 text-white">
             <h1 class="text-lg md:text-xl font-bold max-w-xs">PUSAT TATA KELOLA KEUANGAN DAN PEMBANGUNAN DAERAH </h1>

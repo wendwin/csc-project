@@ -2,7 +2,7 @@
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
         <div class="md:col-span-1  text-white rounded">
 
-            <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded">
+            <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
 
             {{-- Search --}}
             <label for="Search">
@@ -43,9 +43,9 @@
             @include('pustakapemda-components.kategori')
 
             <div class="flex flex-col gap-3">
-                <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded">
-                <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded">
-                <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded">
+                <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
+                <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
+                <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
             </div>
 
         </div>

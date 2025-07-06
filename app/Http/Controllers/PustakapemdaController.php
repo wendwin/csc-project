@@ -169,4 +169,10 @@ class PustakapemdaController extends Controller
 
         return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems','berita_terbaru', 'kategori_layanan', 'bimbingan_teknis','workshop_seminar'));
     }
+
+    public function profil()
+    {
+
+        return view('pustakapemda.profil');
+    }
 }
