@@ -175,4 +175,10 @@ class PustakapemdaController extends Controller
 
         return view('pustakapemda.profil');
     }
+
+    public function kontak()
+    {
+
+        return view('pustakapemda.kontak');
+    }
 }
