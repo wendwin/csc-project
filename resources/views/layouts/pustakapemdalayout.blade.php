@@ -20,9 +20,9 @@
     @include('pustakapemda-components.navbar')
 
     {{-- Konten halaman --}}
-    <main class="relative flex-1"
-        style="background-image: url('/img/pustakapemda/background.png'); background-repeat: repeat; background-size: cover;">
-        <div class="absolute inset-0 bg-black/5 z-0"></div>
+    <main class="relative"
+        style="background-image: url('/img/pustakapemda/base_bg2.webp'); background-repeat: repeat; background-size: auto">
+        <div class="absolute inset-0 bg-white/40 z-0"></div>
 
         <div class="relative z-10 text-white">
             @yield('content')
