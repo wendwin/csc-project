@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
 
 class PustakapemdaController extends Controller
 // <!-- RENDER VIEW WEB PUSTAKAPEMDA -->
 // {{-- HANDLE BY ALDO OR FAISAL--}}
 {
-    public function index()
+    public function index(Request $request)
     {
             $carouselItems = [
         [
@@ -95,29 +96,29 @@ class PustakapemdaController extends Controller
         'Workshop'
     ];
 
-    $berita_terbaru = [
-        [
-            'image' => '/img/asean-bac.jpg',
-            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '27/06/2025',
-            'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-        ],
-        [
-            'image' => '/img/asean-bac.jpg',
-            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '27/06/2025',
-            'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-        ],
-        [
-            'image' => '/img/asean-bac.jpg',
-            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '27/06/2025',
-            'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-        ],
-    ];
+    // $berita_terbaru = [
+    //     [
+    //         'image' => '/img/asean-bac.jpg',
+    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
+    //         'publisher' => 'Pustaka Pemda',
+    //         'date' => '27/06/2025',
+    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
+    //     ],
+    //     [
+    //         'image' => '/img/asean-bac.jpg',
+    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
+    //         'publisher' => 'Pustaka Pemda',
+    //         'date' => '27/06/2025',
+    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
+    //     ],
+    //     [
+    //         'image' => '/img/asean-bac.jpg',
+    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
+    //         'publisher' => 'Pustaka Pemda',
+    //         'date' => '27/06/2025',
+    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
+    //     ],
+    // ];
 
     $bimbingan_teknis = [
         [
@@ -166,6 +167,15 @@ class PustakapemdaController extends Controller
             'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
         ],
     ];
+
+        $berita_terbaru = Article::where('author', 'admin-pustaka-pemda')
+                         ->latest()
+                         ->paginate(4);
+
+
+        if ($request->ajax()) {
+            return view('pustakapemda-components.berita-terbaru', compact('berita_terbaru'))->render();
+        }
 
         return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems','berita_terbaru', 'kategori_layanan', 'bimbingan_teknis','workshop_seminar'));
     }

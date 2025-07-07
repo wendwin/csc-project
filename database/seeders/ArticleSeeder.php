@@ -37,7 +37,7 @@ class ArticleSeeder extends Seeder
                 'category' => $categories[array_rand($categories)],
                 'target_website' => $targets[array_rand($targets)],
                 'content' => $konten,
-                'main_image' => 'articles/main.png',
+                'main_image' => '/img/asean-bac.jpg',
             ]);
 
             for ($j = 1; $j <= 4; $j++) {

@@ -31,6 +31,7 @@
 
     {{-- Footer, bisa di pindahkan ke component jika compleks --}}
     @include('pustakapemda-components.footer')
+    @stack('scripts')
 </body>
 
 </html>
