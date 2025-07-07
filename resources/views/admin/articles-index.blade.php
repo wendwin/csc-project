@@ -42,7 +42,7 @@
                 <tbody>
                     @forelse ($articles as $index => $article)
                         <tr class="border-t hover:bg-gray-50 transition duration-150">
-                            <td class="px-4 py-3">{{ $index + 1 }}</td>
+                            <td class="px-4 py-3">{{ ($articles->currentPage() - 1) * $articles->perPage() + $index + 1 }}</td>
                             <td class="px-4 py-3">{{ $article->title }}</td>
                             <td class="px-4 py-3">{{ ucwords(str_replace('-', ' ', $article->author)) }}</td>
                             <td class="px-4 py-3">{{ $article->category }}</td>
@@ -113,6 +113,9 @@
                     @endforelse
                 </tbody>
             </table>
+            <div class="mt-6">
+                {{ $articles->links() }}
+            </div>            
         </div>
     </div>
 @endsection

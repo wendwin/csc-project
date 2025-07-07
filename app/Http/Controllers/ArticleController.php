@@ -9,11 +9,18 @@ use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
+    // public function index()
+    // {
+    //     $articles = Article::with('images')->latest()->get();
+    //     return view('admin.articles-index', compact('articles'));
+    // }
+
     public function index()
     {
-        $articles = Article::with('images')->latest()->get();
+        $articles = Article::with('images')->latest()->paginate(6);
         return view('admin.articles-index', compact('articles'));
     }
+
 
     public function create()
     {
