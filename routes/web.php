@@ -49,6 +49,8 @@ Route::domain('cendanasolution.test')->group(function () {
 */
 Route::domain('pustakapemda.test')->group(function () {
     Route::get('/', [PustakapemdaController::class, 'index'])->name('website2.home');
+    Route::get('/profil', [PustakapemdaController::class, 'profil'])->name('website2.profil');
+    Route::get('/kontak', [PustakapemdaController::class, 'kontak'])->name('website2.kontak');
     // Tambahkan route lain untuk website pustakapemda disni
 });
 

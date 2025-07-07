@@ -1,4 +1,4 @@
-<div class="md:max-w-5xl mx-auto mt-16">
+<div class="md:max-w-5xl mx-auto mt-4 md:mt-16 md:px-3">
     <div class="flex justify-center rounded-lg">
         <div class="w-full max-w-xl md:max-w-5xl">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -9,7 +9,7 @@
                         <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out 
                             {{ $index === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }}"
                             data-index="{{ $index }}">
-                            <img src="{{ $item['image'] }}" class="w-full h-full object-cover" alt="Slide {{ $index + 1 }}">
+                            <img src="{{ $item['image'] }}" class="w-full h-full object-cover" alt="Slide {{ $index + 1 }}" loading="lazy">
                             <div
                                 class="absolute text-start px-20 md:px-5 inset-y-0 right-0 w-full md:w-1/3 bg-blue-800/70 text-white p-6 flex flex-col justify-center items-start space-y-4">
                                 <p class="text-sm font-semibold">{{ $item['label'] }}</p>
