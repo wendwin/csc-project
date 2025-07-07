@@ -15,11 +15,30 @@ class ArticleController extends Controller
     //     return view('admin.articles-index', compact('articles'));
     // }
 
-    public function index()
+    public function index(Request $request)
     {
-        $articles = Article::with('images')->latest()->paginate(6);
-        return view('admin.articles-index', compact('articles'));
+        $query = Article::with('images')->latest();
+
+        if ($request->filled('tanggal')) {
+            $query->whereDate('created_at', $request->tanggal);
+        }
+
+        if ($request->filled('target_website')) {
+            $query->where('target_website', $request->target_website);
+        }
+
+        if ($request->filled('category')) {
+            $query->where('category', 'like', '%' . $request->category . '%');
+        }
+
+        $articles = $query->paginate(6)->withQueryString();
+
+        // Ambil semua kategori unik dari tabel articles
+        $categories = Article::select('category')->distinct()->pluck('category');
+
+        return view('admin.articles-index', compact('articles', 'categories'));
     }
+
 
 
     public function create()
