@@ -6,7 +6,7 @@
         </div>
         <div class="flex flex-col gap-4">
             @foreach ($berita_terbaru as $item)
-                <a href="#">
+                <a href="{{ route('website2.detail_berita', $item['id']) }}">
                     <div class="p-2 hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg bg-white">
                         <div class="flex flex-col lg:flex-row gap-4 text-start">
                             <!-- Mobile -->

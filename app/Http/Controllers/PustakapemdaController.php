@@ -4,11 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Article;
+use App\Models\ArticleImage;
+use Illuminate\Database\Eloquent\Model;
+
 
 class PustakapemdaController extends Controller
 // <!-- RENDER VIEW WEB PUSTAKAPEMDA -->
 // {{-- HANDLE BY ALDO OR FAISAL--}}
 {
+    public function getKategoriLayanan()
+    {
+        return Article::select('category')->distinct()->pluck('category');
+    }
+
     public function index(Request $request)
     {
             $carouselItems = [
@@ -88,13 +96,7 @@ class PustakapemdaController extends Controller
         ],
     ];
 
-    $kategori_layanan = [
-        'Bimbingan Teknis',
-        'Sosialisasi',
-        'Pelatihan',
-        'Seminar',
-        'Workshop'
-    ];
+    $kategori_layanan = $this->getKategoriLayanan();
 
     // $berita_terbaru = [
     //     [
@@ -176,14 +178,38 @@ class PustakapemdaController extends Controller
         if ($request->ajax()) {
             return view('pustakapemda-components.landingpage.berita-terbaru', compact('berita_terbaru'))->render();
         }
+        
 
         return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems','berita_terbaru', 'kategori_layanan', 'bimbingan_teknis','workshop_seminar'));
+    }
+
+    public function detail_berita($id)
+    {
+        $berita = Article::findOrFail($id);
+        $gambars = ArticleImage::where('article_id', $id)->get();
+        $kategori_layanan = $this->getKategoriLayanan(); 
+
+        return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan'));
     }
 
     public function profil()
     {
 
         return view('pustakapemda.profil');
+    }
+
+    public function layanan(Request $request, $kategori = null)
+    {
+        $kategori_layanan = $this->getKategoriLayanan();
+        $selected_category = $kategori ?? $kategori_layanan[0];
+
+        $layanan_select = Article::where('category', $selected_category)->latest()->paginate(4);
+
+        if ($request->ajax()) {
+            return view('pustakapemda-components.landingpage.layanan_select', compact('layanan_select'))->render();
+        }
+
+        return view('pustakapemda.layanan', compact('layanan_select', 'kategori_layanan', 'selected_category'));
     }
 
     public function kontak()
