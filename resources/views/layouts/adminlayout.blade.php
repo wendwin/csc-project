@@ -35,10 +35,12 @@
         @include('admin-components.navbar')
 
         {{-- Content --}}
-        <main class="flex-1 p-4 sm:p-6 w-full">
+        <main class="flex-1 mt-12 p-4 sm:p-6 w-full">
             @yield('content')
         </main>
     </div>
+
+    @stack('scripts')
 
 </body>
 
