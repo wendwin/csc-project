@@ -174,7 +174,7 @@ class PustakapemdaController extends Controller
 
 
         if ($request->ajax()) {
-            return view('pustakapemda-components.berita-terbaru', compact('berita_terbaru'))->render();
+            return view('pustakapemda-components.landingpage.berita-terbaru', compact('berita_terbaru'))->render();
         }
 
         return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems','berita_terbaru', 'kategori_layanan', 'bimbingan_teknis','workshop_seminar'));

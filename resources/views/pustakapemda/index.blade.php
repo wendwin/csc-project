@@ -4,10 +4,10 @@
 
 @section('content')
     <div class="text-center">
-        @include('pustakapemda-components.hero')
-        @include('pustakapemda-components.tentang')
-        @include('pustakapemda-components.tata-kelola')
-        @include('pustakapemda-components.berita')
+        @include('pustakapemda-components.landingpage.hero')
+        @include('pustakapemda-components.landingpage.tentang')
+        @include('pustakapemda-components.landingpage.tata-kelola')
+        @include('pustakapemda-components.landingpage.berita')
     </div>
 @endsection
 
