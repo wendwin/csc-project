@@ -20,7 +20,7 @@
     @include('pustakapemda-components.navbar')
 
     {{-- Konten halaman --}}
-    <main class="relative"
+    <main class="relative flex-grow"
         style="background-image: url('/img/pustakapemda/base_bg2.webp'); background-repeat: repeat; background-size: auto">
         <div class="absolute inset-0 bg-white/40 z-0"></div>
 
@@ -31,6 +31,7 @@
 
     {{-- Footer, bisa di pindahkan ke component jika compleks --}}
     @include('pustakapemda-components.footer')
+    @stack('scripts')
 </body>
 
 </html>
