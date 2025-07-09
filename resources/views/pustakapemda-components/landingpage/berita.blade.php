@@ -38,13 +38,13 @@
 
         </div>
         <div class="md:col-span-3  text-white rounded">
-            {{-- @include('pustakapemda-components.berita-terbaru') --}}
+            {{-- @include('pustakapemda-components.landingpage.berita-terbaru') --}}
             <div x-data="beritaPagination()" x-init="loadBerita()" x-ref="beritaRoot">
                 <div id="berita-container"></div> {{-- isi berita di sini --}}
             </div>
-            @include('pustakapemda-components.bimbingan-teknis')
+            @include('pustakapemda-components.landingpage.bimbingan-teknis')
             
-            @include('pustakapemda-components.workshop_seminar')
+            @include('pustakapemda-components.landingpage.workshop_seminar')
         </div>
     </div>
 </div>
