@@ -25,7 +25,7 @@
                                 <div class="lg:hidden mt-3 px-1">
                                     <p class="text-gray-700 mb-3 text-justify"> {{ Str::limit(strip_tags($item['content']), 100) }}
                                     </p>
-                                    <a href="{{ route('website2.detail_berita', $item['id']) }}">
+                                    <a href="{{ route('website2.detail_berita', $item['id_encrypt']) }}">
                                         <button class="bg-gray-200 text-[#0048FF] px-4 py-2 rounded hover:bg-gray-300 transition mb-2">
                                             Read More
                                         </button>
@@ -56,7 +56,7 @@
                                     <p class="text-gray-700 mt-3 mb-3 text-justify">
                                         {{ Str::limit(strip_tags($item['content']), 150) }}
                                     </p>
-                                    <a href="{{ route('website2.detail_berita', $item['id']) }}">
+                                    <a href="{{ route('website2.detail_berita', $item['id_encrypt']) }}">
                                         <button class="bg-gray-200 text-[#0048FF] px-4 py-2 rounded hover:bg-gray-300 transition mb-5">
                                             Read More
                                         </button>
