@@ -10,9 +10,9 @@ class ArticleSeeder extends Seeder
 {
     public function run()
     {
-        $authors = ['admin-pustaka-pemda', 'admincsc', 'admin-pspi'];
+        $authors = ['Pustaka Pemda', 'CSC Admin', 'PSPI Admin'];
         $targets = ['pustaka-pemda', 'csc', 'pspi'];
-        $categories = ['Berita', 'Pengumuman', 'Info', 'Artikel Umum'];
+        $categories = ['Berita', 'Pengumuman', 'Info', 'Artikel Umum', 'Workshop'];
 
         $konten = "
             <p><strong>Digitalisasi informasi</strong> menjadi kunci penting dalam mendukung transparansi dan efisiensi layanan publik. Dengan pemanfaatan teknologi, penyampaian informasi kini dapat dilakukan secara cepat, tepat, dan menjangkau masyarakat luas. Programmer adalah seorang profesional yang menulis, menguji, dan memelihara kode perangkat lunak. Mereka menggunakan berbagai bahasa pemrograman untuk menciptakan aplikasi, sistem, dan perangkat lunak yang membantu memecahkan masalah dan memenuhi kebutuhan pengguna.</p>
@@ -30,7 +30,7 @@ class ArticleSeeder extends Seeder
         ";
 
 
-        for ($i = 1; $i <= 12; $i++) {
+        for ($i = 1; $i <= 25; $i++) {
             $article = Article::create([
                 'title' => "Judul Artikel ke-$i",
                 'author' => $authors[array_rand($authors)],

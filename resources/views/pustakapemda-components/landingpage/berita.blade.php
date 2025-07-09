@@ -43,8 +43,12 @@
                 <div id="berita-container"></div> {{-- isi berita di sini --}}
             </div>
             @include('pustakapemda-components.landingpage.bimbingan-teknis')
-            
-            @include('pustakapemda-components.landingpage.workshop_seminar')
+
+            {{-- @include('pustakapemda-components.landingpage.workshop_seminar') --}}
+            <div x-data="workshopPagination()" x-init="loadWorkshop()" x-ref="workshopRoot">
+                <div id="workshop-container"></div> {{-- isi workshop --}}
+            </div>
+
         </div>
     </div>
 </div>

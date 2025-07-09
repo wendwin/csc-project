@@ -146,38 +146,48 @@ class PustakapemdaController extends Controller
         ],
     ];
 
-    $workshop_seminar = [
-        [
-            'image' => '/img/g20.jpg',
-            'title' => 'Pameran G20: Inovasi Global untuk Masa Depan',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '15/06/2025',
-            'description' => 'Acara G20 memperlihatkan komitmen negara-negara dalam menghadapi tantangan global...',
-        ],
-        [
-            'image' => '/img/asean-bac.jpg',
-            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '27/06/2025',
-            'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-        ],
-        [
-            'image' => '/img/asean-bac.jpg',
-            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '27/06/2025',
-            'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-        ],
-    ];
+    // $workshop_seminar = [
+    //     [
+    //         'image' => '/img/g20.jpg',
+    //         'title' => 'Pameran G20: Inovasi Global untuk Masa Depan',
+    //         'publisher' => 'Pustaka Pemda',
+    //         'date' => '15/06/2025',
+    //         'description' => 'Acara G20 memperlihatkan komitmen negara-negara dalam menghadapi tantangan global...',
+    //     ],
+    //     [
+    //         'image' => '/img/asean-bac.jpg',
+    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
+    //         'publisher' => 'Pustaka Pemda',
+    //         'date' => '27/06/2025',
+    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
+    //     ],
+    //     [
+    //         'image' => '/img/asean-bac.jpg',
+    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
+    //         'publisher' => 'Pustaka Pemda',
+    //         'date' => '27/06/2025',
+    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
+    //     ],
+    // ];
 
-        $berita_terbaru = Article::where('author', 'admin-pustaka-pemda')
-                         ->latest()
+        $berita_terbaru = Article::where('author', 'Pustaka Pemda')
+                         ->orderBy('created_at', 'desc')
                          ->paginate(4);
 
+        $workshop_seminar = Article::where('author', 'Pustaka Pemda')
+                         ->where('category', 'Workshop')
+                         ->paginate(4);
 
+        // dd($workshop_seminar);
+        // dd($berita_terbaru);
         if ($request->ajax()) {
+            if ($request->get('section') === 'workshop') {
+                return view('pustakapemda-components.landingpage.workshop_seminar', compact('workshop_seminar'))->render();
+            }
+        
             return view('pustakapemda-components.landingpage.berita-terbaru', compact('berita_terbaru'))->render();
         }
+
         
 
         return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems','berita_terbaru', 'kategori_layanan', 'bimbingan_teknis','workshop_seminar'));
