@@ -86,6 +86,15 @@ Route::domain('dashboard.localhost')->group(function () {
         Route::put('/articles/{id}', [ArticleController::class, 'update'])->name('articles.update');
         Route::delete('/articles/{id}', [ArticleController::class, 'destroy'])->name('articles.destroy');
         Route::post('/upload-trix-image', [App\Http\Controllers\TrixUploadController::class, 'upload'])->name('trix.upload');
+
+
+        // manage user routs
+        Route::get('/admin/users', [AuthController::class, 'listUsers'])->name('admin.users');
+        Route::get('/admin/add-user', [AuthController::class, 'showAddUserForm'])->name('admin.auth.add-user');
+        Route::post('/admin/add-user', [AuthController::class, 'storeNewUser'])->name('admin.store-user');
+        Route::get('/users/{id}/edit', [AuthController::class, 'editUser'])->name('admin.edit-user');
+        Route::put('/users/{id}/update', [AuthController::class, 'updateUser'])->name('admin.update-user');
+        Route::delete('/users/{id}', [AuthController::class, 'deleteUser'])->name('admin.delete-user');
     });
 });
 
