@@ -1,29 +1,104 @@
 @extends('layouts.adminlayout')
 
 @section('content')
-    <div class="p-6 bg-white rounded-lg shadow-lg">
-        <h1 class="text-2xl font-semibold mb-2">{{ $article->title }}</h1>
-        <p class="text-sm text-gray-500 mb-4">{{ $article->category }} | {{ $article->author }}</p>
+    <div class="flex items-center gap-2 mb-6 mt-2">
+        <a href="{{ route('articles.index') }}">
+            <div
+                class="w-6 h-6 rounded-full border-2 border-blue-600 hover:border-blue-700 flex items-center justify-center cursor-pointer">
+                <i data-lucide="arrow-left" class="w-4 h-4 text-blue-600 hover:text-blue-700"></i>
+            </div>
+        </a>
+    </div>
+    <div :class="sidebarOpen ? 'max-w-[978px] mx-auto w-full' : 'w-full'" class="transition-all duration-300">
 
-        {{-- Gambar Utama --}}
-        @if ($article->main_image)
-            <img src="{{ asset('storage/' . $article->main_image) }}" class="w-full h-64 object-cover rounded mb-4"
-                alt="">
-        @endif
-
-        {{-- Konten --}}
-        <div class="prose max-w-none text-sm text-gray-800 mb-6">
-            {!! $article->content !!}
+        <div class="p-2 bg-[#FCFDFD] rounded-t-lg shadow border-b-1 border-gray-300 z-20 relative transition-all duration-300"
+            :class="sidebarOpen ? 'max-w-[978px] mx-auto w-full' : 'w-full'">
+            <h2 class="text-[18px] font-bold ml-6">Preview Article</h2>
         </div>
+
+        <!-- Bagian Konten -->
+        <div class="space-y-4 p-4 -mt-2 bg-white rounded-xl shadow-md transition-all duration-300"
+            :class="sidebarOpen ? 'max-w-[978px] mx-auto w-full' : 'w-full'">
+        @php
+            $words = explode(' ', $article->title);
+            $customChunks = [];
+            $counts = [9, 8];
+            $start = 0;
+
+            foreach ($counts as $count) {
+                $customChunks[] = array_slice($words, $start, $count);
+                $start += $count;
+            }
+            while ($start < count($words)) {
+                $customChunks[] = array_slice($words, $start, 7);
+                $start += 7;
+            }
+        @endphp
+
+        <div class="text-center mt-12 mb-10 px-4">
+            <h1 class="text-[18px] md:text-[22px] font-bold leading-snug">
+                {!! collect($customChunks)->map(fn($chunk) => implode(' ', $chunk))->implode('<br>') !!}
+            </h1>
+            <p class="text-[14px] md:text-[16px] text-[#928A8A] mt-2 mb-6">
+                {{ $article->author }} | {{ $article->category }} - {{ $article->created_at->format('d M Y') }}
+            </p>
+
+
+            {{-- Gambar Utama --}}
+            @if ($article->main_image)
+                <div class="flex justify-center mt-10 px-4">
+                    <img src="{{ asset('storage/' . $article->main_image) }}"
+                        class="w-full max-w-[755px] h-auto object-contain rounded-xl shadow border" alt="">
+                </div>
+            @endif
+            </div>
+
+            {{-- Konten --}}
+            <div class="flex justify-center">
+                <div class="trix-content text-[16px] text-gray-800 w-[755px] font-normal font-sans text-justify">
+                    {!! $article->content !!}
+                </div>
+            </div>
 
         {{-- Gambar Tambahan --}}
         @if ($article->images->count())
-            <h2 class="text-lg font-semibold mb-2">Gambar Tambahan</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="space-y-6 px-4">
                 @foreach ($article->images as $img)
-                    <img src="{{ asset('storage/' . $img->image_path) }}" class="w-full h-32 object-cover rounded shadow">
+                    <div class="flex justify-center">
+                        <img src="{{ asset('storage/' . $img->image_path) }}"
+                            class="w-full max-w-[755px] h-auto object-contain rounded-xl shadow border" alt="">
+                    </div>
                 @endforeach
             </div>
         @endif
+        </div>
     </div>
 @endsection
+
+<style>
+    .trix-content img {
+        display: block;
+        margin: 1rem auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+
+    .trix-content ol {
+        list-style-type: decimal;
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .trix-content ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .trix-content li {
+        margin-bottom: 0.3rem;
+    }
+</style>
