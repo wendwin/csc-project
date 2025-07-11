@@ -30,7 +30,10 @@
     {{-- Sidebar --}}
     @include('admin-components.sidebar')
 
-    <div class="flex-1 flex flex-col min-h-screen overflow-x-hidden">
+<div x-cloak class="flex-1 flex flex-col min-h-screen transition-all duration-300"
+    :class="sidebarOpen ? 'md:pl-64' : 'md:pl-20'">
+
+
         {{-- Navbar --}}
         @include('admin-components.navbar')
 
