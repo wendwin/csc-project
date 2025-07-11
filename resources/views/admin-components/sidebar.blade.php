@@ -92,14 +92,19 @@
             </span>
         </a>
 
-        <a href="#" class="group flex items-center justify-center md:justify-start py-2 rounded-lg hover:bg-gray-100 text-gray-700">
+
+        
+        @php
+            $isUserListActive = request()->routeIs(['admin.users', 'admin.edit-user', 'admin.auth.add-user']);
+        @endphp
+        <a href="{{ route('admin.users') }}" class="group flex items-center justify-center md:justify-start py-2 rounded-lg
+            {{ $isUserListActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-black' }}">
             <div class="w-12 flex justify-center">
-                <i data-lucide="user-plus" class="w-5 h-5 text-black"></i>
+                <i data-lucide="users" class="w-5 h-5 {{ $isUserListActive ? 'text-white' : 'text-black' }}"></i>
             </div>
-            <span
-                class="transition-all duration-200 overflow-hidden whitespace-nowrap"
+            <span class="transition-all duration-200 overflow-hidden whitespace-nowrap"
                 :class="sidebarOpen ? 'opacity-100 w-auto' : 'ml-0 opacity-0 w-0'">
-                Tambah Anggota
+                Daftar Anggota
             </span>
         </a>
     </nav>

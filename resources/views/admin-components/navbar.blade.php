@@ -59,17 +59,31 @@ sidebarOpen ? 'md:ml-64 ml-44' : 'md:ml-20 ml-0'
 
     {{-- Profile --}}
     <div class="flex items-center gap-2 flex-shrink-0">
-        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-gray-300">
-            <img src="https://i.pravatar.cc/100" alt="Profile" class="object-cover w-full h-full">
+     <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-gray-300">
+    @if (Auth::user()->profile_image)
+        <img src="{{ asset('storage/' . Auth::user()->profile_image) }}"
+             alt="Profile"
+             class="w-full h-full object-cover object-top">
+    @else
+        <img src="https://i.pravatar.cc/100"
+             alt="Default Profile"
+             class="w-full h-full object-cover object-top">
+    @endif
+</div>
+
+
+            <div class="text-left">
+                <div class="text-[11px] sm:text-sm font-semibold text-gray-700 truncate max-w-[80px]">
+            {{ Auth::user()->name ?? 'Vampire' }}
         </div>
-        <div class="text-left">
-            <div class="text-[11px] sm:text-sm font-semibold text-gray-700 truncate max-w-[80px]">
-                {{ Auth::user()->name ?? 'Vampire' }}</div>
-            <div class="text-[10px] sm:text-xs text-gray-500 truncate">Admin</div>
-        </div>
-        <div
-            class="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 cursor-pointer">
-            <i data-lucide="chevron-down" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-600"></i>
-        </div>
+            <div class="text-[10px] sm:text-xs text-gray-500 truncate">
+                {{ ucfirst(Auth::user()->role) ?? '-' }}
+            </div>
+            </div>
+       <a href="{{ route('admin.edit-user', Auth::user()->id) }}"
+    class="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 cursor-pointer">
+    <i data-lucide="chevron-down" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-600"></i>
+</a>
+
     </div>
 </header>
