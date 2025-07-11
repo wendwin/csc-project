@@ -85,7 +85,7 @@ Route::domain('dashboard.localhost')->group(function () {
         Route::get('/articles/{id}/edit', [ArticleController::class, 'edit'])->name('articles.edit');
         Route::put('/articles/{id}', [ArticleController::class, 'update'])->name('articles.update');
         Route::delete('/articles/{id}', [ArticleController::class, 'destroy'])->name('articles.destroy');
-
+        Route::post('/upload-trix-image', [App\Http\Controllers\TrixUploadController::class, 'upload'])->name('trix.upload');
     });
 });
 
