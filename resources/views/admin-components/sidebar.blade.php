@@ -46,10 +46,9 @@
 </aside>
 
 {{-- SIDEBAR DESKTOP --}}
-<aside 
-    class="bg-[#D9D9D9] shadow-xl h-screen sticky top-0 hidden md:block transition-all duration-300"
-    :class="sidebarOpen ? 'w-64' : 'w-20'"
->
+<aside class="bg-[#D9D9D9] shadow-xl h-screen fixed top-0 left-0 z-40 hidden md:block transition-all duration-300"
+    :class="sidebarOpen ? 'w-64' : 'w-20'">
+
 <div class="px-6 py-4 text-2xl flex justify-center items-center">
     <div class="transition-all duration-200 flex items-center mr-11" x-show="sidebarOpen">
         <h3 class="text-blue-700 font-bold text-2xl">Dash<span class="text-black">Publikasi</span></h3>
