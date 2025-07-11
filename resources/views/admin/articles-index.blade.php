@@ -51,14 +51,11 @@
         @endforeach
     </select>
 
-
-
                     {{-- Tombol Filter --}}
                     <button type="submit"
                         class="px-3 py-2 text-sm text-white bg-blue-600 hover:bg-blue-700 font-semibold">
                         Filter
                     </button>
-
 
                 {{-- Reset Filter --}}
                 <a href="{{ route('articles.index') }}"
@@ -82,7 +79,7 @@
         {{-- FLASH MESSAGE --}}
         @if (session('success'))
             <div x-data="{ show: true }" x-show="show" x-transition
-                class="mb-4 p-4 text-sm text-green-800 bg-green-100 border border-green-200 rounded-lg flex items-center justify-between">
+                class="mb-4 mt-2 p-4 text-sm text-green-800 bg-green-100 border border-green-200 rounded-lg flex items-center justify-between">
                 <span>{{ session('success') }}</span>
                 <button @click="show = false" class="ml-4 text-green-600 hover:text-green-800">
                     <i data-lucide="x" class="w-5 h-5"></i>

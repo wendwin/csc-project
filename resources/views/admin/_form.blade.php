@@ -221,4 +221,37 @@ trix-editor blockquote {
     });
 </script>
 
+<script>
+    document.addEventListener("trix-attachment-add", function(event) {
+        if (event.attachment.file) {
+            uploadTrixImage(event.attachment);
+        }
+    });
+
+    function uploadTrixImage(attachment) {
+        let file = attachment.file;
+        let form = new FormData();
+        form.append("image", file);
+
+        fetch("{{ route('trix.upload') }}", {
+            method: "POST",
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            body: form,
+        })
+        .then(response => response.json())
+        .then(result => {
+            attachment.setAttributes({
+                url: result.url,
+                href: result.url
+            });
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    }
+</script>
+
+
 
