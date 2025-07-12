@@ -188,8 +188,18 @@ class PustakapemdaController extends Controller
 
     public function profil()
     {
-
-        return view('pustakapemda.profil');
+        $tentangItems = [
+        [
+            'image' => '/img/asean-bac.jpg',
+        ],
+        [
+            'image' => '/img/g20.jpg',
+        ],
+        [
+            'image' => '/img/expo-2020-dubai.jpg',
+        ],
+        ];
+        return view('pustakapemda.profil', compact('tentangItems'));
     }
 
     public function layanan(Request $request, $kategori = null)

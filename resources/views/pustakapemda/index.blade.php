@@ -5,7 +5,7 @@
 @section('content')
     <div class="text-center">
         @include('pustakapemda-components.landingpage.hero')
-        @include('pustakapemda-components.landingpage.tentang')
+        @include('pustakapemda-components.landingpage.tentang', ['extraClass' => 'shadow-md'])
         @include('pustakapemda-components.landingpage.tata-kelola')
         @include('pustakapemda-components.landingpage.berita')
     </div>
