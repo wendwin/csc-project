@@ -10,6 +10,7 @@ class ArticleSeeder extends Seeder
 {
     public function run()
     {
+
         $authors = [
             'pustaka-pemda' => 'admin-pustaka-pemda',
             'csc' => 'admincsc',
@@ -69,6 +70,7 @@ class ArticleSeeder extends Seeder
             <p>Oleh karena itu, <strong>instansi pemerintah</strong> maupun organisasi harus terus berinovasi dalam menyediakan konten yang <em>informatif</em>, akurat, dan mudah diakses oleh semua kalangan. Programmer memainkan peran penting dalam dunia teknologi saat ini. Dengan keterampilan dan pengetahuan yang tepat, mereka dapat menciptakan solusi yang mengubah cara kita berinteraksi dengan teknologi. Jika Anda tertarik untuk menjadi programmer, mulailah belajar bahasa pemrograman dan terlibat dalam proyek pengembangan perangkat lunak!</p>
         ";
 
+
         for ($i = 1; $i <= 12; $i++) {
             // Acak target website
             $target = array_rand($kategoriPerTarget);
@@ -78,6 +80,7 @@ class ArticleSeeder extends Seeder
 
             // Ambil author berdasarkan target
             $author = $authors[$target];
+
 
             $article = Article::create([
                 'title' => "Judul Artikel ke-$i",
