@@ -188,8 +188,18 @@ class PustakapemdaController extends Controller
 
     public function profil()
     {
-
-        return view('pustakapemda.profil');
+        $tentangItems = [
+        [
+            'image' => '/img/asean-bac.jpg',
+        ],
+        [
+            'image' => '/img/g20.jpg',
+        ],
+        [
+            'image' => '/img/expo-2020-dubai.jpg',
+        ],
+        ];
+        return view('pustakapemda.profil', compact('tentangItems'));
     }
 
     public function layanan(Request $request, $kategori = null)
@@ -198,7 +208,10 @@ class PustakapemdaController extends Controller
         $kategori_layanan = $this->getKategoriLayanan();
         $selected_category = $kategori ?? $kategori_layanan[0];
 
-        $layanan_select = Article::where('category', $selected_category)->latest()->paginate(4);
+        $layanan_select = Article::where('category', $selected_category)
+                                ->where('author', 'admin-pustaka-pemda')
+                                ->latest()
+                                ->paginate(4);
         $layanan_select->setCollection(
                         $layanan_select->getCollection()->map(function ($item)use ($hashids) {
                                     $item->id_encrypt = $hashids->encode($item->id);
