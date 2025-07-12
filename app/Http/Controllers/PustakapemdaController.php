@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Article;
 use App\Models\ArticleImage;
 use Hashids\Hashids;
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -163,6 +164,7 @@ class PustakapemdaController extends Controller
             $berita_terbaru->setCollection(
     $berita_terbaru->getCollection()->map(function ($item)use ($hashids) {
                 $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
                 return $item;
             })
         );
@@ -182,13 +184,16 @@ class PustakapemdaController extends Controller
         return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems','berita_terbaru', 'kategori_layanan', 'bimbingan_teknis','workshop_seminar'));
     }
 
-    public function detail_berita($id_encrypt)
+    public function detail_berita($id_slug)
     {
         $hashids = new Hashids('pustakapemda_salt_rahasia', 8);
+        $parts = explode('-', $id_slug);
+        $id_encrypt = $parts[0];
+
         $decoded = $hashids->decode($id_encrypt);
-        $id_dencrypt = $decoded[0] ?? null;
-        $berita = Article::findOrFail($id_dencrypt);
-        $gambars = ArticleImage::where('article_id', $id_dencrypt)->get();
+        $id = $decoded[0] ?? null;
+        $berita = Article::findOrFail($id);
+        $gambars = ArticleImage::where('article_id', $id)->get();
         $kategori_layanan = $this->getKategoriLayanan(); 
 
         return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan'));
@@ -223,6 +228,7 @@ class PustakapemdaController extends Controller
         $layanan_select->setCollection(
                         $layanan_select->getCollection()->map(function ($item)use ($hashids) {
                                     $item->id_encrypt = $hashids->encode($item->id);
+                                    $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
                                     return $item;
                                 })
                             );

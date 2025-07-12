@@ -84,7 +84,7 @@ window.addEventListener('scroll', () => {
                                 ? 'bg-gradient-to-r from-[#2C80FF] to-[#436dd7] text-white'
                                 : 'text-gray-700 hover:bg-gradient-to-r from-[#2C80FF] to-[#436dd7] hover:text-white' }}">
                             <i data-lucide="building-2" class="w-5 h-5"></i>Profil</a>
-                        <a href="{{ route('website2.layanan') }}"
+                        <a href="{{ route('website2.layanan', Str::lower($kategori_layanan[0])) }}"
                             class="rounded-full px-3 py-2 text-sm font-medium flex items-center gap-1
                             {{ request()->routeIs('website2.layanan')
                                 ? 'bg-gradient-to-r from-[#2C80FF] to-[#436dd7] text-white'
@@ -133,7 +133,7 @@ window.addEventListener('scroll', () => {
                     aria-current="page">Beranda</a>
                 <a href="{{ route('website2.profil') }}"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Profil</a>
-                <a href="{{ route('website2.layanan') }}"
+                <a href="{{ route('website2.layanan', Str::lower($kategori_layanan[0])) }}"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Layanan</a>
                 <a href="{{ route('website2.kontak') }}"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Kontak</a>
