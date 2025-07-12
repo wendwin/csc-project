@@ -131,39 +131,7 @@ class PustakapemdaController extends Controller
         ],
     ];
 
-<<<<<<< HEAD
-    // $workshop_seminar = [
-    //     [
-    //         'image' => '/img/g20.jpg',
-    //         'title' => 'Pameran G20: Inovasi Global untuk Masa Depan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '15/06/2025',
-    //         'description' => 'Acara G20 memperlihatkan komitmen negara-negara dalam menghadapi tantangan global...',
-    //     ],
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    // ];
 
-        $berita_terbaru = Article::where('author', 'Pustaka Pemda')
-                         ->orderBy('created_at', 'desc')
-                         ->paginate(4);
-
-        $workshop_seminar = Article::where('author', 'Pustaka Pemda')
-                         ->where('category', 'Workshop')
-                         ->paginate(4);
-=======
     $workshop_seminar = [
         [
             'image' => '/img/g20.jpg',
@@ -198,7 +166,6 @@ class PustakapemdaController extends Controller
                 return $item;
             })
         );
->>>>>>> upstream/main
 
         // dd($workshop_seminar);
         // dd($berita_terbaru);
