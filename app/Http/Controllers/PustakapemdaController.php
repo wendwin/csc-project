@@ -198,7 +198,10 @@ class PustakapemdaController extends Controller
         $kategori_layanan = $this->getKategoriLayanan();
         $selected_category = $kategori ?? $kategori_layanan[0];
 
-        $layanan_select = Article::where('category', $selected_category)->latest()->paginate(4);
+        $layanan_select = Article::where('category', $selected_category)
+                                ->where('author', 'admin-pustaka-pemda')
+                                ->latest()
+                                ->paginate(4);
         $layanan_select->setCollection(
                         $layanan_select->getCollection()->map(function ($item)use ($hashids) {
                                     $item->id_encrypt = $hashids->encode($item->id);
