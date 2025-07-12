@@ -177,6 +177,9 @@ class PustakapemdaController extends Controller
                          ->latest()
                          ->paginate(5);
 
+        $galeri_pelatihan = Article::where('author', 'admin-pustaka-pemda')
+                         ->paginate(8);
+
 
         if ($request->ajax()) {
             if ($request->get('section') === 'workshop') {
@@ -192,7 +195,16 @@ class PustakapemdaController extends Controller
 
         
 
-        return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems','berita_terbaru', 'kategori_layanan', 'bimbingan_teknis','workshop_seminar'));
+        return view('pustakapemda.index', compact(
+            'cards', 
+            'carouselItems', 
+            'tentangItems',
+            'berita_terbaru', 
+            'kategori_layanan', 
+            'bimbingan_teknis',
+            'workshop_seminar',
+            'galeri_pelatihan',
+        ));
     }
 
     public function detail_berita($id_encrypt)

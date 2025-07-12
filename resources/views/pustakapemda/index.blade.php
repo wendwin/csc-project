@@ -8,6 +8,7 @@
         @include('pustakapemda-components.landingpage.tentang', ['extraClass' => 'shadow-md'])
         @include('pustakapemda-components.landingpage.tata-kelola')
         @include('pustakapemda-components.landingpage.berita')
+        @include('pustakapemda-components.landingpage.galeri-pelatihan')
     </div>
 @endsection
 
