@@ -9,18 +9,20 @@
                         <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out 
                             {{ $index === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }}"
                             data-index="{{ $index }}">
-                            <img src="{{ $item['image'] }}" class="w-full h-full object-cover" alt="Slide {{ $index + 1 }}" loading="lazy">
+                            <img src="{{ $item['main_image'] }}" class="w-full h-full object-cover" alt="Slide {{ $index + 1 }}" loading="lazy">
                             <div
                                 class="absolute text-start px-20 md:px-5 inset-y-0 right-0 w-full md:w-1/3 bg-blue-800/70 text-white p-6 flex flex-col justify-center items-start space-y-4">
-                                <p class="text-sm font-semibold">{{ $item['label'] }}</p>
+                                <p class="text-sm font-semibold">Terbaru</p>
                                 <h1 class="text-2xl font-bold">{{ $item['title'] }}</h1>
-                                <div class="flex space-x-4 text-sm text-gray-200">
-                                    <p>{{ $item['publisher'] }}</p>
-                                    <p>{{ $item['date'] }}</p>
+                                <div class="flex flex-col text-start text-sm text-gray-200">
+                                    <p>{{ $item['author'] }}</p>
+                                    <p>{{ $item['updated_at'] }}</p>
                                 </div>
-                                <p class="text-sm text-gray-100">{{ $item['description'] }}</p>
-                                <button class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-blue-100 transition">Read
-                                    More</button>
+                                <p class="text-sm md:text-base text-gray-100 md:pr-7">{{ Str::limit(strip_tags($item['content']), 125) }}</p>
+                                <a href="{{ route('website2.detail_berita', $item['id_encrypt']) }}">
+                                    <button class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-blue-100 transition">Read
+                                        More</button>
+                                </a>
                             </div>
                         </div>
                     @endforeach

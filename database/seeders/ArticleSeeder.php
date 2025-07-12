@@ -10,9 +10,50 @@ class ArticleSeeder extends Seeder
 {
     public function run()
     {
-        $authors = ['Pustaka Pemda', 'CSC Admin', 'PSPI Admin'];
-        $targets = ['pustaka-pemda', 'csc', 'pspi'];
-        $categories = ['Berita', 'Pengumuman', 'Info', 'Artikel Umum', 'Workshop'];
+
+        $authors = [
+            'pustaka-pemda' => 'admin-pustaka-pemda',
+            'csc' => 'admincsc',
+            'pspi' => 'admin-pspi',
+        ];
+
+        $kategoriPerTarget = [
+            'csc' => [
+                'Event Organizer',
+                'Ketahanan Pangan',
+                'Konstruksi',
+            ],
+            'pustaka-pemda' => [
+                'Bimbingan Teknis (Bimtek)',
+                'Pengelolaan Keuangan Desa (APBDes, Dana Desa, dll.)',
+                'Perencanaan dan Pelaporan Pembangunan Desa',
+                'Pelatihan Penyusunan RPJMDes dan RKPDes',
+                'Manajemen Aset Desa',
+                'Digitalisasi Administrasi Desa',
+                'Studi Banding',
+                'Kunjungan ke desa-desa percontohan',
+                'Pertukaran pengalaman dan pembelajaran praktik terbaik',
+                'Pemantapan inovasi pelayanan publik desa',
+                'Workshop dan Seminar Tematik',
+                'Inovasi tata kelola pemerintahan digital',
+                'Peningkatan kapasitas leadership kepala desa dan perangkatnya',
+            ],
+            'pspi' => [
+                'Bimbingan Teknis',
+                'Pengelolaan Keuangan Desa (APBDes, Dana Desa, dll.)',
+                'Perencanaan dan Pelaporan Pembangunan Desa',
+                'Pelatihan Penyusunan RPJMDes dan RKPDes',
+                'Manajemen Aset Desa',
+                'Digitalisasi Administrasi Desa',
+                'Studi Banding',
+                'Kunjungan ke desa-desa percontohan',
+                'Pertukaran pengalaman dan pembelajaran praktik terbaik',
+                'Pemantapan inovasi pelayanan publik desa',
+                'Workshop dan Seminar Tematik',
+                'Inovasi tata kelola pemerintahan digital',
+                'Peningkatan kapasitas leadership kepala desa dan perangkatnya',
+            ],
+        ];
 
         $konten = "
             <p><strong>Digitalisasi informasi</strong> menjadi kunci penting dalam mendukung transparansi dan efisiensi layanan publik. Dengan pemanfaatan teknologi, penyampaian informasi kini dapat dilakukan secara cepat, tepat, dan menjangkau masyarakat luas. Programmer adalah seorang profesional yang menulis, menguji, dan memelihara kode perangkat lunak. Mereka menggunakan berbagai bahasa pemrograman untuk menciptakan aplikasi, sistem, dan perangkat lunak yang membantu memecahkan masalah dan memenuhi kebutuhan pengguna.</p>
@@ -30,12 +71,22 @@ class ArticleSeeder extends Seeder
         ";
 
 
-        for ($i = 1; $i <= 25; $i++) {
+        for ($i = 1; $i <= 12; $i++) {
+            // Acak target website
+            $target = array_rand($kategoriPerTarget);
+
+            // Ambil random kategori dari target yang dipilih
+            $category = $kategoriPerTarget[$target][array_rand($kategoriPerTarget[$target])];
+
+            // Ambil author berdasarkan target
+            $author = $authors[$target];
+
+
             $article = Article::create([
                 'title' => "Judul Artikel ke-$i",
-                'author' => $authors[array_rand($authors)],
-                'category' => $categories[array_rand($categories)],
-                'target_website' => $targets[array_rand($targets)],
+                'author' => $author,
+                'category' => $category,
+                'target_website' => $target,
                 'content' => $konten,
                 'main_image' => '/img/asean-bac.jpg',
             ]);

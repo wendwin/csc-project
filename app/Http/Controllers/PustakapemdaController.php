@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Article;
 use App\Models\ArticleImage;
+use Hashids\Hashids;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -12,39 +13,23 @@ class PustakapemdaController extends Controller
 // <!-- RENDER VIEW WEB PUSTAKAPEMDA -->
 // {{-- HANDLE BY ALDO OR FAISAL--}}
 {
+ 
     public function getKategoriLayanan()
     {
         return Article::select('category')->distinct()->pluck('category');
     }
-
+    
     public function index(Request $request)
     {
-            $carouselItems = [
-        [
-            'image' => '/img/asean-bac.jpg',
-            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-            'label' => 'Terbaru',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '27/06/2025',
-            'description' => 'Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-        ],
-        [
-            'image' => '/img/g20.jpg',
-            'title' => 'Pameran G20: Inovasi Global untuk Masa Depan',
-            'label' => 'Terbaru',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '15/06/2025',
-            'description' => 'Acara G20 memperlihatkan komitmen negara-negara dalam menghadapi tantangan global...',
-        ],
-        [
-            'image' => '/img/expo-2020-dubai.jpg',
-            'title' => 'Expo 2020 Dubai: Kolaborasi Internasional',
-            'label' => 'Terbaru',
-            'publisher' => 'Pustaka Pemda',
-            'date' => '10/06/2025',
-            'description' => 'Berbagai inovasi dari berbagai negara ditampilkan dalam Expo 2020 Dubai...',
-        ],
-    ];
+        $hashids = new Hashids('pustakapemda_salt_rahasia', 8);
+        $carouselItems = Article::where('author', 'admin-pustaka-pemda')
+            ->latest()
+            ->take(3) // ambil hanya 3 data terbaru
+            ->get()
+            ->map(function ($item) use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                return $item;
+            });
 
          $cards = [
         [
@@ -146,6 +131,7 @@ class PustakapemdaController extends Controller
         ],
     ];
 
+<<<<<<< HEAD
     // $workshop_seminar = [
     //     [
     //         'image' => '/img/g20.jpg',
@@ -177,6 +163,42 @@ class PustakapemdaController extends Controller
         $workshop_seminar = Article::where('author', 'Pustaka Pemda')
                          ->where('category', 'Workshop')
                          ->paginate(4);
+=======
+    $workshop_seminar = [
+        [
+            'image' => '/img/g20.jpg',
+            'title' => 'Pameran G20: Inovasi Global untuk Masa Depan',
+            'publisher' => 'Pustaka Pemda',
+            'date' => '15/06/2025',
+            'description' => 'Acara G20 memperlihatkan komitmen negara-negara dalam menghadapi tantangan global...',
+        ],
+        [
+            'image' => '/img/asean-bac.jpg',
+            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
+            'publisher' => 'Pustaka Pemda',
+            'date' => '27/06/2025',
+            'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
+        ],
+        [
+            'image' => '/img/asean-bac.jpg',
+            'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
+            'publisher' => 'Pustaka Pemda',
+            'date' => '27/06/2025',
+            'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
+        ],
+    ];
+        
+        $berita_terbaru = Article::where('author', 'admin-pustaka-pemda')
+                         ->latest()
+                         ->paginate(4);
+        
+            $berita_terbaru->setCollection(
+    $berita_terbaru->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                return $item;
+            })
+        );
+>>>>>>> upstream/main
 
         // dd($workshop_seminar);
         // dd($berita_terbaru);
@@ -193,10 +215,13 @@ class PustakapemdaController extends Controller
         return view('pustakapemda.index', compact('cards', 'carouselItems', 'tentangItems','berita_terbaru', 'kategori_layanan', 'bimbingan_teknis','workshop_seminar'));
     }
 
-    public function detail_berita($id)
+    public function detail_berita($id_encrypt)
     {
-        $berita = Article::findOrFail($id);
-        $gambars = ArticleImage::where('article_id', $id)->get();
+        $hashids = new Hashids('pustakapemda_salt_rahasia', 8);
+        $decoded = $hashids->decode($id_encrypt);
+        $id_dencrypt = $decoded[0] ?? null;
+        $berita = Article::findOrFail($id_dencrypt);
+        $gambars = ArticleImage::where('article_id', $id_dencrypt)->get();
         $kategori_layanan = $this->getKategoriLayanan(); 
 
         return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan'));
@@ -204,16 +229,36 @@ class PustakapemdaController extends Controller
 
     public function profil()
     {
-
-        return view('pustakapemda.profil');
+        $tentangItems = [
+        [
+            'image' => '/img/asean-bac.jpg',
+        ],
+        [
+            'image' => '/img/g20.jpg',
+        ],
+        [
+            'image' => '/img/expo-2020-dubai.jpg',
+        ],
+        ];
+        return view('pustakapemda.profil', compact('tentangItems'));
     }
 
     public function layanan(Request $request, $kategori = null)
     {
+        $hashids = new Hashids('pustakapemda_salt_rahasia', 8);
         $kategori_layanan = $this->getKategoriLayanan();
         $selected_category = $kategori ?? $kategori_layanan[0];
 
-        $layanan_select = Article::where('category', $selected_category)->latest()->paginate(4);
+        $layanan_select = Article::where('category', $selected_category)
+                                ->where('author', 'admin-pustaka-pemda')
+                                ->latest()
+                                ->paginate(4);
+        $layanan_select->setCollection(
+                        $layanan_select->getCollection()->map(function ($item)use ($hashids) {
+                                    $item->id_encrypt = $hashids->encode($item->id);
+                                    return $item;
+                                })
+                            );
 
         if ($request->ajax()) {
             return view('pustakapemda-components.landingpage.layanan_select', compact('layanan_select'))->render();

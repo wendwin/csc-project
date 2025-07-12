@@ -27,10 +27,9 @@ class ArticleController extends Controller
             $query->where('target_website', $request->target_website);
         }
 
-        if ($request->filled('category')) {
-            $query->where('category', 'like', '%' . $request->category . '%');
+        if ($request->filled('category') && $request->category !== '') {
+            $query->where('category', $request->category);
         }
-
         $articles = $query->paginate(6)->withQueryString();
 
         // Ambil semua kategori unik dari tabel articles
@@ -100,8 +99,14 @@ class ArticleController extends Controller
         $defaultAuthors = ['admin-pustaka-pemda', 'admincsc', 'admin-pspi'];
         $targetWebsites = ['pustaka-pemda', 'csc', 'pspi'];
 
-        return view('admin.edit-article', compact('article', 'defaultAuthors', 'targetWebsites'));
+        return view('admin.edit-article', compact(
+            'article',
+            'defaultAuthors',
+            'targetWebsites'
+        ));
     }
+
+
 
     public function update(Request $request, $id)
     {
