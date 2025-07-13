@@ -14,21 +14,24 @@
                             <div class="flex flex-col lg:flex-row text-start">
                                 <div class="flex flex-col items-start">
 
-                                    <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}"
-                                        class="w-full h-[200px] md:min-w-[200px] md:h-[220px] xl:min-w-[300px] xl:h-[250px] object-cover rounded" loading="lazy">
+                                    <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                        class="w-full h-[200px] md:min-w-[200px] md:h-[220px] xl:min-w-[300px] xl:h-[250px] object-cover rounded"
+                                        loading="lazy">
 
                                     <div class="flex flex-col justify-center w-2/3">
                                         <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>
                                         <div class="flex space-x-4 text-sm text-gray-500 mt-1">
-                                            <p>{{ $item['publisher'] }}</p>
-                                            <p>{{ $item['date'] }}</p>
+                                            <p>{{ $item['author'] }}</p>
+                                            <p>{{ $item->created_at->format('d/m/Y') }}</p>
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                        <p class="text-gray-700 mb-3 text-justify">{{ Str::limit($item['description'], 100) }}</p>
+                                        <p class="text-gray-700 mb-3 text-justify">
+                                            {{ Str::limit($item['description'], 100) }}</p>
                                     </div>
                                     <a href="#">
-                                        <button class="bg-gray-200 text-[#0048FF] px-4 py-2 rounded hover:bg-gray-300 transition">
+                                        <button
+                                            class="bg-gray-200 text-[#0048FF] px-4 py-2 rounded hover:bg-gray-300 transition">
                                             Read More
                                         </button>
                                     </a>
@@ -43,23 +46,22 @@
             <div class="text-white rounded">
                 <div class="flex flex-col gap-3">
                     @if (count($bimbingan_teknis) > 1)
-                        @foreach (collect($bimbingan_teknis)->slice(1) as $item)
+                        @foreach ($bimbingan_teknis->slice(1) as $item)
                             <a href="#">
-                                <div class="p-2 hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg bg-white">
+                                <div
+                                    class="p-2 hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg">
                                     <div class="flex flex-col lg:flex-row gap-4 text-start">
-                                        <div class="flex flex-col items-centertext-center">
+                                        <!-- Gambar -->
+                                        <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                            class="w-full lg:w-[40%] h-[150px] object-cover rounded" loading="lazy">
 
-                                            <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}"
-                                                class="w-full h-[100px] md:h-[130px] lg:h-[150px] xl:h-[170px] object-cover rounded" loading="lazy">
-
-                                            <div class="flex flex-col justify-center">
-                                                <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>
-                                                <div class="flex space-x-4 text-sm text-gray-500 mt-1">
-                                                    <p>{{ $item['publisher'] }}</p>
-                                                    <p>{{ $item['date'] }}</p>
-                                                </div>
+                                        <!-- Konten -->
+                                        <div class="flex flex-col justify-center flex-1">
+                                            <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>
+                                            <div class="flex space-x-4 text-sm text-gray-500 mt-1">
+                                                <p>{{ $item['author'] }}</p>
+                                                <p>{{ $item->created_at->format('d/m/Y') }}</p>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -68,6 +70,10 @@
                     @endif
                 </div>
             </div>
+        </div>
+        <!-- Pagination-->
+        <div class="mt-6 pagination">
+            {!! $bimbingan_teknis->links() !!}
         </div>
     </div>
 </div>

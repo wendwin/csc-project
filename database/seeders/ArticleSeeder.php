@@ -10,6 +10,7 @@ class ArticleSeeder extends Seeder
 {
     public function run()
     {
+
         $authors = [
             'pustaka-pemda' => 'admin-pustaka-pemda',
             'csc' => 'admincsc',
@@ -78,6 +79,7 @@ class ArticleSeeder extends Seeder
 
             // Ambil author berdasarkan target
             $author = $authors[$target];
+
 
             $article = Article::create([
                 'title' => "Judul Artikel ke-$i",

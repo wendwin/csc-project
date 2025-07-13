@@ -42,9 +42,15 @@
             <div x-data="beritaPagination()" x-init="loadBerita()" x-ref="beritaRoot">
                 <div id="berita-container"></div> {{-- isi berita di sini --}}
             </div>
-            @include('pustakapemda-components.landingpage.bimbingan-teknis')
-            
-            @include('pustakapemda-components.landingpage.workshop_seminar')
+            {{-- @include('pustakapemda-components.landingpage.bimbingan-teknis') --}}
+            <div x-data="bimtekPagination()" x-init="loadBimtek()" x-ref="bimtekRoot">
+                <div id="bimtek-container"></div> {{-- isi akan diisi via AJAX --}}
+            </div>
+            {{-- @include('pustakapemda-components.landingpage.workshop_seminar') --}}
+            <div x-data="workshopPagination()" x-init="loadWorkshop()" x-ref="workshopRoot">
+                <div id="workshop-container"></div> {{-- isi workshop --}}
+            </div>
+
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="max-w-6xl mx-auto p-0 my-14 bg-white shadow-md rounded-lg overflow-hidden">
+<div class="max-w-6xl mx-auto p-0 my-14 bg-white {{ $extraClass ?? '' }} rounded-lg overflow-hidden">
     <div class="flex justify-center rounded-lg">
         {{-- <div class="w-full max-w-xl md:max-w-5xl"> --}}
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -34,30 +34,22 @@
                 <div class="w-full lg:w-3/5 text-start p-5 my-auto">
                     <h2 class="text-lg md:text-xl font-semibold text-[#2C437F] uppercase tracking-wide mb-3">Tentang Kami</h2>
                     <h2 class="text-xl md:text-2xl font-bold text-[#2C437F] mb-4">Pusat Tata Kelola Keuangan Dan Pembangunan Daerah</h2>
-                    <p class="text-gray-600"><span class="text-slate-700 font-bold">PUSTAKA PEMDA</span> merupakan
+                    <p class="text-gray-600 text-justify"><span class="text-slate-700 font-bold">PUSTAKA PEMDA</span> merupakan
                         perusahaan penyedia jasa profesional yang bergerak di bidang bimbingan teknis (bimtek) dan studi
                         banding, dengan fokus utama pada peningkatan kapasitas aparatur pemerintah desa dan kecamatan di
-                        seluruh Indonesia. Sejak awal berdiri, kami telah dipercaya sebagai mitra oleh lebih dari 10.000
+                        seluruh Indonesia. <br> <br>
+                        Sejak awal berdiri, kami telah dipercaya sebagai mitra oleh lebih dari 10.000
                         desa dari berbagai wilayah di nusantara. Komitmen kami adalah mendukung terciptanya tata kelola
                         keuangan dan pembangunan daerah yang transparan, akuntabel, serta berkelanjutan.</p>
-                    <div class="flex items-center gap-3 my-5">
-                        <a href="#" class="group">
-                            <div
-                                class="w-7 h-7 rounded-full bg-white flex items-center justify-center group-hover:bg-[#2C80FF]">
-                                <i data-lucide="facebook" class="w-4 h-4 text-[#2C437F] group-hover:text-white"></i>
-                            </div>
+                    <div class="flex flex-row gap-1 mt-3 md:mt-5 md:w-[250px]">
+                        <a href="#">
+                            <i data-lucide="facebook" class="w-8 h-8 p-1 rounded-xl bg-[#BB271A] text-white hover:bg-white hover:text-[#BB271A] tranform transition-all flex items-center justify-center"></i>
                         </a>
-                        <a href="#" class="group">
-                            <div
-                                class="w-7 h-7 rounded-full bg-white flex items-center justify-center group-hover:bg-[#2C80FF]">
-                                <i data-lucide="instagram" class="w-4 h-4 text-[#2C437F] group-hover:text-white"></i>
-                            </div>
+                        <a href="#">
+                            <i data-lucide="instagram" class="w-8 h-8 p-1 rounded-xl bg-[#BB271A] text-white hover:bg-white hover:text-[#BB271A] tranform transition-all flex items-center justify-center"></i>
                         </a>
-                        <a href="#" class="group">
-                            <div
-                                class="w-7 h-7 rounded-full bg-white flex items-center justify-center group-hover:bg-[#2C80FF]">
-                                <i data-lucide="linkedin" class="w-4 h-4 text-[#2C437F] group-hover:text-white"></i>
-                            </div>
+                        <a href="#">
+                            <i data-lucide="linkedin" class="w-8 h-8 p-2 rounded-xl bg-[#BB271A] text-white hover:bg-white hover:text-[#BB271A] tranform transition-all flex items-center justify-center"></i>
                         </a>
                     </div>
                 </div>
