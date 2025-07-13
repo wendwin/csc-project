@@ -25,4 +25,7 @@
         </a>
         @endforeach
     </div>
+    <div class="mt-6 pagination">
+        {!! $galeri_pelatihan->links() !!}
+    </div>
 </div>

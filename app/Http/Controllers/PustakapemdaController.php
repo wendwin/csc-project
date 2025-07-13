@@ -189,6 +189,10 @@ class PustakapemdaController extends Controller
             if ($request->get('section') === 'bimtek') {
                 return view('pustakapemda-components.landingpage.bimbingan-teknis', compact('bimbingan_teknis'))->render();
             }
+
+            if ($request->get('section') === 'galeri') {
+                return view('pustakapemda-components.landingpage.galeri-pelatihan', compact('galeri_pelatihan'))->render();
+            }
         
             return view('pustakapemda-components.landingpage.berita-terbaru', compact('berita_terbaru'))->render();
         }
