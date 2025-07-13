@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Log;
 class AuthController extends Controller
 
 // INI AUTH MANAGEMENT USER LOGIN 
@@ -80,11 +81,20 @@ class AuthController extends Controller
         return redirect()->route('admin.users')->with('success', 'User berhasil ditambahkan.');
     }
 
-    public function listUsers()
+    public function listUsers(Request $request)
     {
-        $users = User::all();
-        return view('admin.auth.users-list', compact('users'));
+        $query = User::query();
+
+        if ($request->filled('role')) {
+            $query->where('role', $request->role);
+        }
+
+        $users = $query->paginate(6)->withQueryString(); 
+        $roles = User::select('role')->distinct()->pluck('role'); 
+
+        return view('admin.auth.users-list', compact('users', 'roles'));
     }
+
 
     public function editUser($id)
     {
@@ -92,35 +102,39 @@ class AuthController extends Controller
         return view('admin.auth.edit-user', compact('user'));
     }
 
-    // Simpan hasil edit user
     public function updateUser(Request $request, $id)
     {
         $user = User::findOrFail($id);
 
-        $validated = $request->validate([
+        $rules = [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email,' . $id,
-            'password' => 'nullable|string|min:6|confirmed',
             'role' => 'required|in:admin pustaka pemda,admin csc,admin pspi',
             'profile_image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
-        ]);
+        ];
 
-        // Upload foto baru jika ada
+        if ($request->filled('password')) {
+            $rules['old_password'] = [
+                'required',
+                function ($attribute, $value, $fail) use ($user) {
+                    if (!Hash::check($value, $user->password)) {
+                        $fail('Password lama tidak cocok.');
+                    }
+                },
+            ];
+            $rules['password'] = ['required', 'string', 'min:6', 'confirmed'];
+        }
+
+        $validated = $request->validate($rules);
+        if ($request->filled('password')) {
+            $user->password = Hash::make($request->password);
+        }
         if ($request->hasFile('profile_image')) {
-            // Hapus foto lama jika ada
             if ($user->profile_image) {
                 Storage::disk('public')->delete($user->profile_image);
             }
-
             $user->profile_image = $request->file('profile_image')->store('images/profiles', 'public');
         }
-
-        // Update password hanya jika diisi
-        if (!empty($validated['password'])) {
-            $user->password = Hash::make($validated['password']);
-        }
-
-        // Update data lainnya
         $user->name = $validated['name'];
         $user->email = $validated['email'];
         $user->role = $validated['role'];
@@ -128,6 +142,7 @@ class AuthController extends Controller
 
         return redirect()->route('admin.users')->with('success', 'User berhasil diperbarui.');
     }
+
 
     // Hapus user
     public function deleteUser($id)
