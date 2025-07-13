@@ -25,13 +25,13 @@
     </style>
 </head>
 
-<body class="bg-[#F5F6FA] flex flex-col md:flex-row min-h-screen" x-data="{ sidebarOpen: true }">
+<body class="bg-[#F5F6FA] min-h-screen flex flex-col md:flex-row" x-data="{ sidebarOpen: true }">
 
     {{-- Sidebar --}}
     @include('admin-components.sidebar')
 
-<div x-cloak class="flex-1 flex flex-col min-h-screen transition-all duration-300"
-    :class="sidebarOpen ? 'md:pl-64' : 'md:pl-20'">
+    <div x-cloak class="flex-1 flex flex-col min-h-screen  transition-all duration-300 "
+        :class="sidebarOpen ? 'md:pl-64' : 'md:pl-20'">
 
 
         {{-- Navbar --}}

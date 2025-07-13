@@ -1,63 +1,54 @@
 @extends('layouts.adminlayout')
 
 @section('content')
-        <h1 class="text-[32px] font-bold text-gray-800 mb-6">Daftar Artikel</h1>
+    <h1 class="text-[32px] font-bold text-gray-800 mb-6 -mt-1">Daftar Artikel</h1>
 
-        {{-- FORM FILTER --}}
-        <form method="GET" action="{{ route('articles.index') }}" class="w-full">
-            <div class="flex flex-wrap items-center gap-2 w-full mt-4">
+    {{-- FORM FILTER --}}
+    <form method="GET" action="{{ route('articles.index') }}" class="w-full">
+        <div class="flex flex-wrap items-center gap-2 w-full mt-4">
+            <div
+                class="flex flex-col md:flex-row md:items-center w-full md:w-auto border border-gray-300 rounded-lg font-bold text-[14px] divide-y md:divide-y-0 md:divide-x divide-gray-300">
+                <div class="flex items-center px-3 py-2 text-sm font-semibold text-gray-700">
+                    <i data-lucide="filter" class="w-4 h-4 mr-1"></i>
+                    <span>Filter By</span>
+                </div>
+                <input type="date" name="tanggal" value="{{ request('tanggal') }}"
+                    class="px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none" />
+                <select name="target_website" class="px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none">
+                    <option value="">Target Website</option>
+                    <option value="pustaka-pemda" {{ request('target_website') == 'pustaka-pemda' ? 'selected' : '' }}>
+                        Pustaka
+                        Pemda</option>
+                    <option value="csc" {{ request('target_website') == 'csc' ? 'selected' : '' }}>CSC</option>
+                    <option value="pspi" {{ request('target_website') == 'pspi' ? 'selected' : '' }}>PSPI</option>
+                </select>
 
-                {{-- FILTER WRAPPER --}}
-                <div
-                    class="flex flex-col md:flex-row md:items-center w-full md:w-auto border border-gray-300 rounded-lg font-bold text-[14px] divide-y md:divide-y-0 md:divide-x divide-gray-300">
+                {{-- Mobile: tampilkan teks asli --}}
+                <select name="category"
+                    class="block md:hidden px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none w-full">
+                    <option value="">Kategori Artikel</option>
+                    @foreach ($categories as $category)
+                        <option value="{{ $category }}" title="{{ $category }}"
+                            {{ request('category') == $category ? 'selected' : '' }}>
+                            {{ Str::limit(ucfirst($category), 30) }}
+                        </option>
+                    @endforeach
+                </select>
 
-                    {{-- Label Filter By --}}
-                    <div class="flex items-center px-3 py-2 text-sm font-semibold text-gray-700">
-                        <i data-lucide="filter" class="w-4 h-4 mr-1"></i>
-                        <span>Filter By</span>
-                    </div>
-
-            {{-- Filter: Tanggal --}}
-            <input type="date" name="tanggal" value="{{ request('tanggal') }}"
-                class="px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none" />
-
-
-                    {{-- Filter: Target Website --}}
-                    <select name="target_website" class="px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none">
-                        <option value="">Target Website</option>
-                        <option value="pustaka-pemda" {{ request('target_website') == 'pustaka-pemda' ? 'selected' : '' }}>Pustaka
-                            Pemda</option>
-                        <option value="csc" {{ request('target_website') == 'csc' ? 'selected' : '' }}>CSC</option>
-                        <option value="pspi" {{ request('target_website') == 'pspi' ? 'selected' : '' }}>PSPI</option>
-                    </select>
-    {{-- Mobile: tampilkan teks asli --}}
-    <select name="category" class="block md:hidden px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none w-full">
-        <option value="">Kategori Artikel</option>
-        @foreach ($categories as $category)
-            <option value="{{ $category }}" title="{{ $category }}" {{ request('category') == $category ? 'selected' : '' }}>
-                {{ Str::limit(ucfirst($category), 30) }}
-            </option>
-        @endforeach
-    </select>
-
-    {{-- Desktop: tampilkan teks dipotong --}}
-    <select name="category"
-        class="hidden md:block px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none w-40 truncate">
-        <option value="">Kategori Artikel</option>
-        @foreach ($categories as $category)
-            <option value="{{ $category }}" title="{{ $category }}" {{ request('category') == $category ? 'selected' : '' }}>
-                {{ Str::limit(ucfirst($category), 20) }}
-            </option>
-        @endforeach
-    </select>
-
-                    {{-- Tombol Filter --}}
-                    <button type="submit"
-                        class="px-3 py-2 text-sm text-white bg-blue-600 hover:bg-blue-700 font-semibold">
-                        Filter
-                    </button>
-
-                {{-- Reset Filter --}}
+                {{-- Desktop: tampilkan teks dipotong --}}
+                <select name="category"
+                    class="hidden md:block px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none w-40 truncate">
+                    <option value="">Kategori Artikel</option>
+                    @foreach ($categories as $category)
+                        <option value="{{ $category }}" title="{{ $category }}"
+                            {{ request('category') == $category ? 'selected' : '' }}>
+                            {{ Str::limit(ucfirst($category), 20) }}
+                        </option>
+                    @endforeach
+                </select>
+                <button type="submit" class="px-3 py-2 text-sm text-white bg-blue-600 hover:bg-blue-700 font-semibold">
+                    Filter
+                </button>
                 <a href="{{ route('articles.index') }}"
                     class="flex items-center gap-1 px-3 py-2 text-sm text-red-500 hover:bg-red-100 border rounded-r-lg border-red-300">
                     <i data-lucide="refresh-ccw" class="w-4 h-4"></i>
@@ -65,32 +56,41 @@
                 </a>
             </div>
 
-                {{-- Tambah Artikel --}}
-                <a href="{{ route('articles.create') }}"
-                    class="flex items-center gap-1 px-3 py-2 text-sm text-white bg-[#4379EE] hover:bg-blue-700 font-semibold rounded-lg">
-                    <i data-lucide="plus" class="w-5 h-5"></i>
-                    <span>Tambah Artikel</span>
-                </a>
-            </div>
+            {{-- Tambah Artikel --}}
+            <a href="{{ route('articles.create') }}"
+                class="hidden md:flex items-center gap-1 px-3 py-2 text-sm text-white bg-[#4379EE] hover:bg-blue-700 font-semibold rounded-lg">
+                <i data-lucide="plus" class="w-5 h-5"></i>
+                <span>Tambah Artikel</span>
+            </a>
+        </div>
+    </form>
 
-        </form>
+    {{-- TOMBOL TAMBAH ARTIKEL - MOBILE & TABLET --}}
+    <div class="flex md:hidden mt-4 w-full justify-end">
+        <a href="{{ route('articles.create') }}"
+            class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center gap-2">
+            <i data-lucide="plus" class="w-4 h-4"></i>
+            Tambah Artikel
+        </a>
+    </div>
 
 
-        {{-- FLASH MESSAGE --}}
-        @if (session('success'))
-            <div x-data="{ show: true }" x-show="show" x-transition
-                class="mb-4 mt-2 p-4 text-sm text-green-800 bg-green-100 border border-green-200 rounded-lg flex items-center justify-between">
-                <span>{{ session('success') }}</span>
-                <button @click="show = false" class="ml-4 text-green-600 hover:text-green-800">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
-            </div>
-        @endif
+    {{-- FLASH MESSAGE --}}
+    @if (session('success'))
+        <div x-data="{ show: true }" x-show="show" x-transition
+            class="mb-4 mt-2 p-4 text-sm text-green-800 bg-green-100 border border-green-200 rounded-lg flex items-center justify-between">
+            <span>{{ session('success') }}</span>
+            <button @click="show = false" class="ml-4 text-green-600 hover:text-green-800">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+    @endif
 
-        {{-- TABEL ARTIKEL --}}
-        <div class="w-full overflow-x-auto rounded-2xl shadow-md bg-white mt-10">
+    {{-- TABEL ARTIKEL --}}
+    <div class="w-full rounded-2xl shadow-md bg-white mt-4 md:mt-10">
+        <div class="w-full overflow-x-auto  rounded-2xl ">
             <table
-                class="min-w-[640px] sm:min-w-full text-[10px] sm:text-[11px] md:text-[10px] lg:text-[14px] text-left text-gray-700">
+                class="min-w-[1024px] w-full text-[10px] sm:text-[11px] md:text-[10px] lg:text-[14px] text-left text-gray-700">
                 <thead class="bg-[#FCFDFD]">
                     <tr
                         class="font-semibold text-gray-700 border-b border-gray-200 uppercase text-[12px] sm:text-[13px] md:text-[14px]">
@@ -108,7 +108,8 @@
                     @forelse ($articles as $index => $article)
                         <tr
                             class="border-b border-gray-200 hover:bg-gray-100 transition duration-150 bg-white text-[14px] font-semibold text-[#202224]">
-                            <td class="px-4 py-3">{{ ($articles->currentPage() - 1) * $articles->perPage() + $index + 1 }}</td>
+                            <td class="px-4 py-3">{{ ($articles->currentPage() - 1) * $articles->perPage() + $index + 1 }}
+                            </td>
                             <td class="px-4 py-3" title="{{ $article->title }}">
                                 {{ \Illuminate\Support\Str::words($article->title, 2, '...') }}
                             </td>
@@ -154,7 +155,8 @@
                                                 <p class="text-sm text-gray-600">Yakin ingin menghapus artikel ini?</p>
 
                                                 <div class="flex justify-center gap-4 mt-4">
-                                                    <form action="{{ route('articles.destroy', $article->id) }}" method="POST">
+                                                    <form action="{{ route('articles.destroy', $article->id) }}"
+                                                        method="POST">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit"
@@ -164,12 +166,11 @@
                                                     </form>
                                                     <button type="button" @click="showModal = false"
                                                         class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg text-sm font-medium transition">
-                                                        Batal                       </button>
+                                                        Batal </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- End Delete Modal --}}
                                 </div>
                             </td>
                         </tr>
@@ -188,4 +189,5 @@
                 </div>
             </div>
         </div>
+    </div>
 @endsection
