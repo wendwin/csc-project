@@ -51,7 +51,7 @@ Route::domain('pustakapemda.test')->group(function () {
     Route::get('/', [PustakapemdaController::class, 'index'])->name('website2.home');
     Route::get('/berita/{id}', [PustakapemdaController::class, 'detail_berita'])->name('website2.detail_berita');
     Route::get('/profil', [PustakapemdaController::class, 'profil'])->name('website2.profil');
-    Route::get('/{kategori?}', [PustakapemdaController::class, 'layanan'])->name('website2.layanan');
+    Route::get('/layanan/{kategori?}', [PustakapemdaController::class, 'layanan'])->name('website2.layanan');
     Route::get('/kontak', [PustakapemdaController::class, 'kontak'])->name('website2.kontak');
     // Tambahkan route lain untuk website pustakapemda disni
 });

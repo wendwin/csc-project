@@ -7,7 +7,7 @@
        @foreach ($kategori_layanan as $kategori)
             <div class="
                 w-full px-2 py-1 transition-all
-                {{ isset($selected_category) && $selected_category === $kategori ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'text-black bg-gray-200 hover:bg-gray-300' }}
+                {{ isset($selected_category) && Str::lower($selected_category) === Str::lower($kategori) ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'text-black bg-gray-200 hover:bg-gray-300' }}
             ">
                 <a href="{{ route('website2.layanan', Str::lower($kategori)) }}">
                     <p class="text-sm md:text-base text-start font-semibold truncate overflow-hidden whitespace-nowrap">
