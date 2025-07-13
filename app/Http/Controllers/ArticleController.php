@@ -31,8 +31,7 @@ class ArticleController extends Controller
             $query->where('category', $request->category);
         }
         $articles = $query->paginate(6)->withQueryString();
-
-        // Ambil semua kategori unik dari tabel articles
+        
         $categories = Article::select('category')->distinct()->pluck('category');
 
         return view('admin.articles-index', compact('articles', 'categories'));
