@@ -39,16 +39,62 @@
         </div>
         <div class="md:col-span-3  text-white rounded">
             {{-- @include('pustakapemda-components.landingpage.berita-terbaru') --}}
-            <div x-data="beritaPagination()" x-init="loadBerita()" x-ref="beritaRoot">
-                <div id="berita-container"></div> {{-- isi berita di sini --}}
+            <div x-data="beritaPagination()" x-init="loadBerita()" x-cloak>
+                <div class="my-10 md:my-0">
+                    <div class="container mx-auto md:p-6 bg-white">
+                        <div x-show="loading" class="flex items-center gap-5 mx-5">
+                            <h2 class="text-lg md:text-2xl text-[#2C437F] font-bold mb-4 px-2">Berita Terbaru</h2>
+                            <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>
+                        </div>
+                        <!-- Skeleton loading -->
+                        <div x-show="loading" class="flex flex-col gap-4 animate-pulse mx-5" x-cloak>
+                            <template x-for="i in 5" :key="i">
+                                <div class="p-2 rounded-lg bg-white">
+                                    <div class="flex flex-col lg:flex-row gap-0 text-start">
+                                        <!-- Mobile -->
+                                        <div class="flex flex-row items-center lg:hidden">
+                                            <div class="w-1/3 h-[100px] bg-gray-300/50 rounded"></div>
+                                            <div class="flex flex-col justify-center px-3 w-2/3 gap-2">
+                                                <div class="h-4 bg-gray-300/50 rounded w-3/4"></div>
+                                                <div class="flex space-x-2 text-sm">
+                                                    <div class="h-3 bg-gray-300/50 rounded w-1/2"></div>
+                                                    <div class="h-3 bg-gray-300/50 rounded w-1/4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Desktop -->
+                                        <div class="hidden lg:flex flex-row w-full gap-4">
+                                            <div
+                                                class="min-w-[200px] xl:min-w-[300px] h-[130px] xl:h-[200px] bg-gray-300/50 rounded">
+                                            </div>
+                                            <div class="flex flex-col justify-center w-full space-y-3">
+                                                <div class="h-6 bg-gray-300/50 rounded w-1/2"></div>
+                                                <div class="flex space-x-4">
+                                                    <div class="h-3 bg-gray-300/50 rounded w-1/4"></div>
+                                                    <div class="h-3 bg-gray-300/50 rounded w-1/4"></div>
+                                                </div>
+                                                <div class="h-4 bg-gray-300/50 rounded w-full"></div>
+                                                <div class="h-4 bg-gray-300/50 rounded w-5/6"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+
+                        <div id="berita-container" x-show="!loading" x-cloak></div>
+                    </div>
+                </div>
             </div>
+
             {{-- @include('pustakapemda-components.landingpage.bimbingan-teknis') --}}
             <div x-data="bimtekPagination()" x-init="loadBimtek()" x-ref="bimtekRoot">
-                <div id="bimtek-container"></div> {{-- isi akan diisi via AJAX --}}
+                <div id="bimtek-container"></div> 
             </div>
             {{-- @include('pustakapemda-components.landingpage.workshop_seminar') --}}
             <div x-data="workshopPagination()" x-init="loadWorkshop()" x-ref="workshopRoot">
-                <div id="workshop-container"></div> {{-- isi workshop --}}
+                <div id="workshop-container"></div>
             </div>
 
         </div>
