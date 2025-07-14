@@ -78,7 +78,7 @@
     </div>
 </div> --}}
 
-<div class="">
+<div class="my-10 md:my-0">
     <div class="container mx-auto md:p-6 bg-white">
         <div class="flex items-center gap-5">
             <h2 class="text-lg md:text-2xl text-[#2C437F] font-bold mb-4 px-2">Workshop & Seminar</h2>
