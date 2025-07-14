@@ -1,5 +1,5 @@
 <div class="">
-    <div class="container mx-auto p-6 bg-white">
+    <div class="container mx-auto md:p-6 bg-white">
         <div class="flex items-center gap-5">
             <h2 class="text-lg md:text-2xl text-[#2C437F]  font-bold mb-4 px-2">Berita Terbaru</h2>
             <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>
@@ -8,7 +8,7 @@
             @foreach ($berita_terbaru as $item)
                 <a href="{{ route('website2.detail_berita', $item['id_slug']) }}">
                     <div class="p-2 hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg bg-white">
-                        <div class="flex flex-col lg:flex-row gap-4 text-start">
+                        <div class="flex flex-col lg:flex-row gap-0 text-start">
                             <!-- Mobile -->
                             <div class="flex flex-row items-center lg:hidden">
                                 <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
@@ -18,7 +18,7 @@
                                     <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>
                                     <div class="mt-1 mt-md:flex text-sm text-gray-500 ">
                                         <p>{{ $item['author'] }}</p>
-                                        <p>{{ $item['created_at'] }}</p>
+                                        <p>{{ $item->created_at->format('d/m/Y') }}</p>
                                     </div>
                                 </div>
                             </div>
