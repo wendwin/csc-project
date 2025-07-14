@@ -445,59 +445,7 @@
         </div> --}}
     </div>
 
-    <div class="news">
-        <div class="container" style="background-color:">
-            <div class="line-bar-title mb-3"></div>
-            <h4 class="mb-5 ">Berita Terbaru</h4>
-            <div class="mb-lg-0 d-lg-flex justify-content-evenly align-items-center gap-3">
-                <a href="">
-                    <div class="card p-3 mb-4">
-                        <img src="img/berita/image 4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="line-bar mb-2"></div>
-                            <p class="date">25 November 2024</p>
-                            <p class="title">Bimtek Peningkatan Kapasitas Aparatur Desa di Kecamatan Manuhing,
-                                Manuhing Raya, dan Rungan Berlangsung Sukses</p>
-                            <p class="content">Dalam upaya meningkatkan kualitas pelayanan dan tata kelola pemerintahan
-                                desa, Pemerintah
-                                Kabupaten Gunung Mas menggelar Bimbingan ...</p>
-                            <a href="#" class="next">Selengkapnya...</a>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="card p-3 mb-4">
-                        <img src="img/berita/image 7.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="line-bar mb-2"></div>
-                            <p class="date">25 November 2024</p>
-                            <p class="title">Bimtek Peningkatan Kapasitas Aparatur Desa di Kecamatan Manuhing,
-                                Manuhing Raya, dan Rungan Berlangsung Sukses</p>
-                            <p class="content">Dalam upaya meningkatkan kualitas pelayanan dan tata kelola pemerintahan
-                                desa, Pemerintah
-                                Kabupaten Gunung Mas menggelar Bimbingan ...</p>
-                            <a href="#" class="next">Selengkapnya...</a>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="card p-3 mb-4">
-                        <img src="img/berita/image 9.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="line-bar mb-2"></div>
-                            <p class="date">30 Agustus 2024</p>
-                            <p class="title">Panen Raya Cabai, di Temanggung Mengundang Seluruh Petani cabai dan
-                                Aparatur Desa</p><br>
-                            <p class="content">Pemerintah Desa Tembanggung dengan bangga mengundang seluruh petani dan
-                                aparatur desa untuk berpartisipasi dalam acara Panen Raya ...</p>
-                            <a href="#" class="next">Selengkapnya...</a>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </div>
+    @include('components.berita')
 
     <div class="offer text-center">
         <div class="container">
