@@ -49,6 +49,10 @@
             size: 55
         });
     });
+    // <style>
+    //     [x-cloak] { display: none !important; }
+    // </style>
+
 </script>
 
 </body>

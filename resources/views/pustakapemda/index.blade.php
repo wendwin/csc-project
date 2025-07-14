@@ -43,8 +43,11 @@
                             }
                         })
                         .finally(() => {
-                            this.loading = false;
+                            setTimeout(() => {
+                                this.loading = false;
+                            }, 300); // delay 500ms sebelum loading false
                         });
+
                 },
             };
         }
