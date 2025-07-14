@@ -63,11 +63,14 @@ window.addEventListener('scroll', () => {
             <div class="flex h-16 items-center justify-between">
                 <div class="flex items-center justify-between w-full">
                     <div class="shrink-0 flex items-center gap-3">
-                        <img class="h-14 w-14" src="{{ asset('img/pustakapemda/Logo PustakaPemda 1.png') }}"
-                            alt="Pustaka Pemda" />
-                            <div class="hidden lg:block lg:w-1/2">
-                                <p class="text-base font-semibold text-[#2C437F]">PUSAT TATA KELOLA KEUANGAN DAN PEMBANGUNAN DAERAH</p>
-                            </div>
+                        <a href="{{ route('website2.home') }}">
+                            <img class="h-14 w-14" src="{{ asset('img/pustakapemda/Logo PustakaPemda 1.png') }}"
+                                alt="Pustaka Pemda" />
+                        </a>
+                        <div class="hidden lg:block lg:w-1/2">
+                            <p class="text-base font-semibold text-[#2C437F]">PUSAT TATA KELOLA KEUANGAN DAN PEMBANGUNAN
+                                DAERAH</p>
+                        </div>
                     </div>
 
                     <div class="hidden md:flex items-center space-x-4">
@@ -129,14 +132,42 @@ window.addEventListener('scroll', () => {
         <div x-show="isOpen" class="md:hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="{{ route('website2.home') }}" class="block rounded-md bg-gradient-to-r from-[#2C80FF] to-[#436dd7] px-3 py-2 text-base font-medium text-white"
-                    aria-current="page">Beranda</a>
+                <a href="{{ route('website2.home') }}"
+                    class="block rounded-md px-3 py-2 text-base font-medium 
+                    {{ request()->routeIs('website2.home') 
+                    ? 'text-white bg-gradient-to-r from-[#2C80FF] to-[#436dd7]' 
+                    : 'text-gray-900 hover:text-[#436dd7]' }}"
+                    aria-current="{{ request()->routeIs('website2.home') ? 'page' : '' }}">
+                    Beranda
+                </a>
+
                 <a href="{{ route('website2.profil') }}"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Profil</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium 
+                    {{ request()->routeIs('website2.profil') 
+                    ? 'text-white bg-gradient-to-r from-[#2C80FF] to-[#436dd7]' 
+                    : 'text-gray-900 hover:text-[#436dd7]' }}"
+                    aria-current="{{ request()->routeIs('website2.profil') ? 'page' : '' }}">
+                    Profil
+                </a>
+
                 <a href="{{ route('website2.layanan') }}"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Layanan</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium 
+                    {{ request()->routeIs('website2.layanan') 
+                    ? 'text-white bg-gradient-to-r from-[#2C80FF] to-[#436dd7]' 
+                    : 'text-gray-900 hover:text-[#436dd7]' }}"
+                    aria-current="{{ request()->routeIs('website2.layanan') ? 'page' : '' }}">
+                    Layanan
+                </a>
+
                 <a href="{{ route('website2.kontak') }}"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:text-[#436dd7]">Kontak</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium 
+                    {{ request()->routeIs('website2.kontak') 
+                    ? 'text-white bg-gradient-to-r from-[#2C80FF] to-[#436dd7]' 
+                    : 'text-gray-900 hover:text-[#436dd7]' }}"
+                    aria-current="{{ request()->routeIs('website2.kontak') ? 'page' : '' }}">
+                    Kontak
+                </a>
+
             </div>
         </div>
     </nav>
