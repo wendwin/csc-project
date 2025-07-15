@@ -1,6 +1,6 @@
 <div class="max-w-6xl mx-auto px-5">
     <h1 class="text-[#2C437F] text-xl md:text-2xl font-bold text-start">Mengapa Memilih Kami?</h1>
-    <div class="flex flex-wrap gap-5 my-10 justify-center">
+    <div class="flex flex-wrap gap-5 my-10 md:my-16 justify-center">
 
         <div class="relative h-full overflow-hidden group rounded-xl">
 
