@@ -78,8 +78,8 @@
     </div>
 </div> --}}
 
-<div class="my-10 md:my-0">
-    <div class="container mx-auto md:p-6 bg-white">
+<div class="">
+    <div class="container mx-auto bg-white">
         <div class="flex items-center gap-5">
             <h2 class="text-lg md:text-2xl text-[#2C437F] font-bold mb-4 px-2">Workshop & Seminar</h2>
             <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>

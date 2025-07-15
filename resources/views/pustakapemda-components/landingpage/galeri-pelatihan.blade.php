@@ -1,4 +1,4 @@
-<div class="max-w-6xl mx-auto p-6 my-5 bg-white shadow-md rounded-lg">
+<div class="max-w-6xl mx-auto  bg-white rounded-lg">
     <div class="flex items-center gap-5">
         <h2 class="text-lg md:text-2xl text-[#2C437F] font-bold mb-4 px-2">Galeri Pelatihan</h2>
         <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>
