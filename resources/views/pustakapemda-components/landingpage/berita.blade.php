@@ -42,12 +42,12 @@
             <div x-data="beritaPagination()" x-init="loadBerita()" x-cloak>
                 <div class="my-10 md:my-0">
                     <div class="container mx-auto md:p-6 bg-white">
-                        <div x-show="loading" class="flex items-center gap-5 mx-5">
+                        <div x-show="loading" class="flex items-center gap-5">
                             <h2 class="text-lg md:text-2xl text-[#2C437F] font-bold mb-4 px-2">Berita Terbaru</h2>
                             <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>
                         </div>
                         <!-- Skeleton loading -->
-                        <div x-show="loading" class="flex flex-col gap-4 animate-pulse mx-5" x-cloak>
+                        <div x-show="loading" class="flex flex-col gap-4 animate-pulse" x-cloak>
                             <template x-for="i in 5" :key="i">
                                 <div class="p-2 rounded-lg bg-white">
                                     <div class="flex flex-col lg:flex-row gap-0 text-start">
@@ -90,13 +90,87 @@
 
             {{-- @include('pustakapemda-components.landingpage.bimbingan-teknis') --}}
             <div x-data="bimtekPagination()" x-init="loadBimtek()" x-ref="bimtekRoot">
-                <div id="bimtek-container"></div> 
-            </div>
-            {{-- @include('pustakapemda-components.landingpage.workshop_seminar') --}}
-            <div x-data="workshopPagination()" x-init="loadWorkshop()" x-ref="workshopRoot">
-                <div id="workshop-container"></div>
+                <div class="my-10 md:my-0">
+                    <div class="container mx-auto md:p-6 bg-white">
+                        <div x-show="loading" class="flex items-center gap-5">
+                            <h2 class="text-lg md:text-2xl text-[#2C437F] font-bold mb-4 px-2">Bimbingan Teknis</h2>
+                            <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>
+                        </div>
+
+                        <!-- Skeleton saat loading -->
+                        <div x-show="loading" class="grid grid-cols-1 md:grid-cols-2 gap-4 animate-pulse" x-cloak>
+                            <!-- Card utama kiri -->
+                            <div class="bg-white rounded-lg p-4 space-y-4">
+                                <div class="aspect-video bg-gray-200 rounded"></div>
+                                <div class="h-4 bg-gray-300 rounded w-3/4"></div>
+                                <div class="h-3 bg-gray-300 rounded w-1/2"></div>
+                                <div class="h-3 bg-gray-300 rounded w-1/4"></div>
+                                <div class="h-4 bg-gray-300 rounded w-full"></div>
+                                <div class="w-1/4 h-8 bg-gray-300 rounded"></div>
+                            </div>
+
+                            <!-- List kanan  -->
+                            <div class="flex flex-col gap-4">
+                                <template x-for="i in 4" :key="i">
+                                    <div class="flex gap-4">
+                                        <div class="w-1/3 h-[100px] bg-gray-200 rounded"></div>
+                                        <div class="flex-1 space-y-2">
+                                            <div class="h-4 bg-gray-300 rounded w-3/4"></div>
+                                            <div class="h-3 bg-gray-300 rounded w-1/2"></div>
+                                            <div class="h-3 bg-gray-300 rounded w-1/4"></div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <div id="bimtek-container" x-show="!loading" x-cloak></div>
+                    </div>
+                </div>
             </div>
 
+            {{-- @include('pustakapemda-components.landingpage.workshop_seminar') --}}
+            <div x-data="workshopPagination()" x-init="loadWorkshop()" x-ref="workshopRoot">
+
+                <div class="my-10 md:my-0">
+                    <div class="container mx-auto md:p-6 bg-white">
+                        <div x-show="loading" class="flex items-center gap-5">
+                            <h2 class="text-lg md:text-2xl text-[#2C437F] font-bold mb-4 px-2">Workshop & Seminar</h2>
+                            <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>
+                        </div>
+
+                        <!-- Skeleton Loading -->
+                        <div x-show="loading" class="grid grid-cols-1 md:grid-cols-2 gap-4 animate-pulse" x-cloak>
+                            <!-- Card kiri  -->
+                            <div class="rounded-lg p-4 space-y-4 bg-transparent">
+                                <div class="aspect-video bg-gray-200 rounded"></div>
+                                <div class="h-4 bg-gray-300 rounded w-3/4"></div>
+                                <div class="h-3 bg-gray-300 rounded w-1/2"></div>
+                                <div class="h-3 bg-gray-300 rounded w-1/4"></div>
+                                <div class="h-4 bg-gray-300 rounded w-full"></div>
+                                <div class="w-1/4 h-8 bg-gray-300 rounded"></div>
+                            </div>
+
+                            <!-- Daftar kanan -->
+                            <div class="flex flex-col gap-4">
+                                <template x-for="i in 4" :key="i">
+                                    <div class="flex gap-4">
+                                        <div class="w-1/3 h-[100px] bg-gray-200 rounded"></div>
+                                        <div class="flex-1 space-y-2">
+                                            <div class="h-4 bg-gray-300 rounded w-3/4"></div>
+                                            <div class="h-3 bg-gray-300 rounded w-1/2"></div>
+                                            <div class="h-3 bg-gray-300 rounded w-1/4"></div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <div id="workshop-container" x-show="!loading" x-cloak></div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
