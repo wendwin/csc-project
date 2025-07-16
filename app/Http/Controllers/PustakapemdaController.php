@@ -174,14 +174,39 @@ class PustakapemdaController extends Controller
                          ->latest()
                          ->paginate(5);
 
+        $bimbingan_teknis->setCollection(
+        $bimbingan_teknis->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
+        
         $workshop_seminar = Article::where('author', 'admin-pustaka-pemda')
-                         ->where('category', 'Workshop dan Seminar Tematik')
-                         ->latest()
-                         ->paginate(5);
-
+                            ->where('category', 'Workshop dan Seminar Tematik')
+                            ->latest()
+                            ->paginate(5);
+        
+        $workshop_seminar->setCollection(
+        $workshop_seminar->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
+        
+        
         $galeri_pelatihan = Article::where('author', 'admin-pustaka-pemda')
-                         ->paginate(8);
+                            ->paginate(8);
 
+        $galeri_pelatihan->setCollection(
+        $galeri_pelatihan->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
+        
 
         if ($request->ajax()) {
             if ($request->get('section') === 'workshop') {
@@ -223,9 +248,10 @@ class PustakapemdaController extends Controller
         $id = $decoded[0] ?? null;
         $berita = Article::findOrFail($id);
         $gambars = ArticleImage::where('article_id', $id)->get();
-        $kategori_layanan = $this->getKategoriLayanan(); 
+        $kategori_layanan = $this->getKategoriLayanan();
+        $selected_category = $berita->category; 
 
-        return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan'));
+        return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan','selected_category'));
     }
 
     public function profil()
