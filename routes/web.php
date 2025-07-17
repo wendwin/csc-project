@@ -14,32 +14,37 @@ use App\Http\Controllers\ArticleController;
 |--------------------------------------------------------------------------
 */
 Route::domain('cendanasolution.test')->group(function () {
+    
+    Route::get('/', [HomeController::class, 'index'])->name('home');
 
-    Route::get('/', fn() => view('index', ['css'=> 'home.css']))->name('home');
-
+    // ───── PERUSAHAAN ─────
     Route::prefix('perusahaan')->group(function () {
-        Route::get('/tentang', fn() => view('perusahaan.tentang', ['css' => 'css/perusahaan/tentang.css']))->name('perusahaan.tentang');
-        Route::get('/direksi', fn() => view('perusahaan.direksi', ['css' => 'css/perusahaan/direksi.css']))->name('perusahaan.direksi');
-        Route::get('/struktur_organisasi', fn() => view('perusahaan.struktur_organisasi', ['css' => 'css/perusahaan/struktur-organisasi.css']))->name('perusahaan.struktur_organisasi');
-        Route::get('/tata-kelola', fn() => view('perusahaan.tata-kelola', ['css' => 'css/perusahaan/tata-kelola.css']))->name('perusahaan.tata-kelola');
+        Route::get('/tentang', [HomeController::class, 'tentang'])->name('perusahaan.tentang');
+        Route::get('/direksi', [HomeController::class, 'direksi'])->name('perusahaan.direksi');
+        Route::get('/struktur_organisasi', [HomeController::class, 'strukturOrganisasi'])->name('perusahaan.struktur_organisasi');
+        Route::get('/tata-kelola', [HomeController::class, 'tataKelola'])->name('perusahaan.tata-kelola');
     });
 
+    // ───── LAYANAN ─────
     Route::prefix('layanan')->group(function () {
-        Route::get('/event_organizer', fn() => view('layanan.event_organizer', ['css' => 'css/layanan/event_organizer.css']))->name('layanan.event_organizer');
-        Route::get('/ketahanan_pangan', fn() => view('layanan.ketahanan_pangan', ['css' => 'css/layanan/ketahanan_pangan.css']))->name('layanan.ketahanan_pangan');
-        Route::get('/konstruksi', fn() => view('layanan.konstruksi', ['css' => 'css/layanan/konstruksi.css']))->name('layanan.konstruksi');
+        Route::get('/event_organizer', [HomeController::class, 'eventOrganizer'])->name('layanan.event_organizer');
+        Route::get('/ketahanan_pangan', [HomeController::class, 'ketahananPangan'])->name('layanan.ketahanan_pangan');
+        Route::get('/konstruksi', [HomeController::class, 'konstruksi'])->name('layanan.konstruksi');
     });
 
+    // ───── PROGRAM ─────
     Route::prefix('program')->group(function () {
-        Route::get('/koperasi_desa', fn() => view('klien-sejarah/kopdes', ['css' => 'css/klien-sejarah/kopdes.css']))->name('koperasi_desa');
+        Route::get('/koperasi_desa', [HomeController::class, 'koperasiDesa'])->name('koperasi_desa');
     });
 
-    Route::get('/klien', fn() => view('klien-sejarah/klien', ['css' => 'css/klien-sejarah/klien.css']))->name('klien');
-    Route::get('/sejarah', fn() => view('klien-sejarah/sejarah', ['css' => 'css/klien-sejarah/sejarah.css']))->name('sejarah');
-    Route::get('/karier', fn() => view('klien-sejarah/karier', ['css' => 'css/klien-sejarah/karier.css']))->name('karier');
-    Route::get('/berita', fn() => view('klien-sejarah/berita', ['css' => 'css/klien-sejarah/berita.css']))->name('berita');
-    Route::get('/csr', fn() => view('klien-sejarah/csr', ['css' => 'css/klien-sejarah/csr.css']))->name('csr');
-    Route::get('/hubungi', fn() => view('klien-sejarah/hubungi', ['css' => 'css/klien-sejarah/hubungi.css']))->name('hubungi');
+    // ───── HALAMAN LAIN ─────
+    Route::get('/klien', [HomeController::class, 'klien'])->name('klien');
+    Route::get('/sejarah', [HomeController::class, 'sejarah'])->name('sejarah');
+    Route::get('/karier', [HomeController::class, 'karier'])->name('karier');
+    Route::get('/berita', [HomeController::class, 'berita'])->name('berita');
+    Route::get('/csr', [HomeController::class, 'csr'])->name('csr');
+    Route::get('/hubungi', [HomeController::class, 'hubungi'])->name('hubungi');
+    Route::get('/berita/{id}', [HomeController::class, 'detail_berita'])->name('detail_berita');
 });
 
 /*
@@ -51,7 +56,7 @@ Route::domain('pustakapemda.test')->group(function () {
     Route::get('/', [PustakapemdaController::class, 'index'])->name('website2.home');
     Route::get('/berita/{id}', [PustakapemdaController::class, 'detail_berita'])->name('website2.detail_berita');
     Route::get('/profil', [PustakapemdaController::class, 'profil'])->name('website2.profil');
-    Route::get('/{kategori?}', [PustakapemdaController::class, 'layanan'])->name('website2.layanan');
+    Route::get('/layanan/{kategori?}', [PustakapemdaController::class, 'layanan'])->name('website2.layanan');
     Route::get('/kontak', [PustakapemdaController::class, 'kontak'])->name('website2.kontak');
     // Tambahkan route lain untuk website pustakapemda disni
 });

@@ -25,7 +25,7 @@ class PustakapemdaController extends Controller
         $hashids = new Hashids('pustakapemda_salt_rahasia', 8);
         $carouselItems = Article::where('author', 'admin-pustaka-pemda')
             ->latest()
-            ->take(3) // ambil hanya 3 data terbaru
+            ->take(3)
             ->get()
             ->map(function ($item) use ($hashids) {
                 $item->id_encrypt = $hashids->encode($item->id);
@@ -33,129 +33,56 @@ class PustakapemdaController extends Controller
             });
 
          $cards = [
-        [
-            'title' => 'Jaringan Kemitraan Luas dan Terpercaya',
-            'img' => '/img/pustakapemda/tata_kelola/jaringan.png',
-            'text' => 'Lebih dari 10.000 desa di seluruh Indonesia telah menjadi mitra aktif kami.'
-        ],
-        [
-            'title' => 'Fokus pada Peningkatan Kapasitas Aparatur Desa & Kecamatan',
-            'img' => '/img/pustakapemda/tata_kelola/fokus.png',
-            'text' => 'Kami memiliki spesialisasi dalam penyelenggaraan bimtek dan studi banding yang relevan dengan tantangan nyata di lapangan.'
-        ],
-        [
-            'title' => 'Narasumber dan Fasilitator Profesional',
-            'img' => '/img/pustakapemda/tata_kelola/narasumber.png',
-            'text' => 'Didukung oleh tenaga ahli dari kementerian, akademisi, praktisi pemerintahan, serta tokoh-tokoh desa inspiratif yang memiliki pengalaman langsung di lapangan.'
-        ],
-        [
-            'title' => 'Materi dan Metode Pelatihan Sesuai Kebutuhan',
-            'img' => '/img/pustakapemda/tata_kelola/materi.png',
-            'text' => 'Materi disusun secara kontekstual dan sesuai dengan regulasi terbaru serta praktik terbaik di bidang tata kelola keuangan dan pembangunan desa.'
-        ],
-        [
-            'title' => 'Studi Banding di Lokasi Terpilih',
-            'img' => '/img/pustakapemda/tata_kelola/studi.png',
-            'text' => 'Lokasi studi banding dipilih dari desa-desa percontohan yang telah terbukti sukses.'
-        ],
-        [
-            'title' => 'Komitmen terhadap Inovasi dan Pembaruan',
-            'img' => '/img/pustakapemda/tata_kelola/komitmen.png',
-            'text' => 'Kami terus mengikuti kebijakan terbaru, memanfaatkan teknologi desa, dan menerapkan pendekatan partisipatif serta transparan.'
-        ],
-        [
-            'title' => 'Kolaborasi Lintas Sektor',
-            'img' => '/img/pustakapemda/tata_kelola/kolaborasi.png',
-            'text' => 'Kami bekerja sama dengan berbagai pihak untuk menciptakan dampak positif yang berkelanjutan.'
-        ],
-    ];
+            [
+                'title' => 'Jaringan Kemitraan Luas dan Terpercaya',
+                'img' => '/img/pustakapemda/tata_kelola/jaringan.png',
+                'text' => 'Lebih dari 10.000 desa di seluruh Indonesia telah menjadi mitra aktif kami.'
+            ],
+            [
+                'title' => 'Fokus pada Peningkatan Kapasitas Aparatur Desa & Kecamatan',
+                'img' => '/img/pustakapemda/tata_kelola/fokus.png',
+                'text' => 'Kami memiliki spesialisasi dalam penyelenggaraan bimtek dan studi banding yang relevan dengan tantangan nyata di lapangan.'
+            ],
+            [
+                'title' => 'Narasumber dan Fasilitator Profesional',
+                'img' => '/img/pustakapemda/tata_kelola/narasumber.png',
+                'text' => 'Didukung oleh tenaga ahli dari kementerian, akademisi, praktisi pemerintahan, serta tokoh-tokoh desa inspiratif yang memiliki pengalaman langsung di lapangan.'
+            ],
+            [
+                'title' => 'Materi dan Metode Pelatihan Sesuai Kebutuhan',
+                'img' => '/img/pustakapemda/tata_kelola/materi.png',
+                'text' => 'Materi disusun secara kontekstual dan sesuai dengan regulasi terbaru serta praktik terbaik di bidang tata kelola keuangan dan pembangunan desa.'
+            ],
+            [
+                'title' => 'Studi Banding di Lokasi Terpilih',
+                'img' => '/img/pustakapemda/tata_kelola/studi.png',
+                'text' => 'Lokasi studi banding dipilih dari desa-desa percontohan yang telah terbukti sukses.'
+            ],
+            [
+                'title' => 'Komitmen terhadap Inovasi dan Pembaruan',
+                'img' => '/img/pustakapemda/tata_kelola/komitmen.png',
+                'text' => 'Kami terus mengikuti kebijakan terbaru, memanfaatkan teknologi desa, dan menerapkan pendekatan partisipatif serta transparan.'
+            ],
+            [
+                'title' => 'Kolaborasi Lintas Sektor',
+                'img' => '/img/pustakapemda/tata_kelola/kolaborasi.png',
+                'text' => 'Kami bekerja sama dengan berbagai pihak untuk menciptakan dampak positif yang berkelanjutan.'
+            ],
+        ];
 
-    $tentangItems = [
-        [
-            'image' => '/img/asean-bac.jpg',
-        ],
-        [
-            'image' => '/img/g20.jpg',
-        ],
-        [
-            'image' => '/img/expo-2020-dubai.jpg',
-        ],
-    ];
+        $tentangItems = [
+            [
+                'image' => '/img/asean-bac.jpg',
+            ],
+            [
+                'image' => '/img/g20.jpg',
+            ],
+            [
+                'image' => '/img/expo-2020-dubai.jpg',
+            ],
+        ];
 
-    $kategori_layanan = $this->getKategoriLayanan();
-
-    // $berita_terbaru = [
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    // ];
-
-    // $bimbingan_teknis = [
-    //     [
-    //         'image' => '/img/g20.jpg',
-    //         'title' => 'Pameran G20: Inovasi Global untuk Masa Depan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '15/06/2025',
-    //         'description' => 'Acara G20 memperlihatkan komitmen negara-negara dalam menghadapi tantangan global...',
-    //     ],
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    // ];
-
-
-    // $workshop_seminar = [
-    //     [
-    //         'image' => '/img/g20.jpg',
-    //         'title' => 'Pameran G20: Inovasi Global untuk Masa Depan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '15/06/2025',
-    //         'description' => 'Acara G20 memperlihatkan komitmen negara-negara dalam menghadapi tantangan global...',
-    //     ],
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    //     [
-    //         'image' => '/img/asean-bac.jpg',
-    //         'title' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V.6, SEKDA Balikpapan',
-    //         'publisher' => 'Pustaka Pemda',
-    //         'date' => '27/06/2025',
-    //         'description' => 'Bimbingan Teknis Penyusunan Dokumen Kontrak dan E-Katalog V. 6, SEKDA Balikpapan Penyusunan dokumen kontrak melibatkan beberapa langkah penting, mulai dari...',
-    //     ],
-    // ];
+        $kategori_layanan = $this->getKategoriLayanan();
         
         $berita_terbaru = Article::where('author', 'admin-pustaka-pemda')
                          ->latest()
@@ -174,25 +101,57 @@ class PustakapemdaController extends Controller
                          ->latest()
                          ->paginate(5);
 
+        $bimbingan_teknis->setCollection(
+        $bimbingan_teknis->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
+        
         $workshop_seminar = Article::where('author', 'admin-pustaka-pemda')
-                         ->where('category', 'Workshop dan Seminar Tematik')
-                         ->latest()
-                         ->paginate(5);
-
+                            ->where('category', 'Workshop dan Seminar Tematik')
+                            ->latest()
+                            ->paginate(5);
+        
+        $workshop_seminar->setCollection(
+        $workshop_seminar->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
+        
+        
         $galeri_pelatihan = Article::where('author', 'admin-pustaka-pemda')
-                         ->paginate(8);
+                            ->paginate(8);
 
+        $galeri_pelatihan->setCollection(
+        $galeri_pelatihan->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
+        
 
-        if ($request->ajax()) {
+        if ($request->ajax() && ($request->has('section') || $request->has('pagination'))) {
             if ($request->get('section') === 'workshop') {
                 return view('pustakapemda-components.landingpage.workshop_seminar', compact('workshop_seminar'))->render();
             }
-
+        
             if ($request->get('section') === 'bimtek') {
                 return view('pustakapemda-components.landingpage.bimbingan-teknis', compact('bimbingan_teknis'))->render();
             }
         
-            return view('pustakapemda-components.landingpage.berita-terbaru', compact('berita_terbaru'))->render();
+            if ($request->get('section') === 'galeri') {
+                return view('pustakapemda-components.landingpage.galeri-pelatihan', compact('galeri_pelatihan'))->render();
+            }
+        
+            // Pagination untuk berita
+            if ($request->has('pagination')) {
+                return view('pustakapemda-components.landingpage.berita-terbaru', compact('berita_terbaru'))->render();
+            }
         }
 
         
@@ -219,9 +178,10 @@ class PustakapemdaController extends Controller
         $id = $decoded[0] ?? null;
         $berita = Article::findOrFail($id);
         $gambars = ArticleImage::where('article_id', $id)->get();
-        $kategori_layanan = $this->getKategoriLayanan(); 
+        $kategori_layanan = $this->getKategoriLayanan();
+        $selected_category = $berita->category; 
 
-        return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan'));
+        return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan','selected_category'));
     }
 
     public function profil()

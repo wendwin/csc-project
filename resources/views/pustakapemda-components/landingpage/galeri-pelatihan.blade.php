@@ -1,4 +1,4 @@
-<div class="max-w-6xl mx-auto p-6 my-5 bg-white shadow-md rounded-lg">
+<div class="max-w-6xl mx-auto  bg-white rounded-lg">
     <div class="flex items-center gap-5">
         <h2 class="text-lg md:text-2xl text-[#2C437F] font-bold mb-4 px-2">Galeri Pelatihan</h2>
         <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>
@@ -6,7 +6,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
         @foreach ($galeri_pelatihan as $item)
-        <a href="">
+        <a href="{{ route('website2.detail_berita', $item['id_slug']) }}">
             <div class=" hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg bg-white">
                 <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
                     class="w-full h-[200px] object-cover rounded mb-3" loading="lazy">
@@ -24,5 +24,8 @@
             </div>
         </a>
         @endforeach
+    </div>
+    <div class="mt-6 pagination">
+        {!! $galeri_pelatihan->links() !!}
     </div>
 </div>

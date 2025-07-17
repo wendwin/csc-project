@@ -34,14 +34,14 @@
                 <div class="w-full lg:w-3/5 text-start p-5 my-auto">
                     <h2 class="text-lg md:text-xl font-semibold text-[#2C437F] uppercase tracking-wide mb-3">Tentang Kami</h2>
                     <h2 class="text-xl md:text-2xl font-bold text-[#2C437F] mb-4">Pusat Tata Kelola Keuangan Dan Pembangunan Daerah</h2>
-                    <p class="text-gray-600 text-justify"><span class="text-slate-700 font-bold">PUSTAKA PEMDA</span> merupakan
+                    <p class="text-gray-700 text-justify"><span class="text-slate-700 font-bold">PUSTAKA PEMDA</span> merupakan
                         perusahaan penyedia jasa profesional yang bergerak di bidang bimbingan teknis (bimtek) dan studi
                         banding, dengan fokus utama pada peningkatan kapasitas aparatur pemerintah desa dan kecamatan di
                         seluruh Indonesia. <br> <br>
                         Sejak awal berdiri, kami telah dipercaya sebagai mitra oleh lebih dari 10.000
                         desa dari berbagai wilayah di nusantara. Komitmen kami adalah mendukung terciptanya tata kelola
                         keuangan dan pembangunan daerah yang transparan, akuntabel, serta berkelanjutan.</p>
-                    <div class="flex flex-row gap-1 mt-3 md:mt-5 md:w-[250px]">
+                    <div class="flex flex-row gap-3 mt-5 md:mt-5 md:w-[250px]">
                         <a href="#">
                             <i data-lucide="facebook" class="w-8 h-8 p-1 rounded-xl bg-[#BB271A] text-white hover:bg-white hover:text-[#BB271A] tranform transition-all flex items-center justify-center"></i>
                         </a>
