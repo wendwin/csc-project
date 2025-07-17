@@ -50,7 +50,7 @@
                 loading: false,
                 loadBerita(url = "{{ route('website2.home') }}") {
                     this.loading = true;
-                    fetch(url, {
+                    fetch(url + (url.includes('?') ? '&' : '?') + 'pagination=true', {
                             headers: {
                                 'X-Requested-With': 'XMLHttpRequest'
                             }
@@ -88,7 +88,7 @@
                 loading: false,
                 loadWorkshop(url = "{{ route('website2.home') }}?section=workshop") {
                     this.loading = true;
-                    fetch(url, {
+                    fetch(url + (url.includes('?') ? '&' : '?') + 'pagination=true',  {
                             headers: {
                                 'X-Requested-With': 'XMLHttpRequest'
                             }
@@ -127,7 +127,7 @@
                 loading: false,
                 loadBimtek(url = "{{ route('website2.home') }}?section=bimtek") {
                     this.loading = true;
-                    fetch(url, {
+                    fetch(url + (url.includes('?') ? '&' : '?') + 'pagination=true',  {
                             headers: {
                                 'X-Requested-With': 'XMLHttpRequest'
                             }
@@ -165,7 +165,7 @@
                 loading: false,
                 loadGaleri(url = "{{ route('website2.home') }}?section=galeri") {
                     this.loading = true;
-                    fetch(url, {
+                    fetch(url + (url.includes('?') ? '&' : '?') + 'pagination=true',  {
                             headers: {
                                 'X-Requested-With': 'XMLHttpRequest'
                             }
