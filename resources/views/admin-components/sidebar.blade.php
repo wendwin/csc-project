@@ -21,9 +21,16 @@
             Daftar Artikel
         </a>
 
-        <a href="#" class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100">
-            <i data-lucide="user-plus" class="w-5 h-5"></i>
-            Tambah Anggota
+        <a href="{{ route('admin.users') }}"
+            class="flex items-center gap-3 py-2 px-3 rounded-lg {{ request()->routeIs(['admin.users', 'admin.edit-user', 'admin.auth.add-user']) ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
+            <i data-lucide="users" class="w-5 h-5"></i>
+            Daftar Pengguna
+        </a>
+        
+        <a href="{{ route('admin.posters.index') }}"
+            class="flex items-center gap-3 py-2 px-3 rounded-lg {{ request()->routeIs('admin.posters.*') ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
+            <i data-lucide="image" class="w-5 h-5"></i>
+            Daftar Poster
         </a>
     </nav>
 
@@ -94,6 +101,20 @@
             <span class="overflow-hidden transition-all duration-200 whitespace-nowrap"
                 :class="sidebarOpen ? 'opacity-100 w-auto' : 'ml-0 opacity-0 w-0'">
                 Daftar Pengguna
+            </span>
+        </a>
+
+       @php $isPosterActive = request()->routeIs('admin.posters.*'); @endphp
+        <a href="{{ route('admin.posters.index') }}"
+            class="group flex items-center justify-center md:justify-start py-2 rounded-lg
+            {{ $isPosterActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-black' }}">
+            <div class="flex justify-center w-12">
+                <i data-lucide="image"
+                class="w-5 h-5 {{ $isPosterActive ? 'text-white' : 'text-gray-700 group-hover:text-black' }}"></i>
+            </div>
+            <span class="overflow-hidden transition-all duration-200 whitespace-nowrap"
+                :class="sidebarOpen ? 'opacity-100 w-auto' : 'ml-0 opacity-0 w-0'">
+                Daftar Poster
             </span>
         </a>
     </nav>
