@@ -1,10 +1,10 @@
 @extends('layouts.adminlayout')
 
 @section('content')
-    <div class="flex items-center gap-2 mb-6 mt-2">
+    <div class="flex items-center gap-2 mt-2 mb-6">
         <a href="{{ route('articles.index') }}">
             <div
-                class="w-6 h-6 rounded-full border-2 border-blue-600 hover:border-blue-700 flex items-center justify-center cursor-pointer">
+                class="flex items-center justify-center w-6 h-6 border-2 border-blue-600 rounded-full cursor-pointer hover:border-blue-700">
                 <i data-lucide="arrow-left" class="w-4 h-4 text-blue-600 hover:text-blue-700"></i>
             </div>
         </a>
@@ -17,7 +17,7 @@
         </div>
 
         <!-- Bagian Konten -->
-        <div class="space-y-4 p-4 -mt-2 bg-white rounded-xl shadow-md transition-all duration-300"
+        <div class="p-4 -mt-2 space-y-4 transition-all duration-300 bg-white shadow-md rounded-xl"
             :class="sidebarOpen ? 'max-w-[978px] mx-auto w-full' : 'w-full'">
         @php
             $words = explode(' ', $article->title);
@@ -35,7 +35,7 @@
             }
         @endphp
 
-        <div class="text-center mt-12 mb-10 px-4">
+        <div class="px-4 mt-12 mb-10 text-center">
             <h1 class="text-[18px] md:text-[22px] font-bold leading-snug">
                 {!! collect($customChunks)->map(fn($chunk) => implode(' ', $chunk))->implode('<br>') !!}
             </h1>
@@ -46,7 +46,7 @@
 
             {{-- Gambar Utama --}}
             @if ($article->main_image)
-                <div class="flex justify-center mt-10 px-4">
+                <div class="flex justify-center px-4 mt-10">
                     <img src="{{ asset('storage/' . $article->main_image) }}"
                         class="w-full max-w-[755px] h-auto object-contain rounded-xl shadow border" alt="">
                 </div>
@@ -61,16 +61,16 @@
             </div>
 
         {{-- Gambar Tambahan --}}
-        @if ($article->images->count())
-            <div class="space-y-6 px-4">
-                @foreach ($article->images as $img)
-                    <div class="flex justify-center">
-                        <img src="{{ asset('storage/' . $img->image_path) }}"
-                            class="w-full max-w-[755px] h-auto object-contain rounded-xl shadow border" alt="">
-                    </div>
-                @endforeach
-            </div>
-        @endif
+            @if ($article->images->count())
+                <div class="mx-auto w-full max-w-[755px] grid grid-cols-1 sm:grid-cols-2 gap-4 px-4">
+                    @foreach ($article->images as $img)
+                        <div class="flex justify-center">
+                            <img src="{{ asset('storage/' . $img->image_path) }}"
+                                class="object-contain w-full h-auto border shadow rounded-xl" alt="">
+                        </div>
+                    @endforeach
+                </div>
+            @endif
         </div>
     </div>
 @endsection
