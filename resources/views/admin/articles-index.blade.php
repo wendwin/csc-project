@@ -5,7 +5,7 @@
 
     {{-- FORM FILTER --}}
     <form method="GET" action="{{ route('articles.index') }}" class="w-full">
-        <div class="flex flex-wrap items-center gap-2 w-full mt-4">
+        <div class="flex flex-wrap items-center w-full gap-2 mt-4">
             <div
                 class="flex flex-col md:flex-row md:items-center w-full md:w-auto border border-gray-300 rounded-lg font-bold text-[14px] divide-y md:divide-y-0 md:divide-x divide-gray-300">
                 <div class="flex items-center px-3 py-2 text-sm font-semibold text-gray-700">
@@ -25,7 +25,7 @@
 
                 {{-- Mobile: tampilkan teks asli --}}
                 <select name="category"
-                    class="block md:hidden px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none w-full">
+                    class="block w-full px-3 py-2 text-sm text-gray-800 bg-transparent md:hidden focus:outline-none">
                     <option value="">Kategori Artikel</option>
                     @foreach ($categories as $category)
                         <option value="{{ $category }}" title="{{ $category }}"
@@ -37,7 +37,7 @@
 
                 {{-- Desktop: tampilkan teks dipotong --}}
                 <select name="category"
-                    class="hidden md:block px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none w-40 truncate">
+                    class="hidden w-40 px-3 py-2 text-sm text-gray-800 truncate bg-transparent md:block focus:outline-none">
                     <option value="">Kategori Artikel</option>
                     @foreach ($categories as $category)
                         <option value="{{ $category }}" title="{{ $category }}"
@@ -46,11 +46,11 @@
                         </option>
                     @endforeach
                 </select>
-                <button type="submit" class="px-3 py-2 text-sm text-white bg-blue-600 hover:bg-blue-700 font-semibold">
+                <button type="submit" class="px-3 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700">
                     Filter
                 </button>
                 <a href="{{ route('articles.index') }}"
-                    class="flex items-center gap-1 px-3 py-2 text-sm text-red-500 hover:bg-red-100 border rounded-r-lg border-red-300">
+                    class="flex items-center gap-1 px-3 py-2 text-sm text-red-500 border border-red-300 rounded-r-lg hover:bg-red-100">
                     <i data-lucide="refresh-ccw" class="w-4 h-4"></i>
                     <span>Reset Filter</span>
                 </a>
@@ -66,7 +66,7 @@
     </form>
 
     {{-- TOMBOL TAMBAH ARTIKEL - MOBILE & TABLET --}}
-    <div class="flex md:hidden mt-4 w-full justify-end">
+    <div class="flex justify-end w-full mt-4 md:hidden">
         <a href="{{ route('articles.create') }}"
             class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center gap-2">
             <i data-lucide="plus" class="w-4 h-4"></i>
@@ -75,20 +75,26 @@
     </div>
 
 
-    {{-- FLASH MESSAGE --}}
+   {{-- FLASH MESSAGE --}}
     @if (session('success'))
-        <div x-data="{ show: true }" x-show="show" x-transition
-            class="mb-4 mt-2 p-4 text-sm text-green-800 bg-green-100 border border-green-200 rounded-lg flex items-center justify-between">
-            <span>{{ session('success') }}</span>
-            <button @click="show = false" class="ml-4 text-green-600 hover:text-green-800">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
+        <div x-data="{ show: true }" x-show="show" x-transition.duration.300ms
+            class="fixed z-50 w-full max-w-md px-3 py-2 mt-12 text-green-800 transform -translate-x-1/2 bg-green-100 border border-green-300 rounded top-2 left-1/2"
+            role="alert">
+            <div class="flex items-start justify-between">
+                <div class="text-sm font-medium">
+                    {{ session('success') }}
+                </div>
+                <button @click="show = false" class="ml-4">
+                    <i data-lucide="x" class="w-4 h-4 text-green-600 hover:text-green-800"></i>
+                </button>
+            </div>
         </div>
     @endif
 
+
     {{-- TABEL ARTIKEL --}}
-    <div class="w-full rounded-2xl shadow-md bg-white mt-4 md:mt-10">
-        <div class="w-full overflow-x-auto  rounded-2xl ">
+    <div class="w-full mt-4 bg-white shadow-md rounded-2xl md:mt-10">
+        <div class="w-full overflow-x-auto rounded-2xl ">
             <table
                 class="min-w-[1024px] w-full text-[10px] sm:text-[11px] md:text-[10px] lg:text-[14px] text-left text-gray-700">
                 <thead class="bg-[#FCFDFD]">
@@ -99,9 +105,10 @@
                         <th class="px-4 py-3">Penulis</th>
                         <th class="px-4 py-3">Kategori</th>
                         <th class="px-4 py-3">Target</th>
-                        <th class="px-4 py-3">Gambar Utama</th>
-                        <th class="px-4 py-3">Jumlah Gambar</th>
-                        <th class="px-4 py-3">Aksi</th>
+                        <th class="px-4 py-3">Tanggal</th>
+                        {{-- <th class="px-4 py-3">Gambar Utama</th>
+                        <th class="px-4 py-3">Jumlah Gambar</th> --}}
+                        <th class="px-4 py-3 pl-8">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -117,40 +124,62 @@
                             <td class="px-4 py-3" title="{{ $article->category }}">
                                 {{ \Illuminate\Support\Str::words($article->category, 2, '...') }}
                             </td>
-                            <td class="px-4 py-3">{{ $article->target_website }}</td>
-                            <td class="px-4 py-3 text-center">
+                            {{-- <td class="px-4 py-3">{{ str_replace('-', ' ', $article->target_website) }}</td> --}}
+                            <td class="px-4 py-3">
+                                @php
+                                    $target = $article->target_website;
+                                    $domain = match ($target) {
+                                        'pustaka-pemda' => 'http://pustakapemda.test',
+                                        'pspi' => 'http://pspi.test',
+                                        'csc' => 'http://cendanasolution.test',
+                                        default => null,
+                                    };
+                                @endphp
+
+                                @if ($domain && !empty($article->id_encrypt))
+                                    <a href="{{ $domain }}/berita/{{ $article->id_encrypt }}-{{ \Str::slug($article->title) }}"
+                                    target="_blank"
+                                    class="text-blue-600 underline hover:text-blue-800">
+                                    {{ str_replace('-', ' ', $article->target_website) }}
+                                    </a>
+                                @else
+                                    <span>{{ str_replace('-', ' ', $article->target_website) }}</span>
+                                @endif
+                            </td>
+                            <td class="px-4 py-3">{{ $article->created_at->format('d M Y') }}</td>
+                            {{-- <td class="px-4 py-3 text-center">
                                 @if ($article->main_image)
-                                    <div class="flex justify-center items-center">
+                                    <div class="flex items-center justify-center">
                                         <img src="{{ asset('storage/' . $article->main_image) }}"
-                                            class="w-20 h-10 object-cover rounded-md border" alt="">
+                                            class="object-cover w-20 h-10 border rounded-md" alt="">
                                     </div>
                                 @else
                                     <span class="text-gray-400">-</span>
                                 @endif
                             </td>
-                            <td class="px-4 py-3 text-center">{{ $article->images->count() }}</td>
-                            <td class="px-4 py-3">
-                                <div class="flex space-x-2 items-center">
+                            <td class="px-4 py-3 text-center">{{ $article->images->count() }}</td> --}}
+                            <td class="px-3 py-4">
+                                <div class="flex items-center space-x-2">
                                     <a href="{{ route('articles.show', $article->id) }}" title="Lihat"
-                                        class="text-blue-600 hover:text-blue-800 transition">
+                                        class="text-blue-600 transition hover:text-blue-800">
                                         <i data-lucide="eye" class="w-5 h-5"></i>
                                     </a>
                                     <a href="{{ route('articles.edit', $article->id) }}" title="Edit"
-                                        class="text-yellow-500 hover:text-yellow-700 transition">
+                                        class="text-yellow-500 transition hover:text-yellow-700">
                                         <i data-lucide="edit-3" class="w-5 h-5"></i>
                                     </a>
 
                                     {{-- Delete Modal --}}
                                     <div x-data="{ showModal: false }" class="inline-block">
                                         <button type="button" @click="showModal = true" title="Hapus"
-                                            class="text-red-600 hover:text-red-800 transition">
+                                            class="text-red-600 transition hover:text-red-800">
                                             <i data-lucide="trash-2" class="w-5 h-5"></i>
                                         </button>
 
                                         <div x-show="showModal" x-cloak
-                                            class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                                            class="fixed inset-0 z-50 flex items-center justify-center bg-sky-200/20 backdrop-blur-sm">
                                             <div @click.away="showModal = false"
-                                                class="bg-white p-6 rounded-xl shadow-lg w-full max-w-sm text-center space-y-4">
+                                                class="w-full max-w-sm p-6 space-y-4 text-center bg-white shadow-lg rounded-xl">
                                                 <h2 class="text-lg font-bold text-gray-800">Konfirmasi Hapus</h2>
                                                 <p class="text-sm text-gray-600">Yakin ingin menghapus artikel ini?</p>
 
@@ -160,12 +189,12 @@
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit"
-                                                            class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                                            class="px-4 py-2 text-sm font-medium text-white transition bg-red-600 rounded-lg hover:bg-red-700">
                                                             Hapus
                                                         </button>
                                                     </form>
                                                     <button type="button" @click="showModal = false"
-                                                        class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg text-sm font-medium transition">
+                                                        class="px-4 py-2 text-sm font-medium text-gray-800 transition bg-gray-200 rounded-lg hover:bg-gray-300">
                                                         Batal </button>
                                                 </div>
                                             </div>
@@ -176,14 +205,14 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="8" class="text-center px-4 py-4 text-gray-500">Tidak ada data artikel.</td>
+                            <td colspan="8" class="px-4 py-4 text-center text-gray-500">Tidak ada data artikel.</td>
                         </tr>
                     @endforelse
                 </tbody>
             </table>
 
             {{-- PAGINATION --}}
-            <div class="mt-8 flex justify-center mb-4">
+            <div class="flex justify-center mt-8 mb-4">
                 <div class="w-full max-w-4xl">
                     {{ $articles->links() }}
                 </div>
