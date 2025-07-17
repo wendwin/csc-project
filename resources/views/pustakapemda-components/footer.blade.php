@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="w-2/3 h-1 mx-auto bg-white my-5 rounded-lg"></div>
-        <p class="text-white text-center text-xs pb-5">Hak Cipta 2025 Pustaka Pemda</p>
+        <p class="text-white text-center text-xs pb-5">&copy; 2025 Pustaka Pemda. All rights reserved.</p>
     </div>
 </footer>
 
