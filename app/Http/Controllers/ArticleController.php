@@ -6,6 +6,7 @@ use App\Models\Article;
 use App\Models\ArticleImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Hashids\Hashids;
 
 class ArticleController extends Controller
 {
@@ -15,6 +16,7 @@ class ArticleController extends Controller
     //     return view('admin.articles-index', compact('articles'));
     // }
 
+    
     public function index(Request $request)
     {
         $query = Article::with('images')->latest();
@@ -30,13 +32,25 @@ class ArticleController extends Controller
         if ($request->filled('category') && $request->category !== '') {
             $query->where('category', $request->category);
         }
+
         $articles = $query->paginate(6)->withQueryString();
-        
+
+        foreach ($articles as $article) {
+        $salt = match ($article->target_website) {
+            'pustaka-pemda' => 'pustakapemda_salt_rahasia',
+            'pspi' => 'pspi_salt_rahasia',
+            'csc' => 'cendana_salt_rahasia',
+            default => 'default_salt',
+        };
+
+        $hashids = new Hashids($salt, 8);
+        $article->id_encrypt = $hashids->encode($article->id);
+    }
+
         $categories = Article::select('category')->distinct()->pluck('category');
 
         return view('admin.articles-index', compact('articles', 'categories'));
     }
-
 
 
     public function create()
