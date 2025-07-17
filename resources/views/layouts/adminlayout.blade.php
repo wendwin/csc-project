@@ -25,12 +25,12 @@
     </style>
 </head>
 
-<body class="bg-[#F5F6FA] min-h-screen flex flex-col md:flex-row" x-data="{ sidebarOpen: true }">
+<body class="flex flex-col min-h-screen bg-slate-50 md:flex-row" x-data="{ sidebarOpen: true }">
 
     {{-- Sidebar --}}
     @include('admin-components.sidebar')
 
-    <div x-cloak class="flex-1 flex flex-col min-h-screen  transition-all duration-300 "
+    <div x-cloak class="flex flex-col flex-1 min-h-screen transition-all duration-300 "
         :class="sidebarOpen ? 'md:pl-64' : 'md:pl-20'">
 
 
@@ -38,7 +38,7 @@
         @include('admin-components.navbar')
 
         {{-- Content --}}
-        <main class="flex-1 mt-12 p-4 sm:p-6 w-full">
+        <main class="flex-1 w-full p-4 mt-12 sm:p-6">
             @yield('content')
         </main>
     </div>
