@@ -66,8 +66,18 @@ class AuthController extends Controller
         ]);
 
         $profileImagePath = null;
-        if ($request->hasFile('profile_image')) {
-            $profileImagePath = $request->file('profile_image')->store('images/profiles', 'public');
+
+        if ($request->hasFile('profile_image') && $request->file('profile_image')->isValid()) {
+            $file = $request->file('profile_image');
+            $filename = uniqid() . '.' . $file->getClientOriginalExtension();
+            $destination = public_path('storage/images/profiles');
+
+            if (!file_exists($destination)) {
+                mkdir($destination, 0755, true);
+            }
+
+            $file->move($destination, $filename);
+            $profileImagePath = 'images/profiles/' . $filename;
         }
 
         User::create([
@@ -81,29 +91,29 @@ class AuthController extends Controller
         return redirect()->route('admin.users')->with('success', 'User berhasil ditambahkan.');
     }
 
-    public function listUsers(Request $request)
-    {
-        $query = User::query();
+        public function listUsers(Request $request)
+        {
+            $query = User::query();
 
-        if ($request->filled('role')) {
-            $query->where('role', $request->role);
+            if ($request->filled('role')) {
+                $query->where('role', $request->role);
+            }
+
+            $users = $query->paginate(6)->withQueryString(); 
+            $roles = User::select('role')->distinct()->pluck('role'); 
+
+            return view('admin.auth.users-list', compact('users', 'roles'));
         }
 
-        $users = $query->paginate(6)->withQueryString(); 
-        $roles = User::select('role')->distinct()->pluck('role'); 
 
-        return view('admin.auth.users-list', compact('users', 'roles'));
-    }
+        public function editUser($id)
+        {
+            $user = User::findOrFail($id);
+            return view('admin.auth.edit-user', compact('user'));
+        }
 
-
-    public function editUser($id)
-    {
-        $user = User::findOrFail($id);
-        return view('admin.auth.edit-user', compact('user'));
-    }
-
-    public function updateUser(Request $request, $id)
-    {
+        public function updateUser(Request $request, $id)
+        {
         $user = User::findOrFail($id);
 
         $rules = [
@@ -126,15 +136,28 @@ class AuthController extends Controller
         }
 
         $validated = $request->validate($rules);
+
         if ($request->filled('password')) {
             $user->password = Hash::make($request->password);
         }
-        if ($request->hasFile('profile_image')) {
-            if ($user->profile_image) {
-                Storage::disk('public')->delete($user->profile_image);
+
+        if ($request->hasFile('profile_image') && $request->file('profile_image')->isValid()) {
+            if ($user->profile_image && file_exists(public_path('storage/' . $user->profile_image))) {
+                unlink(public_path('storage/' . $user->profile_image));
             }
-            $user->profile_image = $request->file('profile_image')->store('images/profiles', 'public');
+
+            $file = $request->file('profile_image');
+            $filename = uniqid() . '.' . $file->getClientOriginalExtension();
+            $destination = public_path('storage/images/profiles');
+
+            if (!file_exists($destination)) {
+                mkdir($destination, 0755, true);
+            }
+
+            $file->move($destination, $filename);
+            $user->profile_image = 'images/profiles/' . $filename;
         }
+
         $user->name = $validated['name'];
         $user->email = $validated['email'];
         $user->role = $validated['role'];
@@ -143,13 +166,10 @@ class AuthController extends Controller
         return redirect()->route('admin.users')->with('success', 'User berhasil diperbarui.');
     }
 
-
     // Hapus user
     public function deleteUser($id)
     {
         $user = User::findOrFail($id);
-
-        // Hapus foto profil jika ada
         if ($user->profile_image) {
             Storage::disk('public')->delete($user->profile_image);
         }
@@ -158,6 +178,7 @@ class AuthController extends Controller
 
         return redirect()->route('admin.users')->with('success', 'User berhasil dihapus.');
     }
+    
 }
 
 
