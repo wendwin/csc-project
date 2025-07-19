@@ -7,6 +7,7 @@ use App\Http\Controllers\PspiController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\PosterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -100,6 +101,16 @@ Route::domain('dashboard.localhost')->group(function () {
         Route::get('/users/{id}/edit', [AuthController::class, 'editUser'])->name('admin.edit-user');
         Route::put('/users/{id}/update', [AuthController::class, 'updateUser'])->name('admin.update-user');
         Route::delete('/users/{id}', [AuthController::class, 'deleteUser'])->name('admin.delete-user');
+
+        //poster routs
+        Route::get('/admin/posters', [PosterController::class, 'index'])->name('admin.posters.index');
+        Route::post('/admin/posters', [PosterController::class, 'store'])->name('admin.posters.store');
+        Route::get('/admin/posters/{id}', [PosterController::class, 'show'])->name('admin.posters.show');
+        Route::get('/admin/posters/{id}/edit', [PosterController::class, 'edit'])->name('admin.posters.edit');
+
+       Route::put('/admin/posters/{id}', [PosterController::class, 'update'])->name('admin.posters.update');
+
+        Route::delete('/admin/posters/{id}', [PosterController::class, 'destroy'])->name('admin.posters.destroy');
     });
 });
 
