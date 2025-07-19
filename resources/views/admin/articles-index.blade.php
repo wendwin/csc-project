@@ -3,41 +3,31 @@
 @section('content')
     <h1 class="text-[32px] font-bold text-gray-800 mb-6 -mt-1">Daftar Artikel</h1>
 
-    {{-- FORM FILTER --}}
-    <form method="GET" action="{{ route('articles.index') }}" class="w-full">
-        <div class="flex flex-wrap items-center w-full gap-2 mt-4">
-            <div
-                class="flex flex-col md:flex-row md:items-center w-full md:w-auto border border-gray-300 rounded-lg font-bold text-[14px] divide-y md:divide-y-0 md:divide-x divide-gray-300">
-                <div class="flex items-center px-3 py-2 text-sm font-semibold text-gray-700">
-                    <i data-lucide="filter" class="w-4 h-4 mr-1"></i>
-                    <span>Filter By</span>
-                </div>
+<form method="GET" action="{{ route('articles.index') }}" class="w-full">
+    <div class="flex flex-col gap-2 mt-4 lg:flex-row lg:items-start lg:justify-start">
+
+        {{--  Filter + Reset --}}
+        <div class="flex flex-col w-full lg:flex-row border border-gray-300 rounded-lg font-bold text-sm divide-y lg:divide-y-0 lg:divide-x divide-gray-300 lg:max-w-[800px]">
+            <div class="flex items-center px-4 py-2 text-gray-700 shrink-0">
+                <i data-lucide="filter" class="w-4 h-4 mr-1"></i>
+                <span>Filter By</span>
+            </div>
+            <div class="flex items-center w-full px-4 py-2 lg:w-auto">
                 <input type="date" name="tanggal" value="{{ request('tanggal') }}"
-                    class="px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none" />
-                <select name="target_website" class="px-3 py-2 text-sm text-gray-800 bg-transparent focus:outline-none">
+                    class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0" />
+            </div>
+            <div class="flex items-center w-full px-4 py-2 lg:w-auto">
+                <select name="target_website"
+                    class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0">
                     <option value="">Target Website</option>
-                    <option value="pustaka-pemda" {{ request('target_website') == 'pustaka-pemda' ? 'selected' : '' }}>
-                        Pustaka
-                        Pemda</option>
+                    <option value="pustaka-pemda" {{ request('target_website') == 'pustaka-pemda' ? 'selected' : '' }}>Pustaka Pemda</option>
                     <option value="csc" {{ request('target_website') == 'csc' ? 'selected' : '' }}>CSC</option>
                     <option value="pspi" {{ request('target_website') == 'pspi' ? 'selected' : '' }}>PSPI</option>
                 </select>
-
-                {{-- Mobile: tampilkan teks asli --}}
+            </div>
+            <div class="flex items-center w-full px-4 py-2 lg:w-auto">
                 <select name="category"
-                    class="block w-full px-3 py-2 text-sm text-gray-800 bg-transparent md:hidden focus:outline-none">
-                    <option value="">Kategori Artikel</option>
-                    @foreach ($categories as $category)
-                        <option value="{{ $category }}" title="{{ $category }}"
-                            {{ request('category') == $category ? 'selected' : '' }}>
-                            {{ Str::limit(ucfirst($category), 30) }}
-                        </option>
-                    @endforeach
-                </select>
-
-                {{-- Desktop: tampilkan teks dipotong --}}
-                <select name="category"
-                    class="hidden w-40 px-3 py-2 text-sm text-gray-800 truncate bg-transparent md:block focus:outline-none">
+                    class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0">
                     <option value="">Kategori Artikel</option>
                     @foreach ($categories as $category)
                         <option value="{{ $category }}" title="{{ $category }}"
@@ -46,34 +36,37 @@
                         </option>
                     @endforeach
                 </select>
-                <button type="submit" class="px-3 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700">
-                    Filter
-                </button>
+            </div>
+            <div onclick="this.closest('form').submit();"
+                class="flex items-center w-full px-4 py-2 text-white bg-[#4379EE] hover:bg-blue-700 cursor-pointer md:w-auto">
+                <span class="mx-auto">Filter</span>
+            </div>
+            <div class="items-center px-4 py-2 lg:flex flex-none lg:w-[160px] text-red-500 hover:bg-red-100">
                 <a href="{{ route('articles.index') }}"
-                    class="flex items-center gap-1 px-3 py-2 text-sm text-red-500 border border-red-300 rounded-r-lg hover:bg-red-100">
-                    <i data-lucide="refresh-ccw" class="w-4 h-4"></i>
+                    class="flex items-center gap-1 px-3 py-1  !h-8 !min-h-0 whitespace-nowrap w-full justify-center">
+                    <i data-lucide="refresh-ccw" class="w-5 h-5"></i>
                     <span>Reset Filter</span>
                 </a>
             </div>
-
-            {{-- Tambah Artikel --}}
+        </div>
+       <div class="items-center hidden mt-2 lg:flex lg:ml-2 lg:mt-0">
             <a href="{{ route('articles.create') }}"
-                class="hidden md:flex items-center gap-1 px-3 py-2 text-sm text-white bg-[#4379EE] hover:bg-blue-700 font-semibold rounded-lg">
+                class="flex items-center gap-1 px-4 py-4 text-sm text-white bg-[#4379EE] hover:bg-blue-700 font-semibold rounded-lg !h-12 whitespace-nowrap">
                 <i data-lucide="plus" class="w-5 h-5"></i>
                 <span>Tambah Artikel</span>
             </a>
         </div>
-    </form>
-
-    {{-- TOMBOL TAMBAH ARTIKEL - MOBILE & TABLET --}}
-    <div class="flex justify-end w-full mt-4 md:hidden">
-        <a href="{{ route('articles.create') }}"
-            class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center gap-2">
-            <i data-lucide="plus" class="w-4 h-4"></i>
-            Tambah Artikel
-        </a>
     </div>
+</form>
 
+{{-- Tambah Artikel (mobile & tablet only) --}}
+<div class="flex justify-end w-full mt-4 lg:hidden">
+    <a href="{{ route('articles.create') }}"
+        class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center gap-2">
+        <i data-lucide="plus" class="w-4 h-4"></i>
+        Tambah Artikel
+    </a>
+</div>
 
    {{-- FLASH MESSAGE --}}
     @if (session('success'))
