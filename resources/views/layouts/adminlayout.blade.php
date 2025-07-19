@@ -37,7 +37,7 @@
         @include('admin-components.navbar')
 
         {{-- Content --}}
-        <main class="flex flex-col flex-1 w-full min-h-screen p-4 mt-12 sm:p-6">
+        <main class="flex flex-col flex-1 w-full min-h-screen p-4 sm:p-6">
             @yield('content')
         </main>
     </div>

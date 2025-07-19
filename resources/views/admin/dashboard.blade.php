@@ -2,7 +2,7 @@
 @extends('layouts.adminlayout')
 
 @section('content')
-    <h2 class="mb-4 text-2xl font-bold text-gray-800">Dashboard</h2>
+    <h2 class="mt-12 mb-4 text-2xl font-bold text-gray-800">Dashboard</h2>
       
     <div class="flex flex-wrap gap-6">
         {{-- Total Users --}}
