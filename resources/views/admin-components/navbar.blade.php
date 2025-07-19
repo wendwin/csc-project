@@ -38,15 +38,21 @@ sidebarOpen ? 'md:ml-64 ml-44' : 'md:ml-20 ml-0'
 
 <header
     :class="[
-        'bg-white shadow px-3 py-2 flex flex-row items-center justify-between gap-2 fixed top-0 left-0 right-0 transition-all duration-300 z-50 text-xs sm:text-sm',
+        'bg-white shadow-sm px-3 border-b-1 border-slate-50 border py-2 flex flex-row items-center justify-between gap-2 fixed top-0 left-0 right-0 transition-all duration-300 z-50 text-xs sm:text-sm',
         sidebarOpen ? 'md:ml-64 ml-44' : 'md:ml-20 ml-0'
     ]">
     {{-- Toggle + Search --}}
     <div class="flex items-center gap-2 min-w-0 flex-1 md:max-w-[350px]">
         <button @click="sidebarOpen = !sidebarOpen"
-            class="flex-shrink-0 text-gray-600 hover:text-blue-600 focus:outline-none md:ml-3">
-            <i data-lucide="menu" class="w-4 h-4 sm:w-5 sm:h-5"></i>
-        </button>
+    class="flex-shrink-0 text-gray-600 hover:text-blue-600 focus:outline-none md:ml-3">
+
+    <!-- Icon saat sidebar tertutup (menu) -->
+    <i x-show="!sidebarOpen" data-lucide="x" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+
+    <!-- Icon saat sidebar terbuka (x) -->
+    <i x-show="sidebarOpen" data-lucide="menu" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+</button>
+
         {{-- <div class="relative w-full md:ml-3">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
                 <i data-lucide="search" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
