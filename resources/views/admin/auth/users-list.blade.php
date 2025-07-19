@@ -16,13 +16,22 @@
         </div>
     @endif
 
-    <h1 class="text-[32px] font-bold text-gray-800 mb-6 -mt-1">Daftar Pengguna</h1>
+    <h1 class="mt-12 mb-6 text-2xl font-bold text-gray-800">Daftar Pengguna</h1>
+
+     {{-- TOMBOL TAMBAH USER - MOBILE & TABLET --}}
+    <div class="flex justify-end w-full mt-2 mb-2 md:hidden">
+        <a href="{{ route('admin.auth.add-user') }}"
+            class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-3 rounded-md flex items-center gap-2">
+            <i data-lucide="plus" class="w-4 h-4"></i>
+            Tambah User
+        </a>
+    </div>
 
     {{-- FORM FILTER USER BY ROLE --}}
     <form method="GET" action="{{ route('admin.users') }}" class="w-full">
         <div class="flex flex-wrap items-center w-full gap-2 mt-4 mb-8">
             <div
-                class="flex flex-col md:flex-row md:items-center w-full md:w-auto border border-gray-300 rounded-lg font-bold text-[14px] divide-y md:divide-y-0 md:divide-x divide-gray-300">
+                class="flex flex-col md:flex-row md:items-center w-full md:w-auto border border-gray-300 rounded-md font-bold text-[14px] divide-y md:divide-y-0 md:divide-x divide-gray-300">
                 <div class="flex items-center px-3 py-2 text-sm font-semibold text-gray-700">
                     <i data-lucide="filter" class="w-4 h-4 mr-1"></i>
                     <span>Filter By</span>
@@ -52,23 +61,15 @@
             </div>
             <div class="hidden md:flex">
                 <a href="{{ route('admin.auth.add-user') }}"
-                    class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-3 rounded-lg flex items-center gap-2">
+                    class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-3 rounded-md flex items-center gap-2">
                     <i data-lucide="plus" class="w-4 h-4"></i>
                     Tambah User
                 </a>
             </div>
         </div>
     </form>
-    {{-- TOMBOL TAMBAH USER - MOBILE & TABLET --}}
-    <div class="flex justify-end w-full mb-6 -mt-2 md:hidden">
-        <a href="{{ route('admin.auth.add-user') }}"
-            class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-3 rounded-lg flex items-center gap-2">
-            <i data-lucide="plus" class="w-4 h-4"></i>
-            Tambah User
-        </a>
-    </div>
 
-    <div class="w-full mt-4 overflow-x-auto bg-white shadow-md rounded-2xl">
+    <div class="w-full mt-4 overflow-x-auto bg-white rounded-md shadow-md">
         <table
             class="min-w-[640px] sm:min-w-full text-[10px] sm:text-[11px] md:text-[10px] lg:text-[14px] text-left text-gray-700">
             <thead class="bg-[#FCFDFD]">
@@ -86,7 +87,7 @@
             <tbody>
                 @foreach ($users as $index => $user)
                     <tr
-                        class="border-b border-gray-200 hover:bg-gray-100 transition duration-150 bg-white text-[14px] font-semibold text-[#202224] text-left">
+                        class="border-b border-gray-200 hover:bg-slate-50 transition duration-150 bg-white text-[14px] font-semibold text-[#202224] text-left">
                         <td class="px-4 py-3 text-center ">{{ $users->firstItem() + $index }}</td>
                         <td class="px-4 py-3 ">{{ $user->name }}</td>
                         <td class="px-4 py-3 ">{{ $user->email }}</td>
