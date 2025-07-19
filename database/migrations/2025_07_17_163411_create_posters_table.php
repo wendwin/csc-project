@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('image_path');
+            $table->string('target_website');
             $table->timestamps();
         });
     }
