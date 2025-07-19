@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Storage;
 
 class PosterController extends Controller
 {
-    
     public function index()
     {
         $posters = Poster::all();
@@ -19,6 +18,7 @@ class PosterController extends Controller
     {
         $validated = $request->validate([
             'title' => 'required|string|max:255',
+            'target_website' => 'required|string|max:255',
             'image' => 'required|image|mimes:jpeg,png,jpg|max:10240'
         ]);
 
@@ -26,6 +26,7 @@ class PosterController extends Controller
 
         Poster::create([
             'title' => $validated['title'],
+            'target_website' => $validated['target_website'],
             'image_path' => $path,
         ]);
 
@@ -50,6 +51,7 @@ class PosterController extends Controller
 
         $validated = $request->validate([
             'title' => 'required|string|max:255',
+            'target_website' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg|max:10240'
         ]);
 
@@ -60,6 +62,7 @@ class PosterController extends Controller
         }
 
         $poster->title = $validated['title'];
+        $poster->target_website = $validated['target_website'];
         $poster->save();
 
         return redirect()->route('admin.posters.index')->with('success', 'Poster berhasil diperbarui.');
