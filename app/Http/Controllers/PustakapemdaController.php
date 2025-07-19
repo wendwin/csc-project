@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Article;
 use App\Models\ArticleImage;
+use App\Models\Poster;
 use Hashids\Hashids;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
@@ -133,6 +134,11 @@ class PustakapemdaController extends Controller
                 return $item;
             })
         );
+
+        $posters = Poster::where('target_website', 'pustaka-pemda')
+                ->latest()
+                ->paginate(5);
+
         
 
         if ($request->ajax() && ($request->has('section') || $request->has('pagination'))) {
@@ -165,6 +171,7 @@ class PustakapemdaController extends Controller
             'bimbingan_teknis',
             'workshop_seminar',
             'galeri_pelatihan',
+            'posters'
         ));
     }
 
