@@ -41,9 +41,17 @@
                     <input type="text" name="title" id="title" class="w-full p-2 border rounded" required>
                 </div>
                 <div class="mb-4">
+                    <label for="target_website" class="block mb-1 text-sm font-medium text-left">Target Website</label>
+                    <select name="target_website" id="target_website" class="w-full p-2 border rounded" required>
+                        <option value="">-- Pilih Website --</option>
+                        <option value="pustaka-pemda">Pustaka Pemda</option>
+                        <option value="csc">CSC</option>
+                        <option value="pspi">PSPI</option>
+                    </select>
+                </div>
+                <div class="mb-4">
                     <label for="image" class="block mb-1 text-sm font-medium text-left">Gambar Poster</label>
-                    <input type="file" name="image" id="image" class="w-full p-2 border rounded" accept="image/*"
-                        required>
+                    <input type="file" name="image" id="image" class="w-full p-2 border rounded" accept="image/*" required>
                 </div>
                 <div class="flex justify-center gap-2">
                     <button type="button" @click="showAddModal = false"
@@ -58,6 +66,7 @@
         </div>
     </div>
 
+
     {{-- Tabel Poster --}}
     <div class="w-full mt-4 overflow-x-auto bg-white shadow-md rounded-2xl">
         <table
@@ -68,6 +77,7 @@
                     <th class="px-4 py-3 text-left">No</th>
                     <th class="px-4 py-3 text-left">Judul</th>
                     <th class="px-4 py-3 text-left">Poster</th>
+                    <th class="px-4 py-3 text-left">Target Website</th>
                     <th class="py-3 pl-8 text-left">Aksi</th>
                 </tr>
             </thead>
@@ -80,6 +90,20 @@
                     <td class="px-4 py-3">
                         <img src="{{ asset('storage/' . $poster->image_path) }}" alt="Poster Image"
                             class="h-16 rounded">
+                    </td>
+                    <td class="px-4 py-3 capitalize">
+                        @php
+                            $urls = [
+                                'pustaka-pemda' => 'http://pustakapemda.test/',
+                                'csc' => 'http://cendanasolution.test/',
+                                'pspi' => 'http://pspi.test/',
+                            ];
+                            $url = $urls[$poster->target_website] ?? '#';
+                            $label = str_replace('-', ' ', $poster->target_website); 
+                        @endphp
+                        <a href="{{ $url }}" target="_blank" class="text-blue-600 hover:underline">
+                            {{ $label }}
+                        </a>
                     </td>
                     <td class="py-3 pl-6">
                         <div class="flex items-center space-x-2">
@@ -126,7 +150,7 @@
         </table>
     </div>
 
-    {{-- Modal Edit Poster --}}
+   {{-- Modal Edit Poster --}}
     <div x-show="showEditModal"
         class="fixed inset-0 z-50 flex items-center justify-center bg-sky-200/20 backdrop-blur-sm">
         <div @click.away="showEditModal = false"
@@ -137,8 +161,16 @@
                 @method('PUT')
                 <div class="mb-4">
                     <label class="block mb-1 text-sm font-medium text-left">Judul Poster</label>
-                    <input type="text" name="title" x-model="editPoster.title" class="w-full p-2 border rounded"
-                        required>
+                    <input type="text" name="title" x-model="editPoster.title" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-1 text-sm font-medium text-left">Target Website</label>
+                    <select name="target_website" x-model="editPoster.target_website" class="w-full p-2 border rounded" required>
+                        <option value="">-- Pilih Website --</option>
+                        <option value="pustaka-pemda">Pustaka Pemda</option>
+                        <option value="csc">CSC</option>
+                        <option value="pspi">PSPI</option>
+                    </select>
                 </div>
                 <div class="mb-4">
                     <label class="block mb-1 text-sm font-medium text-left">Gambar Poster (opsional)</label>
