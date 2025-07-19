@@ -1,22 +1,30 @@
 @extends('layouts.adminlayout')
 
 @section('content')
-    <h1 class="text-[32px] font-bold text-gray-800 mb-6 -mt-1">Daftar Artikel</h1>
+    <h1 class="mt-12 mb-6 text-2xl font-bold text-gray-800">Daftar Artikel</h1>
+
+    {{-- Tambah Artikel (mobile & tablet only) --}}
+<div class="flex justify-end w-full mt-2 lg:hidden">
+    <a href="{{ route('articles.create') }}"
+        class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md flex items-center gap-2">
+        <i data-lucide="plus" class="w-4 h-4"></i>
+        Tambah Artikel
+    </a>
+</div>
 
 <form method="GET" action="{{ route('articles.index') }}" class="w-full">
-    <div class="flex flex-col gap-2 mt-4 lg:flex-row lg:items-start lg:justify-start">
-
+    <div class="flex flex-col gap-2 mt-4 mb-8 lg:flex-row lg:items-start lg:justify-start">
         {{--  Filter + Reset --}}
-        <div class="flex flex-col w-full lg:flex-row border border-gray-300 rounded-lg font-bold text-sm divide-y lg:divide-y-0 lg:divide-x divide-gray-300 lg:max-w-[800px]">
-            <div class="flex items-center px-4 py-2 text-gray-700 shrink-0">
+        <div class="flex flex-col w-full lg:flex-row border border-gray-300 rounded-md font-bold text-sm divide-y lg:divide-y-0 lg:divide-x divide-gray-300 lg:max-w-[800px]">
+            <div class="flex items-center px-3 py-1 text-gray-700 shrink-0">
                 <i data-lucide="filter" class="w-4 h-4 mr-1"></i>
                 <span>Filter By</span>
             </div>
-            <div class="flex items-center w-full px-4 py-2 lg:w-auto">
+            <div class="flex items-center w-full px-3 py-1 lg:w-auto">
                 <input type="date" name="tanggal" value="{{ request('tanggal') }}"
                     class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0" />
             </div>
-            <div class="flex items-center w-full px-4 py-2 lg:w-auto">
+            <div class="flex items-center w-full px-3 py-1 lg:w-auto">
                 <select name="target_website"
                     class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0">
                     <option value="">Target Website</option>
@@ -25,7 +33,7 @@
                     <option value="pspi" {{ request('target_website') == 'pspi' ? 'selected' : '' }}>PSPI</option>
                 </select>
             </div>
-            <div class="flex items-center w-full px-4 py-2 lg:w-auto">
+            <div class="flex items-center w-full px-3 py-1 lg:w-auto">
                 <select name="category"
                     class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0">
                     <option value="">Kategori Artikel</option>
@@ -38,10 +46,10 @@
                 </select>
             </div>
             <div onclick="this.closest('form').submit();"
-                class="flex items-center w-full px-4 py-2 text-white bg-[#4379EE] hover:bg-blue-700 cursor-pointer md:w-auto">
+                class="flex items-center w-full px-3 py-1 text-white bg-[#4379EE] hover:bg-blue-700 cursor-pointer md:w-auto">
                 <span class="mx-auto">Filter</span>
             </div>
-            <div class="items-center px-4 py-2 lg:flex flex-none lg:w-[160px] text-red-500 hover:bg-red-100">
+            <div class="items-center px-3 py-1 lg:flex flex-none lg:w-[160px] text-red-500 hover:bg-red-100">
                 <a href="{{ route('articles.index') }}"
                     class="flex items-center gap-1 px-3 py-1  !h-8 !min-h-0 whitespace-nowrap w-full justify-center">
                     <i data-lucide="refresh-ccw" class="w-5 h-5"></i>
@@ -51,22 +59,13 @@
         </div>
        <div class="items-center hidden mt-2 lg:flex lg:ml-2 lg:mt-0">
             <a href="{{ route('articles.create') }}"
-                class="flex items-center gap-1 px-4 py-4 text-sm text-white bg-[#4379EE] hover:bg-blue-700 font-semibold rounded-lg !h-12 whitespace-nowrap">
+                class="flex items-center gap-1 px-3 py-2 text-md text-white bg-[#4379EE] hover:bg-blue-700 font-bold rounded-md !h-10 whitespace-nowrap">
                 <i data-lucide="plus" class="w-5 h-5"></i>
                 <span>Tambah Artikel</span>
             </a>
         </div>
     </div>
 </form>
-
-{{-- Tambah Artikel (mobile & tablet only) --}}
-<div class="flex justify-end w-full mt-4 lg:hidden">
-    <a href="{{ route('articles.create') }}"
-        class="bg-[#4379EE] hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center gap-2">
-        <i data-lucide="plus" class="w-4 h-4"></i>
-        Tambah Artikel
-    </a>
-</div>
 
    {{-- FLASH MESSAGE --}}
     @if (session('success'))
@@ -84,10 +83,9 @@
         </div>
     @endif
 
-
     {{-- TABEL ARTIKEL --}}
-    <div class="w-full mt-4 bg-white shadow-md rounded-2xl md:mt-10">
-        <div class="w-full overflow-x-auto rounded-2xl ">
+    <div class="w-full mt-2 bg-white rounded-md shadow-md md:mt-2">
+        <div class="w-full overflow-x-auto rounded-md ">
             <table
                 class="min-w-[1024px] w-full text-[10px] sm:text-[11px] md:text-[10px] lg:text-[14px] text-left text-gray-700">
                 <thead class="bg-[#FCFDFD]">
@@ -107,7 +105,7 @@
                 <tbody>
                     @forelse ($articles as $index => $article)
                         <tr
-                            class="border-b border-gray-200 hover:bg-gray-100 transition duration-150 bg-white text-[14px] font-semibold text-[#202224]">
+                            class="border-b border-gray-200 hover:bg-slate-50 transition duration-150 bg-white text-[14px] font-semibold text-[#202224]">
                             <td class="px-4 py-3">{{ ($articles->currentPage() - 1) * $articles->perPage() + $index + 1 }}
                             </td>
                             <td class="px-4 py-3" title="{{ $article->title }}">
