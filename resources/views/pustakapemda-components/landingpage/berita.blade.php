@@ -1,10 +1,14 @@
 <div class="max-w-6xl mx-auto p-3 my-5 bg-white shadow-md rounded-lg">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div class="md:col-span-1  text-white rounded">
+        <div class="md:col-span-1  text-white rounded" >
 
             @if ($posters->count())
-                <img src="{{ $posters[0]->image_path }}" alt="{{ $posters[0]->title }}"
-                    class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
+                {{-- <img src="{{ $posters[0]->image_path }}" alt="{{ $posters[0]->title }}"
+                    class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy"> --}}
+                <a href="{{ $posters[0]->image_path }}" data-lightbox="gallery" data-title="{{ $posters[0]->title }}" >
+                    <img src="{{ $posters[0]->image_path }}" alt="{{ $posters[0]->title }}"
+                        class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
+                </a>
 
                 {{-- Search --}}
                 <label for="Search">
@@ -30,8 +34,10 @@
 
                 <div class="flex flex-col gap-3">
                     @foreach ($posters->skip(1) as $poster)
-                        <img src="{{ $poster->image_path }}" alt="{{ $poster->title }}"
-                            class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
+                        <a href="{{ $poster->image_path }}" data-lightbox="gallery" data-title="{{ $poster->title }}">
+                            <img src="{{ $poster->image_path }}" alt="{{ $poster->title }}"
+                                class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
+                        </a>
                     @endforeach
                 </div>
             @endif
