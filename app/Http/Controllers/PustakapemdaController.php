@@ -225,11 +225,15 @@ class PustakapemdaController extends Controller
                                 })
                             );
 
+        $posters = Poster::where('target_website', 'pustaka-pemda')
+                ->latest()
+                ->paginate(4);
+
         if ($request->ajax()) {
             return view('pustakapemda-components.landingpage.layanan_select', compact('layanan_select'))->render();
         }
 
-        return view('pustakapemda.layanan', compact('layanan_select', 'kategori_layanan', 'selected_category'));
+        return view('pustakapemda.layanan', compact('layanan_select', 'kategori_layanan', 'selected_category','posters'));
     }
 
     public function kontak()
