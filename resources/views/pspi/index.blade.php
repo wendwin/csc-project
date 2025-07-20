@@ -5,11 +5,18 @@
 
 @section('content')
 <div class="text-center">
-    <h1 class="text-3xl font-bold text-green-700 mb-4">
-        Selamat Datang di Website Pusat Sertifikasi Profesi Indonesia
-    </h1>
-    <p class="text-lg text-gray-700">
-        Menyediakan informasi seputar sertifikasi profesi dan pengembangan kompetensi di Indonesia.
-    </p>
+    <div class="bg-white">
+        @include('pspi-components.landingpage.hero')
+        @include('pspi-components.landingpage.tentang')
+        <div class="pb-5">
+            <span class="flex items-center">
+                <span class="h-[2px] flex-1 bg-[#FFD900]"></span>
+                
+                <span class="bg-[#002789] p-2 text-lg md:text-xl font-bold text-white ">Transformasi Kinerja Pemerintahan Dimulai di Sini</span>
+                
+                <span class="h-[2px] flex-1 bg-[#FFD900]"></span>
+            </span>
+        </div>
+    </div>
 </div>
 @endsection
