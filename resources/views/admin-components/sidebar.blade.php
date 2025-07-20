@@ -1,34 +1,34 @@
 <div x-show="sidebarOpen" x-transition.opacity @click="sidebarOpen = false"
-    class="fixed inset-0 h-screen bg-black bg-opacity-50 z-60 md:hidden"></div>
+    class="fixed inset-0 h-screen bg-sky-200/20 backdrop-blur-sm z-60 md:hidden"></div>
 
 {{-- SIDEBAR MOBILE --}}
 <aside x-show="sidebarOpen" x-transition @click.away="sidebarOpen = false"
-    class="fixed inset-y-0 left-0 z-50 bg-[#D9D9D9] w-44 h-screen p-4 shadow-lg transition-all duration-300 md:hidden">
+    class="fixed inset-y-0 left-0 z-50 h-screen p-4 transition-all duration-300 bg-white border shadow-sm border-r-1 border-slate-50 w-44 md:hidden">
     <div class="mb-4 ml-1 text-xl font-bold text-blue-700">
         Dash<span class="text-black">Publikasi</span>
     </div>
 
     <nav class="space-y-2 text-gray-700 font-medium z-99 text-[10px] -ml-2">
         <a href="{{ route('admin.dashboard') }}"
-            class="flex items-center gap-3 py-2 px-3 rounded-lg {{ request()->routeIs('admin.dashboard') ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
+            class="flex items-center gap-3 py-2 px-3 rounded-md {{ request()->routeIs('admin.dashboard') ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
             <i data-lucide="layout-dashboard" class="w-5 h-5"></i>
             Dashboard
         </a>
 
         <a href="{{ route('articles.index') }}"
-            class="flex items-center gap-3 py-2 px-3 rounded-lg {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
+            class="flex items-center gap-3 py-2 px-3 rounded-md {{ request()->routeIs('articles.*') ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
             <i data-lucide="list" class="w-5 h-5"></i>
             Daftar Artikel
         </a>
 
         <a href="{{ route('admin.users') }}"
-            class="flex items-center gap-3 py-2 px-3 rounded-lg {{ request()->routeIs(['admin.users', 'admin.edit-user', 'admin.auth.add-user']) ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
+            class="flex items-center gap-3 py-2 px-3 rounded-md {{ request()->routeIs(['admin.users', 'admin.edit-user', 'admin.auth.add-user']) ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
             <i data-lucide="users" class="w-5 h-5"></i>
             Daftar Pengguna
         </a>
         
         <a href="{{ route('admin.posters.index') }}"
-            class="flex items-center gap-3 py-2 px-3 rounded-lg {{ request()->routeIs('admin.posters.*') ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
+            class="flex items-center gap-3 py-2 px-3 rounded-md {{ request()->routeIs('admin.posters.*') ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' }}">
             <i data-lucide="image" class="w-5 h-5"></i>
             Daftar Poster
         </a>
