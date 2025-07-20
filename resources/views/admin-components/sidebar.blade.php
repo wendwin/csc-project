@@ -46,7 +46,7 @@
 
 {{-- SIDEBAR DESKTOP --}}
 <aside
-    class="fixed top-0 left-0 z-40 hidden h-screen overflow-y-auto transition-all duration-300 bg-white border shadow-sm border-r-1 md:block border-slate-50"
+    class="fixed top-0 left-0 z-40 hidden h-screen transition-all duration-300 bg-white border shadow-sm border-r-1 md:block border-slate-50"
     :class="sidebarOpen ? 'w-64' : 'w-20'">
     <div class="flex items-center justify-center px-6 py-4 text-2xl">
         <div class="flex items-center mr-3 transition-all duration-200" x-show="sidebarOpen" x-cloak>
