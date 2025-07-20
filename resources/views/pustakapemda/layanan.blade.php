@@ -1,4 +1,3 @@
-
 @extends('layouts.pustakapemdalayout')
 
 @section('content')
@@ -13,12 +12,12 @@
                         @include('pustakapemda-components.kategori')
 
                         <div class="flex flex-col gap-3">
-                            <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded"
-                                loading="lazy">
-                            <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded"
-                                loading="lazy">
-                            <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded"
-                                loading="lazy">
+                            @foreach ($posters as $poster)
+                                <a href="{{ $poster->image_path }}" data-lightbox="gallery" data-title="{{ $poster->title }}">
+                                    <img src="{{ $poster->image_path }}" alt="{{ $poster->title }}"
+                                        class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
+                                </a>
+                            @endforeach
                         </div>
                     </div>
 
