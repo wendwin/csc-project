@@ -1,4 +1,4 @@
-<div class=" mx-auto mt-4 p-3 md:mt-16">
+<div class=" mx-auto mt-4 p-3 md:p-0 md:mt-16">
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 items-center rounded-lg">
         <div class="w-full md:max-w-[85%] mx-auto px-2 md:px-5 col-span-1 lg:col-span-3">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">

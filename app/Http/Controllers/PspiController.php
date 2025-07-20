@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Article;
 use App\Models\ArticleImage;
+use App\Models\Poster;
 use Hashids\Hashids;
 use Illuminate\Support\Str;
 class PspiController extends Controller
@@ -13,7 +14,10 @@ class PspiController extends Controller
 {
     public function getKategoriLayanan()
     {
-        return Article::select('category')->distinct()->pluck('category');
+        return Article::where('target_website', 'pspi')
+                    ->select('category')
+                    ->distinct()
+                    ->pluck('category');
     }
     
     public function index(Request $request)
@@ -28,41 +32,41 @@ class PspiController extends Controller
                 return $item;
             });
 
-         $cards = [
+         $cardsKeunggulan = [
         [
-            'title' => 'Jaringan Kemitraan Luas dan Terpercaya',
-            'img' => '/img/pustakapemda/tata_kelola/jaringan.png',
-            'text' => 'Lebih dari 10.000 desa di seluruh Indonesia telah menjadi mitra aktif kami.'
+            'title' => 'Spesialisasi di Sektor Pemerintahan',
+            'img' => '/img/pspi/landingpage/keunggulan/spesialisasi.png',
+            'text' => 'Fokus dan pengalaman kami sepenuhnya tertuju pada kebutuhan pelatihan dan sertifikasi di lingkungan OPD hingga desa.'
         ],
         [
-            'title' => 'Fokus pada Peningkatan Kapasitas Aparatur Desa & Kecamatan',
-            'img' => '/img/pustakapemda/tata_kelola/fokus.png',
-            'text' => 'Kami memiliki spesialisasi dalam penyelenggaraan bimtek dan studi banding yang relevan dengan tantangan nyata di lapangan.'
+            'title' => 'Pendekatan Berbasis Kebutuhan Nyata',
+            'img' => '/img/pspi/landingpage/keunggulan/pendekatan.png',
+            'text' => 'Program kami disusun berdasarkan hasil analisis lapangan dan masukan langsung dari stakeholder pemerintahan.'
         ],
         [
-            'title' => 'Narasumber dan Fasilitator Profesional',
-            'img' => '/img/pustakapemda/tata_kelola/narasumber.png',
-            'text' => 'Didukung oleh tenaga ahli dari kementerian, akademisi, praktisi pemerintahan, serta tokoh-tokoh desa inspiratif yang memiliki pengalaman langsung di lapangan.'
+            'title' => 'Kemitraan Luas dan Teruji',
+            'img' => '/img/pspi/landingpage/keunggulan/kemitraan.png',
+            'text' => 'Kami telah bekerja sama dengan berbagai instansi daerah dan desa di berbagai provinsi, menjadikan PSPI sebagai mitra yang dikenal dan dipercaya.'
         ],
         [
-            'title' => 'Materi dan Metode Pelatihan Sesuai Kebutuhan',
-            'img' => '/img/pustakapemda/tata_kelola/materi.png',
-            'text' => 'Materi disusun secara kontekstual dan sesuai dengan regulasi terbaru serta praktik terbaik di bidang tata kelola keuangan dan pembangunan desa.'
+            'title' => 'Tim Ahli dan Fasilitator Berpengalaman',
+            'img' => '/img/pspi/landingpage/keunggulan/timAhli.png',
+            'text' => 'PSPI didukung oleh tenaga profesional dari kalangan akademisi, praktisi pemerintahan, serta asesor bersertifikat nasional.'
         ],
         [
-            'title' => 'Studi Banding di Lokasi Terpilih',
-            'img' => '/img/pustakapemda/tata_kelola/studi.png',
-            'text' => 'Lokasi studi banding dipilih dari desa-desa percontohan yang telah terbukti sukses.'
+            'title' => 'Sertifikasi berstandar nasional',
+            'img' => '/img/pspi/landingpage/keunggulan/sertifikasi.png',
+            'text' => 'Proses pelatihan dan sertifikasi yang kami selenggarakan sesuai dengan standar BNSP dan regulasi nasional lainnya.'
         ],
         [
-            'title' => 'Komitmen terhadap Inovasi dan Pembaruan',
-            'img' => '/img/pustakapemda/tata_kelola/komitmen.png',
-            'text' => 'Kami terus mengikuti kebijakan terbaru, memanfaatkan teknologi desa, dan menerapkan pendekatan partisipatif serta transparan.'
+            'title' => 'Fleksibilitas Pelaksanaan',
+            'img' => '/img/pspi/landingpage/keunggulan/fleksibilitas.png',
+            'text' => 'Dapat disesuaikan dengan kebutuhan instansi, baik secara luring, daring, maupun hybrid.'
         ],
         [
-            'title' => 'Kolaborasi Lintas Sektor',
-            'img' => '/img/pustakapemda/tata_kelola/kolaborasi.png',
-            'text' => 'Kami bekerja sama dengan berbagai pihak untuk menciptakan dampak positif yang berkelanjutan.'
+            'title' => 'Komitmen Pada Transformasi Nyata',
+            'img' => '/img/pspi/landingpage/keunggulan/komitmen.png',
+            'text' => 'Lebih dari sekadar pelatihan, kami mendorong terjadinya perubahan perilaku kerja dan peningkatan kinerja organisasi secara berkelanjutan.'
         ],
     ];
 
@@ -153,7 +157,7 @@ class PspiController extends Controller
     //     ],
     // ];
         
-        $berita_terbaru = Article::where('author', 'admin-pustaka-pemda')
+        $berita_terbaru = Article::where('author', 'admin-pspi')
                          ->latest()
                          ->paginate(5);
         
@@ -165,40 +169,73 @@ class PspiController extends Controller
             })
         );
 
-        $bimbingan_teknis = Article::where('author', 'admin-pustaka-pemda')
+        $bimbingan_teknis = Article::where('author', 'admin-pspi')
                          ->where('category', 'Bimbingan Teknis (Bimtek)')
                          ->latest()
                          ->paginate(5);
 
-        $workshop_seminar = Article::where('author', 'admin-pustaka-pemda')
-                         ->where('category', 'Workshop dan Seminar Tematik')
-                         ->latest()
-                         ->paginate(5);
+        $bimbingan_teknis->setCollection(
+        $bimbingan_teknis->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
+        
+        $workshop_seminar = Article::where('author', 'admin-pspi')
+                            ->where('category', 'Workshop dan Seminar Tematik')
+                            ->latest()
+                            ->paginate(5);
+        
+        $workshop_seminar->setCollection(
+        $workshop_seminar->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
+        
+        
+        $galeri_pelatihan = Article::where('author', 'admin-pspi')
+                            ->paginate(8);
 
-        $galeri_pelatihan = Article::where('author', 'admin-pustaka-pemda')
-                         ->paginate(8);
+        $galeri_pelatihan->setCollection(
+        $galeri_pelatihan->getCollection()->map(function ($item)use ($hashids) {
+                $item->id_encrypt = $hashids->encode($item->id);
+                $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                return $item;
+            })
+        );
 
+        $posters = Poster::where('target_website', 'pspi')
+                ->latest()
+                ->paginate(5);
 
-        if ($request->ajax()) {
+        
+
+        if ($request->ajax() && ($request->has('section') || $request->has('pagination'))) {
             if ($request->get('section') === 'workshop') {
                 return view('pspi-components.landingpage.workshop_seminar', compact('workshop_seminar'))->render();
             }
-
+        
             if ($request->get('section') === 'bimtek') {
                 return view('pspi-components.landingpage.bimbingan-teknis', compact('bimbingan_teknis'))->render();
             }
-
+        
             if ($request->get('section') === 'galeri') {
                 return view('pspi-components.landingpage.galeri-pelatihan', compact('galeri_pelatihan'))->render();
             }
         
-            return view('pspi-components.landingpage.berita-terbaru', compact('berita_terbaru'))->render();
+            // Pagination untuk berita
+            if ($request->has('pagination')) {
+                return view('pspi-components.landingpage.berita-terbaru', compact('berita_terbaru'))->render();
+            }
         }
 
         
 
         return view('pspi.index', compact(
-            'cards', 
+            'cardsKeunggulan', 
             'carouselItems', 
             'tentangItems',
             'berita_terbaru', 
@@ -206,6 +243,22 @@ class PspiController extends Controller
             'bimbingan_teknis',
             'workshop_seminar',
             'galeri_pelatihan',
+            'posters'
         ));
+    }
+        public function detail_berita($id_slug)
+    {
+        $hashids = new Hashids('pspi_salt_rahasia', 8);
+        $parts = explode('-', $id_slug);
+        $id_encrypt = $parts[0];
+
+        $decoded = $hashids->decode($id_encrypt);
+        $id = $decoded[0] ?? null;
+        $berita = Article::findOrFail($id);
+        $gambars = ArticleImage::where('article_id', $id)->get();
+        $kategori_layanan = $this->getKategoriLayanan();
+        $selected_category = $berita->category; 
+
+        return view('pspi-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan','selected_category'));
     }
 }

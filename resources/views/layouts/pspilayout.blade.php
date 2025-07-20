@@ -14,7 +14,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gray-300 min-h-screen flex flex-col">
+<body class="bg-white min-h-screen flex flex-col">
 
     {{-- Navbar khusus PSPI --}}
     @include('pspi-components.navbar')
@@ -25,9 +25,7 @@
     </main>
 
     {{-- Footer, bisa di pindahkan ke component jika compleks --}}
-    <footer class="text-center py-4 text-sm text-gray-500">
-        &copy; {{ date('Y') }} Pusat Sertifikasi Profesi Indonesia.
-    </footer>
+    @include('pspi-components.footer')
 
 </body>
 
