@@ -105,7 +105,6 @@
             @endforeach
         </select>
     </div>
-
     <canvas id="monthlyChart" height="100"></canvas>
 </div>
 
