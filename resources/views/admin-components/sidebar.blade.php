@@ -1,5 +1,5 @@
 <div x-show="sidebarOpen" x-transition.opacity @click="sidebarOpen = false"
-    class="fixed inset-0 h-screen bg-sky-200/20 backdrop-blur-sm z-60 md:hidden"></div>
+    class="fixed inset-0 h-screen bg-sky-200/20 backdrop-blur-sm z-[10] md:hidden"></div>
 
 {{-- SIDEBAR MOBILE --}}
 <aside x-show="sidebarOpen" x-transition @click.away="sidebarOpen = false"
