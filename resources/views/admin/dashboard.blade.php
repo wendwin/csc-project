@@ -6,7 +6,7 @@
       
     <div class="flex flex-wrap gap-6">
         {{-- Total Users --}}
-        <div class="relative flex-1 min-w-[200px] p-4 bg-white shadow rounded-xl">
+        <div class="relative flex-1 min-w-[200px] p-4 bg-white shadow rounded-xl transition-transform duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1">
             <div class="absolute p-4 text-purple-600 bg-purple-100 rounded-2xl top-4 right-4">
                 <i data-lucide="users" class="w-6 h-6"></i>
             </div>
@@ -28,10 +28,10 @@
         </div>
 
         {{-- Artikel CSC --}}
-        <div class="relative flex-1 min-w-[200px] p-4 bg-white shadow rounded-xl">
-            <div class="absolute p-2 bg-yellow-100 top-4 right-4 rounded-2xl">
+        <div class="relative flex-1 min-w-[200px] p-4 bg-white shadow rounded-xl transition-transform duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1">
+             <a href="http://cendanasolution.test" target="_blank" class="absolute p-2 transition bg-yellow-100 top-4 right-4 rounded-2xl hover:brightness-110">
                 <img src="{{ asset('img/logindashboard/csc.png') }}" class="w-10 h-10" alt="Logo CSC">
-            </div>
+            </a>
             <h3 class="text-sm text-gray-500">Total Artikel CSC</h3>
             <p class="text-[28px] font-semibold text-black mt-2">{{ $totalArticlesCsc }}</p>
             <div class="flex items-center gap-1 mt-8">
@@ -50,10 +50,10 @@
         </div>
 
         {{-- Artikel Pustaka Pemda --}}
-        <div class="relative flex-1 min-w-[200px] p-4 bg-white shadow rounded-xl">
-            <div class="absolute p-2 bg-blue-100 top-4 right-4 rounded-2xl">
+        <div class="relative flex-1 min-w-[200px] p-4 bg-white shadow rounded-xl transition-transform duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1">
+            <a href="http://pustakapemda.test" target="_blank" class="absolute p-2 transition bg-blue-100 top-4 right-4 rounded-2xl hover:brightness-110">
                 <img src="{{ asset('img/logindashboard/logo PustakaPemda 1.png') }}" class="w-10 h-10" alt="Logo Pemda">
-            </div>
+            </a>
             <h3 class="text-sm text-gray-500">Total Artikel Pustaka Pemda</h3>
             <p class="text-[28px] font-semibold text-black mt-2">{{ $totalArticlesPemda }}</p>
             <div class="flex items-center gap-1 mt-8">
@@ -72,10 +72,10 @@
         </div>
 
         {{-- Artikel PSPI --}}
-        <div class="relative flex-1 min-w-[200px] p-4 bg-white shadow rounded-xl">
-            <div class="absolute p-2 bg-orange-100 top-4 right-4 rounded-2xl">
+        <div class="relative flex-1 min-w-[200px] p-4 bg-white shadow rounded-xl transition-transform duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1">
+             <a href="http://pspi.test" target="_blank" class="absolute p-2 transition bg-orange-100 top-4 right-4 rounded-2xl hover:brightness-110">
                 <img src="{{ asset('img/logindashboard/pspi.png') }}" class="w-10 h-10" alt="Logo PSPI">
-            </div>
+            </a>
             <h3 class="text-sm text-gray-500">Total Artikel PSPI</h3>
             <p class="text-[28px] font-semibold text-black mt-2">{{ $totalArticlesPspi }}</p>
             <div class="flex items-center gap-1 mt-8">
