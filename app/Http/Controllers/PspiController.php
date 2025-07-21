@@ -261,4 +261,19 @@ class PspiController extends Controller
 
         return view('pspi-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan','selected_category'));
     }
+    public function profil()
+    {
+        $tentangItems = [
+        [
+            'image' => '/img/asean-bac.jpg',
+        ],
+        [
+            'image' => '/img/g20.jpg',
+        ],
+        [
+            'image' => '/img/expo-2020-dubai.jpg',
+        ],
+        ];
+        return view('pspi.profil', compact('tentangItems'));
+    }
 }

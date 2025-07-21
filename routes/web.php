@@ -70,6 +70,7 @@ Route::domain('pustakapemda.test')->group(function () {
 Route::domain('pspi.test')->group(function () {
     Route::get('/', [PspiController::class, 'index'])->name('website3.home');
     Route::get('/berita/{id}', [PspiController::class, 'detail_berita'])->name('website3.detail_berita');
+    Route::get('/profil', [PspiController::class, 'profil'])->name('website3.profil');
     // Tambahkan route lain untuk website pspi disni
 });
 
