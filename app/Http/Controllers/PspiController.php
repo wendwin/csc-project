@@ -276,4 +276,37 @@ class PspiController extends Controller
         ];
         return view('pspi.profil', compact('tentangItems'));
     }
+    public function layanan(Request $request, $kategori = null)
+    {
+        $hashids = new Hashids('pspi_salt_rahasia', 8);
+        $kategori_layanan = $this->getKategoriLayanan();
+        $selected_category = $kategori ?? $kategori_layanan[0];
+
+        $layanan_select = Article::where('category', $selected_category)
+                                ->where('author', 'admin-pspi')
+                                ->latest()
+                                ->paginate(4);
+        $layanan_select->setCollection(
+                        $layanan_select->getCollection()->map(function ($item)use ($hashids) {
+                                    $item->id_encrypt = $hashids->encode($item->id);
+                                    $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+                                    return $item;
+                                })
+                            );
+
+        $posters = Poster::where('target_website', 'pspi')
+                ->latest()
+                ->paginate(4);
+
+        if ($request->ajax()) {
+            return view('pspi-components.layanan.layanan_select', compact('layanan_select'))->render();
+        }
+
+        return view('pspi.layanan', compact('layanan_select', 'kategori_layanan', 'selected_category','posters'));
+    }
+    public function kontak()
+    {
+
+        return view('pspi.kontak');
+    }
 }

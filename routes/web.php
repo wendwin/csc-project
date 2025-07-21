@@ -71,6 +71,8 @@ Route::domain('pspi.test')->group(function () {
     Route::get('/', [PspiController::class, 'index'])->name('website3.home');
     Route::get('/berita/{id}', [PspiController::class, 'detail_berita'])->name('website3.detail_berita');
     Route::get('/profil', [PspiController::class, 'profil'])->name('website3.profil');
+    Route::get('/layanan/{kategori?}', [PspiController::class, 'layanan'])->name('website3.layanan');
+    Route::get('/kontak', [PspiController::class, 'kontak'])->name('website3.kontak');
     // Tambahkan route lain untuk website pspi disni
 });
 

@@ -9,7 +9,7 @@
                 w-full px-2 py-1 transition-all
                 {{ isset($selected_category) && Str::lower($selected_category) === Str::lower($kategori) ? 'bg-[#002789] hover:bg-[#000b89] text-white' : 'text-black bg-gray-200 hover:bg-gray-300' }}
             ">
-                <a href="{{ route('website2.layanan', Str::lower($kategori)) }}">
+                <a href="{{ route('website3.layanan', Str::lower($kategori)) }}">
                     <p class="text-sm md:text-base text-start font-semibold truncate overflow-hidden whitespace-nowrap">
                         {{ $kategori }}
                     </p>
