@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="text-center ">
-        <div class="relative -mb-[140px]">
+        <div class="relative -mb-[120px] select-none pointer-events-none">
             <img src="/img/pspi/detail_berita.webp" alt="" class="w-full h-[250px] relative">
             <h1 class="absolute text-xl md:text-2xl text-white uppercase font-bold top-5 left-5 md:top-10 md:left-10">{{ $berita->category  }}</h1>
         </div>

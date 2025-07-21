@@ -30,13 +30,13 @@
             <div class="flex flex-col gap-2">
                 <div class="flex flex-row gap-1 mt-3 md:mt-0 md:w-[250px]">
                     <a href="#">
-                        <i data-lucide="facebook" class="w-8 h-8 p-1 rounded-xl bg-white text-[#074DFF] flex items-center justify-center"></i>
+                        <i data-lucide="facebook" class="w-8 h-8 p-1 rounded-xl bg-white text-[#074DFF] hover:text-white hover:bg-[#074DFF] flex items-center justify-center"></i>
                     </a>
                     <a href="#">
-                        <i data-lucide="instagram" class="w-8 h-8 p-1 rounded-xl bg-white text-[#074DFF] flex items-center justify-center"></i>
+                        <i data-lucide="instagram" class="w-8 h-8 p-1 rounded-xl bg-white text-[#074DFF] hover:text-white hover:bg-[#074DFF] flex items-center justify-center"></i>
                     </a>
                     <a href="#">
-                        <i data-lucide="linkedin" class="w-8 h-8 p-2 rounded-xl bg-white text-[#074DFF] flex items-center justify-center"></i>
+                        <i data-lucide="linkedin" class="w-8 h-8 p-2 rounded-xl bg-white text-[#074DFF] hover:text-white hover:bg-[#074DFF] flex items-center justify-center"></i>
                     </a>
                 </div>
                 <p class="flex text-xs md:text-sm">Hak Cipta 2025 PSPI</p>
