@@ -204,7 +204,7 @@
 
             {{-- PAGINATION --}}
             <div class="flex justify-center mt-8 mb-4">
-                <div class="w-full max-w-4xl text-gray-500">
+                <div class="w-full max-w-6xl text-gray-500">
                     {{ $articles->links() }}
                 </div>
             </div>
