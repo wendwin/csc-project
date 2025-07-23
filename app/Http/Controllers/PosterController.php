@@ -8,10 +8,16 @@ use Illuminate\Support\Facades\Storage;
 
 class PosterController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $posters = Poster::all();
-        return view('admin.poster', compact('posters'));
+        $query = Poster::query();
+        if ($request->has('target_website') && $request->target_website != '') {
+            $query->where('target_website', $request->target_website);
+        }
+        $posters = $query->paginate(6);
+        $selectedTarget = $request->target_website;
+
+        return view('admin.poster', compact('posters', 'selectedTarget'));
     }
 
     public function store(Request $request)
