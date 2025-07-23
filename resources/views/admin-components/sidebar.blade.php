@@ -67,7 +67,7 @@
                 <span class="absolute w-1 bg-blue-600 rounded-r-full -left-2 top-1 bottom-1"></span>
             @endif
             <div class="flex items-center justify-center md:justify-start py-2 pr-2 pl-2 rounded-md transition-all
-                {{ $isActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-black' }}">
+                {{ $isActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-gray-500' }}">
                 
                 <div class="flex justify-center w-12">
                     <img src="{{ asset($isActive ? 'img/logindashboard/icon/dashicon.png' : 'img/logindashboard/icon/dashiconblack.png') }}"
@@ -88,7 +88,7 @@
             @endif
 
             <div class="flex items-center justify-center md:justify-start py-2 pr-2 pl-2 rounded-md transition-all
-                {{ $isArticleActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-black' }}">
+                {{ $isArticleActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-gray-500' }}">
                 
                 <div class="flex justify-center w-12">
                     <img src="{{ asset($isArticleActive ? 'img/logindashboard/icon/listiconwhite.png' : 'img/logindashboard/icon/listicon.png') }}"
@@ -111,10 +111,10 @@
             @endif
 
             <div class="flex items-center justify-center md:justify-start py-2 pr-2 pl-2 rounded-md transition-all
-                {{ $isUserListActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-black' }}">
+                {{ $isUserListActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-gray-500' }}">
                 
                 <div class="flex justify-center w-12">
-                    <i data-lucide="users" class="w-5 h-5 {{ $isUserListActive ? 'text-white' : 'text-black' }}"></i>
+                    <i data-lucide="users" class="w-5 h-5 {{ $isUserListActive ? 'text-white' : 'text-gray-500' }}"></i>
                 </div>
                 <span class="overflow-hidden transition-all duration-200 whitespace-nowrap"
                     :class="sidebarOpen ? 'opacity-100 w-auto' : 'ml-0 opacity-0 w-0'">
@@ -131,11 +131,11 @@
             @endif
 
             <div class="flex items-center justify-center md:justify-start py-2 pr-2 pl-2 rounded-md transition-all
-                {{ $isPosterActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-black' }}">
+                {{ $isPosterActive ? 'bg-blue-600 text-white' : 'hover:bg-gray-100 text-gray-500' }}">
                 
                 <div class="flex justify-center w-12">
                     <i data-lucide="image"
-                        class="w-5 h-5 {{ $isPosterActive ? 'text-white' : 'text-gray-700 group-hover:text-black' }}"></i>
+                        class="w-5 h-5 {{ $isPosterActive ? 'text-white' : 'text-gray-500' }}"></i>
                 </div>
                 <span class="overflow-hidden transition-all duration-200 whitespace-nowrap"
                     :class="sidebarOpen ? 'opacity-100 w-auto' : 'ml-0 opacity-0 w-0'">
@@ -149,14 +149,14 @@
 <div class="absolute w-full px-4 bottom-6">
     <form method="POST" action="{{ route('admin.logout') }}">
         @csrf
-        <button type="submit" class="relative block w-full pl-2 group">
+        <button type="submit" class="relative block w-full pl-2 font-medium text-gray-500 group hover:text-red-400 ">
             {{-- Border kiri biru --}}
-            <span class="absolute w-1 bg-red-600 rounded-r-full -left-2 top-1 bottom-1"></span>
+            <span class="absolute w-1"></span>
 
-            <div class="flex items-center justify-center py-2 pl-2 pr-2 text-white transition-all bg-red-500 border border-red-600 rounded-md md:justify-start hover:bg-red-600">
+            <div class="flex items-center justify-center py-2 pl-2 pr-2 transition-all md:justify-start">
                 
                 <div class="flex justify-center w-12">
-                    <i data-lucide="log-out" class="w-5 h-5 text-white"></i>
+                    <i data-lucide="log-out" class="w-5 h-5"></i>
                 </div>
                 <span class="overflow-hidden transition-all duration-200 whitespace-nowrap"
                     :class="sidebarOpen ? 'opacity-100 w-auto' : 'opacity-0 w-0'">

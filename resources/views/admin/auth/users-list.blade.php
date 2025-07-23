@@ -16,7 +16,7 @@
 </div>
 @endif
 
-<h1 class="mt-12 mb-6 text-2xl font-bold text-gray-800">Daftar Pengguna</h1>
+<h1 class="mt-12 mb-6 text-2xl font-bold text-gray-700">Daftar Pengguna</h1>
 
 {{-- TOMBOL TAMBAH USER - MOBILE & TABLET --}}
 <div class="flex justify-end w-full mt-2 mb-2 lg:hidden">
@@ -33,13 +33,13 @@
     <div class="flex flex-col gap-2 mt-4 mb-8 lg:flex-row lg:items-start lg:justify-start">
         <div
             class="flex flex-col w-full lg:flex-row border border-gray-300 rounded-md font-bold text-sm divide-y lg:divide-y-0 lg:divide-x divide-gray-300 lg:max-w-[500px]">
-            <div class="flex items-center px-3 py-1 text-gray-700 shrink-0">
+            <div class="flex items-center px-3 py-1 text-gray-600 shrink-0">
                 <i data-lucide="filter" class="w-4 h-4 mr-1"></i>
                 <span>Filter By</span>
             </div>
 
             <div class="flex items-center w-full px-3 py-1 lg:w-auto">
-                <select name="role" class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0">
+                <select name="role" class="w-full text-gray-600 bg-transparent focus:outline-none !h-8 !min-h-0">
                     <option value="">Semua Role</option>
                     <option value="admin pustaka pemda" {{ request('role')=='admin pustaka pemda' ? 'selected' : '' }}>
                         Admin Pustaka Pemda
@@ -79,10 +79,10 @@
 
 <div class="w-full mt-4 overflow-x-auto bg-white rounded-md shadow-md">
     <table
-        class="min-w-[640px] sm:min-w-full text-[10px] sm:text-[11px] md:text-[10px] lg:text-[14px] text-left text-gray-700">
+        class="min-w-[640px] sm:min-w-full text-[10px] sm:text-[11px] md:text-[10px] lg:text-[14px] text-left text-gray-600">
         <thead class="bg-[#FCFDFD]">
             <tr
-                class="font-semibold text-gray-700 border-b border-gray-200 uppercase text-[12px] sm:text-[13px] md:text-[14px] text-center">
+                class="font-semibold text-gray-600 border-b border-gray-200 uppercase text-[12px] sm:text-[13px] md:text-[14px] text-center">
                 <th class="px-4 py-3 text-center">No</th>
                 <th class="px-4 py-3 text-left">Nama</th>
                 <th class="px-4 py-3 text-left">Email</th>
@@ -95,7 +95,7 @@
         <tbody>
             @foreach ($users as $index => $user)
             <tr
-                class="border-b border-gray-200 hover:bg-slate-50 transition duration-150 bg-white text-[14px] font-semibold text-[#202224] text-left">
+                class="border-b border-gray-200 hover:bg-slate-50 transition duration-150 bg-white text-[14px] font-semibold text-gray-500 text-left">
                 <td class="px-4 py-3 text-center ">{{ $users->firstItem() + $index }}</td>
                 <td class="px-4 py-3 ">{{ $user->name }}</td>
                 <td class="px-4 py-3 ">{{ $user->email }}</td>

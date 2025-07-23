@@ -1,7 +1,7 @@
 @extends('layouts.adminlayout')
 
 @section('content')
-    <h1 class="mt-12 mb-6 text-2xl font-bold text-gray-800">Daftar Artikel</h1>
+    <h1 class="mt-12 mb-6 text-2xl font-bold text-gray-700">Daftar Artikel</h1>
 
     {{-- Tambah Artikel (mobile & tablet only) --}}
 <div class="flex justify-end w-full mt-2 lg:hidden">
@@ -16,17 +16,17 @@
     <div class="flex flex-col gap-2 mt-4 mb-8 lg:flex-row lg:items-start lg:justify-start">
         {{--  Filter + Reset --}}
         <div class="flex flex-col w-full lg:flex-row border border-gray-300 rounded-md font-bold text-sm divide-y lg:divide-y-0 lg:divide-x divide-gray-300 lg:max-w-[800px]">
-            <div class="flex items-center px-3 py-1 text-gray-700 shrink-0">
+            <div class="flex items-center px-3 py-1 text-gray-600 shrink-0">
                 <i data-lucide="filter" class="w-4 h-4 mr-1"></i>
                 <span>Filter By</span>
             </div>
             <div class="flex items-center w-full px-3 py-1 lg:w-auto">
                 <input type="date" name="tanggal" value="{{ request('tanggal') }}"
-                    class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0" />
+                    class="w-full text-gray-600 bg-transparent focus:outline-none !h-8 !min-h-0" />
             </div>
             <div class="flex items-center w-full px-3 py-1 lg:w-auto">
                 <select name="target_website"
-                    class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0">
+                    class="w-full text-gray-600 bg-transparent focus:outline-none !h-8 !min-h-0">
                     <option value="">Target Website</option>
                     <option value="pustaka-pemda" {{ request('target_website') == 'pustaka-pemda' ? 'selected' : '' }}>Pustaka Pemda</option>
                     <option value="csc" {{ request('target_website') == 'csc' ? 'selected' : '' }}>CSC</option>
@@ -35,7 +35,7 @@
             </div>
             <div class="flex items-center w-full px-3 py-1 lg:w-auto">
                 <select name="category"
-                    class="w-full text-gray-800 bg-transparent focus:outline-none !h-8 !min-h-0">
+                    class="w-full text-gray-600 bg-transparent focus:outline-none !h-8 !min-h-0">
                     <option value="">Kategori Artikel</option>
                     @foreach ($categories as $category)
                         <option value="{{ $category }}" title="{{ $category }}"
@@ -70,7 +70,7 @@
    {{-- FLASH MESSAGE --}}
     @if (session('success'))
         <div x-data="{ show: true }" x-show="show" x-transition.duration.300ms
-            class="fixed z-50 w-full max-w-md px-3 py-2 mt-12 text-green-800 transform -translate-x-1/2 bg-green-100 border border-green-300 rounded top-2 left-1/2"
+            class="fixed z-50 w-full max-w-md px-3 py-2 mt-12 text-green-600 transform -translate-x-1/2 bg-green-100 border border-green-300 rounded top-2 left-1/2"
             role="alert">
             <div class="flex items-start justify-between">
                 <div class="text-sm font-medium">
@@ -90,7 +90,7 @@
                 class="min-w-[1024px] w-full text-[10px] sm:text-[11px] md:text-[10px] lg:text-[14px] text-left text-gray-700">
                 <thead class="bg-[#FCFDFD]">
                     <tr
-                        class="font-semibold text-gray-700 border-b border-gray-200 uppercase text-[12px] sm:text-[13px] md:text-[14px]">
+                        class="font-semibold text-gray-600 border-b border-gray-200 uppercase text-[12px] sm:text-[13px] md:text-[14px]">
                         <th class="px-4 py-3">No</th>
                         <th class="px-4 py-3">Judul</th>
                         <th class="px-4 py-3">Penulis</th>
@@ -105,7 +105,7 @@
                 <tbody>
                     @forelse ($articles as $index => $article)
                         <tr
-                            class="border-b border-gray-200 hover:bg-slate-50 transition duration-150 bg-white text-[14px] font-semibold text-[#202224]">
+                            class="border-b border-gray-200 hover:bg-slate-50 transition duration-150 bg-white text-[14px] font-semibold text-gray-500">
                             <td class="px-4 py-3">{{ ($articles->currentPage() - 1) * $articles->perPage() + $index + 1 }}
                             </td>
                             <td class="px-4 py-3" title="{{ $article->title }}">
@@ -204,7 +204,7 @@
 
             {{-- PAGINATION --}}
             <div class="flex justify-center mt-8 mb-4">
-                <div class="w-full max-w-4xl">
+                <div class="w-full max-w-4xl text-gray-500">
                     {{ $articles->links() }}
                 </div>
             </div>

@@ -2,7 +2,7 @@
 @extends('layouts.adminlayout')
 
 @section('content')
-    <h2 class="mt-12 mb-4 text-2xl font-bold text-gray-800">Dashboard</h2>
+    <h2 class="mt-12 mb-4 text-2xl font-bold text-gray-700">Dashboard</h2>
       
     <div class="flex flex-wrap gap-6">
         {{-- Total Users --}}
@@ -97,7 +97,7 @@
     {{-- Statistik Artikel Bulanan --}}
 <div class="p-6 mt-6 bg-white shadow rounded-xl">
     <div class="flex items-center justify-between mb-4">
-        <h3 class="text-xl font-semibold text-gray-800">Jumlah Artikel</h3>
+        <h3 class="text-xl font-semibold text-gray-700">Jumlah Artikel</h3>
         <select id="websiteSelect" class="px-3 py-1 text-sm border border-gray-300 rounded">
             <option value="all">Semua Website</option>
             @foreach ($monthlyArticleStats->pluck('target_website')->unique() as $website)
