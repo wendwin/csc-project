@@ -59,6 +59,7 @@ Route::domain('pustakapemda.test')->group(function () {
     Route::get('/profil', [PustakapemdaController::class, 'profil'])->name('website2.profil');
     Route::get('/layanan/{kategori?}', [PustakapemdaController::class, 'layanan'])->name('website2.layanan');
     Route::get('/kontak', [PustakapemdaController::class, 'kontak'])->name('website2.kontak');
+    Route::get('/search-news', [PustakapemdaController::class, 'search'])->name('website2.search.news');
     // Tambahkan route lain untuk website pustakapemda disni
 });
 
@@ -73,6 +74,9 @@ Route::domain('pspi.test')->group(function () {
     Route::get('/profil', [PspiController::class, 'profil'])->name('website3.profil');
     Route::get('/layanan/{kategori?}', [PspiController::class, 'layanan'])->name('website3.layanan');
     Route::get('/kontak', [PspiController::class, 'kontak'])->name('website3.kontak');
+    Route::get('/search-news', [PspiController::class, 'search'])->name('website3.search.news');
+    // web.php
+
     // Tambahkan route lain untuk website pspi disni
 });
 
