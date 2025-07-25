@@ -18,7 +18,7 @@
             </span>
         </div>
         <div class="py-5 md:py-10 rounded-b-[30px] mb-10"
-        style="background-image: url('/img/pspi/backdrop_pspi2.webp'); background-repeat: repeat; background-size: auto">
+            style="background-image: url('/img/pspi/backdrop_pspi4.webp'); background-repeat: repeat; background-size: 350px;">
             @include('pspi-components.landingpage.keunggulan')
             @include('pspi-components.landingpage.berita')
             {{-- @include('pustakapemda-components.landingpage.galeri-pelatihan') --}}
