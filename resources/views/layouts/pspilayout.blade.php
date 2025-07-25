@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title ?? 'Website PSPI' }}</title>
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('lightbox2/css/lightbox.css') }}">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -26,7 +27,8 @@
 
     {{-- Footer, bisa di pindahkan ke component jika compleks --}}
     @include('pspi-components.footer')
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="{{ asset('lightbox2/js/lightbox.js') }}"></script>
 </body>
 
 </html>
