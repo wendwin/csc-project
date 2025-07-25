@@ -14,7 +14,7 @@
                             <div class="flex flex-col lg:flex-row text-start">
                                 <div class="flex flex-col items-start">
 
-                                    <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                    <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                                         class="w-full h-[200px] md:min-w-[200px] md:h-[220px] xl:min-w-[300px] xl:h-[250px] object-cover rounded"
                                         loading="lazy">
 
@@ -52,7 +52,7 @@
                                     class="p-2 hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg">
                                     <div class="flex flex-col lg:flex-row gap-4 text-start">
                                         <!-- Gambar -->
-                                        <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                        <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                                             class="w-full lg:w-[40%] h-[150px] object-cover rounded" loading="lazy">
 
                                         <!-- Konten -->
@@ -95,7 +95,7 @@
 
                                     <!-- Gambar utama dengan aspect-video -->
                                     <div class="w-full aspect-video overflow-hidden rounded">
-                                        <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                        <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                                             class="w-full h-full object-cover" loading="lazy">
                                     </div>
 
@@ -133,7 +133,7 @@
                                 <div class="p-2 hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg">
                                     <div class="flex flex-row md:flex-col lg:flex-row gap-4 text-start w-full">
                                         <!-- Gambar responsive -->
-                                        <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                        <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                                             class="w-1/3 md:w-full h-[100px] md:h-[150px] lg:w-[40%] object-cover rounded" loading="lazy">
 
                                         <!-- Konten -->

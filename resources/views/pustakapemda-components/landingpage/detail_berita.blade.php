@@ -30,11 +30,11 @@
                                 <span>|</span>
                                 <p>{{ $berita->created_at }}</p>
                             </div>
-                            <img src="{{ $berita->main_image }}" alt="" class="w-full h-auto flex justify-center rounded-lg">
+                            <img src="{{ '/storage/'.$berita['main_image'] }}" alt="" class="w-full h-auto flex justify-center rounded-lg">
                             <div class="text-black text-justify py-5 text-sm md:text-base">{!! $berita->content !!}</div>\
                             <div class="flex flex-col gap-5">
                                 @foreach($gambars as $gambar)
-                                        <img src="/img/{{ $gambar->image_path }}" alt="Gambar artikel" class="w-full h-auto rounded-lg object-cover" />
+                                        <img src="{{ '/storage/'.$gambar['image_path'] }}" alt="Gambar artikel" class="w-full h-auto rounded-lg object-cover" />
                                 @endforeach
                             </div>
                         </div>
