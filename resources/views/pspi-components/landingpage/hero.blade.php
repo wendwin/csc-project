@@ -1,13 +1,5 @@
-<div x-data="{ isOpen: false, showTopbar: true }" 
-     x-init="
-        let lastScroll = window.pageYOffset;
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            showTopbar = currentScroll === 0;
-            lastScroll = currentScroll;
-        });
-     ">
-    <div class="mx-auto p-3 md:p-0 transition-all duration-100" :class="showTopbar ? 'md:mt-[105px] ' : 'md:mt-0'">
+<div >
+    <div class="mx-auto p-3 md:p-0 " >
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-5 items-center rounded-lg">
             <div class="w-full md:max-w-[85%] mx-auto px-2 md:px-5 col-span-1 lg:col-span-3">
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
