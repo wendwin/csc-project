@@ -21,7 +21,6 @@
                     <div class="flex flex-col md:flex-row justify-between items-center text-black text-start gap-5 md:gap-0  group">
                         <div class="flex flex-col items-start justify-start gap-5 md:pr-5">
                             <div class="flex flex-row gap-5 items-center mx-auto md:mx-0 mb-5">
-                                <img src="/img/logo/sertifikasi.png" alt="" class="max-w-10">
                                 <h6 class="font-bold text-xl ">Hubungi Kami Sekarang</h6>
                             </div>
                             <div class="flex flex-row gap-5">
@@ -50,7 +49,7 @@
                             </div>
                         </div>
                         <div class="overflow-hidden rounded-lg">
-                            <img src="/img/tentang1.png" alt="" loading="lazy" class=" object-contain md:max-w-full group-hover:scale-105 transform transition-all">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.05247688938937!2d110.36102033466555!3d-7.806796034091653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5791fd206501%3A0xd1b9d44af39d9e21!2sJl.%20Sidomukti%20No.30!5e0!3m2!1sen!2sid!4v1753451268940!5m2!1sen!2sid" class="h-[400px] w-full md:h-[400px] md:w-[600px] mt-5 md:mt-0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
