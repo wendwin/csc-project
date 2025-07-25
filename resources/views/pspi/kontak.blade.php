@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="py-5 md:py-10 my-10 rounded-b-[15px] md:rounded-b-[30px] mb-20"
-                style="background-image: url('/img/pspi/backdrop_pspi2.webp'); background-repeat: repeat; background-size: auto">
+                style="background-image: url('/img/pspi/backdrop_pspi4.webp'); background-repeat: repeat; background-size: 350px;">
                 <div class="max-w-7xl mx-auto bg-white p-5 rounded-lg my-5 md:my-10y shadow">
                     <div
                         class="flex flex-col md:flex-row justify-between items-center text-black text-start gap-5 md:gap-0  group">
@@ -27,16 +27,16 @@
                             </div>
                             <div class="flex flex-row gap-5">
                                 <h6 class="min-w-20 font-semibold">Alamat: </h6>
-                                <p>Jl. Sidomukti No.30, Kelurahan Kadipaten,
+                                <p class="text-slate-700">Jl. Sidomukti No.30, Kelurahan Kadipaten,
                                     Kecamatan Kraton, Kota Yogyakarta, DIY (55132)</p>
                             </div>
                             <div class="flex flex-row gap-5">
                                 <h6 class="min-w-20 font-semibold">Telepon: </h6>
-                                <p>0857-2976-2708</p>
+                                <p class="text-slate-700">0857-2976-2708</p>
                             </div>
                             <div class="flex flex-row gap-5">
                                 <h6 class="min-w-20 font-semibold">Email: </h6>
-                                <p>pspindonesia2025@gmail.com</p>
+                                <p class="text-slate-700">pspindonesia2025@gmail.com</p>
                             </div>
                             <div class="flex flex-row gap-1 mt-3 md:mt-5 md:w-[250px]">
                                 <a href="#">

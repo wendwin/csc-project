@@ -11,7 +11,7 @@
                 <h5 class="text-center text-sm md:text-base font-bold group-hover:scale-105 transform transition-all mb-3 md:mb-0 order-2 md:order-1 md:hidden min-h-[1px]">
                     {{ $card['title'] }}
                 </h5>
-                <p class="text-justify text-xs md:text-sm group-hover:scale-105 transform transition-all order-3 md:order-3 min-h-[72px]">{{ $card['text'] }} </p>
+                <p class="text-center text-xs md:text-sm group-hover:scale-105 transform transition-all order-3 md:order-3 min-h-[72px]">{{ $card['text'] }} </p>
             </div>
         @endforeach
     </div>
