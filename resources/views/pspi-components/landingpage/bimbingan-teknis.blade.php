@@ -34,7 +34,7 @@
                                 <div class="flex flex-col items-start">
 
                                     <div class="w-full aspect-video overflow-hidden rounded">
-                                        <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                        <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                                             class="w-full h-full object-cover" loading="lazy">
                                     </div>
 
@@ -69,7 +69,7 @@
                                 <a href="{{ route('website3.detail_berita', $item['id_slug']) }}">
                                     <div class="p-2 hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg">
                                         <div class="flex flex-row md:flex-col lg:flex-row gap-4 text-start w-full">
-                                            <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                            <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                                                 class="w-1/3 md:w-full h-[100px] md:h-[150px] lg:w-[40%] object-cover rounded" loading="lazy">
         
                                             <div class="flex flex-col justify-center w-2/3">

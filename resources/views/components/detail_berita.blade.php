@@ -13,14 +13,14 @@
                 </div>
 
                 <div class="d-flex justify-content-center mb-4">
-                    <img src="{{ $berita->main_image }}" alt="" class="img-fluid rounded">
+                    <img src="{{ '/storage/'.$berita['main_image'] }}" alt="" class="img-fluid rounded">
                 </div>
 
                  <div class="text-black text-justify py-3 fs-6 fs-md-5">{!! $berita->content !!}</div>
 
                 <div class="d-flex flex-column align-items-center gap-3">
                     @foreach($gambars as $gambar)
-                        <img src="/img/{{ $gambar->image_path }}" alt="Gambar artikel"
+                        <img src="{{ '/storage/'.$gambar['image_path'] }}" alt="Gambar artikel"
                             class="img-fluid rounded object-fit-cover mb-3"/>
                     @endforeach
                 </div>

@@ -309,4 +309,20 @@ class PspiController extends Controller
 
         return view('pspi.kontak');
     }
+    public function search(Request $request)
+    {
+        $hashids = new Hashids('pspi_salt_rahasia', 8);    
+        $keyword = $request->get('query');
+
+        $results = Article::where('title', 'like', '%' . $keyword . '%')
+            ->where('target_website', 'pspi')
+            ->limit(5)
+            ->get(['id', 'title']);
+        $results->transform(function ($item) use ($hashids) {
+            $item->id_encrypt = $hashids->encode($item->id);
+            $item->id_slug = $item->id_encrypt . '-' . Str::slug($item->title);
+            return $item;
+        });
+        return response()->json($results);
+    }
 }

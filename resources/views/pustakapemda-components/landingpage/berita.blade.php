@@ -10,12 +10,12 @@
                         class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
                 </a>
 
-                {{-- Search --}}
+                                {{-- Search --}}
                 <label for="Search">
                     <div class="relative pt-5">
                         <input type="text" id="Search" placeholder="Cari Info Bimtek..."
                             class="mt-0.5 w-full p-2 text-[#0048FF] rounded border border-gray-300 bg-gray-200 pe-10 shadow-sm sm:text-sm 
-                        focus:border-gray-500 focus:ring-0 active:border-gray-500 active:ring-0 placeholder:text-[#0048FF]" />
+                        focus:border-gray-500 focus:ring-0 active:border-gray-500 active:ring-0 placeholder:text-[#0048FF]" autocomplete="off" />
 
                         <span class="absolute inset-y-0 mt-5 right-2 grid w-8 place-content-center">
                             <button type="button" aria-label="Submit"
@@ -27,6 +27,10 @@
                                 </svg>
                             </button>
                         </span>
+
+                        <!-- Sugestion List -->
+                        <ul id="suggestions" class="absolute z-10 mt-2 w-full bg-white border border-gray-300 rounded shadow-md hidden">
+                        </ul>
                     </div>
                 </label>
 
@@ -180,3 +184,42 @@
 
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('Search');
+    const suggestionBox = document.getElementById('suggestions');
+
+    searchInput.addEventListener('input', function () {
+        const query = this.value;
+
+        if (query.length < 2) {
+            suggestionBox.innerHTML = '';
+            suggestionBox.classList.add('hidden');
+            return;
+        }
+
+        fetch(`/search-news?query=${encodeURIComponent(query)}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.length === 0) {
+                    suggestionBox.innerHTML = '<li class="p-2 text-gray-500">Tidak ditemukan</li>';
+                } else {
+                    suggestionBox.innerHTML = data.map(item => `
+                        <li class="p-2 text-black hover:bg-gray-200 my-1 cursor-pointer" onclick="window.location.href='/berita/${item.id_slug}'">
+                            ${item.title}
+                        </li>
+                    `).join('');
+                }
+
+                suggestionBox.classList.remove('hidden');
+            });
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!searchInput.contains(e.target) && !suggestionBox.contains(e.target)) {
+            suggestionBox.classList.add('hidden');
+        }
+    });
+});
+</script>
