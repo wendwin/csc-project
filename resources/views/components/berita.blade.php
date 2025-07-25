@@ -8,7 +8,7 @@
             @foreach ($berita_terbaru as $item)
                 <a href="{{ route('detail_berita', $item['id_slug']) }}">
                     <div class="card p-3 mb-4">
-                        <img src="{{ $item['main_image'] }}" class="card-img-top" alt="...">
+                        <img src="{{ '/storage/'.$item['main_image'] }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <div class="line-bar mb-2"></div>
                             <p class="date">{{ \Carbon\Carbon::parse($item['updated_at'])->translatedFormat('d F Y') }}</p>
