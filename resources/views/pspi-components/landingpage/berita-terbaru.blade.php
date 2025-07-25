@@ -30,7 +30,7 @@
                             <div class="flex flex-col lg:flex-row gap-0 text-start">
                                 <!-- Mobile -->
                                 <div class="flex flex-row items-center lg:hidden">
-                                    <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                    <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                                         class="w-1/3 h-[100px] object-cover rounded" loading="lazy">
 
                                     <div class="flex flex-col justify-center px-3 w-2/3">
@@ -51,7 +51,7 @@
                                 <!-- Desktop -->
                                 <div class="hidden lg:flex flex-row w-full">
                                     <!-- Gambar -->
-                                    <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                                    <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                                         class="min-w-[200px] h-[130px] xl:min-w-[300px] xl:h-[200px] object-cover rounded"
                                         loading="lazy">
 

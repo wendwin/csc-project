@@ -18,7 +18,7 @@
                             <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out 
                                 {{ $index === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }}"
                                 data-index="{{ $index }}">
-                                <img src="{{ $item['main_image'] }}" class="w-full h-full object-cover" alt="Slide {{ $index + 1 }}" loading="lazy">
+                                <img src="{{ '/storage/'.$item['main_image'] }}" class="w-full h-full object-cover" alt="Slide {{ $index + 1 }}" loading="lazy">
                                 <div
                                     class="absolute text-start px-20 md:px-13 inset-y-0 left-0 w-full md:w-2/3 bg-blue-800/70 text-white p-6 flex flex-col justify-center items-start space-y-4">
                                     <p class="text-sm font-semibold">Terbaru</p>

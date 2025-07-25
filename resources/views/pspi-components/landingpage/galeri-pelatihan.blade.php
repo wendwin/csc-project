@@ -26,7 +26,7 @@
             @foreach ($galeri_pelatihan as $item)
             <a href="{{ route('website3.detail_berita', $item['id_slug']) }}">
                 <div class=" hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg bg-white">
-                    <img src="{{ $item['main_image'] }}" alt="{{ $item['title'] }}"
+                    <img src="{{ '/storage/'.$item['main_image'] }}" alt="{{ $item['title'] }}"
                         class="w-full h-[200px] object-cover rounded mb-3" loading="lazy">
 
                     <div class="flex flex-col justify-center p-2 text-left">
