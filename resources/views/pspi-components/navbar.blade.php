@@ -193,9 +193,9 @@ window.addEventListener('scroll', () => {
             x-transition:enter-start="-translate-y-full opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
             x-transition:leave="transition ease-in duration-300" x-transition:leave-start="translate-y-0 opacity-100"
             x-transition:leave-end="-translate-y-full opacity-0"
-            class="hidden xl:flex items-center justify-around mx-auto gap-2 bg-[#002789] py-4 w-full will-change-transform">
+            class="hidden xl:flex items-center justify-around mx-auto gap-2 bg-[#002789] py-4 w-full will-change-transform relative">
             <div class="max-w-3xl flex gap-5">
-                <img src="{{ asset('/img/logo/sertifikasi.png') }}" alt="" width="90">
+                <img src="{{ asset('/img/logo/sertifikasi.png') }}" alt="PSPI-Logo" draggable="false" class="w-20 xl:w-22 object-contain">
                 <div class="text-white">
                     <p class="font-semibold text-xl mb-2">Pusat Sertifikasi Profesi Indonesia</p>
                     <p class="font-medium text-xs">Alamat : Jl. Sidomukti No 30, Kel. Kadipaten, Kec.Keraton, Kota
@@ -203,6 +203,12 @@ window.addEventListener('scroll', () => {
                     <p class="font-medium text-xs">Telp: 0857-2976-2708</p>
                     <p class="font-medium text-xs">Email: pspindonesia2025@gmail.com</p>
                 </div>
+            </div>
+            <div class="absolute bottom-0 left-0">
+                <img src="{{ asset('/img/pspi/backdrop_batik.png') }}" alt="bg-batik" draggable="false"  class="w-32 xl:w-48 object-contain">
+            </div>
+            <div class="absolute top-0 right-0 rotate-180">
+                <img src="{{ asset('/img/pspi/backdrop_batik.png') }}" alt="bg-batik" draggable="false"  class="w-32 xl:w-48 object-contain">
             </div>
         </div>
 
@@ -216,14 +222,14 @@ window.addEventListener('scroll', () => {
                     <div class="shrink-0 flex items-center gap-3">
                         <!-- Mobile & Tablet (logo selalu tampil) -->
                         <a href="{{ route('website3.home') }}" class="block xl:hidden">
-                            <img class="h-14 w-14" src="{{ asset('/img/logo/sertifikasi.png') }}" alt="PSPI">
+                            <img class="h-14 w-14" src="{{ asset('/img/logo/sertifikasi.png') }}" alt="PSPI" draggable="false">
                         </a>
                         <!-- Desktop: logo + nama saat scroll -->
                         <div x-bind:class="showTopbar ? 'opacity-0 pointer-events-none absolute' : 'opacity-100 static'"
                             class="hidden xl:flex items-center gap-3  will-change-opacity">
                             <div class="hidden xl:flex items-center gap-3">
                                 <a href="{{ route('website3.home') }}">
-                                    <img class="h-16 w-16" src="{{ asset('/img/logo/sertifikasi.png') }}"
+                                    <img class="h-16 w-16 " draggable="false" src="{{ asset('/img/logo/sertifikasi.png') }}"
                                         alt="PSPI">
                                 </a>
                                 <p class="text-base font-semibold text-[#2C437F] uppercase">Pusat Sertifikasi Profesi
@@ -329,7 +335,7 @@ window.addEventListener('scroll', () => {
                     <a href="{{ route('website3.home') }}"
                         class="block rounded-md px-3 py-2 text-base font-medium 
                     {{ request()->routeIs('website3.home')
-                        ? 'text-white bg-gradient-to-r from-[#2C80FF] to-[#436dd7]'
+                        ? 'text-white bg-[#002789]'
                         : 'text-gray-900 hover:text-[#436dd7]' }}"
                         aria-current="{{ request()->routeIs('website3.home') ? 'page' : '' }}">
                         Beranda
@@ -338,7 +344,7 @@ window.addEventListener('scroll', () => {
                     <a href="{{ route('website3.profil') }}"
                         class="block rounded-md px-3 py-2 text-base font-medium 
                     {{ request()->routeIs('website3.profil')
-                        ? 'text-white bg-gradient-to-r from-[#2C80FF] to-[#436dd7]'
+                        ? 'text-white bg-[#002789]'
                         : 'text-gray-900 hover:text-[#436dd7]' }}"
                         aria-current="{{ request()->routeIs('website3.profil') ? 'page' : '' }}">
                         Profil
@@ -347,7 +353,7 @@ window.addEventListener('scroll', () => {
                     <a href="{{ route('website3.layanan') }}"
                         class="block rounded-md px-3 py-2 text-base font-medium 
                     {{ request()->routeIs('website3.layanan')
-                        ? 'text-white bg-gradient-to-r from-[#2C80FF] to-[#436dd7]'
+                        ? 'text-white bg-[#002789]'
                         : 'text-gray-900 hover:text-[#436dd7]' }}"
                         aria-current="{{ request()->routeIs('website3.layanan') ? 'page' : '' }}">
                         Layanan
@@ -356,7 +362,7 @@ window.addEventListener('scroll', () => {
                     <a href="{{ route('website3.kontak') }}"
                         class="block rounded-md px-3 py-2 text-base font-medium 
                     {{ request()->routeIs('website3.kontak')
-                        ? 'text-white bg-gradient-to-r from-[#2C80FF] to-[#436dd7]'
+                        ? 'text-white bg-[#002789]'
                         : 'text-gray-900 hover:text-[#436dd7]' }}"
                         aria-current="{{ request()->routeIs('website3.kontak') ? 'page' : '' }}">
                         Kontak

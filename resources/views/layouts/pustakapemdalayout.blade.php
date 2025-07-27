@@ -43,7 +43,7 @@
     <script>
     $(function() {
         $('#floating-wpp').floatingWhatsApp({
-            phone: '6282221222177',
+            phone: '{{ env('WHATSAPP_NUMBER_PUSTAKAPEMDA') }}',
             popupMessage: 'Hai, ada yang bisa kami bantu?',
             showPopup: true,
             position: 'right',

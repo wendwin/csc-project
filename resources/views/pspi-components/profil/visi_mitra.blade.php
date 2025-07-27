@@ -7,11 +7,11 @@
             </div>
             <div class="text-justify px-3 md:px-0 mb-3">
                 <h6 class="font-semibold">Visi</h6>
-                <p>Menjadi lembaga terdepan dalam peningkatan kapasitas dan sertifikasi profesi bagiaparatur pemerintahan yang profesional, kompeten, dan berdaya saing tinggi di tingkatnasional.</p>
+                <p class="text-slate-700">Menjadi lembaga terdepan dalam peningkatan kapasitas dan sertifikasi profesi bagiaparatur pemerintahan yang profesional, kompeten, dan berdaya saing tinggi di tingkatnasional.</p>
             </div>
             <div class="text-justify px-3 md:px-0">
                 <h6 class="font-semibold">Misi</h6>
-                <ul class="ml-5">
+                <ul class="ml-5 text-slate-700">
                     <li class="list-disc">Menyelenggarakan pelatihan, bimbingan teknis, dan sertifikasi profesi yangberorientasi pada kebutuhan nyata di lingkungan pemerintahan.</li>
                     <li class="list-disc">Membangun kemitraan strategis dengan instansi pemerintah, lembaga pendidikan,dan organisasi profesi dalam mendukung pengembangan SDM sektor publik.</li>
                     <li class="list-disc">Meningkatkan kualitas pelayanan publik melalui peningkatan kompetensi teknis, manajerial, dan sosial aparatur pemerintahan.</li>
@@ -26,7 +26,7 @@
                 <span class="h-[2px] flex-1 bg-[#FFD900] -mt-2"></span>
             </div>
             <div class="text-justify px-3 md:px-0">
-                <ul class="ml-5">
+                <ul class="ml-5 text-slate-700">
                     <li class="list-disc">APDESI Desa Kab. Tanah Laut</li>
                     <li class="list-disc">Kec. Manuhing, Kab. Gunung Mas</li>
                     <li class="list-disc">Kec. Manuhing Raya, Kab. Gunung Mas</li>

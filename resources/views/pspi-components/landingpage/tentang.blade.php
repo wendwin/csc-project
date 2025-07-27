@@ -5,7 +5,7 @@
                 <h1 class="text-white bg-[#002789] p-2 text-lg md:text-xl font-bold text-start">Tentang Kami</h1>
                 <span class="h-[2px] flex-1 bg-[#FFD900]"></span>
             </div>
-            <p class="text-justify py-2 px-3 text-black">
+            <p class="text-justify py-2 px-3 text-slate-700">
                     Dalam menghadapi kompleksitas tata kelola pemerintahan yang semakin dinamis dan berorientasi pada pelayanan publik yang profesional, kebutuhan akan aparatur yang kompeten dan tersertifikasi menjadi semakin mendesak. Baik di tingkat Organisasi Perangkat Daerah (OPD) maupun hingga ke tingkat pemerintahan desa, kapasitas sumber daya manusia menjadi penentu keberhasilan program pembangunan dan pelayanan masyarakat.
                     <br><br>
                     Pusat Sertifikasi Profesi Indonesia (PSPI) hadir sebagai solusi strategis dalam menjawab tantangan tersebut. Kami berkomitmen untuk menjadi lembaga terpercaya dalam peningkatan kapasitas dan sertifikasi kompetensi bagi aparatur pemerintahan di seluruh Indonesia. Dengan pendekatan yang terstruktur, terukur, dan berstandar nasional, PSPI memfasilitasi penguatan kapasitas SDM agar selaras dengan tuntutan reformasi birokrasi, akuntabilitas, dan profesionalisme.

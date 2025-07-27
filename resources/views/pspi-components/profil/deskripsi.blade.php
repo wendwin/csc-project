@@ -7,18 +7,18 @@
         <div class="flex flex-wrap justify-center my-10 gap-5 md:gap-10">
             <div class="flex flex-col gap-3">
                 <img src="/img/logo/pusdiklatnas.png" alt="" loading="lazy" class="w-full min-h-[80px] max-h-[150px] md:min-h-40 object-contain select-none pointer-events-none">
-                <p class="text-black font-bold">PUSDIKLATNAS</p>
+                <p class="text-slate-700 font-bold">PUSDIKLATNAS</p>
             </div>
             <div class="flex flex-col gap-3">
                 <img src="/img/logo/pustakapemda.png" alt="" loading="lazy" class="w-full min-h-[80px] max-h-[150px] md:min-h-40 object-contain select-none pointer-events-none">
-                <p class="text-black font-bold">PUSTAKA PEMDA</p>
+                <p class="text-slate-700 font-bold">PUSTAKA PEMDA</p>
             </div>
             <div class="flex flex-col gap-3">
                 <img src="/img/logo/sertifikasi.png" alt="" loading="lazy" class="w-full min-h-[80px] max-h-[150px] md:min-h-40 object-contain select-none pointer-events-none">
-                <p class="text-black font-bold">PSPI</p>
+                <p class="text-slate-700 font-bold">PSPI</p>
             </div>
         </div>
-        <p class="text-black text-justify mb-10">
+        <p class="text-slate-700 text-justify mb-10">
             PSPI (Pusat Sertifikasi Profesi Indonesia) bukanlah entitas yang berdiri sendiri. Bersama PUSDIKLATNAS (Pusat Pendidikan dan Pelatihan Nasional) dan PUSTAKA PEMDA (Pusat Tata Kelola Keuangan dan Pembangunan Daerah), kami merupakan bagian dari ekosistem terpadu yang dinaungi oleh PT. Cendana Solution Center — sebuah grup perusahaan yang berkomitmen pada peningkatan kapasitas sumber daya manusia dan penguatan tata kelola pemerintahan di seluruh Indonesia.
             <br><br>
             Sinergi antar unit dalam grup ini memungkinkan kami menghadirkan layanan yang lebih luas, lebih mendalam, dan lebih berdampak. Mulai dari pelatihan teknis, kajian kebijakan, hingga pengembangan sistem dan inovasi pemerintahan desa, semua bergerak dalam satu visi: menjadi katalis perubahan positif bagi pembangunan daerah.
