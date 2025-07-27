@@ -193,9 +193,9 @@ window.addEventListener('scroll', () => {
             x-transition:enter-start="-translate-y-full opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
             x-transition:leave="transition ease-in duration-300" x-transition:leave-start="translate-y-0 opacity-100"
             x-transition:leave-end="-translate-y-full opacity-0"
-            class="hidden xl:flex items-center justify-around mx-auto gap-2 bg-[#002789] py-4 w-full will-change-transform">
+            class="hidden xl:flex items-center justify-around mx-auto gap-2 bg-[#002789] py-4 w-full will-change-transform relative">
             <div class="max-w-3xl flex gap-5">
-                <img src="{{ asset('/img/logo/sertifikasi.png') }}" alt="" width="90">
+                <img src="{{ asset('/img/logo/sertifikasi.png') }}" alt="PSPI-Logo" draggable="false" class="w-20 xl:w-22 object-contain">
                 <div class="text-white">
                     <p class="font-semibold text-xl mb-2">Pusat Sertifikasi Profesi Indonesia</p>
                     <p class="font-medium text-xs">Alamat : Jl. Sidomukti No 30, Kel. Kadipaten, Kec.Keraton, Kota
@@ -203,6 +203,12 @@ window.addEventListener('scroll', () => {
                     <p class="font-medium text-xs">Telp: 0857-2976-2708</p>
                     <p class="font-medium text-xs">Email: pspindonesia2025@gmail.com</p>
                 </div>
+            </div>
+            <div class="absolute bottom-0 left-0">
+                <img src="{{ asset('/img/pspi/backdrop_batik.png') }}" alt="bg-batik" draggable="false"  class="w-32 xl:w-48 object-contain">
+            </div>
+            <div class="absolute top-0 right-0 rotate-180">
+                <img src="{{ asset('/img/pspi/backdrop_batik.png') }}" alt="bg-batik" draggable="false"  class="w-32 xl:w-48 object-contain">
             </div>
         </div>
 
