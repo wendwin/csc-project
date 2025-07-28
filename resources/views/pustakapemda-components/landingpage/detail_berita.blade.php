@@ -12,12 +12,12 @@
                         @include('pustakapemda-components.kategori')
 
                         <div class="flex flex-col gap-3">
-                            <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded"
-                                loading="lazy">
-                            <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded"
-                                loading="lazy">
-                            <img src="/img/asean-bac.jpg" alt="" class="w-full h-[300px] bg-gray-500 object-cover rounded"
-                                loading="lazy">
+                            @foreach ($posters as $poster)
+                                <a href="{{ '/storage/'.$poster->image_path }}" data-lightbox="gallery" data-title="{{ $poster->title }}">
+                                    <img src="{{ '/storage/'.$poster->image_path }}" alt="{{ $poster->title }}"
+                                        class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
+                                </a>
+                            @endforeach
                         </div>
 
                     </div>
@@ -26,7 +26,7 @@
                         <div class="p-3 md:p-0 md:py-5 md:pl-5 md:pr-0">
                             <h1 class="text-black text-base md:text-xl font-semibold">{{ $berita->title }}</h1>
                             <div class="my-2 md:my-5 justify-center flex flex-row space-x-2 text-sm text-gray-500 ">
-                                <p>{{ $berita->author }}</p>
+                                <p>{{ ucwords(str_replace('-', ' ', $berita['author'])) }}</p>
                                 <span>|</span>
                                 <p>{{ $berita->created_at }}</p>
                             </div>

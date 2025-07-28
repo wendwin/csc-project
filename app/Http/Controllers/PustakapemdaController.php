@@ -139,7 +139,7 @@ class PustakapemdaController extends Controller
                 ->latest()
                 ->paginate(5);
 
-        
+        // dd($posters);
 
         if ($request->ajax() && ($request->has('section') || $request->has('pagination'))) {
             if ($request->get('section') === 'workshop') {
@@ -187,8 +187,12 @@ class PustakapemdaController extends Controller
         $gambars = ArticleImage::where('article_id', $id)->get();
         $kategori_layanan = $this->getKategoriLayanan();
         $selected_category = $berita->category; 
+       
+        $posters = Poster::where('target_website', 'pustaka-pemda')
+                ->latest()
+                ->paginate(5);
 
-        return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan','selected_category'));
+        return view('pustakapemda-components.landingpage.detail_berita', compact('berita','gambars', 'kategori_layanan','selected_category', 'posters'));
     }
 
     public function profil()

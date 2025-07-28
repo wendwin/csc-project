@@ -13,8 +13,8 @@
 
                         <div class="flex flex-col gap-3">
                             @foreach ($posters as $poster)
-                                <a href="{{ $poster->image_path }}" data-lightbox="gallery" data-title="{{ $poster->title }}">
-                                    <img src="{{ $poster->image_path }}" alt="{{ $poster->title }}"
+                                <a href="{{ '/storage/'.$poster->image_path }}" data-lightbox="gallery" data-title="{{ $poster->title }}">
+                                    <img src="{{ '/storage/'.$poster->image_path }}" alt="{{ $poster->title }}"
                                         class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
                                 </a>
                             @endforeach

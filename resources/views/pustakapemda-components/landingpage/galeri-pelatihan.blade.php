@@ -14,7 +14,7 @@
                 <div class="flex flex-col justify-center p-2 text-left">
                     <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>
                     <div class="flex space-x-4 text-sm text-gray-500 mt-1">
-                        <p>{{ $item['author'] }}</p>
+                        <p>{{ ucwords(str_replace('-', ' ', $item['author'])) }}</p>
                         <p>{{ $item->created_at->format('d/m/Y') }}</p>
                     </div>
                     <p class="text-gray-700 mb-3 mt-2 text-justify">
