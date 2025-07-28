@@ -24,7 +24,7 @@
                     <div class="md:col-span-3  text-white rounded order-0 md:order-1">
 
                         <div class="p-3 md:p-0 md:py-5 md:pl-5 md:pr-0">
-                            <h1 class="text-black text-base md:text-xl font-semibold">{{ $berita->title }}</h1>
+                            <h1 class="text-black text-lg md:text-2xl font-semibold">{{ $berita->title }}</h1>
                             <div class="my-2 md:my-5 justify-center flex flex-row space-x-2 text-sm text-gray-500 ">
                                 <p>{{ ucwords(str_replace('-', ' ', $berita['author'])) }}</p>
                                 <span>|</span>

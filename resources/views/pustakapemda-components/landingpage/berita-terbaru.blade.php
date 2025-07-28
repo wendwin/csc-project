@@ -5,6 +5,25 @@
             <span class="h-[2px] flex-1 bg-[#EF0000] -mt-2"></span>
         </div>
         <div class="flex flex-col gap-4">
+            @if($berita_terbaru->isEmpty())
+                <div class="flex flex-col items-center justify-center py-16 px-4 bg-gray-50 rounded-lg">
+                    <div class="text-center">
+                        <!-- Icon -->
+                        <svg class="mx-auto h-16 w-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                            </path>
+                        </svg>
+                        
+                        <!-- Pesan -->
+                        <h3 class="mt-4 text-xl font-semibold text-gray-900">Belum Ada Berita Terbaru</h3>
+                        <p class="mt-2 text-sm text-gray-500">
+                            Saat ini belum ada berita yang tersedia. 
+                            Silakan cek kembali nanti.
+                        </p>
+                    </div>
+                </div>
+            @else
             @foreach ($berita_terbaru as $item)
                 <a href="{{ route('website2.detail_berita', $item['id_slug']) }}">
                     <div class="p-2 hover:shadow-lg hover:bg-gray-100 transition-all rounded-lg bg-white">
@@ -52,6 +71,7 @@
                     </div>
                 </a>
             @endforeach
+        @endif
         </div>
         <!-- Tambahkan pagination di sini -->
         <div class="mt-6 pagination">
