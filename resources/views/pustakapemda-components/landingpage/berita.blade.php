@@ -5,8 +5,8 @@
             @if ($posters->count())
                 {{-- <img src="{{ $posters[0]->image_path }}" alt="{{ $posters[0]->title }}"
                     class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy"> --}}
-                <a href="{{ $posters[0]->image_path }}" data-lightbox="gallery" data-title="{{ $posters[0]->title }}" >
-                    <img src="{{ $posters[0]->image_path }}" alt="{{ $posters[0]->title }}"
+                <a href="{{ '/storage/'.$posters[0]->image_path }}" data-lightbox="gallery" data-title="{{ $posters[0]->title }}" >
+                    <img src="{{ '/storage/'.$posters[0]->image_path }}" alt="{{ $posters[0]->title }}"
                         class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
                 </a>
 
@@ -38,8 +38,8 @@
 
                 <div class="flex flex-col gap-3">
                     @foreach ($posters->skip(1) as $poster)
-                        <a href="{{ $poster->image_path }}" data-lightbox="gallery" data-title="{{ $poster->title }}">
-                            <img src="{{ $poster->image_path }}" alt="{{ $poster->title }}"
+                        <a href="{{ '/storage/'.$poster->image_path }}" data-lightbox="gallery" data-title="{{ $poster->title }}">
+                            <img src="{{ '/storage/'.$poster->image_path }}" alt="{{ $poster->title }}"
                                 class="w-full h-[300px] bg-gray-500 object-cover rounded" loading="lazy">
                         </a>
                     @endforeach

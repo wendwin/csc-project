@@ -22,7 +22,7 @@
                                     <div class="flex flex-col justify-center w-2/3">
                                         <h3 class="text-base mt-3 font-semibold text-black">{{ $item['title'] }}</h3>
                                         <div class="flex gap-4 text-sm text-gray-500 mt-1">
-                                            <p>{{ $item['author'] }}</p>
+                                            <p>{{ ucwords(str_replace('-', ' ', $item['author'])) }}</p>
                                             <p>{{ $item->created_at->format('d/m/Y') }}</p>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@
                                         <div class="flex flex-col justify-center  w-2/3">
                                             <h3 class="text-base font-semibold text-black">{{ $item['title'] }}</h3>
                                             <div class="mt-1 text-sm text-gray-500">
-                                                <p>{{ $item['author'] }}</p>
+                                                <p>{{ ucwords(str_replace('-', ' ', $item['author'])) }}</p>
                                                 <p>{{ $item->created_at->format('d/m/Y') }}</p>
                                             </div>
                                         </div>
