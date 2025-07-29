@@ -1,4 +1,4 @@
-/* <link rel="stylesheet" href="{{ asset('css/berita_component.css') }}">
+<link rel="stylesheet" href="{{ asset('css/berita_component.css') }}">
 
 <div class="news">
     <div class="container">
@@ -6,7 +6,7 @@
         <h4 class="mb-5">Berita Terbaru</h4>
         <div class="row g-4">
             @foreach ($berita_terbaru as $item)
-                <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+                <div class="col-sm-6 col-lg-4 d-flex align-items-stretch    ">
                     <div class="card h-100 p-0 d-flex flex-column w-100">
                         <img src="{{ '/storage/'.$item['main_image'] }}" class="card-img-top" alt="{{ $item['title'] }}">
                         <div class="card-body d-flex flex-column">
@@ -26,4 +26,4 @@
             {!! $berita_terbaru->links() !!}
         </div>
     </div>
-</div> */
+</div>

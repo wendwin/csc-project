@@ -128,12 +128,19 @@ h3{
 }
 
 @media (min-width: 768px) {
+  .detail-berita-section {
+    width: 95%;
+    margin: auto;
+  } 
   .detail-berita-section img {
     width: 75%;
   }
 }
 
 @media (min-width: 992px) {
+  .detail-berita-section {
+    width: 65%;
+  }
   .detail-berita-section img {
     width: 45%;
   }
