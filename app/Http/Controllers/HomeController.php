@@ -15,7 +15,7 @@ class HomeController extends Controller
         $hashids = new Hashids('cendana_salt_rahasia', 8);
         $berita_terbaru = Article::where('author', 'admincsc')
                          ->latest()
-                         ->paginate(3);
+                         ->paginate(6);
 
         $berita_terbaru->setCollection(
             $berita_terbaru->getCollection()->map(function ($item) use ($hashids) {
