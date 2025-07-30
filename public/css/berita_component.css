@@ -21,7 +21,7 @@
 
 .news .card {
     background-color: #f5f5f5;
-    max-width: 600px;
+    /* max-width: 350px; */
 }
 
 .news .line-bar {
@@ -32,7 +32,7 @@
 }
 
 .news .card .next {
-    color: #848484;
+    color: #20a3db;
     transition: ease-in-out 0.1s;
     font-weight: 500;
 }
@@ -43,7 +43,7 @@
 }
 
 .news .card:hover .next {
-    color: #3499C5;
+    color: #297a9d;
     transition: ease-in-out 0.1s;
 }
 

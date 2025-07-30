@@ -43,10 +43,7 @@
     </div>
 
     <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between mt-4 py-3 px-4 py-md-1 px-md-5">
-        <p class=" order-2 order-md-0 mt-md-4 mt-lg-3"> 2024. CSC - <i class="bi bi-c-circle"></i> PT
-            Cendana
-            Solution
-            Center. Hak Cipta Dilindungi</p>
+        <p class=" order-2 order-md-0 mt-md-4 mt-lg-3">&copy; 2025 Cendana Solution Center. All rights reserved.</p>
         <div class="d-flex flex-column flex-md-row order-1 order-md-0 mb-3  mt-md-4 mt-lg-3 ">
             <a class="me-md-2  " href=""><i class="bi bi-shield-fill-exclamation me-2"> </i>Kebijakan
                 Privasi</a>
