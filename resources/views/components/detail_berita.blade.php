@@ -8,7 +8,7 @@
                 <h1 class="text-dark fs-4 fs-md-3 fw-semibold text-center">{{ $berita->title }}</h1>
 
                 <div class="my-2 my-md-4 d-flex flex-wrap align-items-center justify-content-center gap-2 text-muted small">
-                    <span>{{ $berita->author }}</span>
+                    <span class="text-capitalize">{{ $berita->author }}</span>
                     <span>|</span>
                     <span>{{ \Carbon\Carbon::parse($berita->created_at)->translatedFormat('d F Y') }}</span>
                 </div>
