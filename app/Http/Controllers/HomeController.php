@@ -154,7 +154,7 @@ class HomeController extends Controller
         ]);
     }
 
-    public function detail_berita($id_slug) {
+    public function detail_berita($id_slug, Request $request) {
         $hashids = new Hashids('cendana_salt_rahasia', 8);
         $parts = explode('-', $id_slug);
         $id_encrypt = $parts[0];
@@ -165,6 +165,10 @@ class HomeController extends Controller
         $gambars = ArticleImage::where('article_id', $id)->get();
 
         $berita_terbaru = $this->getBerita_terbaru();
+    
+        if ($request->ajax()) {
+            return view('components.berita_list', compact('berita_terbaru'))->render();
+        }
 
         return view('components.detail_berita', [
             'css' => 'css/detail_berita.css',
