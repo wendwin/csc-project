@@ -28,9 +28,13 @@ class HomeController extends Controller
         return $berita_terbaru;
     }
 
-    public function index()
+    public function index(Request $request)
     {
         $berita_terbaru = $this->getBerita_terbaru();
+    
+        if ($request->ajax()) {
+            return view('components.berita_list', compact('berita_terbaru'))->render();
+        }
 
         return view('index', [
             'css' => 'home.css',
@@ -119,9 +123,14 @@ class HomeController extends Controller
             'navbar' => 'default'
         ]);
     }
-
-    public function berita() {
+    public function berita(Request $request)
+    {
         $berita_terbaru = $this->getBerita_terbaru();
+    
+        if ($request->ajax()) {
+            return view('components.berita_list', compact('berita_terbaru'))->render();
+        }
+    
         return view('klien-sejarah.berita', [
             'css' => 'css/klien-sejarah/berita.css',
             'navbar' => 'default',

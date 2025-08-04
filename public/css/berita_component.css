@@ -11,7 +11,7 @@
 .news .line-bar-title {
     width: 50px;
     height: 5px;
-    background-color: #F7BC12;
+    background-color: #f7bc12;
     transition: width 0.3s;
 }
 
@@ -27,7 +27,7 @@
 .news .line-bar {
     width: 25px;
     height: 5px;
-    background-color: #3499C5;
+    background-color: #3499c5;
     transition: width 0.3s;
 }
 
@@ -36,7 +36,6 @@
     transition: ease-in-out 0.1s;
     font-weight: 500;
 }
-
 
 .news .card:hover .line-bar {
     width: 50px;
