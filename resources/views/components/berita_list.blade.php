@@ -22,8 +22,8 @@
         @endforeach
     </div>
 
-    <div class="mt-5 pagination">
-        {!! $berita_terbaru->withQueryString()->links() !!}
+    <div class="mt-5 pagination d-flex justify-content-end">
+        {!! $berita_terbaru->withQueryString()->links('pagination::bootstrap-5') !!}
 
     </div>
 @endif
